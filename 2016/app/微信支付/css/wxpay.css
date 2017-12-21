@@ -1,0 +1,151 @@
+@charset "utf-8";
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	background: #ededed;
+	line-height: 1;
+	font-family: "Microsoft YaHei",Arial,Helvetica,sans-serif;
+	font-size: 12px;
+}
+ul,li{
+	list-style: none;
+}
+img{
+	border: 0;
+	display: block;
+	width: 100%;
+}
+a{
+	text-decoration: none;
+	color: #33;
+}
+html,body{
+	height: 100%;
+}
+.clearfix:after{
+	clear: both;
+	content: '.';
+	height: 0;
+	display: block;
+	visibility: hidden;
+}
+.pay_tit{
+	width: 100%;
+    overflow: hidden;
+}
+.pay_tit h1{
+	width: 100%;
+	text-align: center;
+	font-size: 20px;
+    padding: 10px 0;
+}
+.pay_line{
+	background: url(../images/wx_line.jpg) repeat-x;
+	width: 100%;
+	height: 8px;
+	overflow: hidden;
+}
+
+.pay_cp{
+	background: #fff;
+	padding: 25px;
+	border-bottom: #cecece 1px solid;
+	width: 100%;
+	overflow: hidden;
+}
+.pay_cp .pic{
+    width: 30%;
+    float: left;
+    overflow: hidden;
+}
+.pay_cp .pic img{
+	max-width: 100%;
+}
+.pay_cp .text{
+	width: 65%;
+	line-height: 1.4;
+	color: #afafaf;
+	float: right;
+	font-size: 14px;
+}
+.pay_cp .text h3{
+	color: #000;
+	font-weight: normal;
+	font-size: 14px;
+}
+.ml{
+	margin-left: 15px;
+}
+.mt{
+	margin-top: 10px;
+}
+.pay_zf,.pay_money,.pay_adr{
+	width: 100%;
+	overflow: hidden;
+	margin-top: 15px;
+}
+.pay_adr{
+	color: #777;
+	border-bottom: #cecece 1px solid;
+	background: #fff;
+	line-height: 1.5;
+	font-size: 14px;
+}
+.pay_adr dl{
+	overflow: hidden;
+	padding: 15px 0;
+	position: relative;
+}
+.pay_adr dl.l{
+	border-bottom: #ededed 1px solid;
+}
+.pay_adr dt{
+	width: 30%;
+	float: left;
+	text-align: right;
+}
+.pay_adr dd{
+	width: 63%;
+	float: left;
+	text-align: left;	
+	font-size: 14px;
+}
+.jian_icon{
+	width: 15px;
+	height: 26px;
+	position: absolute;
+	top: 45%;
+	right: 2px;
+	background: url('../images/jian_icon.png') no-repeat;
+	display: block;
+	background-size: 50% 50%;
+}
+.pay_money{
+	background: #fff;
+	border-bottom: #cecece 1px solid;
+	padding: 15px 0 15px 25px;
+	font-size: 16px;
+	color: #333;
+}
+.pay_money .price{
+	color: #ff4800;
+	font-size: 22px;
+	font-weight: bold;
+
+}
+.pay_btn{
+	width: 100%;
+	background: #ff4800;
+	color: #fff;
+	font-size: 24px;
+	font-weight: bold;
+	border: 0;
+	padding: 0;
+	cursor: pointer;
+	height: 55px;
+	line-height: 55px;
+	margin-bottom: 20px;
+}

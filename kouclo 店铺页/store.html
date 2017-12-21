@@ -1,0 +1,1133 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>kouclo 店铺页</title>
+<link rel="stylesheet" href="css/store.css" />
+<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+<script type="text/javascript" src="js/store.js"></script>
+
+<script>
+$(function(){
+	$(".indexShowBox").slideJ({
+		leftBtn:".indexShowLeft",
+		rightBtn:".indexShowRight",
+		speed:800
+	});
+});
+</script>
+</head>
+
+<body>
+<!-- top -->
+<div id="top">
+    <div class="top_con">
+         <!-- land -->
+         <div id="land">
+             您好, 请<a href="#">登录</a>!<span class="mar_left"><a href="#">[免费注册]</a></span>
+         </div>
+         <!--
+         <div id="land">
+             您好,1797585699...<span class="sx"><a href="#"><b></b>消息</a></span><span class="mar_left"><a href="#">[退出]</a></span> 
+         </div>
+         -->
+        <!-- top_right -->
+        <div class="top_right">
+           <ul>
+              <li class="app_down" style="margin-left:0px;">
+                 手机抠抠
+                 <div class="ewm_line"></div>
+                 <div class="ewm">
+                    
+                    <img src="images/005.jpg" width="123" height="123" />
+                 </div>
+              </li>
+              <li class="top_shop"><a href="#"><i class="icon_shop"></i>购物车</a></li>
+              <li class="top_sc">
+                  <a href="#"><i class="icon_sc"></i></a>
+                  <span class="mysc"><a href="#">我的收藏</a></span>
+                  <div class="top_sc0">
+                     <ul>
+                         <li><a href="#">收藏的宝贝</a></li>
+                         <li><a href="#">收藏的店铺</a></li>
+                     </ul>
+                     
+                  </div>
+              </li>
+              <li class="top_my"><a href="#">我的抠抠<i class="icon_my"></i></a></li>
+              <li class="app_sy"><a href="#">抠抠网首页</a></li>
+           </ul>
+           
+           
+        </div>
+        <div class="clear"></div>
+  </div>
+  
+</div>
+<!-- top end -->
+
+<!-- header -->
+<div id="header" class="clearfix">
+    <div class="header_con">
+        <!-- h1 -->
+        <h1>
+           <a href="#"><img src="images/logo.png" width="152" height="78" alt="抠抠网" /></a>
+        </h1>
+        <!-- header_store -->
+        <div class="header_store">
+           <h2>CICISHOP  官方旗舰专卖店</h2>
+           <div class="header_store_con">
+               <span class="header_store_enter">
+                  <a href="#"><i class="header_store_icon"></i>进入店铺</a>  
+               </span>
+               <span class="header_store_sc"><a href="javascript:void(0);" onclick="AddFavorite('http://www.kouclo.com','抠抠网kouclo.com-全球强势品牌销售及新品首发平台')">收藏本店</a></span>
+               <div id="collect">
+                 <div class="prompt">
+                     <a href="#" class="close"></a>
+                     <div class="prompt_con">
+                        <span class="text"><i class="yes"></i>成功收藏此店铺</span>
+                     </div>
+                     <!--<div class="prompt_con">
+                        <span class="text"><i class="no"></i>已收藏过此店铺</span>
+                     </div>-->
+                     <div class="like">
+                       <h3>你可能还喜欢的店铺</h3>
+                       <ul>
+                          <li><a href="#" title=""><img src="images/06.jpg" alt="" /></a><br /><a href="#" title="">店铺假字</a></li>
+                          <li><a href="#" title=""><img src="images/07.jpg" alt="" /></a><br /><a href="#" title="">店铺假字</a></li>
+                          <li><a href="#" title=""><img src="images/07.jpg" alt="" /></a><br /><a href="#" title="">店铺假字</a></li>
+                          <li><a href="#" title=""><img src="images/06.jpg" alt="" /></a><br /><a href="#" title="">店铺假字</a></li>
+                       </ul>
+                     </div>
+                 </div>
+               </div>
+           </div>
+        </div>
+        <!-- search -->
+        <div id="search">
+            <form method="post" name="myform" action="" id="form">
+                 <input type="text" class="search_inp" value=""/>
+                 <input type="submit" class="search_btn" value="搜索" />
+                 <input type="button" class="search_btn0" value="搜本店" />
+            </form>
+        </div>
+    </div>
+</div>
+<!-- header end -->
+
+<!-- header_line -->
+<div class="header_line"></div>
+<!-- header_line end -->
+
+<!-- main -->
+<div class="main">
+   <!-- banner -->
+   <div id="banner"><a href="#"><img src="images/01.jpg" alt="" /></a></div>
+   <!-- banner end -->
+   
+   <!-- store_nav -->
+   <div id="store_nav">
+       <!-- store_feilei -->
+       <div class="store_feilei">
+          <a href="">所有分类<i class="icon_feilei"></i></a>
+          <div class="store_flz">
+             <ul>
+               <li class="list">
+                  <span class="store_tp"><a href="#">2014新款</a><i class="icon_st"></i></span>
+                  <div class="store_flz00">
+                    <ul>
+                        <li><a href="#">男装上衣</a></li>
+                        <li><a href="#">女装上衣</a></li>
+                        <li><a href="#">运动装</a></li>
+                        <li><a href="#">配饰</a></li>
+                    </ul>
+                  </div>
+               </li>
+               <li class="list">
+                  <span class="store_tp"><a href="#">针织衫</a><i class="icon_st"></i></span>
+                  <div class="store_flz00">
+                    <ul>
+                        <li><a href="#">男装上衣</a></li>
+                        <li><a href="#">女装上衣</a></li>
+                    </ul>
+                  </div>
+               </li>
+               <li class="list">
+                  <span class="store_tp"><a href="#">连衣裙</a><i class="icon_st"></i></span>
+                  <div class="store_flz00">
+                    <ul>
+                        <li><a href="#">男装上衣</a></li>
+                        <li><a href="#">运动装</a></li>
+                        <li><a href="#">配饰</a></li>
+                    </ul>
+                  </div>
+               </li>
+               <li class="list">
+                  <span class="store_tp"><a href="#">POLO</a><i class="icon_st"></i></span>
+                  <div class="store_flz00">
+                    <ul>
+                        <li><a href="#">男装上衣</a></li>
+                        <li><a href="#">女装上衣</a></li>
+                        <li><a href="#">运动装</a></li>
+                        <li><a href="#">配饰</a></li>
+                    </ul>
+                  </div>
+               </li>
+             
+             </ul>
+             
+             
+             
+             
+             
+          </div>
+       </div>
+       <!-- store_nav -->
+       <div class="store_nav">
+          <span><a href="#">首页</a></span>
+          <span><a href="#">[夏季经典款]</a></span>
+          <span><a href="#">[cicishope独家出售]</a></span>
+          <span><a href="#">店铺动态</a></span>
+       </div>
+       <!-- store_air -->
+       <div class="store_air">
+           <span class="icon_air"></span>
+          
+           <div id="demo">
+             <div class="qimo">
+              <div id="demo1">
+                  累积购买1000元即可成为会员，会员可享受正价9.5折<a href="#">下载手机新版客户端,首单送5元现金券</a>
+              </div> 
+              <div id="demo2"></div> 
+              </div> 
+           </div>  
+       </div>
+   </div>
+   <!-- store_nav end -->
+   
+   <!-- carousel -->
+   <div id="carousel">
+       <div class="indexShow">
+         <a href="javascript:void(0)" class="indexShowLeft"></a>
+		 <a href="javascript:void(0)" class="indexShowRight"></a>
+         <div class="indexShowBox">
+           <ul>
+             <li><a href="#"><img src="images/02.jpg" width="1200" height="399" alt=""/></a></li>
+             <li><a href="#"><img src="images/08.jpg" width="1200" height="399" alt="" /></a></li>
+             <li><a href="#"><img src="images/09.jpg" width="1200" height="399" alt="" /></a></li>
+           </ul>
+         </div>
+          
+          
+       </div>
+       <div class="carousel_bg"></div>
+   </div>
+   <!-- carousel end -->
+   
+   <!-- content -->
+   <div class="content">
+       <!-- left -->
+       <div class="left">
+          <!-- sp_fl -->
+          <div class="sp_fl">
+             <div class="sp_fl_title">
+               <h2>商品分类</h2>
+             </div>
+          <div class="sp_fl_con">
+             <ul>
+                <li>
+                   <i class="icon_sp0"></i><a href="#">查看所有商品</a>
+                   <div class="sp_fl_con0">
+                      <ul>
+                         <li class="hover"><a href="#">按销量</a></li>
+                         <li><a href="#">按新品</a></li>
+                         <li><a href="#">按价格</a></li>
+                         <li><a href="#">按收藏</a></li>
+                      </ul>
+                   </div>
+                </li>
+                <li>
+                   <span class="sp_fl_text"><i class="icon_sp"></i><a href="javascript:void(0)">TOP</a></span>
+                   <div class="sp_fl_con01">
+                      <ul>
+                         <li class="hover"><span class="line"></span><a href="#">全部服饰</a><span class="ash0">120</span></li>
+                         <li><span class="line"></span><a href="#">鞋子</a><span class="ash0">12</span></li>
+                         <li><span class="line"></span><a href="#">袜子</a><span class="ash0">5</span></li>
+                         <li><span class="line"></span><a href="#">内衣</a><span class="ash0">77</span></li>
+                         <li><span class="line"></span><a href="#">配饰</a><span class="ash0">25</span></li>
+                      </ul>
+                   </div>
+                </li>
+                <li>
+                   <span class="sp_fl_text"><i class="icon_sp"></i><a href="javascript:void(0)">Bottom</a></span>
+                   <div class="sp_fl_con01">
+                      <ul>
+                         <li class="hover"><span class="line"></span><a href="#">全部服饰</a><span class="ash0">120</span></li>
+                         <li><span class="line"></span><a href="#">鞋子</a><span class="ash0">12</span></li>
+                         <li><span class="line"></span><a href="#">袜子</a><span class="ash0">5</span></li>
+                         <li><span class="line"></span><a href="#">内衣</a><span class="ash0">77</span></li>
+                         <li><span class="line"></span><a href="#">配饰</a><span class="ash0">25</span></li>
+                      </ul>
+                   </div>
+                </li>
+                <li>
+                    <span class="sp_fl_text"><i class="icon_sp"></i><a href="javascript:void(0)">Dress</a></span>
+                    <div class="sp_fl_con01">
+                      <ul>
+                         <li class="hover"><span class="line"></span><a href="#">全部服饰</a><span class="ash0">120</span></li>
+                         <li><span class="line"></span><a href="#">鞋子</a><span class="ash0">12</span></li>
+                         <li><span class="line"></span><a href="#">袜子</a><span class="ash0">5</span></li>
+                         <li><span class="line"></span><a href="#">内衣</a><span class="ash0">77</span></li>
+                         <li><span class="line"></span><a href="#">配饰</a><span class="ash0">25</span></li>
+                      </ul>
+                   </div>
+                </li>
+                <li>
+                    <span class="sp_fl_text"><i class="icon_sp"></i><a href="javascript:void(0)">ACC</a></span>
+                    <div class="sp_fl_con01">
+                      <ul>
+                         <li class="hover"><span class="line"></span><a href="#">全部服饰</a><span class="ash0">120</span></li>
+                         <li><span class="line"></span><a href="#">鞋子</a><span class="ash0">12</span></li>
+                         <li><span class="line"></span><a href="#">袜子</a><span class="ash0">5</span></li>
+                         <li><span class="line"></span><a href="#">内衣</a><span class="ash0">77</span></li>
+                         <li><span class="line"></span><a href="#">配饰</a><span class="ash0">25</span></li>
+                      </ul>
+                   </div>
+                 </li>
+                <li>
+                   <span class="sp_fl_text"><i class="icon_sp"></i><a href="javascript:void(0)">Bag</a></span>
+                   <div class="sp_fl_con01">
+                      <ul>
+                         <li class="hover"><span class="line"></span><a href="#">全部服饰</a><span class="ash0">120</span></li>
+                         <li><span class="line"></span><a href="#">鞋子</a><span class="ash0">12</span></li>
+                         <li><span class="line"></span><a href="#">袜子</a><span class="ash0">5</span></li>
+                         <li><span class="line"></span><a href="#">内衣</a><span class="ash0">77</span></li>
+                         <li><span class="line"></span><a href="#">配饰</a><span class="ash0">25</span></li>
+                      </ul>
+                   </div>
+                </li>
+             </ul>
+           </div>
+        </div>
+        
+        <!-- left_search -->
+        <div class="left_search">
+          <form method="post" name="">
+             <dl>
+                 <dt>关键字</dt>
+                 <dd><input name="" type="text" class="left_search_inp" /></dd>
+             </dl>
+             <dl>
+                 <dt>价格</dt>
+                 <dd><input name="" type="text" class="left_search_inp0" /><span class="left_search_text">到</span><input name="" type="text" class="left_search_inp0" /></dd>
+             </dl>
+             <div class="left_search_tj">
+                  <input name="" type="button" class="left_search_tj0" value="搜索" />
+             </div>
+          </form>
+        </div>
+        
+        
+        <!-- sp_fl -->
+        <div class="sp_fl">
+           <div class="hot_sale_title">
+             <h2><i class="icon_hot"></i>Hot Sale</h2>
+           </div>
+           <div class="hot_sale_title0">
+             <ul>
+               <li class="hover" id="pl1" onmouseover="setTab('pl',1,2)">销售量</li>
+               <li id="pl2" onmouseover="setTab('pl',2,2)" style="margin-left:13px;">收藏数</li>
+             </ul>
+           </div>
+           <div class="hot_sale" id="con_pl_1">
+             <ul>
+                <li>
+                   <a href="#" title=""><img src="images/04.jpg" alt="" /></a>
+                   <p>
+                      <a href="#" title="">特：小清新2014款</a><br />
+                      <span class="red fz_14">￥99</span>
+                   </p>
+                </li>
+                <li>
+                   <a href="#" title=""><img src="images/04.jpg" alt="" /></a>
+                   <p>
+                      <a href="#" title="">特：小清新2014款</a><br />
+                      <span class="red fz_14">￥99</span>
+                   </p>
+                </li>
+                <li>
+                   <a href="#" title=""><img src="images/04.jpg" alt="" /></a>
+                   <p>
+                      <a href="#" title="">特：小清新2014款</a><br />
+                      <span class="red fz_14">￥99</span>
+                   </p>
+                </li>
+                <li>
+                   <a href="#" title=""><img src="images/04.jpg" alt="" /></a>
+                   <p>
+                      <a href="#" title="">特：小清新2014款</a><br />
+                      <span class="red fz_14">￥99</span>
+                   </p>
+                </li>
+                <li>
+                   <a href="#" title=""><img src="images/04.jpg" alt="" /></a>
+                   <p>
+                      <a href="#" title="">特：小清新2014款</a><br />
+                      <span class="red fz_14">￥99</span>
+                   </p>
+                </li>
+                <li>
+                   <a href="#" title=""><img src="images/04.jpg" alt="" /></a>
+                   <p>
+                      <a href="#" title="">特：小清新2014款</a><br />
+                      <span class="red fz_14">￥99</span>
+                   </p>
+                </li>
+                <li>
+                   <a href="#" title=""><img src="images/04.jpg" alt="" /></a>
+                   <p>
+                      <a href="#" title="">特：小清新2014款</a><br />
+                      <span class="red fz_14">￥99</span>
+                   </p>
+                </li>
+                <li>
+                   <a href="#" title=""><img src="images/04.jpg" alt="" /></a>
+                   <p>
+                      <a href="#" title="">特：小清新2014款</a><br />
+                      <span class="red fz_14">￥99</span>
+                   </p>
+                </li>
+                <li>
+                   <a href="#" title=""><img src="images/04.jpg" alt="" /></a>
+                   <p>
+                      <a href="#" title="">特：小清新2014款</a><br />
+                      <span class="red fz_14">￥99</span>
+                   </p>
+                </li>
+                <li>
+                   <a href="#" title=""><img src="images/04.jpg" alt="" /></a>
+                   <p>
+                      <a href="#" title="">特：小清新2014款</a><br />
+                      <span class="red fz_14">￥99</span>
+                   </p>
+                </li>
+             </ul>
+           </div>
+           
+           <div class="hot_sale" id="con_pl_2" style="display:none;">
+             <ul>
+                <li>
+                   <a href="#" title=""><img src="images/04.jpg" alt="" /></a>
+                   <p>
+                      <a href="#" title="">特：gggg14款</a><br />
+                      <span class="red fz_14">￥99</span>
+                   </p>
+                </li>
+                <li>
+                   <a href="#" title=""><img src="images/04.jpg" alt="" /></a>
+                   <p>
+                      <a href="#" title="">特：小清新2014款</a><br />
+                      <span class="red fz_14">￥99</span>
+                   </p>
+                </li>
+                <li>
+                   <a href="#" title=""><img src="images/04.jpg" alt="" /></a>
+                   <p>
+                      <a href="#" title="">特：小清新2014款</a><br />
+                      <span class="red fz_14">￥99</span>
+                   </p>
+                </li>
+                <li>
+                   <a href="#" title=""><img src="images/04.jpg" alt="" /></a>
+                   <p>
+                      <a href="#" title="">特：小清新2014款</a><br />
+                      <span class="red fz_14">￥99</span>
+                   </p>
+                </li>
+                <li>
+                   <a href="#" title=""><img src="images/04.jpg" alt="" /></a>
+                   <p>
+                      <a href="#" title="">特：小清新2014款</a><br />
+                      <span class="red fz_14">￥99</span>
+                   </p>
+                </li>
+                <li>
+                   <a href="#" title=""><img src="images/04.jpg" alt="" /></a>
+                   <p>
+                      <a href="#" title="">特：小清新2014款</a><br />
+                      <span class="red fz_14">￥99</span>
+                   </p>
+                </li>
+                <li>
+                   <a href="#" title=""><img src="images/04.jpg" alt="" /></a>
+                   <p>
+                      <a href="#" title="">特：小清新2014款</a><br />
+                      <span class="red fz_14">￥99</span>
+                   </p>
+                </li>
+                <li>
+                   <a href="#" title=""><img src="images/04.jpg" alt="" /></a>
+                   <p>
+                      <a href="#" title="">特：小清新2014款</a><br />
+                      <span class="red fz_14">￥99</span>
+                   </p>
+                </li>
+                <li>
+                   <a href="#" title=""><img src="images/04.jpg" alt="" /></a>
+                   <p>
+                      <a href="#" title="">特：小清新2014款</a><br />
+                      <span class="red fz_14">￥99</span>
+                   </p>
+                </li>
+                <li>
+                   <a href="#" title=""><img src="images/04.jpg" alt="" /></a>
+                   <p>
+                      <a href="#" title="">特：小清新2014款</a><br />
+                      <span class="red fz_14">￥99</span>
+                   </p>
+                </li>
+             </ul>
+           </div>
+           
+           
+           <div class="hot_more"><a href="#">更多<i class="icon_hot0"></i></a></div>
+           
+        </div>
+        
+     </div>
+     <!-- left end -->
+     <!-- right -->
+     <div class="right">
+        <!-- term -->
+        <div class="term">
+           <dl>
+              <dt>所有宝贝</dt>
+              <dd>
+                <div class="con">
+                   &gt;<a href="#">TOP</a>&gt;<a href="#" class="hover">深蓝色<b></b></a><a href="#" class="hover">S(19)<b></b></a>
+                </div>
+                <div class="cl">
+                   <a href="javascript:;">清空筛选条件</a>
+                </div>
+              </dd>
+           </dl>
+           <dl class="line">
+              <dt>颜色分类</dt>
+              <dd>
+                <div class="con0 con00">
+                  <a href="#"><i class="color_hei"></i>黑色</a><a href="#"><i class="color_sblue"></i>深蓝色</a><a href="#"><i class="color_fred"></i>粉红色</a><a href="#"><i class="color_qash"></i>浅灰色</a><a href="#"><i class="color_tblue"></i>天蓝色</a><a href="#"><i class="color_blue"></i>蓝色</a><a href="#"><i class="color_zlblue"></i>紫罗兰</a><a href="#"><i class="color_yellow"></i>黄色</a><a href="#"><i class="color_red"></i>红色</a><a href="#"><i class="color_green"></i>浅绿色</a><a href="#"><i class="color_ash"></i>深灰色</a>
+                </div>
+              </dd>
+           </dl>
+           
+           <dl class="line">
+              <dt>尺码</dt>
+              <dd>
+                <div class="con0">
+                   <a href="#">均码(527)</a><a href="#">S(19)</a><a href="#">M(19)</a><a href="#">L(5)</a>
+                </div>
+              </dd>
+           </dl>
+           
+           <dl>
+              <dt>材质</dt>
+              <dd>
+                <div class="con0">
+                   <a href="#">其他</a><a href="#">棉</a><a href="#">帆布</a><a href="#">牛仔布</a>
+                </div>
+              </dd>
+           </dl>
+        </div>
+        
+        
+        <!-- sort -->
+        <div class="sort">
+           <div class="sort_con">
+              <ul>
+                <li>排序</li>
+                <li class="t cur"><a href="#">人气<i class="icon_arrow"></i></a></li>
+                <li class="t"><a href="#">销量<i class="icon_arrow"></i></a></li>
+                <li class="t"><a href="#">新品<i class="icon_arrow"></i></a></li>
+                <li class="t price"><a href="javascript:;" title="点击后按价格从低到高">价格<b></b></a></li>
+                <li class="t"><a href="#">收藏<i class="icon_arrow"></i></a></li>
+                <li class="t0"><a href="#" class="hover">大图<i class="icon_big"></i></a><a href="#">小图<i class="icon_small"></i></a></li>
+              </ul>
+           </div>
+           <div class="sort_con0">
+              <span class="color">1/23</span><span>&lt;</span><a href="#" title="下一页"><span>&gt;</span></a>
+           </div>
+        </div>
+        
+        <!-- big_con -->
+        <div class="big_con clearfix">
+           <ul class="seaLis_Big clearfix" id="js_seaLis_Big">
+              
+              <li>
+                  <div class="con">
+                      <p class="pic_bg"><a href="#" title=""><img src="images/03.jpg" alt=""/></a></p>
+                      <p class="mar_t text"><a href="#" title="">cici-shop 复古碎花连衣裙</a></p>
+                      <p class="text">
+                         <span class="past_price">￥288</span><span class="now_price0">￥</span><span class="now_price">158</span>
+                      </p>
+                  </div>
+                  <div class="bigpic_con0">
+                      <div class="bigpic_lcon">
+                         <p class="bigLi_tWrap">
+			                <a href="#"><img src="images/03.jpg" alt="" /></a>
+		                 </p>
+                         <p class="text mar_t"><a href="#">cici-shop 复古碎花连衣裙</a></p>
+                         <p class="text">
+                            <span class="past_price">￥288</span><span class="now_price0">￥</span><span class="now_price">158</span>
+                         </p>
+                     </div>
+                     <div class="bigLi_tSma">
+                        <a href="javascript:;" title="上一页" class="bigLi_tSma_pre"></a>
+                        <a href="javascript:;" title="下一页" class="bigLi_tSma_next"></a>
+                        <div class="bigLi_tSma_proView">
+                          <p class="tSma_proView_content">
+                             <b class="proThumb-img"><img src="images/03.jpg" alt=""></b>
+                             <b class="proThumb-img"><img src="images/022.jpg" alt=""></b>
+                             <b class="proThumb-img"><img src="images/023.jpg" alt=""></b>
+                             <b class="proThumb-img"><img src="images/024.jpg" alt=""></b>
+                             <b class="proThumb-img"><img src="images/021.jpg" alt=""></b>
+                             
+                          </p>
+                        </div>
+                   
+                    </div>
+                  </div>
+                 
+                 
+              </li>
+              <li>
+                  <div class="con">
+                      <p class="pic_bg"><a href="#" title=""><img src="images/03.jpg" alt=""/></a></p>
+                      <p class="mar_t text"><a href="#" title="">cici-shop 复古碎花连衣裙</a></p>
+                      <p class="text">
+                         <span class="past_price">￥288</span><span class="now_price0">￥</span><span class="now_price">158</span>
+                      </p>
+                  </div>
+                  <div class="bigpic_con0">
+                      <div class="bigpic_lcon">
+                         <p class="bigLi_tWrap">
+			                <a href="#"><img src="images/03.jpg" alt="" /></a>
+		                 </p>
+                         <p class="text mar_t"><a href="#">cici-shop 复古碎花连衣裙</a></p>
+                         <p class="text">
+                            <span class="past_price">￥288</span><span class="now_price0">￥</span><span class="now_price">158</span>
+                         </p>
+                     </div>
+                     <div class="bigLi_tSma">
+                        <a href="javascript:;" title="上一页" class="bigLi_tSma_pre"></a>
+                        <a href="javascript:;" title="下一页" class="bigLi_tSma_next"></a>
+                        <div class="bigLi_tSma_proView">
+                          <p class="tSma_proView_content">
+                             <b class="proThumb-img"><img src="images/03.jpg" alt=""></b>
+                             <b class="proThumb-img"><img src="images/022.jpg" alt=""></b>
+                             <b class="proThumb-img"><img src="images/023.jpg" alt=""></b>
+                            
+                          </p>
+                        </div>
+                   
+                    </div>
+                  </div>
+                 
+                 
+              </li>
+              <li>
+                  <div class="con">
+                      <p class="pic_bg"><a href="#" title=""><img src="images/03.jpg" alt=""/></a></p>
+                      <p class="mar_t text"><a href="#" title="">cici-shop 复古碎花连衣裙</a></p>
+                      <p class="text">
+                         <span class="past_price">￥288</span><span class="now_price0">￥</span><span class="now_price">158</span>
+                      </p>
+                  </div>
+                  <div class="bigpic_con0">
+                      <div class="bigpic_lcon">
+                         <p class="bigLi_tWrap">
+			                <a href="#"><img src="images/03.jpg" alt="" /></a>
+		                 </p>
+                         <p class="text mar_t"><a href="#">cici-shop 复古碎花连衣裙</a></p>
+                         <p class="text">
+                            <span class="past_price">￥288</span><span class="now_price0">￥</span><span class="now_price">158</span>
+                         </p>
+                     </div>
+                     <div class="bigLi_tSma">
+                        <a href="javascript:;" title="上一页" class="bigLi_tSma_pre"></a>
+                        <a href="javascript:;" title="下一页" class="bigLi_tSma_next"></a>
+                        <div class="bigLi_tSma_proView">
+                          <p class="tSma_proView_content">
+                             <b class="proThumb-img"><img src="images/03.jpg" alt=""></b>
+                             <b class="proThumb-img"><img src="images/022.jpg" alt=""></b>
+                             <b class="proThumb-img"><img src="images/023.jpg" alt=""></b>
+                             <b class="proThumb-img"><img src="images/024.jpg" alt=""></b>
+                             <b class="proThumb-img"><img src="images/021.jpg" alt=""></b>
+                             
+                          </p>
+                        </div>
+                   
+                    </div>
+                  </div>
+                 
+                 
+              </li>
+              <li>
+                  <div class="con">
+                      <p class="pic_bg"><a href="#" title=""><img src="images/03.jpg" alt=""/></a></p>
+                      <p class="mar_t text"><a href="#" title="">cici-shop 复古碎花连衣裙</a></p>
+                      <p class="text">
+                         <span class="past_price">￥288</span><span class="now_price0">￥</span><span class="now_price">158</span>
+                      </p>
+                  </div>
+                  <div class="bigpic_con0">
+                      <div class="bigpic_lcon">
+                         <p class="bigLi_tWrap">
+			                <a href="#"><img src="images/03.jpg" alt="" /></a>
+		                 </p>
+                         <p class="text mar_t"><a href="#">cici-shop 复古碎花连衣裙</a></p>
+                         <p class="text">
+                            <span class="past_price">￥288</span><span class="now_price0">￥</span><span class="now_price">158</span>
+                         </p>
+                     </div>
+                     <div class="bigLi_tSma">
+                        <a href="javascript:;" title="上一页" class="bigLi_tSma_pre"></a>
+                        <a href="javascript:;" title="下一页" class="bigLi_tSma_next"></a>
+                        <div class="bigLi_tSma_proView">
+                          <p class="tSma_proView_content">
+                             <b class="proThumb-img"><img src="images/03.jpg" alt=""></b>
+                             <b class="proThumb-img"><img src="images/022.jpg" alt=""></b>
+                             <b class="proThumb-img"><img src="images/023.jpg" alt=""></b>
+                             <b class="proThumb-img"><img src="images/024.jpg" alt=""></b>
+                             <b class="proThumb-img"><img src="images/021.jpg" alt=""></b>
+                             
+                          </p>
+                        </div>
+                   
+                    </div>
+                  </div>
+                 
+                 
+              </li>
+              <li>
+                  <div class="con">
+                      <p class="pic_bg"><a href="#" title=""><img src="images/03.jpg" alt=""/></a></p>
+                      <p class="mar_t text"><a href="#" title="">cici-shop 复古碎花连衣裙</a></p>
+                      <p class="text">
+                         <span class="past_price">￥288</span><span class="now_price0">￥</span><span class="now_price">158</span>
+                      </p>
+                  </div>
+                  <div class="bigpic_con0">
+                      <div class="bigpic_lcon">
+                         <p class="bigLi_tWrap">
+			                <a href="#"><img src="images/03.jpg" alt="" /></a>
+		                 </p>
+                         <p class="text mar_t"><a href="#">cici-shop 复古碎花连衣裙</a></p>
+                         <p class="text">
+                            <span class="past_price">￥288</span><span class="now_price0">￥</span><span class="now_price">158</span>
+                         </p>
+                     </div>
+                     <div class="bigLi_tSma">
+                        <a href="javascript:;" title="上一页" class="bigLi_tSma_pre"></a>
+                        <a href="javascript:;" title="下一页" class="bigLi_tSma_next"></a>
+                        <div class="bigLi_tSma_proView">
+                          <p class="tSma_proView_content">
+                             <b class="proThumb-img"><img src="images/03.jpg" alt=""></b>
+                             <b class="proThumb-img"><img src="images/022.jpg" alt=""></b>
+                             <b class="proThumb-img"><img src="images/023.jpg" alt=""></b>
+                             <b class="proThumb-img"><img src="images/024.jpg" alt=""></b>
+                             <b class="proThumb-img"><img src="images/021.jpg" alt=""></b>
+                             
+                          </p>
+                        </div>
+                   
+                    </div>
+                  </div>
+                 
+                 
+              </li>
+              <li>
+                  <div class="con">
+                      <p class="pic_bg"><a href="#" title=""><img src="images/03.jpg" alt=""/></a></p>
+                      <p class="mar_t text"><a href="#" title="">cici-shop 复古碎花连衣裙</a></p>
+                      <p class="text">
+                         <span class="past_price">￥288</span><span class="now_price0">￥</span><span class="now_price">158</span>
+                      </p>
+                  </div>
+                  <div class="bigpic_con0">
+                      <div class="bigpic_lcon">
+                         <p class="bigLi_tWrap">
+			                <a href="#"><img src="images/03.jpg" alt="" /></a>
+		                 </p>
+                         <p class="text mar_t"><a href="#">cici-shop 复古碎花连衣裙</a></p>
+                         <p class="text">
+                            <span class="past_price">￥288</span><span class="now_price0">￥</span><span class="now_price">158</span>
+                         </p>
+                     </div>
+                     <div class="bigLi_tSma">
+                        <a href="javascript:;" title="上一页" class="bigLi_tSma_pre"></a>
+                        <a href="javascript:;" title="下一页" class="bigLi_tSma_next"></a>
+                        <div class="bigLi_tSma_proView">
+                          <p class="tSma_proView_content">
+                             <b class="proThumb-img"><img src="images/03.jpg" alt=""></b>
+                             <b class="proThumb-img"><img src="images/022.jpg" alt=""></b>
+                             <b class="proThumb-img"><img src="images/023.jpg" alt=""></b>
+                             <b class="proThumb-img"><img src="images/024.jpg" alt=""></b>
+                             <b class="proThumb-img"><img src="images/021.jpg" alt=""></b>
+                             
+                          </p>
+                        </div>
+                   
+                    </div>
+                  </div>
+                 
+                 
+              </li>
+              <li>
+                  <div class="con">
+                      <p class="pic_bg"><a href="#" title=""><img src="images/03.jpg" alt=""/></a></p>
+                      <p class="mar_t text"><a href="#" title="">cici-shop 复古碎花连衣裙</a></p>
+                      <p class="text">
+                         <span class="past_price">￥288</span><span class="now_price0">￥</span><span class="now_price">158</span>
+                      </p>
+                  </div>
+                  <div class="bigpic_con0">
+                      <div class="bigpic_lcon">
+                         <p class="bigLi_tWrap">
+			                <a href="#"><img src="images/03.jpg" alt="" /></a>
+		                 </p>
+                         <p class="text mar_t"><a href="#">cici-shop 复古碎花连衣裙</a></p>
+                         <p class="text">
+                            <span class="past_price">￥288</span><span class="now_price0">￥</span><span class="now_price">158</span>
+                         </p>
+                     </div>
+                     <div class="bigLi_tSma">
+                        <a href="javascript:;" title="上一页" class="bigLi_tSma_pre"></a>
+                        <a href="javascript:;" title="下一页" class="bigLi_tSma_next"></a>
+                        <div class="bigLi_tSma_proView">
+                          <p class="tSma_proView_content">
+                             <b class="proThumb-img"><img src="images/03.jpg" alt=""></b>
+                             <b class="proThumb-img"><img src="images/022.jpg" alt=""></b>
+                             <b class="proThumb-img"><img src="images/023.jpg" alt=""></b>
+                             <b class="proThumb-img"><img src="images/024.jpg" alt=""></b>
+                             <b class="proThumb-img"><img src="images/021.jpg" alt=""></b>
+                             
+                          </p>
+                        </div>
+                   
+                    </div>
+                  </div>
+                 
+                 
+              </li>
+              <li>
+                  <div class="con">
+                      <p class="pic_bg"><a href="#" title=""><img src="images/03.jpg" alt=""/></a></p>
+                      <p class="mar_t text"><a href="#" title="">cici-shop 复古碎花连衣裙</a></p>
+                      <p class="text">
+                         <span class="past_price">￥288</span><span class="now_price0">￥</span><span class="now_price">158</span>
+                      </p>
+                  </div>
+                  <div class="bigpic_con0">
+                      <div class="bigpic_lcon">
+                         <p class="bigLi_tWrap">
+			                <a href="#"><img src="images/03.jpg" alt="" /></a>
+		                 </p>
+                         <p class="text mar_t"><a href="#">cici-shop 复古碎花连衣裙</a></p>
+                         <p class="text">
+                            <span class="past_price">￥288</span><span class="now_price0">￥</span><span class="now_price">158</span>
+                         </p>
+                     </div>
+                     <div class="bigLi_tSma">
+                        <a href="javascript:;" title="上一页" class="bigLi_tSma_pre"></a>
+                        <a href="javascript:;" title="下一页" class="bigLi_tSma_next"></a>
+                        <div class="bigLi_tSma_proView">
+                          <p class="tSma_proView_content">
+                             <b class="proThumb-img"><img src="images/03.jpg" alt=""></b>
+                             <b class="proThumb-img"><img src="images/022.jpg" alt=""></b>
+                             <b class="proThumb-img"><img src="images/023.jpg" alt=""></b>
+                             <b class="proThumb-img"><img src="images/024.jpg" alt=""></b>
+                             <b class="proThumb-img"><img src="images/021.jpg" alt=""></b>
+                             
+                          </p>
+                        </div>
+                   
+                    </div>
+                  </div>
+                 
+                 
+              </li>
+              <li>
+                  <div class="con">
+                      <p class="pic_bg"><a href="#" title=""><img src="images/03.jpg" alt=""/></a></p>
+                      <p class="mar_t text"><a href="#" title="">cici-shop 复古碎花连衣裙</a></p>
+                      <p class="text">
+                         <span class="past_price">￥288</span><span class="now_price0">￥</span><span class="now_price">158</span>
+                      </p>
+                  </div>
+                  <div class="bigpic_con0">
+                      <div class="bigpic_lcon">
+                         <p class="bigLi_tWrap">
+			                <a href="#"><img src="images/03.jpg" alt="" /></a>
+		                 </p>
+                         <p class="text mar_t"><a href="#">cici-shop 复古碎花连衣裙</a></p>
+                         <p class="text">
+                            <span class="past_price">￥288</span><span class="now_price0">￥</span><span class="now_price">158</span>
+                         </p>
+                     </div>
+                     <div class="bigLi_tSma">
+                        <a href="javascript:;" title="上一页" class="bigLi_tSma_pre"></a>
+                        <a href="javascript:;" title="下一页" class="bigLi_tSma_next"></a>
+                        <div class="bigLi_tSma_proView">
+                          <p class="tSma_proView_content">
+                             <b class="proThumb-img"><img src="images/03.jpg" alt=""></b>
+                             <b class="proThumb-img"><img src="images/022.jpg" alt=""></b>
+                             <b class="proThumb-img"><img src="images/023.jpg" alt=""></b>
+                             <b class="proThumb-img"><img src="images/024.jpg" alt=""></b>
+                             <b class="proThumb-img"><img src="images/021.jpg" alt=""></b>
+                             
+                          </p>
+                        </div>
+                   
+                    </div>
+                  </div>
+                 
+                 
+              </li>
+              <li>
+                  <div class="con">
+                      <p class="pic_bg"><a href="#" title=""><img src="images/03.jpg" alt=""/></a></p>
+                      <p class="mar_t text"><a href="#" title="">cici-shop 复古碎花连衣裙</a></p>
+                      <p class="text">
+                         <span class="past_price">￥288</span><span class="now_price0">￥</span><span class="now_price">158</span>
+                      </p>
+                  </div>
+                  <div class="bigpic_con0">
+                      <div class="bigpic_lcon">
+                         <p class="bigLi_tWrap">
+			                <a href="#"><img src="images/03.jpg" alt="" /></a>
+		                 </p>
+                         <p class="text mar_t"><a href="#">cici-shop 复古碎花连衣裙</a></p>
+                         <p class="text">
+                            <span class="past_price">￥288</span><span class="now_price0">￥</span><span class="now_price">158</span>
+                         </p>
+                     </div>
+                     <div class="bigLi_tSma">
+                        <a href="javascript:;" title="上一页" class="bigLi_tSma_pre"></a>
+                        <a href="javascript:;" title="下一页" class="bigLi_tSma_next"></a>
+                        <div class="bigLi_tSma_proView">
+                          <p class="tSma_proView_content">
+                             <b class="proThumb-img"><img src="images/03.jpg" alt=""></b>
+                             <b class="proThumb-img"><img src="images/022.jpg" alt=""></b>
+                             <b class="proThumb-img"><img src="images/023.jpg" alt=""></b>
+                             <b class="proThumb-img"><img src="images/024.jpg" alt=""></b>
+                             <b class="proThumb-img"><img src="images/021.jpg" alt=""></b>
+                             
+                          </p>
+                        </div>
+                   
+                    </div>
+                  </div>
+                 
+                 
+              </li>
+              <li>
+                  <div class="con">
+                      <p class="pic_bg"><a href="#" title=""><img src="images/03.jpg" alt=""/></a></p>
+                      <p class="mar_t text"><a href="#" title="">cici-shop 复古碎花连衣裙</a></p>
+                      <p class="text">
+                         <span class="past_price">￥288</span><span class="now_price0">￥</span><span class="now_price">158</span>
+                      </p>
+                  </div>
+                  <div class="bigpic_con0">
+                      <div class="bigpic_lcon">
+                         <p class="bigLi_tWrap">
+			                <a href="#"><img src="images/03.jpg" alt="" /></a>
+		                 </p>
+                         <p class="text mar_t"><a href="#">cici-shop 复古碎花连衣裙</a></p>
+                         <p class="text">
+                            <span class="past_price">￥288</span><span class="now_price0">￥</span><span class="now_price">158</span>
+                         </p>
+                     </div>
+                     <div class="bigLi_tSma">
+                        <a href="javascript:;" title="上一页" class="bigLi_tSma_pre"></a>
+                        <a href="javascript:;" title="下一页" class="bigLi_tSma_next"></a>
+                        <div class="bigLi_tSma_proView">
+                          <p class="tSma_proView_content">
+                             <b class="proThumb-img"><img src="images/03.jpg" alt=""></b>
+                             <b class="proThumb-img"><img src="images/022.jpg" alt=""></b>
+                             <b class="proThumb-img"><img src="images/023.jpg" alt=""></b>
+                             <b class="proThumb-img"><img src="images/024.jpg" alt=""></b>
+                             <b class="proThumb-img"><img src="images/021.jpg" alt=""></b>
+                             
+                          </p>
+                        </div>
+                   
+                    </div>
+                  </div>
+                 
+                 
+              </li>
+              <li>
+                  <div class="con">
+                      <p class="pic_bg"><a href="#" title=""><img src="images/03.jpg" alt=""/></a></p>
+                      <p class="mar_t text"><a href="#" title="">cici-shop 复古碎花连衣裙</a></p>
+                      <p class="text">
+                         <span class="past_price">￥288</span><span class="now_price0">￥</span><span class="now_price">158</span>
+                      </p>
+                  </div>
+                  <div class="bigpic_con0">
+                      <div class="bigpic_lcon">
+                         <p class="bigLi_tWrap">
+			                <a href="#"><img src="images/03.jpg" alt="" /></a>
+		                 </p>
+                         <p class="text mar_t"><a href="#">cici-shop 复古碎花连衣裙</a></p>
+                         <p class="text">
+                            <span class="past_price">￥288</span><span class="now_price0">￥</span><span class="now_price">158</span>
+                         </p>
+                     </div>
+                     <div class="bigLi_tSma">
+                        <a href="javascript:;" title="上一页" class="bigLi_tSma_pre"></a>
+                        <a href="javascript:;" title="下一页" class="bigLi_tSma_next"></a>
+                        <div class="bigLi_tSma_proView">
+                          <p class="tSma_proView_content">
+                             <b class="proThumb-img"><img src="images/03.jpg" alt=""></b>
+                             <b class="proThumb-img"><img src="images/022.jpg" alt=""></b>
+                             <b class="proThumb-img"><img src="images/023.jpg" alt=""></b>
+                             <b class="proThumb-img"><img src="images/024.jpg" alt=""></b>
+                             <b class="proThumb-img"><img src="images/021.jpg" alt=""></b>
+                             
+                          </p>
+                        </div>
+                   
+                    </div>
+                  </div>
+                 
+                 
+              </li>
+              
+              
+           </ul>
+        
+        
+        </div>
+        
+        
+        <!-- pages -->
+        <div id="pages">
+          <div class="pages_con">
+            <a href="#">&lt;&lt;上一页</a><a href="#" class="active">1</a><a href="#">2</a><a href="#">3</a><span class="dot">&hellip;</span><a href="#">上一页&gt;&gt;</a><span class="text">共7页，到第<input name="" type="text" class="pages_input" value="1" onFocus="this.value=''" onBlur="if(!value){value=defaultValue;}"/>页</span><input name="" type="button" class="sure" value="确定"/>
+          </div>
+      </div>
+     <!-- pages end -->
+        
+        
+        
+        
+        
+     </div>
+     <!-- right end -->
+
+      <div class="clear"></div>
+   </div>
+   <!-- content end -->
+  
+   <!-- look_pass -->
+   <div class="look_pass">
+      <div class="look_pass_title">
+         <div class="bg"></div>
+         <h2>最近浏览商品</h2>
+      </div>
+      <div class="look_pass_con">
+         <div class="pre_btn"></div>
+         <div class="next_btn"></div>
+         <div class="look_pass_nav">
+           <ul>
+                <li>
+                  <a href="#" title=""><img src="images/03.jpg" alt=""/></a>
+                  <p><a href="#" title="">cici-shop 复古碎花连衣裙</a></p>
+                  <p>
+                    <span class="past_price">￥288</span><span class="now_price0">￥</span><span class="now_price">158</span>
+                  </p>
+                </li>
+                <li>
+                  <a href="#" title=""><img src="images/03.jpg" alt=""/></a>
+                  <p><a href="#" title="">cici-shop 复古碎花连衣裙</a></p>
+                  <p>
+                    <span class="past_price">￥288</span><span class="now_price0">￥</span><span class="now_price">158</span>
+                  </p>
+                </li>
+                <li>
+                  <a href="#" title=""><img src="images/03.jpg" alt=""/></a>
+                  <p><a href="#" title="">cici-shop 复古碎花连衣裙</a></p>
+                  <p>
+                    <span class="past_price">￥288</span><span class="now_price0">￥</span><span class="now_price">158</span>
+                  </p>
+                </li>
+                <li>
+                  <a href="#" title=""><img src="images/03.jpg" alt=""/></a>
+                  <p><a href="#" title="">cici-shop 复古碎花连衣裙</a></p>
+                  <p>
+                    <span class="past_price">￥288</span><span class="now_price0">￥</span><span class="now_price">158</span>
+                  </p>
+                </li>
+                <li>
+                  <a href="#" title=""><img src="images/03.jpg" alt=""/></a>
+                  <p><a href="#" title="">cici-shop 复古碎花连衣裙</a></p>
+                  <p>
+                    <span class="past_price">￥288</span><span class="now_price0">￥</span><span class="now_price">158</span>
+                  </p>
+                </li>
+                <li>
+                  <a href="#" title=""><img src="images/03.jpg" alt=""/></a>
+                  <p><a href="#" title="">cici-shop 复古碎花连衣裙</a></p>
+                  <p>
+                    <span class="past_price">￥288</span><span class="now_price0">￥</span><span class="now_price">158</span>
+                  </p>
+                </li>
+                <li>
+                  <a href="#" title=""><img src="images/03.jpg" alt=""/></a>
+                  <p><a href="#" title="">cici-shop 复古碎花连衣裙</a></p>
+                  <p>
+                    <span class="past_price">￥288</span><span class="now_price0">￥</span><span class="now_price">158</span>
+                  </p>
+                </li>
+                <li>
+                  <a href="#" title=""><img src="images/03.jpg" alt=""/></a>
+                  <p><a href="#" title="">cici-shop 复古碎花连衣裙</a></p>
+                  <p>
+                    <span class="past_price">￥288</span><span class="now_price0">￥</span><span class="now_price">158</span>
+                  </p>
+                </li>
+           
+           </ul>
+         </div>
+      </div>
+   </div>
+   <!-- look_pass end -->
+  
+  
+
+</div>
+
+<!-- main end -->
+
+<!-- float_nav -->
+<div id="float_nav">
+  <div id="float_nav0">
+     <div id="float_nav_con">
+         <ul>
+           <li><a href="#">抠抠网首页</a></li>
+           <li><a href="#">抠抠商城</a></li>
+           <li><a href="#">抠抠品</a></li>
+           <li><a href="#">爱车汇</a></li>
+         </ul>
+         <div class="else"><a href="#">Click it ! <br />More SALES!</a></div>
+     </div>
+     <div id="float_nav_bg"></div>
+  </div>
+</div>
+<!-- float_nav end -->
+
+
+</body>
+</html>

@@ -1,0 +1,1007 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>抠抠网--确认订单</title>
+<link type="text/css" rel="stylesheet" href="css/index.css"  />
+<link type="text/css" rel="stylesheet" href="css/order.css"  />
+<link type="text/css" rel="stylesheet" href="css/order_xuni.css"  />
+<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+<script type="text/javascript" src="js/order.js"></script>
+</head>
+<body>
+<!-- top -->
+<div id="top">
+   <!-- top_con -->
+   <div class="top_con" style="width:1000px;">
+      <!-- top_left -->
+      <!--<div class="top_left">
+         <span>hi,welcome to Kouclo</span>
+         <span><a href="#">请登录</a></span>
+         <span><a href="#">免费注册</a></span>
+      </div>-->
+      
+      <div class="top_left">
+         <span>hi,welcome to Kouclo</span>
+         <span><a href="#">退出</a></span>
+      </div>
+      <!-- top_right -->
+      <div class="top_right">
+      
+         <div class="top_home">
+            <a href="#"><b class="top_home_pic"></b>抠抠首页</a>
+         </div>
+         
+         <div class="top_my">
+            <a href="#">我的抠抠<b class="top_my_icon"></b></a>
+            <ul class="top_my_text">
+               <li><a href="#">待付款</a></li>
+               <li><a href="#">我的退换货</a></li>
+               <li class="bord_bn"><a href="#">待评价</a></li>
+            </ul>
+         </div>
+         
+         <div class="top_order"><a href="#">我的订单</a></div>
+         
+         <div class="top_fav">
+            <a href="#">收藏夹<b class="top_fav_icon"></b></a>
+            <ul class="top_fav_text">
+               <li><a href="#">商品</a></li>
+               <li class="bord_bn"><a href="#">店铺</a></li>
+            </ul>
+         </div>
+         <div class="top_phone_box">
+             <span class="top_phone">
+                <img src="images/app.png" alt="" />
+             </span>
+             <span class="ewm">
+               <img src="images/erweima.jpg" alt="" />
+             </span>
+         </div>
+         
+         <div class="top_help"><a href="#">帮助中心</a></div>
+         
+      </div>
+   </div>
+</div>
+<!-- top end -->
+
+
+<!-- shopcart_header -->
+<div id="order_header" class="clearfix">
+   <h1>
+      <a href="#"><img src="images/shop_logo.png" alt="抠抠网" /></a>
+   </h1>
+   <div class="tit">
+      <img src="images/order_tit.png" width="123" height="41" alt="确认订单" />
+   </div>
+   <div class="pic"></div>
+</div>
+<!-- shopcart_header end -->
+
+
+<!-- order -->
+<div class="order">
+  <!-- order_ts -->
+  <div class="order_ts">
+     您购物车中的商品，为您保留 <span class="sj">30分钟</span>，请及时结算。
+  </div>
+  
+
+
+  <!-- order_ts_con -->
+  <div class="order_ts_con">
+    <form action="" method="post" name="g_orders" id="g_orders">
+      <table cellspacing="0" cellpadding="0" class="order_ts_table">
+        <tbody>
+          <tr>
+            <td class="tit">
+              确认订单信息 
+            </td>
+          </tr>
+          <tr>
+            <td class="order_pd">
+              <div class="order_cp0_con">
+                 <dl>
+                   <dt>
+                       <a href="#"><img src="images/01.jpg" alt="" /></a>
+                   </dt>
+                   <dd>
+                      <p>
+                        商品名称：<a href="#">QB</a>
+                      </p>
+                      <p>
+                        店铺名称：<a href="#" class="lan">快乐节日7</a>
+                      </p>
+                      <p>
+                         价格:
+                        <em class="s_old_price">1.00</em>
+                        <em class="J_Price xx_red">1.00</em>
+                        <input class="j_price_hidden" type="hidden" value="1.00">
+                      </p>
+                      <p class="color">颜色：红色　尺码：X</p>
+                    </dd>
+                  </dl>
+               </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+               <div class="order_con clearfix">
+                <!-- order_conl --> 
+                <div class="order_conl">
+                  <!-- order_words -->
+                  <div class="order_words">
+                     <dl>
+                       <dt>给卖家留言</dt>
+                       <dd>
+                         <textarea name="" cols="" rows="" class="textarea" onchange="this.value=this.value.substring(0, 50)" onkeydown="this.value=this.value.substring(0, 50)" onkeyup="this.value=this.value.substring(0, 50)" ></textarea>
+                         <p class="ts">最多输入50个字</p>
+                       </dd>
+                     </dl>
+                  </div>
+                </div>
+                
+                <!-- order_conr -->
+                <div class="order_conr">
+                   <!-- order_express -->
+                   <div class="order_express">
+                      <dl class="z1">
+                        <dt>运送方式：</dt>
+                        <dd>
+                           <div class="order_express_con">
+                              <span class="express_text">快递10元</span><b class="express_icon"></b>
+                              <ul class="express_con">
+                                <li>平邮</li>
+                                <li>快递20元</li>
+                              </ul>
+                           </div>
+                        </dd>
+                      </dl>
+                   </div>
+                   <!-- order_price -->
+                   <div class="order_price">
+                      店铺合计（含运费）：￥<span class="order_money">189</span>
+                   </div>
+                </div>
+                
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td class="tit">
+              确认购买信息 
+            </td>
+          </tr>
+          <tr>
+            <td class="order_pd">
+              <select class="count_select" name="buy_num">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+              </select>
+               (可购数量111)
+               <script>
+                  $().ready(function (){
+                            $('.count_select').change(function (){
+                                var count = $(this).val();
+                                refFn(count)
+                             })
+
+                             function refFn(num){
+                            	if(Number(num)>0)
+                                {
+                                    var price = $('.j_price_hidden').val();
+                                    if(Number(price)>0)
+                                    {
+                                        var total_price = returnFloat2(num*price);
+                                        if(Number(total_price)>0)
+                                        {
+                                            $('.total_price').html(total_price);
+                                        }
+                                    }
+                                }
+
+                             }
+
+                            refFn($('.count_select').val())
+                        })
+                </script>
+            </td>
+          </tr>
+          <tr>
+            <td class="tit">
+              确认帐号信息 
+            </td>
+          </tr>
+          <tr>
+            <td class="order_pd">
+              <div class="j_addr addressEditor">
+                    <dl>
+                        <dt><span class="yel">*</span>账号名：</dt>
+                        <dd><input type="text" name="account" id="account" class="addrInputStyle" /><span class="J_errors">请输入你需要充值的账号名（只能充值该商品所示的游戏或服务。<span style="color:red;">谨防骗子！</span>）</span></dd>
+                    </dl>
+                    <dl>
+                        <dt><span class="yel">*</span>确认帐号名：</dt>
+                        <dd>
+                            <input type="text" name="a_account" id="a_account" class="addrInputStyle" /><span class="J_errors">请再次输入你需要充值的账号名（只能充值该商品所示的游戏或服务。<span style="color:red;">谨防骗子！</span>）</span>
+                        </dd>
+                    </dl>
+                    <div class="xx_warn">
+                       <div class="tit0">充值提醒：</div>
+                       <div class="con">
+                         1、该商品为自动充值，完成付款商品会自动充值到该购买账户中，任何卖家无法修改订单信息，请不要填写他人提供的账户。<br />2、卖家不会用QQ联系买家，任何以暗号、系统漏洞等各类理由要求您填写第三方中间账户或者非该商品用途账户均涉嫌诈骗。<br />3、您购买的是自动充值类商品，如果不清楚该商品用途或者该商品链接非卖家本人发送，请务必与卖家沟通确认。
+                       </div>
+                    </div>
+                </div>
+            </td>
+          </tr>
+          <tr>
+        	<td class="order_pd">
+                <div class="j_addr addressEditor">
+                    <dl>
+                    	<dt><span class="yel">*</span>所在区/服：</dt>
+                        <dd><input type="text" name="serice_r" id="serice_r" class="addrInputStyle" /></dd>
+                    </dl>
+                    <dl>
+                    	<dt><span class="yel">*</span>游戏角色名：</dt>
+                        <dd>
+                            <input type="text" name="game_real" id="game_real" class="addrInputStyle" /><span class="J_errors">必须填写实际的名字，简繁体不得随意转换！</span>
+                        </dd>
+                    </dl>
+                    <dl>
+                    	<dt><span class="yel">*</span>备注：</dt>
+                        <dd>
+                            <textarea class="addrInputStyle text_addr" name="message" style="height:100px" /></textarea>
+                        </dd>
+                    </dl>
+                    <div class="xx_warn">
+                        <div class="tit0">温馨提醒：</div>
+                        <div class="con">
+                            1.此卡为游戏点卡/话费充值卡，不能用与其它任何用途。店家告知有其他用途的请立刻申请退货退款。<br />2.如商品充值不成功，不可向任何一方透露卡号和密码 。<br />免责说明：自动发货平台为淘宝网提供的存储虚拟产品与密码的空间。请用户保存好自己存储空间的密码。为避免不必要的损失， 建议卖家用户不要将大量的虚拟产品存储在该空间，买家用户购买成功后请立即查看卡号密码。淘宝对非因淘宝过错导致的用户在使用该存储空间所导致的任何直接、间接的损失不承担任何责任。
+                        </div>
+                    </div>
+                </div>
+            </td>
+          </tr>
+          <tr>
+        	<td class="order_pd">
+                <div class="j_addr addressEditor">
+                    <dl>
+                        <dt><span class="yel">*</span>充值号码：</dt>
+                        <dd><input type="text" name="cell_num" id="cell_num" class="addrInputStyle" /><span class="J_errors">请输入你需要充值的电话号码,小灵通和固定电话需要输入区号。例如：02155667788</span></dd>
+                    </dl>
+                    <dl>
+                        <dt><span class="yel">*</span>再次确认您的号码：</dt>
+                        <dd>
+                            <input type="text" name="a_cell_num" id="a_cell_num" class="addrInputStyle" /><span class="J_errors">请再次输入你需要充值的手机（或小灵通、固定电话）号码</span>
+                        </dd>
+                    </dl>
+                </div>
+
+            </td>
+         </tr>
+        </tbody>
+      </table>
+    
+    
+    </form>
+    <script type="text/javascript" src="js/jquery.validate.min.js"></script>
+    	<script type="text/javascript">
+        	$(function(){
+
+				$("#g_orders").validate({
+					rules: {
+						//账号名
+						"account": {
+							required:true
+						},
+						"a_account":{
+							required:true,
+							equalTo: "#account"
+						},
+
+						//手机号验证
+						"cell_num": {
+							required:true,
+							isMobile:true
+						},
+						"a_cell_num":{
+							required:true,
+							equalTo: "#cell_num"
+						},
+
+						//区服、游戏名验证
+						"serice_r": {
+							required:true
+						},
+						"game_real":{
+							required:true
+						}
+
+					},
+					messages: {
+						"account":{
+							required:"请输入账号名"
+						},
+						"a_account": {
+							required:"内容不能为空",
+							equalTo:"两次输入不一致"
+						},
+						"cell_num": {
+							required:"请输入手机号",
+							isMobile:"手机号格式输入错误"
+						},
+						"a_cell_num":{
+							required:"两次输入不一致",
+							equalTo: "两次输入不一致"
+						},
+						"serice_r": {
+							required:"请输入游戏的区/服"
+						},
+						"game_real":{
+							required:"请输入角色名"
+						}
+
+					},
+					errorClass :"Validform_error",
+
+					errorPlacement:function(error, element) {  //错误提示在什么地方
+
+							if (element.next().length >0 ){
+							   error.insertAfter(element.next());
+							 }else{
+							  error.insertAfter(element);
+							 }
+					 },
+					errorElement:"div",
+					submitHandler:function(form) {
+
+						$(form).ajaxSubmit();  //表单提交
+
+					}
+
+			});
+			})
+			// 手机号码验证
+			jQuery.validator.addMethod("isMobile", function(value,element) {
+				var length = value.length;
+				var mobile = /^(((13[0-9]{1})|(15[0-9]{1}))+\d{8})$/;
+				return this.optional(element) || (length == 11 && mobile.test(value));
+			}, "请正确填写您的联系电话");
+
+
+
+        </script>
+
+
+  </div>
+  
+  <!-- order_pay -->
+  <div class="order_pay">
+     
+     <!-- order_pay_price -->
+     <div class="order_pay_price">
+        <p>总金额：￥<span class="xx_red0">189</span></p>
+        <p>实付款：￥<span class="order_pay_money">189</span></p>
+     </div>
+     <!-- order_pay_btn -->
+     <div class="order_pay_btn">
+        <input type="button" class="order_pay_inp" />
+     </div>
+  </div>
+  
+  
+</div>
+<!-- order end -->
+<script type="text/javascript">
+$().ready(function(){
+	//tabOrder("#navMove"); //订单信息切换 jsJy.js
+	$(".a1").alertBox({ id:"#a1box"});	//修改价格弹框
+        $(".sel_prefer").change(function (){
+            var id = $(this).attr('id');
+            if(id)
+            {
+                var order_shipping_price = $('#'+id).find("option:selected").attr('attr_value');
+
+                if(order_shipping_price)
+                {
+                    var id_array = id.split('_');
+
+                    if(id_array[1]>0 && id_array[2] >0)
+                    {
+                        var shop_good_price = $('.shop_goods_shipping_price_'+id_array[1]).val();
+                        var auto_shipping_price = $('.auto_shipping_'+id_array[1]+'_'+id_array[2]).val();
+                        var total_price = $('.auto_total_price').val();
+
+                        if(total_price > 0 && shop_good_price > 0 && auto_shipping_price >0)
+                        {
+                            var shop_new_price = (Number(Number(shop_good_price)-Number(auto_shipping_price))+ Number(order_shipping_price));
+
+                            var new_price = Number(total_price)-Number(shop_good_price) + Number(shop_new_price);
+
+                            if(new_price >0)
+                            {
+                                $('.show_shipping_price_'+id_array[1]+'_'+id_array[2]).html(returnFloat2(order_shipping_price));
+                                $('.shop_total_'+id_array[1]).html(returnFloat2(shop_new_price));
+                                $('.total_price').html(returnFloat2(new_price));
+                            }
+                        }
+                    }
+                }
+
+            }else{
+                return false;
+            }
+        })
+})
+</script>
+
+<script type="text/javascript">
+
+function returnFloat2(value) {//金额转换
+    if(value == '0' || value == ''){return '0.00';}
+	//value = Math.round(parseFloat(value) * 100) / 100;
+    var xsd = value.toString().split(".");
+	//Ext.log(xsd.length);
+	if(xsd.length==1){
+		value = value.toString()+".00";
+		return value;
+	}
+	if(xsd.length>1){
+		if(xsd[1].length<2){
+			value = value.toString()+"0";
+		}else{
+                    value = xsd[0]+'.'+xsd[1].substring(0,2);
+                }
+		return value;
+	}
+}
+
+
+/**修改地址*/
+function chang_fun(id){
+	$('#address'+id).attr('checked','checked')
+	//$("#address_goods").load("header.html");
+	var ajax = $.ajax({url:'/shopcart/modify_address',
+					 async:false,
+					 cache:false,
+					 type:'post',
+					 data:"id="+id,
+					dataType:'text',
+					beforeSend:aa()
+					});
+	if (ajax.responseText)
+	{
+		$('#address_goods').html(ajax.responseText);
+		$('#shipaddress_type').val(1);
+		$('#loading').hide();
+	}
+}
+
+function chang_addresstype(a,b,c)
+{
+	$('#shipaddress_type').val(0);
+	$('#user_address_ass').val(a);
+	$('#regin_user_address').val(b);
+	$('#regins_address_idsaa').val(c);
+	var re_id = c;
+	var re_id3 = b;
+	var total_num = $('#total_num').val();
+	var total_weight = $('#total_weight').val();
+	var shopping_id = $('.ps_bor00:checked').val();
+
+	var ajax = $.ajax({url:'/shopcart/freight',
+					 async:false,
+					 cache:false,
+					 type:'post',
+					 data:"re_id="+re_id+'&total_num='+total_num+'&total_weight='+total_weight+'&shopping_id='+shopping_id,
+					dataType:'text',
+					beforeSend:aa()
+					});
+	if (ajax.responseText !== 'cannot')
+	{
+		//$('#freight_money').html('￥'+ajax.responseText);
+		var voucher_money = $('#voucher_money').val();
+		var total_price = $('#total_price').val();
+		var total_money = parseFloat(total_price)+parseFloat(ajax.responseText)-parseFloat(voucher_money);
+		if(total_money < 0)
+		{
+			var total_money = 0;
+		}
+		$('#total_money').html('￥'+total_money);
+		$('#freight_display').html('运费 <em class="c_f6" id="freight_money">￥'+ajax.responseText+'</em>');
+		$('#freight_display').show();
+		$('#loading').hide();
+	}
+	else
+	{
+		if(re_id3 != 0)
+		{
+			$('#freight_display').html('<em class="c_f6" id="freight_money">您所选配送方式暂时无法配送到该区域 </em>');
+			$('#freight_display').show();
+		}
+		else
+		{
+			$('#freight_display').hide();
+		}
+		$('#loading').hide();
+	}
+
+}
+function aa()
+{
+	$('#loading').show();
+	}
+function chang_add(a)
+{
+	$("#address_goods").load("/shopcart/modify_address/"+a);
+}
+</script>
+<script type="text/javascript">
+	//配送方式
+	function chang_ps(a, b ,c)
+	{
+		//alert(12);
+		if(b != 'sf_express')//不是顺丰
+		{
+			var d = $('.zf_bor0:checked').val();
+			if(d == 0)
+			{
+				alert("'"+c+"'"+'暂时不支持货到付款');
+				$('#zf1').attr('checked','checked');
+
+				$('.zf1_box').show();
+				$('.zf2_box').hide();
+				$('.zf3_box').hide();
+			}
+			$('#zf2').attr("disabled","disabled");
+		}
+		else
+		{
+			$('#zf2').attr("disabled","");
+		}
+		$('.ps1_box').hide();
+		$('#psss'+a).show();
+
+	}
+	//支付方式
+	$('#zf1').click(function() {
+		$('.zf1_box').show();
+		$('.zf2_box').hide();
+		$('.zf3_box').hide();
+	});
+	$('#zf2').click(function() {
+		$('.zf1_box').hide();
+		$('.zf2_box').show();
+		$('.zf3_box').hide();
+	});
+	$('#zf3').click(function() {
+		$('.zf1_box').hide();
+		$('.zf2_box').hide();
+		$('.zf3_box').show();
+	});
+	function chang_zf(a)
+	{
+		//alert(22);
+		if($('.'+a).attr('checked') != true)//没选顺丰
+		{
+			alert('货到付款，配送方式只能选顺丰');
+			$('.'+a).attr('checked','checked');
+			$('.ps_bor00').attr("disabled","disabled");
+			$('.'+a).attr("disabled","");
+		}
+		$('.ps1_box').hide();
+		$('.zf'+a).show();
+	}
+	function chang_zfa()
+	{
+		//alert(33);
+		$('.ps_bor00').attr("disabled","");
+	}
+	//登录注册
+	$('.pos_log').click(function() {
+		$('.pos_login').show();
+	});
+	$('.pos_log_clo').click(function() {
+		$('.pos_login').hide();
+	});
+	//
+	$(document).ready(function(){
+		var timeOutId;
+		$(document).ready(function(){
+		$("#tabs_con").load("/simple_login/login");
+		$("#tabs_ul li").each(function(index){
+		$(this).click(function(){
+			$("#tabs_ul li.tabs_hover").removeClass("tabs_hover");
+			$(this).addClass("tabs_hover");
+			var myindex = $(this).index();
+			var allset = $(this).parent().children('li');
+			if(index==0){
+				$("#tabs_con").load("/simple_login/login");
+			}
+			else if(index==1){
+				$("#tabs_con").load("/simple_login/register");
+			}
+		});
+		});
+		$("#tabs_box img").bind("ajaxStart",function(){
+		$("#tabs_con").html("");
+		$(this).show();
+		}).bind("ajaxStop",function(){
+		$(this).slideUp("slow");
+		});
+		})
+		//运费价格更改
+		$(".farearea").each(function(){
+			var thisYf = $(this).find('.sel_prefer option:selected').attr('price')
+			$(this).find('.freight').html( thisYf );
+
+		})
+
+
+	})
+
+</script>
+<script src="js/alert2.js" type="text/javascript"></script>
+<!--未成年人验证 JS 调用 -->
+<script>
+$(function(){
+	
+	//未成年人验证	
+	$("").alertBox({ id:"#a1box"});	//提醒买家付款
+	
+	$("#J_compe").validate({
+
+		rules: {
+			"real_name":{
+				required:true
+			},
+			"real_id": {
+				required:true,
+				isIdentity:true,
+				isUnder:true
+			}
+		},
+		messages: {
+			"real_name":{
+				required:"请填写您的真实姓名"
+			},
+			"real_id": {
+				required:"请填写您的身份证号"
+			}
+		},
+
+		errorClass :"Validform_checktip",
+		errorElement:"span",
+		submitHandler:function(form) {   //通过验证后运行的函数,里面要加上表单提交的函数,否则表单不会提交
+
+			//$(form).ajaxSubmit();  //表单提交
+			$.post('/order_Confirmation/real_r',{real_name:$("#real_name").val(),real_id:$("#real_id").val()},function(data){
+
+				if(data=='ok'){
+					window.location.reload();
+			
+
+				}else{
+					alert("数据错误，请重新输入！")
+				}
+			})
+
+	    }
+
+});
+	// 身份证
+
+    
+})
+</script>
+<!-- 实名认证 -->
+<!--<div class="alertbox" id="a1box" style="display:none">
+    <h3>实名认证</h3>
+    <div class="sub0">
+    	<div class="jy_tip">根据文化部规定，购买网游类商品必须年满18周岁。<br />您还未通过支付宝实名认证，请输入您的身份证号码进行身份确认</div>
+    <form action="" id="J_compe">
+        <ul>
+            <li><label>真实姓名：</label><input type="text" name="real_name" id="real_name" class="txt J_name" /><span></span></li>
+            <li><label>身份证号：</label><input type="text" name="real_id" id="real_id" class="txt J_ident" /><span></span></li>
+            <li><input type="submit" value="确 认" class="btnSub" /></li>
+        </ul>
+    </form>
+    </div>
+</div>-->
+<script type="text/javascript">
+// 身份证验证
+	jQuery.validator.addMethod("isIdentity", function(value,element) { 
+		function IdentityCodeValid(code) { 
+			  			var CheckIdCard={
+							//Wi 加权因子 Xi 余数0~10对应的校验码 Pi省份代码
+							Wi:[7,9,10,5,8,4,2,1,6,3,7,9,10,5,8,4,2],
+							Xi:[1,0,"X",9,8,7,6,5,4,3,2],
+							Pi:[11,12,13,14,15,21,22,23,31,32,33,34,35,36,37,41,42,43,44,45,46,50,51,52,53,54,61,62,63,64,65,71,81,82,91],
+					 
+							//检验18位身份证号码出生日期是否有效
+							//parseFloat过滤前导零，年份必需大于等于1900且小于等于当前年份，用Date()对象判断日期是否有效。
+							brithday18:function(sIdCard){
+								var year=parseFloat(sIdCard.substr(6,4));
+								var month=parseFloat(sIdCard.substr(10,2));
+								var day=parseFloat(sIdCard.substr(12,2));
+								var checkDay=new Date(year,month-1,day);
+								var nowDay=new Date();
+								if (1900<=year && year<=nowDay.getFullYear() && month==(checkDay.getMonth()+1) && day==checkDay.getDate()) {
+									return true;
+								};
+							},
+					 
+							//检验15位身份证号码出生日期是否有效
+							brithday15:function(sIdCard){
+								var year=parseFloat(sIdCard.substr(6,2));
+								var month=parseFloat(sIdCard.substr(8,2));
+								var day=parseFloat(sIdCard.substr(10,2));
+								var checkDay=new Date(year,month-1,day);
+								if (month==(checkDay.getMonth()+1) && day==checkDay.getDate()) {
+									return true;
+								};
+							},
+					 
+							//检验校验码是否有效
+							validate:function(sIdCard){
+								var aIdCard=sIdCard.split("");
+								var sum=0;
+								for (var i = 0; i < CheckIdCard.Wi.length; i++) {
+									sum+=CheckIdCard.Wi[i]*aIdCard[i]; //线性加权求和
+								};
+								var index=sum%11;//求模，可能为0~10,可求对应的校验码是否于身份证的校验码匹配
+								if (CheckIdCard.Xi[index]==aIdCard[17].toUpperCase()) {
+									return true;
+								};
+							},
+					 
+							//检验输入的省份编码是否有效
+							province:function(sIdCard){
+								var p2=sIdCard.substr(0,2);
+								for (var i = 0; i < CheckIdCard.Pi.length; i++) {
+									if(CheckIdCard.Pi[i]==p2){
+										return true;
+									};
+								};
+							}
+						};
+						var sIdCard=code.replace(/^\s+|\s+$/g,"");//去除字符串的前后空格，允许用户不小心输入前后空格
+						if (sIdCard.match(/^\d{14,17}(\d|X)$/gi)==null) {//判断是否全为18或15位数字，最后一位可以是大小写字母X
+							//alert("身份证号码须为18位或15位数字");      //允许用户输入大小写X代替罗马数字的Ⅹ
+							return false;
+						}
+						else if (sIdCard.length==18) {
+							if (CheckIdCard.province(sIdCard)&&CheckIdCard.brithday18(sIdCard)&&CheckIdCard.validate(sIdCard)) {
+								return true;
+							}
+							else{
+								return false;
+							};
+						}
+						else if (sIdCard.length==15) {
+							if (CheckIdCard.province(sIdCard)&&CheckIdCard.brithday15(sIdCard)) {
+								return true;
+							}
+							else{
+								return false;
+							};
+						};
+						
+		  }
+		  
+		return IdentityCodeValid(value); 
+	}, "请正确填写您的身份证号"); 
+	
+	
+	// 未成年人验证
+	jQuery.validator.addMethod("isUnder", function(value,element) { 
+		var serverTime = "<?php echo date('Y-m-d'); ?>"+"";
+
+		function underAge(code) { 
+			
+			switch (code.length) {
+				case 15: //15位身份证号码是1999年之前的,所以，均返回true 成年。
+					return true
+				case 18:
+						var serverTime = "<?php echo date('Y-m-d'); ?>"+"",
+							serverYear = serverTime.substring(0,4),
+							serverMonth = serverTime.substring(5,7),
+							serverDay = serverTime.substring(8,11);
+
+						var year =  code.substring(6,10); 
+						  
+						var month = code.substring(10,12);   
+						var day = code.substring(12,14);
+						if( serverMonth > month ){
+							year = Number(year) + Number(1);
+						}
+
+						if( serverYear - year>=18 ){   
+							return true
+						}else{   
+							return false;   
+						}
+				default:
+					break;
+			}
+		}
+		  
+		return underAge(value); 
+		
+	}, "您还未满18周岁，不能进行网游类商品交易。"); 
+</script>
+
+<script>
+//弹框js效果
+$(function(){
+	$("#mask").css({
+			"height":$(document).height()
+           }).show();
+	
+	if($(".alertbox").css("display")=="block"){
+	      $("#pop_warn_bg").hide();
+		  $("#pop_warn").hide();
+		  
+	   }
+	  else{  
+		 $("#pop_warn_bg").show();
+		 $("#pop_warn").show(); 
+		   }; 	   	
+});
+
+$(function(){
+	
+		   
+	$(".btn").click(function(){
+               $("#pop_warn_bg").hide();
+		       $("#pop_warn").hide();
+		       $("#mask").hide();
+     }); 
+
+});
+
+
+var count=5;
+var timer=setInterval(function(){
+	  if(count--==0){
+		  clearInterval(timer);
+		  $("#play").hide();
+		  $(".btn").show();
+		  }
+		  else{
+			  document.getElementById('play').innerHTML=count;
+			  }	  
+},1000)
+</script>
+
+<!-- mask -->
+<!--<div id="mask"></div>-->
+
+<!-- pop_warn_bg -->
+<!--<div id="pop_warn_bg"></div>-->
+
+
+<!-- pop_warn -->
+<div id="pop_warn" >
+    <!-- pop_warn_title -->
+    <div id="pop_warn_title">
+       <span class="pop_warn_span">您正在购买:</span>
+    </div>
+    <!-- pop_warn_con -->
+    <div id="pop_warn_con">
+    
+       <h2>抠抠欺诈风险提醒！</h2>
+       <div class="tit">
+          请仔细阅读以下信息，以免遭受欺诈：
+       </div>
+       <div class="con">
+          <p>1.此商品只可充值商品标题中所描述的相关游戏，请谨慎填写您所需要充值的与此商品相关的游戏账号</p>
+          <p>2.务必警惕骗子以QQ、CF、DNF等低价出售为名骗取您前来购买的骗术，谨防上当受骗</p>
+          <p>3.如您对于此笔交易过程有任何的疑问，请务必暂停交易可以拨打：    400-8859-000消费者热线咨询客服</p>
+       </div>
+       <div class="con0">
+          切勿相信任何以"炒信"、"兼职"等名义的行骗手段。此商品只可充值标题中所描述的相关游戏，别人给您账号让您填写的肯定是骗子。如让您在原本充值账号前加"VIP、CF、QQ"等其他字符，均是骗子。谨防上当受骗。 
+       </div>
+       <div id="play">5</div>
+       <button name="" type="submit" class="btn">我已阅读以上信息</button>
+   <!--
+       <h2>抠抠提醒您</h2>
+       <div class="con0">
+          此卡是游戏点卡，不能充手机话费，也不是游戏币 
+       </div>
+       <div class="tit">
+          如您不知道该卡的实际用途，请和商家确认。
+       </div>
+       <div class="con">
+          <p>此卡所属的卖家是： <a href="#"><span class="fc"><?php if(isset($vv_shop_info['store_name'])):?><?php echo $vv_shop_info['store_name'];?><?php endif;?></span></a></p>
+          <p>非店主本人发送的商品链接，请务必与卖家联系确认：<?php if(isset($vv_shop_info['tel'])):?><?php echo $vv_shop_info['tel'];?><?php endif;?></p>
+          <p><span class="fc">抠抠网提醒：商家不会主动向您推销低价点卡！否则有可能遭遇诈骗</span></p>
+       </div>
+       <div id="play">5</div>
+       <button name="" type="submit" class="btn">我已阅读以上提示</button>-->
+    
+    </div>
+</div>
+
+
+
+<!-- footer -->
+<div id="footer">
+    <!-- footer_con -->
+    <div class="footer_con" style="width:1000px;">
+       <!-- footer_con0 -->
+       <div class="footer_con0" style="padding-left:200px;">
+          <h3><img src="images/news.jpg" alt="下载客户端，关注更多潮流咨询" /></h3>
+          <ul>
+             <li class="line"></li>
+             <li><img src="images/sina.jpg" alt="官方微博@kouclo" /></li>
+             <li class="line"></li>
+             <li class="wx"><img src="images/qq.jpg" alt="微信平台" /></li>
+             <li class="line"></li>
+             <li class="kh"><img src="images/phone.jpg" alt="客户端下载" /></li>
+          </ul>
+       </div>
+       <!-- footer_content -->
+       <div class="footer_content" style="margin-left:44px;">
+           <img src="images/content.png" alt="联系我们 400-8859-000" />
+       </div>
+    </div>
+</div>
+<!-- footer end -->
+
+<!-- service -->
+<div class="service" style="width:1000px">
+    <!-- service_left -->
+    <div class="service_left" style="margin:15px 110px 8px">
+       <div class="service_left_tit">
+          <ul>
+             <li>关于抠抠</li>
+             <li class="line"></li>
+             <li>新手指南 </li>
+             <li class="line"></li>
+             <li>维权中心</li>
+             <li class="line"></li>
+             <li>支付方式</li>
+             <li class="line"></li>
+             <li>售后服务</li>
+             <li class="line"></li>
+             <li>配送说明</li>
+           </ul>
+       </div>
+       <div class="service_left_con">
+          <ul>
+             <li>
+               <a href="#">关于抠抠</a><a href="#">商家入驻</a><a href="#">加入我们</a><a href="#">联系我们</a><a href="#">友情链接</a> 
+             </li>
+             <li>
+               <a href="#">用户注册</a><a href="#">用户注册协议</a><a href="#">购物流程</a><a href="#">网站地图</a> 
+             </li>
+             <li>
+               <a href="#">客服中心</a><a href="#">找回密码</a><a href="#">邮件订阅</a><a href="#">产品册订阅</a><a href="#">隐私声明</a> 
+             </li>
+             <li class="l">
+               <a href="#">货到付款</a><a href="#">在线支付</a><a href="#">礼品卡及账户余额</a><a href="#">其他支付方式</a>
+             </li>
+             <li class="n">
+               <a href="#">退款政策</a><a href="#">退货流程</a><a href="#">退款说明</a> 
+             </li>
+             <li>
+               <a href="#">发货规定</a><a href="#">国内配送</a><a href="#">海外配送</a><a href="#">订单拆分</a>
+             </li>
+          </ul>
+       </div>
+        
+    </div>
+   
+</div>
+
+<!-- copyright -->
+<div class="copyright" style="width:1000px">
+     CopyRIGHT © 2009-2014 抠抠网 KOUCLO All RIGHTS RESERVED<br /> 闽ICP备13001618号 | 增值电信业务经营许可证：闽B1-20130053 | 互联网药品信息服务资质证书编号：（闽）-非经营性-2014-0008
+</div>
+
+</body>
+</html>

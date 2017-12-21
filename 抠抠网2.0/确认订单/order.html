@@ -1,0 +1,776 @@
+<!DOCTYPE html>
+<html lang="gbk">
+<head>
+	<meta charset="UTF-8">
+	<title>抠抠网-确认订单</title>
+	<link rel="stylesheet" type="text/css" href="css/public0.css">
+	<link rel="stylesheet" type="text/css" href="css/order.css">
+	<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+	<script type="text/javascript" src="js/order.js"></script>
+	<script type="text/javascript" src="js/public.js"></script>
+	<script type="text/javascript" src="js/Popt.js"></script>
+	<script type="text/javascript" src="js/cityJson.js"></script>
+	<script type="text/javascript" src="js/citySet.js"></script>
+</head>
+<body>
+<!-- top -->
+<div id="top">
+	<div id="top_con">
+		<!-- top_left -->
+		<div class="top_left st">
+			欢迎光临抠抠网<a href="#" class="l">请登录</a><span>|</span><a href="#" >免费注册</a>
+		</div>
+		<!-- top_right -->
+		<div class="top_right st">
+			<ul>
+				<li>
+					<a href="#">我的订单</a>
+				</li>
+				<li class="line"></li>
+				<li class="my">
+					<a href="#">我的抠抠<b class="my_icon"></b></a>
+					<div class="my_kk">
+						<a href="#">我的收藏</a><a href="#">我的足迹</a><a href="#">优惠券(0)</a>
+					</div>
+				</li>
+				<li class="line"></li>
+				<li class="phone">
+					<a href="#">手机版<b class="my_icon"></b></a>
+					<div class="phone_con">
+						<div class="pic">
+							<img src="images/ewm.jpg" alt="抠抠网">扫一扫，下载客户端
+						</div>
+						<div class="text">
+							<a href="#"><b></b></a>
+							<a href="#"><b class="an"></b></a>
+							<a href="#" class="s"><b class="pa"></b></a>
+						</div>
+					</div>
+				</li>
+				<li class="line"></li>
+				<li>
+					<a href="#">帮助中心</a>
+				</li>
+				<li class="line"></li>
+				<li class="sc">
+					<a href="#"><b class="sc_icon"></b>收藏抠抠网</a>
+				</li>
+			</ul>
+			
+		</div>
+	</div>
+</div>
+<!-- top end -->
+
+<!-- header -->	
+<div id="header">
+	<div id="header_con">
+		<h1>
+			<a href="#"><img src="images/logo.png" alt="抠抠网"></a>
+		</h1>
+		<h2>确认订单</h2>
+		<div id="shopcar_hd">
+			<div class="shopcar_hd_bg shopcar_hd_bg0"></div>
+			<div class="shopcar_hd_tit">
+				<span class="cur">我的购物车</span><span class="ml cur">确认订单信息</span><span class="ml0">成功提交订单</span>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- header end -->
+
+<!-- main -->
+<div id="main">
+   <div id="order_main">
+
+   	  <!-- order_tit -->
+   	  <div class="order_tit">
+   	  	 <h2>
+   	  	 	收货地址<a id="add_new" href="javascript:;">添加新收货地址</a>
+   	  	 </h2>
+   	  </div>
+   	  <!-- order_tit end -->
+
+   	  <!-- address -->
+   	  <!--
+   	  <div id="address">
+   	  	 <form id="adr_form" action="">
+   	  	 	<dl class="clearfix">
+   	  	 		<dt>
+   	  	 			<span class="red_star">*</span>收货人：
+   	  	 		</dt>
+   	  	 		<dd>
+   	  	 			<input type="text" id="adr_name" class="inp_adr"/>
+   	  	 			<div class="adr_error"></div>
+   	  	 		</dd>
+   	  	 	</dl>
+   	  	 	<dl class="clearfix">
+   	  	 		<dt>
+   	  	 			<span class="red_star">*</span>所在地区：
+   	  	 		</dt>
+   	  	 		<dd>
+   	  	 		    <div class="inp_con">
+   	  	 		    	<input type="text" class="inp_adr0" readonly="readonly" id="inp_city" />
+   	  	 				<b class="inp_icon"></b>
+   	  	 		    </div>
+   	  	 			<div class="adr_error"></div>
+   	  	 		</dd>
+   	  	 	</dl>
+   	  	 	<dl class="clearfix">
+   	  	 		<dt>
+   	  	 			<span class="red_star">*</span>详细地址：
+   	  	 		</dt>
+   	  	 		<dd>
+   	  	 			<textarea class="adr_text" name="addr" id="adr_dz">
+   	  	 			</textarea>
+   	  	 			<div class="adr_error"></div>
+   	  	 		</dd>
+   	  	 	</dl>
+   	  	 	<dl class="clearfix">
+   	  	 		<dt>
+   	  	 			<span class="red_star">*</span>手机号码：
+   	  	 		</dt>
+   	  	 		<dd>
+   	  	 			<input type="text" class="inp_adr" id="adr_phone"/>
+   	  	 			<div class="adr_error"></div>
+   	  	 		</dd>
+   	  	 	</dl>
+   	  	 	<dl class="clearfix">
+   	  	 		<dt>固定电话：</dt>
+   	  	 		<dd>
+   	  	 			<input type="text" class="inp_qh" id="tel_qh" />
+   	  	 			<input type="text" class="inp_tel" id="tel_hm" />
+   	  	 			<input type="text" class="inp_qh" id="tel_fh" />
+   	  	 			<div class="adr_error"></div>
+   	  	 		</dd>
+   	  	 	</dl>
+   	  	 	<dl class="clearfix">
+   	  	 		<dt>邮政编码：</dt>
+   	  	 		<dd>
+   	  	 			<input type="text" class="inp_code" id="adr_code"/>
+   	  	 			<div class="adr_error"></div>
+   	  	 		</dd>
+   	  	 	</dl>
+   	  	 	<dl class="clearfix m">
+   	  	 		<dt>&nbsp;</dt>
+   	  	 		<dd>
+   	  	 			<span class="adr_default">
+   	  	 			  <input type="checkbox" />
+   	  	 			  <b></b>设为默认收货地址
+   	  	 			</span>
+   	  	 		</dd>
+   	  	 	</dl>
+   	  	 	<dl class="clearfix">
+   	  	 		<dt>&nbsp;</dt>
+   	  	 		<dd>
+   	  	 			<input type="submit" id="adr_btn" value="保存收货地址"/>
+   	  	 			
+   	  	 		</dd>
+   	  	 	</dl>
+   	  	 </form>
+   	  </div>-->
+   	  <!-- address end -->
+
+   	  <!-- address_con -->
+   	  
+   	  <div id="address_con">
+   	  	  <ul>
+   	  	  	<li class="cur">
+   	  	  		<h3>
+   	  	  			张静伟<span class="defa_adr">默认地址</span>
+   	  	  		</h3>
+   	  	  		<p>
+   	  	  			北京-北京市-朝阳区
+   	  	  		</p>
+   	  	  		<p>
+   	  	  			朝阳建外建国门外大街乙24号燕华苑2座1703室抠抠网
+   	  	  		</p>
+   	  	  		<p>
+   	  	  			18310102020<span class="make">修改</span>
+   	  	  		</p>
+   	  	  	</li>
+   	  	  	<li>
+   	  	  		<h3>
+   	  	  			张静伟
+   	  	  		</h3>
+   	  	  		<p>
+   	  	  			北京-北京市-朝阳区
+   	  	  		</p>
+   	  	  		<p>
+   	  	  			朝阳建外建国门外大街乙24号燕华苑2座1703室抠抠网
+   	  	  		</p>
+   	  	  		<p>
+   	  	  			18310102020<span class="make">修改</span><span class="set">设为默认地址</span>
+   	  	  		</p>
+   	  	  	</li>
+   	  	  	<li>
+   	  	  		<h3>
+   	  	  			张静伟
+   	  	  		</h3>
+   	  	  		<p>
+   	  	  			北京-北京市-朝阳区
+   	  	  		</p>
+   	  	  		<p>
+   	  	  			朝阳建外建国门外大街乙24号燕华苑2座1703室抠抠网
+   	  	  		</p>
+   	  	  		<p>
+   	  	  			18310102020<span class="make">修改</span><span class="set">设为默认地址</span>
+   	  	  		</p>
+   	  	  	</li>
+   	  	  	<li>
+   	  	  		<h3>
+   	  	  			张静伟
+   	  	  		</h3>
+   	  	  		<p>
+   	  	  			北京-北京市-朝阳区
+   	  	  		</p>
+   	  	  		<p>
+   	  	  			朝阳建外建国门外大街乙24号燕华苑2座1703室抠抠网
+   	  	  		</p>
+   	  	  		<p>
+   	  	  			18310102020<span class="make">修改</span><span class="set">设为默认地址</span>
+   	  	  		</p>
+   	  	  	</li>
+   	  	  	<li>
+   	  	  		<h3>
+   	  	  			张静伟
+   	  	  		</h3>
+   	  	  		<p>
+   	  	  			北京-北京市-朝阳区
+   	  	  		</p>
+   	  	  		<p>
+   	  	  			朝阳建外建国门外大街乙24号燕华苑2座1703室抠抠网
+   	  	  		</p>
+   	  	  		<p>
+   	  	  			18310102020<span class="make">修改</span><span class="set">设为默认地址</span>
+   	  	  		</p>
+   	  	  	</li>
+   	  	  	<li>
+   	  	  		<h3>
+   	  	  			张静伟
+   	  	  		</h3>
+   	  	  		<p>
+   	  	  			北京-北京市-朝阳区
+   	  	  		</p>
+   	  	  		<p>
+   	  	  			朝阳建外建国门外大街乙24号燕华苑2座1703室抠抠网
+   	  	  		</p>
+   	  	  		<p>
+   	  	  			18310102020<span class="make">修改</span><span class="set">设为默认地址</span>
+   	  	  		</p>
+   	  	  	</li>
+   	  	  	<li>
+   	  	  		<h3>
+   	  	  			张静伟
+   	  	  		</h3>
+   	  	  		<p>
+   	  	  			北京-北京市-朝阳区
+   	  	  		</p>
+   	  	  		<p>
+   	  	  			朝阳建外建国门外大街乙24号燕华苑2座1703室抠抠网
+   	  	  		</p>
+   	  	  		<p>
+   	  	  			18310102020<span class="make">修改</span><span class="set">设为默认地址</span>
+   	  	  		</p>
+   	  	  	</li>
+   	  	  </ul>
+   	  	  <div id="open_adr">
+   	  	  	<b></b>展开全部地址
+   	  	  </div>
+   	  </div>
+   	  <!-- address_con end -->
+
+   	  <!-- order_tit -->
+   	  <div class="order_tit">
+   	  	 <h2>
+   	  	 	商品信息<a id="return_shopcar" href="javascript:;">返回购物车修改</a>
+   	  	 </h2>
+   	  </div>
+   	  <!-- order_tit end -->
+
+   	  <!-- order_store -->
+   	  <div class="order_store clearfix">
+   	  	 <!-- order_store_tit -->
+   	  	 <div class="order_store_tit">
+   	  	 	<ul>
+   	  	 		<li class="n">
+   	  	 			<a href="#">舒适吗内衣专营店</a><a href="#"><b class="store_icon"></b></a>
+   	  	 		</li>
+   	  	 		<li>单价（元）</li>
+   	  	 		<li class="m">数量</li>
+   	  	 		<li class="c">小计</li>
+   	  	 		<li class="y">运费</li>
+   	  	 	</ul>
+   	  	 </div>
+   	  	 <!-- order_ts -->
+   	  	 <div class="order_ts">
+   	  	 	尊敬的客户，由于此店铺商品使用不同的配送方式，所以将被系统拆分为2个订单分开配送，所产生的额外运费将由您来承担
+   	  	 </div>
+
+   	  	 <!-- order_pro -->
+   	  	 <div class="order_pro">
+   	  	    <table cellpadding="0" cellspacing="0" class="order_table">
+   	  	    	<tbody>
+   	  	    		<tr>
+   	  	    			<td>
+   	  	    				<table cellpadding="0" cellspacing="0" class="order_pro_table">
+				   	  	 		<tbody>
+				   	  	 			<tr>
+				   	  	 				<td>
+				   	  	 				    <div class="order_pic">
+				   	  	 				    	<a href="#"><img src="images/01.jpg"></a>
+					   	  	 					<div class="con">
+					   	  	 						<p>
+					   	  	 							<a href="#">2015秋装新款时尚女士套装裙新品欧洲站套装女休闲两件套yf3115</a>
+					   	  	 						</p>
+					   	  	 						<p>
+					   	  	 							<span>红色</span><span>官方标配</span><span>中国大陆</span>
+					   	  	 						</p>
+					   	  	 					</div>
+				   	  	 				    </div>
+				   	  	 				</td>
+				   	  	 				<td class="t w">
+				   	  	 					<p>199.00</p>
+				   	  	 				</td>
+				   	  	 				<td class="d t">x1</td>
+				   	  	 				<td class="z t">199.00</td>
+				   	  	 			</tr>
+				   	  	 			<tr>
+				   	  	 				<td>
+				   	  	 				    <div class="order_pic">
+				   	  	 				    	<a href="#"><img src="images/01.jpg"></a>
+					   	  	 					<div class="con">
+					   	  	 						<p>
+					   	  	 							<a href="#">2015秋装新款时尚女士套装裙新品欧洲站套装女休闲两件套yf3115</a>
+					   	  	 						</p>
+					   	  	 						<p>
+					   	  	 							<span>红色</span><span>官方标配</span><span>中国大陆</span>
+					   	  	 						</p>
+					   	  	 					</div>
+				   	  	 				    </div>
+				   	  	 				</td>
+				   	  	 				<td class="t w">
+				   	  	 					<p>199.00</p>
+				   	  	 				</td>
+				   	  	 				<td class="d t">x1</td>
+				   	  	 				<td class="z t">199.00</td>
+				   	  	 			</tr>
+				   	  	 		</tbody>
+				   	  	 	</table>
+   	  	    			</td>
+   	  	    			<td class="e">
+   	  	    				<div class="exp_pay">
+			   	  	 			<span>快递10元</span><b></b>
+			   	  	 			<ul>
+			   	  	 				<li class="cur">快递10元</li>
+			   	  	 				<li>快递20元</li>
+			   	  	 				<li>快递30元</li>
+			   	  	 			</ul>
+			   	  	 		</div>
+   	  	    			</td>
+   	  	    		</tr>
+   	  	    	</tbody>
+   	  	    </table>
+   	  	 </div>
+
+   	  	 <!-- order_else -->
+         <div class="order_else clearfix">
+            <!-- order_else_left -->
+         	<div class="order_else_left">
+         		<!-- order_word -->
+         		<div class="order_word">
+         			<div class="text">
+         				订单留言
+         			</div>
+         			<div class="con">
+         				<textarea class="word_area" name="words">
+   	  	 				</textarea>
+   	  	 				<span class="word_text"><em>0</em>/100</span>
+         			</div>
+         		</div>
+         		<!-- order_word -->
+         		<div class="order_inv">
+         			<div class="check_inv">
+         			    <input type="checkbox" />
+         				<b></b>索要发票
+         			</div>
+         			<div class="inv_tit">
+         				<span class="tt">发票抬头</span>
+         				<span class="radio">
+         					<input type="radio" name="fabiao" /><b class="checked"></b><em>个人</em>
+         				</span>
+         				<span class="radio">
+         					<input type="radio" name="fabiao" /><b></b><em>单位</em>
+         				</span>
+         				<textarea class="radio_area" name="words"></textarea>
+         				<span class="radio_area_num"><em>0</em>/50</span>
+         			</div>
+         		</div>
+         	</div>
+         	<!-- order_else_right -->
+         	<div class="order_else_right">
+         		<dl class="clearfix">
+         			<dt>店铺优惠：</dt>
+         			<dd>
+         				<div class="ticket">
+		   	  	 			<span>快递10元</span><b></b>
+		   	  	 			<ul>
+		   	  	 				<li class="cur">快递10元</li>
+		   	  	 				<li>快递20元</li>
+		   	  	 				<li>快递30元</li>
+		   	  	 			</ul>
+		   	  	 		</div>
+         			</dd>
+         		</dl>
+         		<dl>
+         			<dt>
+         				店铺合计：<span class="t">( 含运费 )</span>
+         			</dt>
+         			<dd class="m">
+         				￥<em>1518.00</em>
+         			</dd>
+         		</dl>
+         	</div>
+         </div>
+
+   	  </div>
+   	  <!-- order_store end -->
+
+   	  <!-- order_ticket -->
+   	  <div class="order_ticket">
+   	  	 <h2>
+   	  	 	<b></b>使用优惠劵<span>您有<em>3</em>张优惠劵可用</span>
+   	  	 </h2>
+   	  	 <div class="order_ticket_con">
+   	  	 	<div class="order_ticket_tit">
+   	  	 		<ul>
+	   	  	 		<li class="cur">
+	   	  	 			可用优惠劵<em>3</em><b></b>
+	   	  	 		</li>
+	   	  	 		<li>
+	   	  	 			不可用优惠劵<em>2</em>
+	   	  	 		</li>
+	   	  	 	</ul>
+   	  	 	</div>
+   	  	 	<div class="order_ticket_con0" style="display: block">
+   	  	 		<ul class="z">
+   	  	 			<li class="t">面值</li>
+   	  	 			<li>名称</li>
+   	  	 			<li class="q">有效期</li>
+   	  	 			<li class="e">使用条件</li>
+   	  	 		</ul>
+   	  	 		<ul>
+   	  	 			<li class="t">
+   	  	 				<span class="red_radio">
+   	  	 					<input type="radio" name="yhq">
+   	  	 					<b></b>180元
+   	  	 				</span>
+   	  	 			</li>
+   	  	 			<li>双十一抠抠网优惠劵</li>
+   	  	 			<li class="q">有效期至2015-11-15</li>
+   	  	 			<li class="e">满250.00使用</li>
+   	  	 			
+   	  	 		</ul>
+   	  	 		<ul>
+   	  	 			<li class="t">
+   	  	 				<span class="red_radio">
+   	  	 					<input type="radio" name="yhq">
+   	  	 					<b></b>150元
+   	  	 				</span>
+   	  	 			</li>
+   	  	 			<li>双十一抠抠网优惠劵</li>
+   	  	 			<li class="q">有效期至2015-11-15</li>
+   	  	 			<li class="e">满250.00使用</li>
+   	  	 			
+   	  	 		</ul>
+   	  	 		
+   	  	 	</div>
+   	  	 	<div class="order_ticket_con0">
+   	  	 		<ul class="z">
+   	  	 			<li class="t">面值</li>
+   	  	 			<li>名称</li>
+   	  	 			<li class="q">有效期</li>
+   	  	 			<li class="e">使用条件</li>
+   	  	 		</ul>
+   	  	 		<ul>
+   	  	 			<li class="t">
+   	  	 				<span class="dis_radio">
+   	  	 					<input type="radio" name="yhq" disabled="disabled">
+   	  	 					<b></b>150元
+   	  	 				</span>
+   	  	 			</li>
+   	  	 			<li>双十一抠抠网优惠劵</li>
+   	  	 			<li class="q">有效期至2015-11-15</li>
+   	  	 			<li class="e">满250.00使用</li>
+   	  	 		</ul>
+   	  	 		<ul>
+   	  	 			<li class="t">
+   	  	 				<span class="dis_radio">
+   	  	 					<input type="radio" name="yhq" disabled="disabled">
+   	  	 					<b></b>190元
+   	  	 				</span>
+   	  	 			</li>
+   	  	 			<li>双十一抠抠网优惠劵</li>
+   	  	 			<li class="q">有效期至2015-11-15</li>
+   	  	 			<li class="e">满250.00使用</li>
+   	  	 		</ul>
+   	  	 	</div>
+   	  	 </div>
+   	  </div>
+   	  <!-- order_ticket end -->
+
+   	  <!-- order_ticket -->
+   	  <div class="order_ticket">
+   	  	 <h2>
+   	  	 	<b></b>使用红包<span>您有<em>3</em>张红包可用</span>
+   	  	 </h2>
+   	  	 <div class="order_ticket_con">
+   	  	 	<div class="order_ticket_tit">
+   	  	 		<ul>
+	   	  	 		<li class="cur">
+	   	  	 			可用红包<em>3</em><b></b>
+	   	  	 		</li>
+	   	  	 		<li>
+	   	  	 			不可用红包<em>2</em>
+	   	  	 		</li>
+	   	  	 	</ul>
+   	  	 	</div>
+   	  	 	
+   	  	 	<div class="order_ticket_con0" style="display: block">
+   	  	 		<ul class="z">
+   	  	 			<li class="t">面值</li>
+   	  	 			<li>名称</li>
+   	  	 			<li class="q">有效期</li>
+   	  	 			<li class="e">使用条件</li>
+   	  	 		</ul>
+   	  	 		<ul>
+   	  	 			<li class="t">
+   	  	 				<span class="red_check">
+   	  	 					<input type="checkbox" name="yhq" disabled="disabled">
+   	  	 					<b></b>150元
+   	  	 				</span>
+   	  	 			</li>
+   	  	 			<li>双十一抠抠网优惠劵</li>
+   	  	 			<li class="q">有效期至2015-11-15</li>
+   	  	 			<li class="e">满250.00使用</li>
+   	  	 			
+   	  	 		</ul>
+   	  	 		<ul>
+   	  	 			<li class="t">
+   	  	 				<span class="red_check">
+   	  	 					<input type="checkbox" name="yhq" disabled="disabled">
+   	  	 					<b></b>160元
+   	  	 				</span>
+   	  	 			</li>
+   	  	 			<li>双十一抠抠网优惠劵</li>
+   	  	 			<li class="q">有效期至2015-11-15</li>
+   	  	 			<li class="e">满250.00使用</li>
+   	  	 		</ul>
+   	  	 	</div>
+   	  	 	<div class="order_ticket_con0">
+   	  	 		<ul class="z">
+   	  	 			<li class="t">面值</li>
+   	  	 			<li>名称</li>
+   	  	 			<li class="q">有效期</li>
+   	  	 			<li class="e">使用条件</li>
+   	  	 		</ul>
+   	  	 		<ul>
+   	  	 			<li class="t">
+   	  	 				<span class="dis_check">
+   	  	 					<input type="checkbox" name="yhq">
+   	  	 					<b></b>150元
+   	  	 				</span>
+   	  	 			</li>
+   	  	 			<li>双十一抠抠网优惠劵</li>
+   	  	 			<li class="q">有效期至2015-11-15</li>
+   	  	 			<li class="e">满250.00使用</li>
+   	  	 		</ul>
+   	  	 		<ul>
+   	  	 			<li class="t">
+   	  	 				<span class="dis_check">
+   	  	 					<input type="checkbox" name="yhq">
+   	  	 					<b></b>150元
+   	  	 				</span>
+   	  	 			</li>
+   	  	 			<li>双十一抠抠网优惠劵</li>
+   	  	 			<li class="q">有效期至2015-11-15</li>
+   	  	 			<li>满250.00使用</li>
+   	  	 		</ul>
+   	  	 	</div>
+   	  	 </div>
+   	  </div>
+   	  <!-- order_ticket end -->
+
+   	  <!-- order_ticket -->
+   	  <div class="order_ticket">
+   	  	 <h2>
+   	  	 	<b></b>使用易货劵<span>共使用了<em>3</em>张易货劵可用，可优惠150.00元</span>
+   	  	 </h2>
+   	  	 <div class="order_ticket_con">
+   	  	 	<dl>
+   	  	 		<dt>易货劵码：</dt>
+   	  	 		<dd>
+   	  	 		    <p>
+   	  	 				<input type="text" class="inp_qm" placeholder="请输入易货劵码" />
+   	  	 				<input type="button" class="use_btn" value="使用" />
+   	  	 			</p>
+   	  	 			<p>
+   	  	 				易货劵：NXD******dx7<span>面值：150.00</span><span id="cancel_btn">取消使用</span>
+   	  	 			</p>
+   	  	 		</dd>
+   	  	 	</dl>
+   	  	 </div>
+   	  	 <div class="zhifu">
+   	  	 	<dl>
+   	  	 		<dt>支付密码：</dt>
+   	  	 		<dd>
+   	  	 			<input type="text" class="zhifu_inp" placeholder="请输入使用平台优惠的支付密码" /><a href="#" class="forget_mm">忘记密码？</a>
+   	  	 			<p class="error_text">
+   	  	 				<b></b>请输入正确的支付密码
+   	  	 			</p>
+   	  	 		</dd>
+   	  	 	</dl>
+   	  	 </div>
+   	  </div>
+   	  <!-- order_ticket end -->
+
+   	  <!-- account -->
+	  <div class="account">
+	  	 <dl>
+	  	 	<dt>共<span class="g">3</span>件商品，商品合计：</dt>
+	  	 	<dd>￥2896.00</dd>
+	  	 </dl>
+	  	 <dl>
+	  	 	<dt>运费合计：</dt>
+	  	 	<dd>￥10.00</dd>
+	  	 </dl>
+	  	 <dl>
+	  	 	<dt>优惠合计：</dt>
+	  	 	<dd>-￥500.00</dd>
+	  	 </dl>
+	  	 <dl>
+	  	 	<dt>应付金额：</dt>
+	  	 	<dd>
+	  	 		<span>￥<em>2500.00</em></span>
+	  	 	</dd>
+	  	 </dl>
+	  	 <p class="ml">
+	  	 	收货地址：北京-北京市-朝阳区 朝阳建外建国门外大街乙24号燕华苑2座1703室抠抠网
+	  	 </p>
+	  	 <p>
+	  	 	收货人：<span>张静伟</span><span>18310102020</span>
+	  	 </p>
+	  	 <input type="button" id="submit_btn" value="提交订单"/>
+	  </div>
+   	  <!-- account end -->
+
+   	  <!-- fix_con -->
+   	  <div id="fix_con">
+   	  	 <div class="text">
+   	  	 	收货地址：北京-北京市-朝阳区 朝阳建外建国门外大街乙24号燕华苑2座1703室抠抠网<span>张静伟</span><span>18310102020</span>
+   	  	 </div>
+   	  	 <div class="money">
+   	  	 	应付金额：<span>￥<em>2366.00</em></span>
+   	  	 </div>
+   	  	 <input type="button" id="submit_go" value="提交订单" />
+   	  </div>
+   	  <!-- fix_con end -->
+   </div>
+</div>
+<!-- main end -->
+
+<!-- footer -->
+<div id="footer">
+	<div id="footer_con">
+		CopyRIGHT © 2009-2014 抠抠网 KOUCLO All RIGHTS RESERVED 闽ICP备13001618号-1增值电信业务经营许可证：闽B1-20130053<br/>
+		互联网药品信息服务资质证书编号：（闽）-非经营性-2014-0008
+	</div>
+</div>
+<!-- footer end -->
+
+<!-- mask -->
+<div id="mask"></div>
+<!-- pop_adr -->
+<div id="pop_adr">
+	<h2>
+		添加新收货地址<span id="pop_close"></span>
+	</h2>
+	<form id="adr_form" action="">
+   	  	 	<dl class="clearfix">
+   	  	 		<dt>
+   	  	 			<span class="red_star">*</span>收货人：
+   	  	 		</dt>
+   	  	 		<dd>
+   	  	 			<input type="text" id="adr_name" class="inp_adr"/>
+   	  	 			<div class="adr_error"></div>
+   	  	 		</dd>
+   	  	 	</dl>
+   	  	 	<dl class="clearfix">
+   	  	 		<dt>
+   	  	 			<span class="red_star">*</span>所在地区：
+   	  	 		</dt>
+   	  	 		<dd>
+   	  	 		    <div class="inp_con">
+   	  	 		    	<input type="text" class="inp_adr0" readonly="readonly" id="inp_city" />
+   	  	 				<b class="inp_icon"></b>
+   	  	 		    </div>
+   	  	 			<div class="adr_error"></div>
+   	  	 		</dd>
+   	  	 	</dl>
+   	  	 	<dl class="clearfix">
+   	  	 		<dt>
+   	  	 			<span class="red_star">*</span>详细地址：
+   	  	 		</dt>
+   	  	 		<dd>
+   	  	 			<textarea class="adr_text" name="addr" id="adr_dz">
+   	  	 			</textarea>
+   	  	 			<div class="adr_error"></div>
+   	  	 		</dd>
+   	  	 	</dl>
+   	  	 	<dl class="clearfix">
+   	  	 		<dt>
+   	  	 			<span class="red_star">*</span>手机号码：
+   	  	 		</dt>
+   	  	 		<dd>
+   	  	 			<input type="text" class="inp_adr" id="adr_phone"/>
+   	  	 			<div class="adr_error"></div>
+   	  	 		</dd>
+   	  	 	</dl>
+   	  	 	<dl class="clearfix">
+   	  	 		<dt>固定电话：</dt>
+   	  	 		<dd>
+   	  	 			<input type="text" class="inp_qh" id="tel_qh" />
+   	  	 			<input type="text" class="inp_tel" id="tel_hm" />
+   	  	 			<input type="text" class="inp_qh" id="tel_fh" />
+   	  	 			<div class="adr_error"></div>
+   	  	 		</dd>
+   	  	 	</dl>
+   	  	 	<dl class="clearfix">
+   	  	 		<dt>邮政编码：</dt>
+   	  	 		<dd>
+   	  	 			<input type="text" class="inp_code" id="adr_code"/>
+   	  	 			<div class="adr_error"></div>
+   	  	 		</dd>
+   	  	 	</dl>
+   	  	 	<dl class="clearfix m">
+   	  	 		<dt>&nbsp;</dt>
+   	  	 		<dd>
+   	  	 			<span class="adr_default">
+   	  	 			  <input type="checkbox" />
+   	  	 			  <b></b>设为默认收货地址
+   	  	 			</span>
+   	  	 		</dd>
+   	  	 	</dl>
+   	  	 	<dl class="clearfix">
+   	  	 		<dt>&nbsp;</dt>
+   	  	 		<dd>
+   	  	 			<input type="submit" id="adr_btn" value="保存收货地址"/>
+   	  	 			
+   	  	 		</dd>
+   	  	 	</dl>
+   	  	 </form>
+</div>
+
+
+</body>
+</html>

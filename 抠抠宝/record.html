@@ -1,0 +1,897 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>交易记录--抠抠宝</title>
+<link rel="stylesheet" type="text/css" href="css/koukoubao.css" />
+
+<link type="text/css" href="css/record.css" rel="stylesheet" />
+<link type="text/css" href="css/datepicker.css" rel="stylesheet" />
+<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+<script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
+<script type="text/javascript" src="js/koukoubao.js"></script>
+<script type="text/javascript" src="js/jquery.datePicker-min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+
+	$(".datepicker").datePicker({
+		inline:true,
+		selectMultiple:false
+	});
+	
+	$("#datepicker").datePicker({
+		clickInput:true
+	});
+	$("#datepicker0").datePicker({
+		clickInput:true
+	});
+});
+</script>
+
+
+</head>
+
+<body>
+<!-- top begin -->
+<div id="top">
+  <div id="top_con">
+    <span class="mr">你好，李鹏慧</span><a href="#">安全退出</a><span class="line">|</span><a href="#">我的抠抠宝</a><span class="line">|</span><a href="#">交易记录</a>
+  </div>
+</div>
+<!-- top end -->
+
+<!-- header begin -->
+<div id="header">
+   <!-- h1 -->
+   <h1><a href="#"><img src="images/logo-kkb.png" width="146" height="37" alt="抠抠宝" /></a></h1>
+   <!-- header_nav -->
+   <div id="header_nav">
+      <ul>
+        <li class="cur sy"><a href="#">首　页</a></li>
+        <li><a href="#">交易记录</a></li>
+        <li><a href="#">账户资产</a></li>
+        <li><a href="#">账户设置</a></li>
+      </ul>
+      
+   </div> 
+</div>
+<!-- header end -->
+
+
+<!-- content begin -->
+<div id="content">
+	<div id="main">
+        <!-- record_title -->
+        <div class="record_title">
+           <h2>交易记录</h2>
+        </div>
+        <!-- record_search -->
+        <div class="record_search">
+          <form name="form1" action="" method="post">
+           <!-- record_search_box -->
+           <div class="record_search_box clearfix z3">
+              <!-- record_search_left -->
+              <div class="record_search_left">
+                 <div class="record_search_title">
+                    交易时间：
+                 </div>
+                 <div class="record_search_con">
+                    <div class="zdy" style="display:none">
+                       <div class="record_time">
+                          <input name="" type="text" class="inp_time" id="datepicker"/>
+                          
+                       </div>
+                       <div class="record_time ml">
+                          <div class="record_time_box">
+                             <span class="record_time_text">00:00</span>
+                             <i class="record_pic"></i>
+                             <ul class="time_list record_h">
+                                <li>01:00</li>
+							    <li>02:00</li>
+							    <li>03:00</li>
+                                <li>04:00</li>
+                                <li>05:00</li>
+                                <li>06:00</li>
+                                <li>07:00</li>
+                                <li>08:00</li>
+                                <li>09:00</li>
+                                <li>10:00</li>
+                                <li>11:00</li>
+                                <li>12:00</li>
+                                <li>13:00</li>
+                                <li>14:00</li>
+                                <li>15:00</li>
+                                <li>16:00</li>
+                                <li>17:00</li>
+                                <li>18:00</li>
+                                <li>19:00</li>
+                                <li>20:00</li>
+                                <li>21:00</li>
+                                <li>22:00</li>
+                                <li>23:00</li>
+                                <li>24:00</li>
+                             </ul>
+                         </div>
+                      </div>
+                      <div class="time_line">-</div>
+                      <div class="record_time">
+                         <input name="" type="text" class="inp_time" id="datepicker0"/>
+                      </div>
+                      <div class="record_time ml">
+                         <div class="record_time_box">
+                            <span class="record_time_text">00:00</span>
+                            <i class="record_pic"></i>
+                            <ul class="time_list record_h">
+                                <li>01:00</li>
+							    <li>02:00</li>
+							    <li>03:00</li>
+                                <li>04:00</li>
+                                <li>05:00</li>
+                                <li>06:00</li>
+                                <li>07:00</li>
+                                <li>08:00</li>
+                                <li>09:00</li>
+                                <li>10:00</li>
+                                <li>11:00</li>
+                                <li>12:00</li>
+                                <li>13:00</li>
+                                <li>14:00</li>
+                                <li>15:00</li>
+                                <li>16:00</li>
+                                <li>17:00</li>
+                                <li>18:00</li>
+                                <li>19:00</li>
+                                <li>20:00</li>
+                                <li>21:00</li>
+                                <li>22:00</li>
+                                <li>23:00</li>
+                                <li>24:00</li>
+
+                           </ul>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <div class="record_box" id="record_box">
+                       <div class="record_box_con">
+                          <span class="record_box_text">最近一周</span>
+                          <i class="record_pic"></i>
+                          <ul class="record_list" id="record_list">
+                             <li>今天</li>
+							 <li>最近一周</li>
+							 <li>最近一月</li>
+							 <li>最近三月</li>
+							 <li class="zdytime">自定义时间</li>
+                          </ul>
+                       </div>
+                       
+                    </div>
+                    
+                 </div>
+              </div>
+              <!-- record_search_right -->
+              <div class="record_search_right">
+                 <div class="record_search_title">
+                    交易状态：
+                 </div>
+                 <div class="record_search_con0">
+                   <div class="record_box">
+                       <div class="record_box_con0">
+                          <span class="record_box_text0">所有状态</span>
+                          <i class="record_pic"></i>
+                          <ul class="record_list0 record_h">
+                             <li>退款</li>
+                             <li class="hover">所有状态</li>
+                             <li>进行中</li>
+							 <li>待付款</li>
+                             <li>待确认收货</li>
+                             <li>退款</li>
+                             <li>成功</li>
+                             <li>失败</li>
+                             <li>退款待处理</li>
+                             <li>退至银行失败</li>
+                             <li>等待买家签收</li>
+                             <li>等待签收确认</li>
+                             <li>等待系统打款给卖家</li>
+                             <li>维权</li>
+                          </ul>
+                       </div>
+                       
+                    </div>
+                 </div>
+              </div>
+           </div>
+           <!-- record_search_box end -->
+           
+           <!-- record_search_box -->
+           <div class="record_search_box clearfix z2">
+              <!-- record_search_left -->
+              <div class="record_search_left">
+                 <div class="record_search_title">
+                    关 键 字：
+                 </div>
+                 <div class="record_search_con">
+                    <div class="record_box">
+                       <div class="record_box_con">
+                          <span class="record_box_text">商户订单号</span>
+                          <i class="record_pic"></i>
+                          <ul class="record_list">
+                             <li class="hover">商户订单号</li>
+							 <li>交易号</li>
+							 <li>交易信息</li>
+							 <li>对方名称</li>
+                          </ul>
+                       </div>
+                       
+                    </div>
+                    <input name="" type="text" class="record_inp" />
+                 </div>
+              </div>
+              <!-- record_search_right -->
+              <div class="record_search_right">
+                 <div class="record_search_title">
+                    时间类型：
+                 </div>
+                 <div class="record_search_con0">
+                   <div class="record_box">
+                       <div class="record_box_con0">
+                          <span class="record_box_text0">创建时间</span>
+                          <i class="record_pic"></i>
+                          <ul class="record_list0">
+                             <li class="hover">创建时间</li>
+                             <li>付款时间</li>
+                             <li>收款时间</li>
+                          </ul>
+                       </div>
+                       
+                    </div>
+                 </div>
+              </div>
+           </div>
+           <!-- record_search_box end -->
+           
+           <!-- record_search_box -->
+           <div class="record_search_box clearfix">
+              <!-- record_search_left -->
+              <div class="record_search_left">
+                 <div class="record_search_title">
+                    金额范围：
+                 </div>
+                 <div class="record_search_con">
+                   <input name="" type="text" class="record_inp0" /><span class="record_inpl">-</span><input name="" type="text" class="record_inp0" />
+                 </div>
+              </div>
+              <!-- record_search_right -->
+              <div class="record_search_right">
+                 <div class="record_search_title">
+                    资金流向：
+                 </div>
+                 <div class="record_search_con0">
+                   <div class="record_box">
+                       <div class="record_box_con0">
+                          <span class="record_box_text0">全部</span>
+                          <i class="record_pic"></i>
+                          <ul class="record_list0">
+                             <li class="hover">全部</li>
+                             <li>收入</li>
+                             <li>支出</li>
+                          </ul>
+                       </div>
+                       
+                    </div>
+                 </div>
+              </div>
+           </div>
+           <!-- record_search_box end -->
+           <!-- record_search_box -->
+           <div class="record_search_box clearfix">
+              <!-- record_search_left -->
+              <div class="record_search_left">
+                 <div class="record_search_title">
+                    交易方式：
+                 </div>
+                 <div class="record_search_con">
+                   <div class="record_check"><input type="checkbox" class="inp_check" />担保交易</div>
+                   <div class="record_check"><input type="checkbox" class="inp_check" />及时到帐</div>
+                 </div>
+              </div>
+             
+           </div>
+           <!-- record_search_box end -->
+           <!-- record_search_box -->
+           <div class="record_search_box">
+              <input type='submit' class='record_bth' value='搜索' />
+           </div>
+           <!-- record_search_box end -->
+          </form> 
+        </div>
+     
+       <!-- record_status_title -->
+       <div class="record_status_title">
+          <ul>
+             <li class='cur'>所有状态</li>
+		     <li>进行中</li>
+		     <li>等待付款</li>
+		     <li>等待发货</li>
+		     <li class='l'>等待确认收货</li>
+		     <li class='l0'>退款</li>
+		     <li class='l0'>成功</li>
+		     <li class='l0'>失败</li>
+		     <li class='l0 no'>维权</li>
+       </ul>
+     </div>
+     <!-- record_status_title end -->
+     <!-- record_status -->
+     <div class="record_status">
+        <div class="con">
+           <div class="record_status_tit">
+              <ul>
+                 <li class="t">创建时间</li>
+                 <li>名称</li>
+                 <li class="h">商户订单号<span class="ash">｜</span>交易号</li>
+                 <li class="d">对方</li>
+                 <li class="j">金额<span class="ash">｜</span>明细</li>
+                 <li class="zt">状态</li>
+                 <li class="zt">操作</li>
+              </ul>
+           </div>
+           <table class="record_table" border="0" cellpadding="0" cellspacing="0">
+              <tr>
+                <td class="time">2014-06-12</td>
+                <td class="name"><a href="">淘宝购物-156-4760-7134 官方超<br/>快充&mdash;内蒙古联通5...</a></td>
+                <td class="sh">订单号：T100P710168824477438<br/>交易号：20140627110010017400169689</td>
+                <td class="df"><a href="">千行你我话费专营店</a></td>
+                <td class="money">-99.5</td>
+                <td class="zt">交易成功</td>
+                <td class="zt"><a href="">详情</a></td>
+              </tr>
+              <tr>
+                <td class="time">2014-06-12</td>
+                <td class="name"><a href="">淘宝购物-156-4760-7134 官方超<br/>快充&mdash;内蒙古联通5...</a></td>
+                <td class="sh">订单号：T100P710168824477438<br/>交易号：20140627110010017400169689</td>
+                <td class="df"><a href="">千行你我话费专营店</a></td>
+                <td class="money">-99.5</td>
+                <td class="zt"><span class="wait">待付款</span></td>
+                <td class="zt"><a href="">详情</a></td>
+              </tr>
+              <tr>
+                <td class="time">2014-06-12</td>
+                <td class="name"><a href="">淘宝购物-156-4760-7134 官方超<br/>快充&mdash;内蒙古联通5...</a></td>
+                <td class="sh">订单号：T100P710168824477438<br/>交易号：20140627110010017400169689</td>
+                <td class="df"><a href="">千行你我话费专营店</a></td>
+                <td class="money"><span class="orange">-99.5</span></td>
+                <td class="zt">交易成功</td>
+                <td class="zt"><a href="">详情</a></td>
+              </tr>
+              <tr>
+                <td class="time">2014-06-12</td>
+                <td class="name"><a href="">淘宝购物-156-4760-7134 官方超<br/>快充&mdash;内蒙古联通5...</a></td>
+                <td class="sh">订单号：T100P710168824477438<br/>交易号：20140627110010017400169689</td>
+                <td class="df"><a href="">千行你我话费专营店</a></td>
+                <td class="money">-99.5</td>
+                <td class="zt">交易成功</td>
+                <td class="zt"><a href="">详情</a></td>
+              </tr>
+              <tr>
+                <td class="time">2014-06-12</td>
+                <td class="name"><a href="">淘宝购物-156-4760-7134 官方超<br/>快充&mdash;内蒙古联通5...</a></td>
+                <td class="sh">订单号：T100P710168824477438<br/>交易号：20140627110010017400169689</td>
+                <td class="df"><a href="">千行你我话费专营店</a></td>
+                <td class="money">-99.5</td>
+                <td class="zt">交易成功</td>
+                <td class="zt"><a href="">详情</a></td>
+              </tr>
+
+          </table>
+          <div class='page'>
+			 <p class='page_l'>
+				下载账单：<a href="">Excel格式</a><a href="">TXT格式</a>
+			 </p>
+			 <div class='page_r'>
+				<span class='yeshu'>2-8页，共8页</span><a href="" class='shangye'>上一页</a><a href="" class='xiaye'>下一页</a>
+			 </div>
+				
+		  </div>
+        </div>
+        <div class="con" style="display:none">
+           <div class="record_status_tit">
+              <ul>
+                 <li class="t">创建时间</li>
+                 <li>名称</li>
+                 <li class="h">商户订单号<span class="ash">｜</span>交易号</li>
+                 <li class="d">对方</li>
+                 <li class="j">金额<span class="ash">｜</span>明细</li>
+                 <li class="zt">状态</li>
+                 <li class="zt">操作</li>
+              </ul>
+           </div>
+           <table class="record_table" border="0" cellpadding="0" cellspacing="0">
+              <tr>
+                <td class="time">2014-06-12</td>
+                <td class="name"><a href="">淘宝购物-156-4760-7134 官方超<br/>快充&mdash;内蒙古联通5...</a></td>
+                <td class="sh">订单号：T100P710168824477438<br/>交易号：20140627110010017400169689</td>
+                <td class="df"><a href="">千行你我话费专营店</a></td>
+                <td class="money">-99.5</td>
+                <td class="zt">交易成功</td>
+                <td class="zt"><a href="">详情</a></td>
+              </tr>
+              <tr>
+                <td class="time">2014-06-12</td>
+                <td class="name"><a href="">淘宝购物-156-4760-7134 官方超<br/>快充&mdash;内蒙古联通5...</a></td>
+                <td class="sh">订单号：T100P710168824477438<br/>交易号：20140627110010017400169689</td>
+                <td class="df"><a href="">千行你我话费专营店</a></td>
+                <td class="money">-99.5</td>
+                <td class="zt"><span class="wait">待付款</span></td>
+                <td class="zt"><a href="">详情</a></td>
+              </tr>
+              <tr>
+                <td class="time">2014-06-12</td>
+                <td class="name"><a href="">淘宝购物-156-4760-7134 官方超<br/>快充&mdash;内蒙古联通5...</a></td>
+                <td class="sh">订单号：T100P710168824477438<br/>交易号：20140627110010017400169689</td>
+                <td class="df"><a href="">千行你我话费专营店</a></td>
+                <td class="money"><span class="orange">-99.5</span></td>
+                <td class="zt">交易成功</td>
+                <td class="zt"><a href="">详情</a></td>
+              </tr>
+
+
+          </table>
+          <div class='page'>
+			 <p class='page_l'>
+				下载账单：<a href="">Excel格式</a><a href="">TXT格式</a>
+			 </p>
+			 <div class='page_r'>
+				<span class='yeshu'>2-8页，共8页</span><a href="" class='shangye'>上一页</a><a href="" class='xiaye'>下一页</a>
+			 </div>
+				
+		  </div>
+        </div>
+        
+        <div class="con" style="display:none">
+           <div class="record_status_tit">
+              <ul>
+                 <li class="t">创建时间</li>
+                 <li>名称</li>
+                 <li class="h">商户订单号<span class="ash">｜</span>交易号</li>
+                 <li class="d">对方</li>
+                 <li class="j">金额<span class="ash">｜</span>明细</li>
+                 <li class="zt">状态</li>
+                 <li class="zt">操作</li>
+              </ul>
+           </div>
+           <table class="record_table" border="0" cellpadding="0" cellspacing="0">
+              <tr>
+                <td class="time">2014-06-12</td>
+                <td class="name"><a href="">淘宝购物-156-4760-7134 官方超<br/>快充&mdash;内蒙古联通5...</a></td>
+                <td class="sh">订单号：T100P710168824477438<br/>交易号：20140627110010017400169689</td>
+                <td class="df"><a href="">千行你我话费专营店</a></td>
+                <td class="money">-99.5</td>
+                <td class="zt">交易成功</td>
+                <td class="zt"><a href="">详情</a></td>
+              </tr>
+              <tr>
+                <td class="time">2014-06-12</td>
+                <td class="name"><a href="">淘宝购物-156-4760-7134 官方超<br/>快充&mdash;内蒙古联通5...</a></td>
+                <td class="sh">订单号：T100P710168824477438<br/>交易号：20140627110010017400169689</td>
+                <td class="df"><a href="">千行你我话费专营店</a></td>
+                <td class="money">-99.5</td>
+                <td class="zt"><span class="wait">待付款</span></td>
+                <td class="zt"><a href="">详情</a></td>
+              </tr>
+              <tr>
+                <td class="time">2014-06-12</td>
+                <td class="name"><a href="">淘宝购物-156-4760-7134 官方超<br/>快充&mdash;内蒙古联通5...</a></td>
+                <td class="sh">订单号：T100P710168824477438<br/>交易号：20140627110010017400169689</td>
+                <td class="df"><a href="">千行你我话费专营店</a></td>
+                <td class="money"><span class="orange">-99.5</span></td>
+                <td class="zt">交易成功</td>
+                <td class="zt"><a href="">详情</a></td>
+              </tr>
+              <tr>
+                <td class="time">2014-06-12</td>
+                <td class="name"><a href="">淘宝购物-156-4760-7134 官方超<br/>快充&mdash;内蒙古联通5...</a></td>
+                <td class="sh">订单号：T100P710168824477438<br/>交易号：20140627110010017400169689</td>
+                <td class="df"><a href="">千行你我话费专营店</a></td>
+                <td class="money">-99.5</td>
+                <td class="zt">交易成功</td>
+                <td class="zt"><a href="">详情</a></td>
+              </tr>
+
+
+          </table>
+          <div class='page'>
+			 <p class='page_l'>
+				下载账单：<a href="">Excel格式</a><a href="">TXT格式</a>
+			 </p>
+			 <div class='page_r'>
+				<span class='yeshu'>2-8页，共8页</span><a href="" class='shangye'>上一页</a><a href="" class='xiaye'>下一页</a>
+			 </div>
+				
+		  </div>
+        </div>
+        
+        
+        <div class="con" style="display:none">
+           <div class="record_status_tit">
+              <ul>
+                 <li class="t">创建时间</li>
+                 <li>名称</li>
+                 <li class="h">商户订单号<span class="ash">｜</span>交易号</li>
+                 <li class="d">对方</li>
+                 <li class="j">金额<span class="ash">｜</span>明细</li>
+                 <li class="zt">状态</li>
+                 <li class="zt">操作</li>
+              </ul>
+           </div>
+           <table class="record_table" border="0" cellpadding="0" cellspacing="0">
+              <tr>
+                <td class="time">2014-06-12</td>
+                <td class="name"><a href="">淘宝购物-156-4760-7134 官方超<br/>快充&mdash;内蒙古联通5...</a></td>
+                <td class="sh">订单号：T100P710168824477438<br/>交易号：20140627110010017400169689</td>
+                <td class="df"><a href="">千行你我话费专营店</a></td>
+                <td class="money">-99.5</td>
+                <td class="zt">交易成功</td>
+                <td class="zt"><a href="">详情</a></td>
+              </tr>
+              <tr>
+                <td class="time">2014-06-12</td>
+                <td class="name"><a href="">淘宝购物-156-4760-7134 官方超<br/>快充&mdash;内蒙古联通5...</a></td>
+                <td class="sh">订单号：T100P710168824477438<br/>交易号：20140627110010017400169689</td>
+                <td class="df"><a href="">千行你我话费专营店</a></td>
+                <td class="money">-99.5</td>
+                <td class="zt"><span class="wait">待付款</span></td>
+                <td class="zt"><a href="">详情</a></td>
+              </tr>
+              <tr>
+                <td class="time">2014-06-12</td>
+                <td class="name"><a href="">淘宝购物-156-4760-7134 官方超<br/>快充&mdash;内蒙古联通5...</a></td>
+                <td class="sh">订单号：T100P710168824477438<br/>交易号：20140627110010017400169689</td>
+                <td class="df"><a href="">千行你我话费专营店</a></td>
+                <td class="money"><span class="orange">-99.5</span></td>
+                <td class="zt">交易成功</td>
+                <td class="zt"><a href="">详情</a></td>
+              </tr>
+
+
+          </table>
+          <div class='page'>
+			 <p class='page_l'>
+				下载账单：<a href="">Excel格式</a><a href="">TXT格式</a>
+			 </p>
+			 <div class='page_r'>
+				<span class='yeshu'>2-8页，共8页</span><a href="" class='shangye'>上一页</a><a href="" class='xiaye'>下一页</a>
+			 </div>
+				
+		  </div>
+        </div>
+        
+        
+        <div class="con" style="display:none">
+           <div class="record_status_tit">
+              <ul>
+                 <li class="t">创建时间</li>
+                 <li>名称</li>
+                 <li class="h">商户订单号<span class="ash">｜</span>交易号</li>
+                 <li class="d">对方</li>
+                 <li class="j">金额<span class="ash">｜</span>明细</li>
+                 <li class="zt">状态</li>
+                 <li class="zt">操作</li>
+              </ul>
+           </div>
+           <table class="record_table" border="0" cellpadding="0" cellspacing="0">
+              <tr>
+                <td class="time">2014-06-12</td>
+                <td class="name"><a href="">淘宝购物-156-4760-7134 官方超<br/>快充&mdash;内蒙古联通5...</a></td>
+                <td class="sh">订单号：T100P710168824477438<br/>交易号：20140627110010017400169689</td>
+                <td class="df"><a href="">千行你我话费专营店</a></td>
+                <td class="money">-99.5</td>
+                <td class="zt">交易成功</td>
+                <td class="zt"><a href="">详情</a></td>
+              </tr>
+              <tr>
+                <td class="time">2014-06-12</td>
+                <td class="name"><a href="">淘宝购物-156-4760-7134 官方超<br/>快充&mdash;内蒙古联通5...</a></td>
+                <td class="sh">订单号：T100P710168824477438<br/>交易号：20140627110010017400169689</td>
+                <td class="df"><a href="">千行你我话费专营店</a></td>
+                <td class="money">-99.5</td>
+                <td class="zt"><span class="wait">待付款</span></td>
+                <td class="zt"><a href="">详情</a></td>
+              </tr>
+              <tr>
+                <td class="time">2014-06-12</td>
+                <td class="name"><a href="">淘宝购物-156-4760-7134 官方超<br/>快充&mdash;内蒙古联通5...</a></td>
+                <td class="sh">订单号：T100P710168824477438<br/>交易号：20140627110010017400169689</td>
+                <td class="df"><a href="">千行你我话费专营店</a></td>
+                <td class="money"><span class="orange">-99.5</span></td>
+                <td class="zt">交易成功</td>
+                <td class="zt"><a href="">详情</a></td>
+              </tr>
+              <tr>
+                <td class="time">2014-06-12</td>
+                <td class="name"><a href="">淘宝购物-156-4760-7134 官方超<br/>快充&mdash;内蒙古联通5...</a></td>
+                <td class="sh">订单号：T100P710168824477438<br/>交易号：20140627110010017400169689</td>
+                <td class="df"><a href="">千行你我话费专营店</a></td>
+                <td class="money">-99.5</td>
+                <td class="zt">交易成功</td>
+                <td class="zt"><a href="">详情</a></td>
+              </tr>
+
+
+          </table>
+          <div class='page'>
+			 <p class='page_l'>
+				下载账单：<a href="">Excel格式</a><a href="">TXT格式</a>
+			 </p>
+			 <div class='page_r'>
+				<span class='yeshu'>2-8页，共8页</span><a href="" class='shangye'>上一页</a><a href="" class='xiaye'>下一页</a>
+			 </div>
+				
+		  </div>
+        </div>
+        
+        
+        <div class="con" style="display:none">
+           <div class="record_status_tit">
+              <ul>
+                 <li class="t">创建时间</li>
+                 <li>名称</li>
+                 <li class="h">商户订单号<span class="ash">｜</span>交易号</li>
+                 <li class="d">对方</li>
+                 <li class="j">金额<span class="ash">｜</span>明细</li>
+                 <li class="zt">状态</li>
+                 <li class="zt">操作</li>
+              </ul>
+           </div>
+           <table class="record_table" border="0" cellpadding="0" cellspacing="0">
+              <tr>
+                <td class="time">2014-06-12</td>
+                <td class="name"><a href="">淘宝购物-156-4760-7134 官方超<br/>快充&mdash;内蒙古联通5...</a></td>
+                <td class="sh">订单号：T100P710168824477438<br/>交易号：20140627110010017400169689</td>
+                <td class="df"><a href="">千行你我话费专营店</a></td>
+                <td class="money">-99.5</td>
+                <td class="zt">交易成功</td>
+                <td class="zt"><a href="">详情</a></td>
+              </tr>
+              <tr>
+                <td class="time">2014-06-12</td>
+                <td class="name"><a href="">淘宝购物-156-4760-7134 官方超<br/>快充&mdash;内蒙古联通5...</a></td>
+                <td class="sh">订单号：T100P710168824477438<br/>交易号：20140627110010017400169689</td>
+                <td class="df"><a href="">千行你我话费专营店</a></td>
+                <td class="money">-99.5</td>
+                <td class="zt"><span class="wait">待付款</span></td>
+                <td class="zt"><a href="">详情</a></td>
+              </tr>
+              <tr>
+                <td class="time">2014-06-12</td>
+                <td class="name"><a href="">淘宝购物-156-4760-7134 官方超<br/>快充&mdash;内蒙古联通5...</a></td>
+                <td class="sh">订单号：T100P710168824477438<br/>交易号：20140627110010017400169689</td>
+                <td class="df"><a href="">千行你我话费专营店</a></td>
+                <td class="money"><span class="orange">-99.5</span></td>
+                <td class="zt">交易成功</td>
+                <td class="zt"><a href="">详情</a></td>
+              </tr>
+
+
+          </table>
+          <div class='page'>
+			 <p class='page_l'>
+				下载账单：<a href="">Excel格式</a><a href="">TXT格式</a>
+			 </p>
+			 <div class='page_r'>
+				<span class='yeshu'>2-8页，共8页</span><a href="" class='shangye'>上一页</a><a href="" class='xiaye'>下一页</a>
+			 </div>
+				
+		  </div>
+        </div>
+        
+        
+        <div class="con" style="display:none">
+           <div class="record_status_tit">
+              <ul>
+                 <li class="t">创建时间</li>
+                 <li>名称</li>
+                 <li class="h">商户订单号<span class="ash">｜</span>交易号</li>
+                 <li class="d">对方</li>
+                 <li class="j">金额<span class="ash">｜</span>明细</li>
+                 <li class="zt">状态</li>
+                 <li class="zt">操作</li>
+              </ul>
+           </div>
+           <table class="record_table" border="0" cellpadding="0" cellspacing="0">
+              <tr>
+                <td class="time">2014-06-12</td>
+                <td class="name"><a href="">淘宝购物-156-4760-7134 官方超<br/>快充&mdash;内蒙古联通5...</a></td>
+                <td class="sh">订单号：T100P710168824477438<br/>交易号：20140627110010017400169689</td>
+                <td class="df"><a href="">千行你我话费专营店</a></td>
+                <td class="money">-99.5</td>
+                <td class="zt">交易成功</td>
+                <td class="zt"><a href="">详情</a></td>
+              </tr>
+              <tr>
+                <td class="time">2014-06-12</td>
+                <td class="name"><a href="">淘宝购物-156-4760-7134 官方超<br/>快充&mdash;内蒙古联通5...</a></td>
+                <td class="sh">订单号：T100P710168824477438<br/>交易号：20140627110010017400169689</td>
+                <td class="df"><a href="">千行你我话费专营店</a></td>
+                <td class="money">-99.5</td>
+                <td class="zt"><span class="wait">待付款</span></td>
+                <td class="zt"><a href="">详情</a></td>
+              </tr>
+              <tr>
+                <td class="time">2014-06-12</td>
+                <td class="name"><a href="">淘宝购物-156-4760-7134 官方超<br/>快充&mdash;内蒙古联通5...</a></td>
+                <td class="sh">订单号：T100P710168824477438<br/>交易号：20140627110010017400169689</td>
+                <td class="df"><a href="">千行你我话费专营店</a></td>
+                <td class="money"><span class="orange">-99.5</span></td>
+                <td class="zt">交易成功</td>
+                <td class="zt"><a href="">详情</a></td>
+              </tr>
+              <tr>
+                <td class="time">2014-06-12</td>
+                <td class="name"><a href="">淘宝购物-156-4760-7134 官方超<br/>快充&mdash;内蒙古联通5...</a></td>
+                <td class="sh">订单号：T100P710168824477438<br/>交易号：20140627110010017400169689</td>
+                <td class="df"><a href="">千行你我话费专营店</a></td>
+                <td class="money">-99.5</td>
+                <td class="zt">交易成功</td>
+                <td class="zt"><a href="">详情</a></td>
+              </tr>
+
+          </table>
+          <div class='page'>
+			 <p class='page_l'>
+				下载账单：<a href="">Excel格式</a><a href="">TXT格式</a>
+			 </p>
+			 <div class='page_r'>
+				<span class='yeshu'>2-8页，共8页</span><a href="" class='shangye'>上一页</a><a href="" class='xiaye'>下一页</a>
+			 </div>
+				
+		  </div>
+        </div>
+        
+        <div class="con" style="display:none">
+           <div class="record_status_tit">
+              <ul>
+                 <li class="t">创建时间</li>
+                 <li>名称</li>
+                 <li class="h">商户订单号<span class="ash">｜</span>交易号</li>
+                 <li class="d">对方</li>
+                 <li class="j">金额<span class="ash">｜</span>明细</li>
+                 <li class="zt">状态</li>
+                 <li class="zt">操作</li>
+              </ul>
+           </div>
+           <table class="record_table" border="0" cellpadding="0" cellspacing="0">
+              <tr>
+                <td class="time">2014-06-12</td>
+                <td class="name"><a href="">淘宝购物-156-4760-7134 官方超<br/>快充&mdash;内蒙古联通5...</a></td>
+                <td class="sh">订单号：T100P710168824477438<br/>交易号：20140627110010017400169689</td>
+                <td class="df"><a href="">千行你我话费专营店</a></td>
+                <td class="money">-99.5</td>
+                <td class="zt">交易成功</td>
+                <td class="zt"><a href="">详情</a></td>
+              </tr>
+              <tr>
+                <td class="time">2014-06-12</td>
+                <td class="name"><a href="">淘宝购物-156-4760-7134 官方超<br/>快充&mdash;内蒙古联通5...</a></td>
+                <td class="sh">订单号：T100P710168824477438<br/>交易号：20140627110010017400169689</td>
+                <td class="df"><a href="">千行你我话费专营店</a></td>
+                <td class="money">-99.5</td>
+                <td class="zt"><span class="wait">待付款</span></td>
+                <td class="zt"><a href="">详情</a></td>
+              </tr>
+              <tr>
+                <td class="time">2014-06-12</td>
+                <td class="name"><a href="">淘宝购物-156-4760-7134 官方超<br/>快充&mdash;内蒙古联通5...</a></td>
+                <td class="sh">订单号：T100P710168824477438<br/>交易号：20140627110010017400169689</td>
+                <td class="df"><a href="">千行你我话费专营店</a></td>
+                <td class="money"><span class="orange">-99.5</span></td>
+                <td class="zt">交易成功</td>
+                <td class="zt"><a href="">详情</a></td>
+              </tr>
+
+          </table>
+          <div class='page'>
+			 <p class='page_l'>
+				下载账单：<a href="">Excel格式</a><a href="">TXT格式</a>
+			 </p>
+			 <div class='page_r'>
+				<span class='yeshu'>2-8页，共8页</span><a href="" class='shangye'>上一页</a><a href="" class='xiaye'>下一页</a>
+			 </div>
+				
+		  </div>
+        </div>
+        
+        <div class="con" style="display:none">
+           <div class="record_status_tit">
+              <ul>
+                 <li class="t">创建时间</li>
+                 <li>名称</li>
+                 <li class="h">商户订单号<span class="ash">｜</span>交易号</li>
+                 <li class="d">对方</li>
+                 <li class="j">金额<span class="ash">｜</span>明细</li>
+                 <li class="zt">状态</li>
+                 <li class="zt">操作</li>
+              </ul>
+           </div>
+           <table class="record_table" border="0" cellpadding="0" cellspacing="0">
+              <tr>
+                <td class="time">2014-06-12</td>
+                <td class="name"><a href="">淘宝购物-156-4760-7134 官方超<br/>快充&mdash;内蒙古联通5...</a></td>
+                <td class="sh">订单号：T100P710168824477438<br/>交易号：20140627110010017400169689</td>
+                <td class="df"><a href="">千行你我话费专营店</a></td>
+                <td class="money">-99.5</td>
+                <td class="zt">交易成功</td>
+                <td class="zt"><a href="">详情</a></td>
+              </tr>
+              <tr>
+                <td class="time">2014-06-12</td>
+                <td class="name"><a href="">淘宝购物-156-4760-7134 官方超<br/>快充&mdash;内蒙古联通5...</a></td>
+                <td class="sh">订单号：T100P710168824477438<br/>交易号：20140627110010017400169689</td>
+                <td class="df"><a href="">千行你我话费专营店</a></td>
+                <td class="money">-99.5</td>
+                <td class="zt"><span class="wait">待付款</span></td>
+                <td class="zt"><a href="">详情</a></td>
+              </tr>
+              <tr>
+                <td class="time">2014-06-12</td>
+                <td class="name"><a href="">淘宝购物-156-4760-7134 官方超<br/>快充&mdash;内蒙古联通5...</a></td>
+                <td class="sh">订单号：T100P710168824477438<br/>交易号：20140627110010017400169689</td>
+                <td class="df"><a href="">千行你我话费专营店</a></td>
+                <td class="money"><span class="orange">-99.5</span></td>
+                <td class="zt">交易成功</td>
+                <td class="zt"><a href="">详情</a></td>
+              </tr>
+              <tr>
+                <td class="time">2014-06-12</td>
+                <td class="name"><a href="">淘宝购物-156-4760-7134 官方超<br/>快充&mdash;内蒙古联通5...</a></td>
+                <td class="sh">订单号：T100P710168824477438<br/>交易号：20140627110010017400169689</td>
+                <td class="df"><a href="">千行你我话费专营店</a></td>
+                <td class="money">-99.5</td>
+                <td class="zt">交易成功</td>
+                <td class="zt"><a href="">详情</a></td>
+              </tr>
+
+          </table>
+          <div class='page'>
+			 <p class='page_l'>
+				下载账单：<a href="">Excel格式</a><a href="">TXT格式</a>
+			 </p>
+			 <div class='page_r'>
+				<span class='yeshu'>2-8页，共8页</span><a href="" class='shangye'>上一页</a><a href="" class='xiaye'>下一页</a>
+			 </div>
+				
+		  </div>
+        </div>
+         
+         
+     </div>
+     
+     
+     
+     
+   </div>
+
+</div>
+<!-- content end -->
+
+
+<!-- footer begin -->
+<div id="footer">
+   <p class="tt">
+     <a href="#">关于抠抠宝</a><span class="line">|</span><a href="#">联系我们</a><span class="line">|</span><a href="#">帮助说明</a>
+   </p>
+   <p>CopyRIGHT © 2009-2013 抠抠网 KOUCLO All RIGHTS RESERVED 闽ICP备13001618号</p>
+   <p>增值电信业务经营许可证：闽B1-20130053<span class="line">|</span>互联网药品信息服务资质证书编号：（闽）-非经营性-2014-0008</p>
+</div>
+<!-- footer end -->
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

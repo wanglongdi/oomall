@@ -1,0 +1,90 @@
+@charset "utf-8";
+/* bg */
+.dui_icon,.tan_icon,.right_icon,.error_icon{background:url(../images/safety_bg.png) no-repeat; overflow:hidden;}
+:focus{border:0px none;}
+
+/* safety */
+.safety{width:788px; border:#dbdbdb 1px solid; overflow:hidden; background:#fff; float:right;}
+
+/* safety_tit */
+.safety_tit{width:788px; border-bottom:#ededed 1px solid; height:38px; line-height:38px;}
+.safety_tit h3{padding-left:20px; font-size:16px; font-weight:normal; color:#333;}
+
+
+/* safety_con */
+.safety_con{width:708px; margin:0px 40px; overflow:hidden; font-family:'宋体';}
+.safety_con ul li{padding:42px 0px 36px 0px; border-bottom:#e6e6e6 1px solid; height:30px; line-height:30px; overflow:hidden;}
+.safety_con h3{width:80px; float:left; padding-left:40px; font-size:14px; font-weight:bold; color:#333; position:relative;}
+.safety_con .text{width:500px; float:left; overflow:hidden; color:#333;}
+.safety_con .make{width:88px; text-align:center; float:right;}
+.safety_con .make a{color:#317ecd;}
+.safety_con a.yz{width:81px; height:23px; line-height:23px; background:#ff5400; color:#fff; display:inline-block; margin-top:4px;}
+.dui_icon{width:30px; height:30px; background-position:0px 0px; position:absolute; left:0px; top:0px;}
+.tan_icon{width:30px; height:30px; background-position:-39px 0px; position:absolute; left:0px; top:0px;}
+
+.error_icon{width:30px; height:30px; background-position:-120px 0px; position:absolute; left:0px; top:0px;}
+
+.hui{color:#999;}
+
+
+/* email */
+.email{width:615px; padding:82px 0px 123px 173px; overflow:hidden;}
+.email dl{width:615px; margin-bottom:17px; overflow:hidden; font-family:'宋体'; line-height:28px;}
+.email dt{width:73px; float:left; color:#666;}
+.email dd{width:542px; float:left;}
+.email_ipt{width:183px; padding-left:3px; height:26px; line-height:26px; border:#ddd 1px solid; float:left;}
+.email_yzm{width:80px; padding-left:3px; height:26px; line-height:26px; border:#ddd 1px solid; float:left;}
+.email_pic{width:97px; float:left; padding-left:5px;}
+.right_icon{width:16px; height:16px; background-position:-90px 0px; margin-left:13px; float:left; margin-top:6px;}
+.email_text{margin-left:13px; color:#ff5400; float:left; width:280px;}
+.email_btn{width:116px; height:31px; line-height:31px; text-align:center; font-size:16px; color:#fff; margin:0px 426px 0px 73px; border:0px; background:#ff5400; cursor:pointer;}
+.email_btn0{width:116px; height:31px; line-height:31px; text-align:center; font-size:16px; color:#fff; margin:0px 409px 0px 90px; border:0px; background:#ff5400; cursor:pointer;}
+
+.email_yzm0{width:67px; padding-left:3px; height:26px; line-height:26px; border:#ddd 1px solid; float:left;}
+
+
+/* email_right */
+.email_right{width:615px; padding:82px 0px 123px 173px; overflow:hidden;}
+.email_right h3{font-size:20px; color:#333; line-height:30px; position:relative; padding-left:50px; font-weight:normal; margin:5px 0px;}
+.email_right_text{color:#666; padding-left:50px; width:565px; line-height:40px; font-family:'宋体';}
+.email_right_btn{width:111px; height:26px; line-height:26px; text-align:center; background:#f4f4f4; border:#e8e8e8 1px solid; margin:10px 454px 0px 50px;}
+.email_right_btn a{color:#565656; font-family:'宋体';}
+
+
+
+/* email_error */
+.email_error{width:615px; padding:82px 0px 123px 173px; overflow:hidden;}
+.email_error h3{font-size:20px; color:#333; line-height:30px; position:relative; padding-left:50px; font-weight:normal; margin:5px 0px; color:#ff3600;}
+.email_error_text{color:#666; padding-left:50px; width:565px; line-height:30px; font-family:'宋体'; padding-top:5px;}
+.email_error_text0{color:#666; padding-left:50px; width:565px; line-height:30px; font-family:'宋体'; margin-top:20px;}
+.email_error_text0 a{color:#317ecd;}
+
+
+.pass_text{margin-left:13px; color:#ccc; float:left; width:100px;}
+
+
+/* get_yzm */
+#get_yzm{width:110px; height:26px; line-height:26px; border:#e8e8e8 1px solid; background:#f4f4f4; text-align:center; margin-left:4px; display:inline; float:left; cursor:pointer; color:#666;}
+
+.phone_num{font-size:15px; color:#666;}
+
+/* phone_right */
+.phone_right{width:615px; padding:82px 0px 123px 173px; overflow:hidden;}
+.phone_right h3{font-size:20px; color:#008000; line-height:30px; position:relative; padding-left:50px; font-weight:normal; margin:5px 0px;}
+.phone_icon00,.phone_icon01,.phone_icon02,.phone_icon03{width:160px; height:14px; background:url(../images/personal_bg.png) no-repeat; overflow:hidden; position:absolute; left:130px; top:11px;}
+.phone_icon00{background-position:0px -52px;}
+.phone_icon01{background-position:0px -72px;}
+.phone_icon02{background-position:0px -92px;}
+.phone_icon03{background-position:0px -112px;}
+.phone_right_text{color:#666; padding-left:50px; width:565px; line-height:35px; font-family:'宋体'; position:relative;}
+.phone_right_text a{color:#317ecd; }
+
+/* pay_pwd */
+.pay_pwd{width:615px; padding:82px 0px 123px 173px; overflow:hidden;}
+.pay_pwd dl{width:615px; margin-bottom:17px; overflow:hidden; font-family:'宋体'; line-height:28px;}
+.pay_pwd dt{width:85px; float:left; color:#666; text-align:right; padding-right:5px;}
+.pay_pwd dd{width:525px; float:left;}
+
+
+
+

@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="gbk">
+<head>
+	<meta charset="UTF-8">
+	<title>抠抠网-收银台</title>
+    <link rel="stylesheet" type="text/css" href="css/cashier.css">
+    <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src="js/cashier.js"></script>
+</head>
+<body>
+<!-- cashier_header -->	
+<div id="cashier_header">
+	<h1>
+		<a href="#"><img src="images/logo.png" alt="抠抠网"></a>
+	</h1>
+	<h2>
+		收银台
+	</h2>
+	<div class="else_text">
+		欢迎光临抠抠网　[ hi,<a href="#">13681063119</a> <a href="#">退出</a> ]<span>|</span><a href="#">我的订单</a><span>|</span><a href="#">帮助中心</a>
+	</div>
+</div>
+<!-- cashier_header end -->
+<!-- cashier_main -->
+<div id="cashier_main">
+    <!-- cashier_con -->
+    <div class="cashier_con">
+        <div class="order_right">
+            <b class="order_icon"></b>
+            <div class="order_lcon">
+                <h2>订单提交成功，仅差一步完成购物，请尽快支付！</h2>
+                <p>
+                    订单号：2015110979370
+                </p>
+                <p>
+                    请您在提交订单后<span class="hour">24小时</span>内完成支付，否则订单会自动取消。
+                </p>
+            </div>
+            <div class="order_rcon">
+                <p>
+                    应付金额：<span class="money">179.90</span> 元
+                </p>
+                <p>
+                    <span id="order_infor">订单详情<b class="infor_icon"></b></span>
+                </p>
+            </div>
+        </div>
+        <div id="order_infor_con">  
+            <p>
+                收货信息：北京朝阳区五环到六环之间北京市朝阳区常惠路6号北辰福第v中心B座1108<span class="ml">张静伟</span><span class="ml">152****9234</span>
+            </p>
+            <p>
+                商品名称：维达抽纸 倍韧3层150抽软抽*3包（大规格）雏菊淡香
+            </p>
+        </div>
+        
+    </div>
+    <!-- cashier_con end -->
+    
+    <!-- pay_con -->
+    <div class="pay_con">
+        <!-- pay_often -->
+        <div class="pay_bank">
+            <h2>
+                常用支付方式<b class="bank_icon0"></b>
+            </h2>
+            <div class="pay_bank_line"></div>
+            <form action="" name="form2">
+                <ul class="pay_often">
+                    <li>
+                        <div class="con clearfix">
+                            <div class="lcon">
+                                <input type="radio" value="weixin" name="bank">
+                                <label for="icbc">
+                                    <img title="" src="images/04.jpg">
+                                </label>
+                            </div>
+                            <div class="rcon">支付<span>179.90</span>元</div>
+                        </div>
+                        <div class="pay_wx">
+                            <div class="wx_text">
+                                请使用微信扫</br>描二维码支付
+                                <b class="jia_icon"></b>
+                                <b class="sj_icon"></b>
+                            </div>
+                            <div class="wx_pic">
+                                <img src="images/05.jpg">
+                            </div>
+                        </div>
+                        
+                    </li>
+                   <li>
+                        <div class="lcon">
+                            <input type="radio" name="bank" >
+                            <label for="icbc">
+                                <img title="工商银行" src="images/01.jpg">
+                            </label>
+                        </div>
+                        <div class="rcon">
+                            支付<span>179.90</span>元
+                        </div>
+                    </li>
+                    <li>
+                        <div class="lcon">
+                            <input type="radio" name="bank">
+                            <label for="icbc">
+                                <img title="工商银行" src="images/03.jpg">
+                            </label>
+                        </div>
+                        <div class="rcon">
+                            支付<span>179.90</span>元
+                        </div>
+                    </li>
+                    <button class="pay_btn" type="submit">立即支付</button>
+                </ul>
+                 
+            </form>
+        </div>
+        <!-- pay_often end -->
+        <!-- pay_bank -->
+        <form action="http:www.baidu.com" name="form1" target="_blank">
+        <div class="pay_bank">
+            <h2>
+                个人网银支付<b class="bank_icon0"></b>
+            </h2>
+            <div class="pay_bank_line"></div>
+            
+            <ul class="pay_bank_con">
+                <li>
+                    <input type="radio" name="bank">
+                    <label for="icbc">
+                        <img title="工商银行" src="images/961111.png">
+                    </label>
+                <li>
+                    <input type="radio" name="bank">
+                    <label for="icbc">
+                        <img title="工商银行" src="images/sdb.png">
+                    </label>
+                </li>
+                <li>
+                    <input type="radio" name="bank">
+                    <label for="icbc">
+                        <img title="工商银行" src="images/sdb.png">
+                    </label>
+                </li>
+                <li>
+                    <input type="radio" name="bank">
+                    <label for="icbc">
+                        <img title="工商银行" src="images/sdb.png">
+                    </label>
+                </li>
+                <li>
+                    <input type="radio" name="bank">
+                    <label for="icbc">
+                        <img title="工商银行" src="images/sdb.png">
+                    </label>
+                </li>
+                <li>
+                    <input type="radio" name="bank">
+                    <label for="icbc">
+                        <img title="工商银行" src="images/sdb.png">
+                    </label>
+                </li>
+                <li>
+                    <input type="radio" name="bank">
+                    <label for="icbc">
+                        <img title="工商银行" src="images/sdb.png">
+                    </label>
+                </li>
+                <li>
+                    <input type="radio" name="bank">
+                    <label for="icbc">
+                        <img title="工商银行" src="images/sdb.png">
+                    </label>
+                </li>
+                <li>
+                    <input type="radio" name="bank">
+                    <label for="icbc">
+                        <img title="工商银行" src="images/sdb.png">
+                    </label>
+                </li>
+                <li>
+                    <input type="radio" name="bank">
+                    <label for="icbc">
+                        <img title="工商银行" src="images/sdb.png">
+                    </label>
+                </li>
+                <li>
+                    <input type="radio" name="bank">
+                    <label for="icbc">
+                        <img title="工商银行" src="images/sdb.png">
+                    </label>
+                </li>
+                <li>
+                    <input type="radio" name="bank">
+                    <label for="icbc">
+                        <img title="工商银行" src="images/sdb.png">
+                    </label>
+                </li>
+                <li>
+                    <input type="radio" name="bank">
+                    <label for="icbc">
+                        <img title="工商银行" src="images/sdb.png">
+                    </label>
+                </li>
+                <li>
+                    <input type="radio" name="bank">
+                    <label for="icbc">
+                        <img title="工商银行" src="images/sdb.png">
+                    </label>
+                </li>
+                <li>
+                    <input type="radio" name="bank">
+                    <label for="icbc">
+                        <img title="工商银行" src="images/sdb.png">
+                    </label>
+                </li>
+                <li>
+                    <input type="radio" name="bank">
+                    <label for="icbc">
+                        <img title="工商银行" src="images/sdb.png">
+                    </label>
+                </li>
+                <li>
+                    <input type="radio" name="bank">
+                    <label for="icbc">
+                        <img title="工商银行" src="images/sdb.png">
+                    </label>
+                </li>
+                <li>
+                    <input type="radio" name="bank">
+                    <label for="icbc">
+                        <img title="工商银行" src="images/sdb.png">
+                    </label>
+                </li>
+                <li class="more_bank">查看更多</li>
+            </ul>
+        </div>
+        <!-- pay_bank end -->
+        <!-- pay_bank -->
+        <div class="pay_bank">
+            <h2>
+                微信支付<span>|</span>支付宝支付<span>|</span>平台支付<b class="bank_icon0"></b>
+            </h2>
+            <div class="pay_bank_line"></div>
+            <ul class="pay_bank_con0">
+                <li class="cur">
+                    <a href="javascript:;"><img title="工商银行" src="images/06.jpg"></a>
+                </li>
+                <li>
+                    <a href="javascript:;"><img title="工商银行" src="images/06.jpg"></a>
+                </li>
+                <li>
+                    <a href="javascript:;"><img title="工商银行" src="images/06.jpg"></a>
+                </li>
+                <li>
+                    <a href="javascript:;"><img title="工商银行" src="images/06.jpg"></a>
+                </li>
+                <li>
+                    <a href="javascript:;"><img title="工商银行" src="images/06.jpg"></a>
+                </li>
+                <li>
+                    <a href="javascript:;"><img title="微信支付" src="images/04.jpg"></a>
+                </li>
+                <div class="pay_wx">
+                    <div class="wx_text">
+                        请使用微信扫</br>描二维码支付
+                        <b class="jia_icon"></b>
+                        <b class="sj_icon"></b>
+                    </div>
+                    <div class="wx_pic">
+                        <img src="images/05.jpg">
+                    </div>
+                </div>
+            </ul>
+            
+        </div>
+        <!-- pay_bank end -->
+        <!-- pay_bank -->
+        <div class="pay_bank">
+            <h2>
+                企业网银支付<b class="bank_icon0"></b>
+            </h2>
+            <div class="pay_bank_line md"></div>
+            <ul class="pay_bank_con">
+                <li>
+                    <a href="javascript:;"><img title="工商银行" src="images/03.jpg"></a>
+                </li>
+                <li>
+                    <a href="javascript:;"><img title="工商银行" src="images/03.jpg"></a>
+                </li>
+                <li>
+                    <a href="javascript:;"><img title="工商银行" src="images/03.jpg"></a>
+                </li>
+                <li>
+                    <a href="javascript:;"><img title="工商银行" src="images/03.jpg"></a>
+                </li>
+                <li>
+                    <a href="javascript:;"><img title="工商银行" src="images/03.jpg"></a>
+                </li>
+                <li>
+                    <a href="javascript:;"><img title="工商银行" src="images/03.jpg"></a>
+                </li>
+                <li>
+                    <a href="javascript:;"><img title="工商银行" src="images/03.jpg"></a>
+                </li>
+                <li>
+                    <a href="javascript:;"><img title="工商银行" src="images/03.jpg"></a>
+                </li>
+
+                <li class="more_bank">查看更多</li>
+            </ul>
+        </div>
+        <!-- pay_bank end -->
+        </form>
+    </div>
+    <!-- pay_con end -->
+
+</div>
+<!-- cashier-main end -->
+
+<!-- cashier_footer -->
+<div id="cashier_footer">
+    <div class="cashier_footer_con">
+        <p>
+            COPYRIGHT © 2009-2014 抠抠网 KOUCLO All RIGHTS RESERVED
+        </p>
+        <p>
+            闽ICP备13001618号 | 增值电信业务经营许可证：闽B1-20130053 | 互联网药品信息服务资质证书编号：（闽）-非经营性-2014-0008
+        </p>
+    </div>
+</div>
+<!-- cashier-footer end -->
+
+<div id="mask"></div>
+<div id="finised">
+    <div id="close"></div>
+    <div class="finised_con">
+        <div id="finised_icon"></div>
+        <div class="finised_text">
+            <p class="text">
+                请您在新打开的支付平台页面进行支付，支付完成前请不要关闭该窗口！
+            </p>
+            <p>
+                <a href="#" class="btn">已完成支付</a><a href="http://www.kouclo.com/help/index/19" class="btn0" target="_blank">支付遇到问题</a>
+            </p>
+            <p class="text0">
+               <a href="javascript:;">&lt;&lt;返回重新选择银行</a> 
+            </p>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

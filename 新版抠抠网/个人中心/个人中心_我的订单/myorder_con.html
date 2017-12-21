@@ -1,0 +1,751 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>个人中心_我的订单详情页</title>
+<link rel="stylesheet" type="text/css" href="css/Personal_home.css">
+<link rel="stylesheet" type="text/css" href="css/myorder.css">
+<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+<script type="text/javascript" src='js/personal_home.js'></script>
+<script type="text/javascript" src='js/myorder.js'></script>
+
+</head>
+
+<body>
+	<!-- top -->
+<div id="top">
+   <!-- top_con -->
+   <div class="top_con">
+      <!-- top_left -->
+      <!--<div class="top_left">
+         <span>hi,welcome to Kouclo</span>
+         <span><a href="#">请登录</a></span>
+         <span><a href="#">免费注册</a></span>
+      </div>-->
+      
+      <div class="top_left">
+         <span>hi,welcome to Kouclo</span>
+         <span><a href="#">退出</a></span>
+      </div>
+      <!-- top_right -->
+      <div class="top_right">
+      
+         <div class="top_home">
+            <a href="#"><b class="top_home_pic"></b>抠抠首页</a>
+         </div>
+         
+         <div class="top_my">
+            <a href="#">我的抠抠<b class="top_my_icon"></b></a>
+            <ul class="top_my_text">
+               <li><a href="#">待付款</a></li>
+               <li><a href="#">我的退换货</a></li>
+               <li class="bord_bn"><a href="#">待评价</a></li>
+            </ul>
+         </div>
+         
+         <div class="top_order"><a href="#">我的订单</a></div>
+         
+         <div class="top_fav">
+            <a href="#">收藏夹<b class="top_fav_icon"></b></a>
+            <ul class="top_fav_text">
+               <li><a href="#">商品</a></li>
+               <li class="bord_bn"><a href="#">店铺</a></li>
+            </ul>
+         </div>
+         <div class="top_phone_box">
+             <span class="top_phone">
+                <img src="images/app.png" alt="" />
+             </span>
+             <span class="ewm">
+               <img src="images/erweima.jpg" alt="" />
+             </span>
+         </div>
+         
+         <div class="top_help"><a href="#">帮助中心</a></div>
+         
+      </div>
+   </div>
+</div>
+<!-- top end -->
+
+<!-- header -->
+<div id="header">
+   <div class="header_con">
+      <div class="header_con0">
+         <!-- h1-->
+         <h1>
+           <a href="#"><img src="images/logo.png" alt="抠抠网" /></a>
+         </h1>
+         <!-- search -->
+         <div id="search">
+            <div class="search_key">
+               <b class="search_icon0"></b>
+               <span class="text">商品</span>
+               <div class="keyword">
+                 <span class="tt">店铺</span>
+               </div>
+           </div>
+           <input name="" type="text" id="search_inp" />
+           <button name="" type="submit" id="search_btn" ></button>
+         </div>
+         <!-- shopcar -->
+         <div class="shopcar">
+             <!-- shopcar_con -->
+             <div class="shopcar_con">
+               <span class="shopcar_icon"></span>
+               <a href="#">我的购物车<span class="shopcar_text0">(</span><span class="shopcar_tt0 shopcar_text0">0</span><span class="shopcar_text0">)</span></a>
+               <span class="shopcar_sj"></span>
+             </div>
+            <!-- shopcar_box -->
+            <div class="shopcar_box">
+               <!-- shopcar_lose -->
+               <!--<div class="shopcar_lose">
+                       <span class="shopcar_lose_icon"></span>
+                       <div class="shopcar_lose_text">
+                          您购物车中的商品均已失效
+                       </div>
+                       <div class="shopcar_lose_btn">
+                          <a href="#">查看购物车</a>
+                       </div>
+                   </div>-->
+              <!-- shopcar_box0 -->
+              <div class="shopcar_box0">
+                  <!-- shopcar_cp -->
+                  <div class="shopcar_cp">
+                     <ul>
+                        <li>
+                           <div class="sel">
+                              <span class="custom-checkbox"><input name="" type="checkbox" value="" id="1"/><label for="1"></label></span>
+                           </div>
+                           <div class="cp">
+                              <dl>
+                                <dt>
+                                  <a href="#"><img src="images/17.jpg" alt="" /></a>
+                                </dt> 
+                                <dd>
+                                  <h3><a href="#">Babyghost</a></h3>
+                                  <p><a href="#" title="">2014秋  绿色纹样...</a></p>
+                                  <p>￥<span class="price">339.00</span></p>
+                               </dd>
+                             </dl>
+                           </div>
+                           <div class="num">
+                             <span class="sub"></span>
+                             <input type="text" class="num_inp" value="1" />
+                             <span class="add"></span>
+                           </div>
+                          <span class="shopcar_close"></span>
+                       </li>
+                       <li>
+                           <div class="sel">
+                              <span class="custom-checkbox"><input name="" type="checkbox" value="" id="2"/><label for="2"></label></span>
+                           </div>
+                           <div class="cp">
+                              <dl>
+                                <dt>
+                                  <a href="#"><img src="images/18.jpg" alt="" /></a>
+                                </dt> 
+                                <dd>
+                                  <h3><a href="#">Babyghost</a></h3>
+                                  <p><a href="#" title="">2014秋  绿色纹样...</a></p>
+                                  <p>￥<span class="price">339.00</span></p>
+                               </dd>
+                             </dl>
+                           </div>
+                           <div class="num">
+                             <span class="sub"></span>
+                             <input type="text" class="num_inp" value="1" />
+                             <span class="add"></span>
+                           </div>
+                          <span class="shopcar_close"></span>
+                       </li>
+                       <li>
+                           <div class="sel">
+                              <span class="custom-checkbox"><input name="" type="checkbox" value="" id="3"/><label for="3"></label></span>
+                           </div>
+                           <div class="cp">
+                              <dl>
+                                <dt>
+                                  <a href="#"><img src="images/18.jpg" alt="" /></a>
+                                </dt> 
+                                <dd>
+                                  <h3><a href="#">Babyghost</a></h3>
+                                  <p><a href="#" title="">2014秋  绿色纹样...</a></p>
+                                  <p>￥<span class="price">339.00</span></p>
+                               </dd>
+                             </dl>
+                           </div>
+                           <div class="num">
+                             <span class="sub"></span>
+                             <input type="text" class="num_inp" value="1" />
+                             <span class="add"></span>
+                           </div>
+                          <span class="shopcar_close"></span>
+                       </li>
+                       <li>
+                           <div class="sel">
+                              <span class="custom-checkbox"><input name="" type="checkbox" value="" id="4"/><label for="4"></label></span>
+                           </div>
+                           <div class="cp">
+                              <dl>
+                                <dt>
+                                  <a href="#"><img src="images/18.jpg" alt="" /></a>
+                                </dt> 
+                                <dd>
+                                  <h3><a href="#">Babyghost</a></h3>
+                                  <p><a href="#" title="">2014秋  绿色纹样...</a></p>
+                                  <p>￥<span class="price">339.00</span></p>
+                               </dd>
+                             </dl>
+                           </div>
+                           <div class="num">
+                             <span class="sub"></span>
+                             <input type="text" class="num_inp" value="1" />
+                             <span class="add"></span>
+                           </div>
+                          <span class="shopcar_close"></span>
+                       </li>
+                       <li>
+                           <div class="sel">
+                              <span class="custom-checkbox"><input name="" type="checkbox" value="" id="5"/><label for="5"></label></span>
+                           </div>
+                           <div class="cp">
+                              <dl>
+                                <dt>
+                                  <a href="#"><img src="images/18.jpg" alt="" /></a>
+                                </dt> 
+                                <dd>
+                                  <h3><a href="#">Babyghost</a></h3>
+                                  <p><a href="#" title="">2014秋  绿色纹样...</a></p>
+                                  <p>￥<span class="price">339.00</span></p>
+                               </dd>
+                             </dl>
+                           </div>
+                           <div class="num">
+                             <span class="sub"></span>
+                             <input type="text" class="num_inp" value="1" />
+                             <span class="add"></span>
+                           </div>
+                          <span class="shopcar_close"></span>
+                       </li>
+                       
+                    </ul>
+
+                </div>
+             
+           
+            <!-- shopcar_all -->
+            <div class="shopcar_all">
+               <div class="shopcar_all_text">
+                  <p>
+                     <span class="custom-checkbox"><input name="" type="checkbox" value="" id="allcheck" onclick="checkAll(this,$('.shopcar_cp'))" checked="checked"/><label for="allcheck" >全选</label></span><a href="javascript:void(0);" class="del">删除</a>，共 <span class="shopcar_tt shopcar_tt0">0</span> 件
+                  </p>
+                  <p class="p_left">合计　￥<span class="total_price">0</span></p>
+               </div>
+               <div class="shopcar_jsbtn">
+                  <a href="#">立即结算</a>
+               </div>
+            </div>
+            
+            
+            
+            </div>
+        
+          </div>
+        </div>
+        <!-- shopcar end -->  
+      </div>
+      <div class="header_bg"></div>
+   </div>
+
+</div>
+
+<!-- header end -->
+
+
+<!-- personal_home -->
+<div id='personal_out'>
+
+	<div class='personal'>
+		<!-- personal_top -->
+		<div class='personal_up'>
+			<a href="#" class='sy'>抠抠首页</a>
+			<span>></span>
+			<a href="#" class='per_center'>个人中心</a>			
+		</div>
+		<!-- personal_top  end-->
+
+		<!-- personal_down -->
+		<div class='personal_down'>
+			<!-- personal_down_l -->
+			<div class='personal_down_l'>
+				<h3 class='per'>个人中心</h3>
+				<div class='personal_pic'>
+					<img src="images/personal_pic.png">
+				</div>
+
+        <!-- <div id='n'> -->
+
+				<div class='personal_nav'>
+					<h3 class='personal_nav_h3'>交易管理</h3>
+					<ul>
+						<li><a href="javascript:void()">我的订单<b></b></a></li>
+						<li class=""><a href="javascript:void()">我的收藏<b></b></a></li>
+						<li><a href="javascript:void()">浏览历史<b></b></a></li>
+					</ul>
+				</div>
+				<div class='personal_nav'>
+					<h3 class='personal_nav_h3'>客服服务</h3>
+					<ul>
+						<li><a href="javascript:void()">我的退换货<b></b></a></li>
+						<li><a href="javascript:void()">我的评论<b></b></a></li>
+						<li><a href="javascript:void()">我的咨询<b></b></a></li>
+						<li><a href="javascript:void()">我的投诉<b></b></a></li>
+						<li><a href="javascript:void()">我的站内信<b></b></a></li>
+					</ul>
+				</div>
+				<div class='personal_nav'>
+					<h3 class='personal_nav_h3'>个人信息管理</h3>
+					<ul>
+						<li><a href="javascript:void()">个人资料<b></b></a></li>
+						<li><a href="javascript:void()">安全设置<b></b></a></li>
+						<li><a href="javascript:void()">我的余额<b></b></a></li>
+						<li><a href="javascript:void()">我的优惠券<b></b></a></li>
+						<li><a href="javascript:void()">我的现金券<b></b></a></li>
+						<li><a href="javascript:void()">收货地址<b></b></a></li>
+					</ul>
+				</div>
+				<!-- </div> -->
+
+			</div>
+			<!-- personal_down_l  end -->
+
+			<!-- order_detail -->
+            <div class="order_detail">
+               <!-- order_state -->
+               <div class="order_state">
+                  <p class="tit">当前状态：订单已成功，等待付款</p>
+                  <p class="con">订单编号：15321232252</p>
+                  <p class="con">********，如果您1小时内无法完成付款，系统会将您的订单取消.</p>
+                  <p class="pic"><a href="#" class="btn">立即支付</a></p>
+               </div>
+
+               
+               <!-- order_state -->
+               <!--
+               <div class="order_state">
+                  <p class="tit">当前状态：确认收货</p>
+                  <p class="con">订单编号：15321232252</p>
+                  <p class="con">还有 <span class="red">8天20小时58分9秒</span> 来确认收货,超时订单自动确认收货</p>
+                  <p class="pic"><a href="#" class="btn">确认收货</a> <a href="#" class="lan">申请退款</a>|<a href="#" class="lan">延长收货时间</a></p>
+               </div>
+               -->
+
+               <!-- rder_state_pic -->
+               <div class="rder_state_pic">
+                  <div class="bg"></div>
+                  <div class="text">
+                     <ul>
+                        <li>
+                           <p class="tt">提交订单</p>
+                           <p>2014-07-1314:00:18</p>
+                        </li>
+                        <li>
+                           <p class="tt">商品出库</p>
+                           <p>2014-07-1314:00:18</p>
+                        </li>
+                        <li>
+                           <p class="tt">等待收货</p>
+                           <p>2014-07-1314:00:18</p>
+                        </li>
+                        <li>
+                           <p class="tt0">交易完成</p>
+                           <p>2014-07-1314:00:18</p>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+               
+               <!-- order_flow -->
+               <div class="order_flow">
+                  <div class="order_flow_tit">
+                     <a class="hover" href="javascript:;">物流信息</a><span class="line">|</span><a href="javascript:;">付款信息</a>
+                  </div>
+                  <div class="order_flow_con">
+                     <div class="order_flow_wl">
+                        <div class="tit">
+                           <ul>
+                              <li class="l">时间</li>
+                              <li>物流详情</li>
+                              <li class="t">操作人</li>
+                           </ul>
+                        </div>
+                        <div class="con">
+                           <ul>
+                              <li class="l">2014-08-12 11:09:39</li>
+                              <li>东山永福 张华安 已收件，进入公司分捡</li>
+                              <li class="t">张华安</li>
+                           </ul>
+                           <ul>
+                              <li class="l">2014-08-12 11:09:39</li>
+                              <li>东山永福 张华安 已收件，进入公司分捡</li>
+                              <li class="t">张华安</li>
+                           </ul>
+                           <ul>
+                              <li class="l">2014-08-12 11:09:39</li>
+                              <li>东山永福 张华安 已收件，进入公司分捡</li>
+                              <li class="t">张华安</li>
+                           </ul>
+                           <ul>
+                              <li class="l">2014-08-12 11:09:39</li>
+                              <li>东山永福 张华安 已收件，进入公司分捡</li>
+                              <li class="t">张华安</li>
+                           </ul>
+                           <ul>
+                              <li class="l">2014-08-12 11:09:39</li>
+                              <li>东山永福 张华安 已收件，进入公司分捡</li>
+                              <li class="t">张华安</li>
+                           </ul>
+                           <ul>
+                              <li class="l">2014-08-12 11:09:39</li>
+                              <li>东山永福 张华安 已收件，进入公司分捡</li>
+                              <li class="t">张华安</li>
+                           </ul>
+                           <ul>
+                              <li class="l">2014-08-12 11:09:39</li>
+                              <li>东山永福 张华安 已收件，进入公司分捡<br />东山永福 张华安 已收件，进入公司分捡</li>
+                              <li class="t">张华安</li>
+                           </ul>
+                           
+                        </div>
+                        <div class="con0">
+                          <ul>
+                              <li class="l">送货方式：圆通快递</li>
+                              <li>运单号：455233362366</li>
+                           </ul>
+                        </div>
+                     </div>
+                     
+                     <div class="order_flow_wl" style="display:none">
+                        <div class="con01">
+                          <ul>
+                              <li class="l">付款方式：<span class="zi">在线支付</span></li>
+                              <li>商品金额：<span class="pr">￥92.10</span></li>
+                           </ul>
+                           <ul>
+                              <li class="l">商品金额：<span class="pr">￥92.10</span></li>
+                              <li>优惠金额：<span class="pr">￥92.10</span></li>
+                           </ul>
+                           <ul>
+                              <li class="l">优惠金额：<span class="pr">￥92.10</span></li>
+                              <li></li>
+                           </ul>
+                           <ul>
+                              <li class="l">应支付金额：<span class="pr">￥92.10</span></li>
+                              <li></li>
+                           </ul>
+                          
+                        </div>
+                        <div class="con0">
+                          <ul>
+                              <li class="l">送货方式：圆通快递</li>
+                              <li>运单号：455233362366</li>
+                           </ul>
+                         </div>
+                         <div class="no">暂无信息</div>
+                     </div>
+                     
+                  </div>
+                  <!-- order_flow_con  end -->                 
+               </div>
+               <!-- order_flow end -->
+               
+               <!-- order_infor -->
+               <div class="order_infor">
+                  <!-- order_infor_tit -->
+                  <div class="order_infor_tit">
+                     <h3>订单信息</h3>
+                  </div>
+                  <!-- order_infor_con -->
+                  <div class="order_infor_con">
+                     <h3>收货人信息</h3>
+                     <ul>
+                        <li>收件人：徐柳</li>
+                        <li>收货地址：北京市朝阳区建外大街24号燕华苑2座1703室</li>
+                        <li>联系方式：18710005804</li>
+                     </ul>
+                  </div>
+                  <!-- order_infor_con -->
+                  <div class="order_infor_con">
+                     <h3>支付及留言</h3>
+                     <ul>
+                        <li>支付类型：在线支付</li>
+                        <li>买家留言：考虑到粉丝卡付款金陵饭店烧烤架房顶上看见了房顶上刻录机</li>
+                        <li>
+                           <span class="text">补充留言：</span>
+                           <textarea name="" cols="" rows="" class="textarea" onchange="this.value=this.value.substring(0, 300)" onkeydown="this.value=this.value.substring(0, 300)" onkeyup="this.value=this.value.substring(0, 300)"></textarea>
+                           <span class="tishi">最多输入300个字</span>
+                        </li>
+                     </ul>
+                  </div>
+                  <!-- order_infor_con -->
+                  <div class="order_infor_con">
+                     <h3>发票信息</h3>
+                     <!--
+                     <ul>
+                        <li>发票类型：普通发票</li>
+                        <li>发票抬头：北京市*********************************************************************</li>
+                        <li>联系电话：15855236985</li>
+                     </ul>
+                     -->
+                     <div class="no">
+                        无
+                     </div>
+                  </div>
+                  <!-- order_infor_con0 -->
+                  <div class="order_infor_con0">
+                     <h3>商品详情</h3>
+                     <table cellspacing="0" cellpadding="0">
+                       <thead>
+                         <tr>
+                           <td colspan="4">
+                             <div class="tit">
+                                订单号：165456413255122
+                             </div>
+                             <div class="tit0">
+                                <a href="#" class="tit0_icon"></a><a href="#">舒适吗内衣专营店</a>
+                             </div>
+                             <div class="time">下单时间：2014-8-28</div>
+                           </td>
+                         </tr>
+                      </thead>
+                      <tbody>
+                         <tr>
+                           <td class="l">
+                              <div class="myorder_cp0">
+                                 <div class="con">
+                                   <div class="pic">
+                                      <a href="#"><img src="images/01.jpg" alt=""/></a>
+                                   </div>
+                                   <div class="text">
+                                      <p>
+                                        <a href="#" title="嘉利玛经典同名女士香水50ml">嘉利玛经典同名女士香水</a>
+                                      </p>
+                                      <p>
+                                        颜色：红色　　尺码：X
+                                      </p>
+                                      <p class="mt">
+                                        <span class="zhen"></span><span class="zheng"></span><span class="jian"></span>
+                                      </p>
+                                   </div>
+                                   <div class="text0">
+                                       <p class="nowp">79.00×1</p>
+                                       <p class="oldp">199.00</p>
+                                   </div>
+                                   <div class="text01">
+                                      <a href="#">申请退换货</a><br /><a href="#">投诉卖家</a>
+                                   </div>
+                                 </div>
+                                 
+                                 <div class="con">
+                                   <div class="pic">
+                                      <a href="#"><img src="images/01.jpg" alt=""/></a>
+                                   </div>
+                                   <div class="text">
+                                      <p>
+                                        <a href="#" title="嘉利玛经典同名女士香水50ml">嘉利玛经典同名女士香水50ml</a>
+                                      </p>
+                                      <p>
+                                        颜色：红色　　尺码：X
+                                      </p>
+                                      <p class="mt">
+                                        <span class="zhen"></span><span class="zheng"></span><span class="jian"></span>
+                                      </p>
+                                   </div>
+                                   <div class="text0">
+                                       <p class="nowp">79.00×1</p>
+                                       <p class="oldp">199.00</p>
+                                   </div>
+                                   <div class="text01">
+                                      <a href="#">申请退换货</a><br /><a href="#" class="toushu">投诉卖家</a>
+                                   </div>
+                                </div>
+                                 
+                              </div>
+                              
+                           </td>
+                           <td class="t">
+                              <span class="price">￥79</span><br />
+                              <span class="yf">（含运费：10.00）</span>
+                           </td>
+                           <td class="n">
+                              <p><a href="#">待付款</a></p>
+                              <p><a href="#">查看订单</a></p>
+                           </td>
+                           
+                           <td class="m">
+                              <p><a href="#" class="liji">立即支付</a></p>
+                              <p><a href="#" class="cancel_btn">取消订单</a></p>
+                           </td>
+                           
+                         </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  
+                  <!-- myorder_sale -->
+                  <div class="myorder_sale">
+                     <div class="lcon">
+                        <p>已使用 积分：<span class="dot">20</span>点</p>
+                        <p>已使用 优惠券：<span class="dot">20</span>元</p>
+                     </div>
+                       
+                     <div class="rcon">
+                        <p>商品总价：<span class="mon">￥79</span></p>
+                        <p>运费：<span class="mon">￥10</span></p>
+                        <p>应支付：<span class="all">￥158 元</span></p>
+                     </div>
+                     <div class="myorder_sale_btn">
+                       <input type="button" value="立即支付" class="pay_btn"  />
+                       <input type="button" value="取消订单" class="qx_btn"  />
+                     </div>
+                  </div>
+                  
+               </div>
+               
+               
+               
+            </div>
+			
+			<!-- order_detail  end -->
+
+		</div>
+		<!-- personal_down  end -->
+	</div>
+</div>
+
+<!-- personal_home  end-->
+
+<!-- mask -->
+<div id="mask"></div>
+<div id="reason">
+  <div class="reason_tit">
+     <h3>您取消订单的原因：</h3>
+     <span class="close"></span>
+  </div>
+  <div class="reason_con">
+    <ul>
+      <li><input type="radio" name="reason" class="radio" />支付不成功</li>
+      <li><input type="radio" name="reason" class="radio" />现在不想购买</li>
+      <li><input type="radio" name="reason" class="radio" />错误或重逢下单</li>
+      <li><input type="radio" name="reason" class="radio" />订单价格有问题</li>
+      <li><input type="radio" name="reason" class="radio" />收货人信息有误</li>
+      <li><input type="radio" name="reason" class="radio" />等待发货时间过长</li>
+      <li><input type="radio" name="reason" class="radio" />忘记使用积分或者优惠券</li>
+      <li><input type="radio" name="reason" class="radio" />商品价格娇贵</li>
+      <li><input type="radio" name="reason" class="radio" />发票问题</li>
+      <li>
+        <div class="tt">
+          <input type="radio" name="reason" class="radio" />其它
+        </div>
+        <div class="con">
+          <span class="tit">原因</span>
+          <textarea name="" cols="" rows="" class="reason_area" onchange="this.value=this.value.substring(0, 50)" onkeydown="this.value=this.value.substring(0, 50)" onkeyup="this.value=this.value.substring(0, 50)"></textarea>
+        </div>
+        <div class="yy">最多输入50个字</div>
+      </li>
+    </ul>
+    <div class="else">
+       <a href="javascript:;" class="queren">确认取消</a><a href="javascript:;" class="noq">暂不取消</a>
+    </div>
+  </div>
+</div>
+
+
+<!-- toushu_con -->
+<div id="toushu_con">
+  <div class="text">
+  很遗憾，您需先申请退款<span class="close"></span>
+  </div>
+  
+</div>
+
+
+
+<!-- footer -->
+<div id="footer">
+    <!-- footer_con -->
+    <div class="footer_con" style="width:1000px;">
+       <!-- footer_con0 -->
+       <div class="footer_con0" style="padding-left:200px;">
+          <h3><img src="images/news.jpg" alt="下载客户端，关注更多潮流咨询" /></h3>
+          <ul>
+             <li class="line"></li>
+             <li><img src="images/sina.jpg" alt="官方微博@kouclo" /></li>
+             <li class="line"></li>
+             <li class="wx"><img src="images/qq.jpg" alt="微信平台" /></li>
+             <li class="line"></li>
+             <li class="kh"><img src="images/phone.jpg" alt="客户端下载" /></li>
+          </ul>
+       </div>
+       <!-- footer_content -->
+       <div class="footer_content" style="margin-left:40px;">
+           <img src="images/content.png" alt="联系我们 400-8859-000" />
+       </div>
+    </div>
+</div>
+<!-- footer end -->
+
+<!-- service -->
+<div class="service" style="width:1000px">
+    <!-- service_left -->
+    <div class="service_left" style="margin:15px 110px 8px">
+       <div class="service_left_tit">
+          <ul>
+             <li>关于抠抠</li>
+             <li class="line"></li>
+             <li>新手指南 </li>
+             <li class="line"></li>
+             <li>维权中心</li>
+             <li class="line"></li>
+             <li>支付方式</li>
+             <li class="line"></li>
+             <li>售后服务</li>
+             <li class="line"></li>
+             <li>配送说明</li>
+           </ul>
+       </div>
+       <div class="service_left_con">
+          <ul>
+             <li>
+               <a href="#">关于抠抠</a><a href="#">商家入驻</a><a href="#">加入我们</a><a href="#">联系我们</a><a href="#">友情链接</a> 
+             </li>
+             <li>
+               <a href="#">用户注册</a><a href="#">用户注册协议</a><a href="#">购物流程</a><a href="#">网站地图</a> 
+             </li>
+             <li>
+               <a href="#">客服中心</a><a href="#">找回密码</a><a href="#">邮件订阅</a><a href="#">产品册订阅</a><a href="#">隐私声明</a> 
+             </li>
+             <li class="l">
+               <a href="#">货到付款</a><a href="#">在线支付</a><a href="#">礼品卡及账户余额</a><a href="#">其他支付方式</a>
+             </li>
+             <li class="n">
+               <a href="#">退款政策</a><a href="#">退货流程</a><a href="#">退款说明</a> 
+             </li>
+             <li>
+               <a href="#">发货规定</a><a href="#">国内配送</a><a href="#">海外配送</a><a href="#">订单拆分</a>
+             </li>
+          </ul>
+       </div>
+        
+    </div>
+   
+</div>
+
+<!-- copyright -->
+<div class="copyright" style="width:1000px">
+     CopyRIGHT © 2009-2014 抠抠网 KOUCLO All RIGHTS RESERVED<br /> 闽ICP备13001618号 | 增值电信业务经营许可证：闽B1-20130053 | 互联网药品信息服务资质证书编号：（闽）-非经营性-2014-0008
+</div>
+
+</body>
+</html>

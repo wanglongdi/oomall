@@ -1,0 +1,1229 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>kouclo 店铺页</title>
+<link rel="stylesheet" href="css/store.css" />
+<link rel="stylesheet" href="css/product.css" />
+<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+<script type="text/javascript" src="js/store.js"></script>
+<script src="js/simplefoucs.js" type="text/javascript"></script>
+<script src="js/product.js" type="text/javascript"></script>
+<script>
+$(function(){
+	$(".indexShowBox").slideJ({
+		leftBtn:".indexShowLeft",
+		rightBtn:".indexShowRight",
+		speed:800
+	});
+});
+</script>
+</head>
+
+<body>
+<!-- mask -->
+<div id="mask" style="display:none;"></div>
+
+<!-- top -->
+<div id="top">
+    <div class="top_con">
+         <!-- land -->
+         <div id="land">
+             您好, 请<a href="#">登录</a>!<span class="mar_left"><a href="#">[免费注册]</a></span>
+         </div>
+         <!--
+         <div id="land">
+             您好,1797585699...<span class="sx"><a href="#"><b></b>消息</a></span><span class="mar_left"><a href="#">[退出]</a></span> 
+         </div>
+         -->
+        <!-- top_right -->
+        <div class="top_right">
+           <ul>
+              <li class="app_down" style="margin-left:0px;"><a href="#">APP下载</a></li>
+              <li class="top_shop"><a href="#"><i class="icon_shop"></i>购物车</a></li>
+              <li class="top_sc">
+                  <a href="#"><i class="icon_sc"></i></a>
+                  <span class="mysc"><a href="#">我的收藏</a></span>
+                  <div class="top_sc0">
+                     <ul>
+                         <li><a href="#">收藏的宝贝</a></li>
+                         <li><a href="#">收藏的店铺</a></li>
+                     </ul>
+                     
+                  </div>
+              </li>
+              <li class="top_my"><a href="#">我的抠抠<i class="icon_my"></i></a></li>
+              <li class="app_sy"><a href="#">抠抠网首页</a></li>
+           </ul>
+           
+           
+        </div>
+        <div class="clear"></div>
+  </div>
+  
+</div>
+<!-- top end -->
+
+<!-- header -->
+<div id="header" class="clearfix">
+    <div class="header_con">
+        <!-- h1 -->
+        <h1>
+           <a href="#"><img src="images/logo.png" width="152" height="78" alt="抠抠网" /></a>
+        </h1>
+        <!-- header_store -->
+        <div class="header_store">
+           <h2>CICISHOP  官方旗舰专卖店</h2>
+           <div class="header_store_con">
+               <span class="header_store_enter">
+                  <a href="#"><i class="header_store_icon"></i>进入店铺</a>  
+               </span>
+               <span class="header_store_sc"><a href="javascript:void(0);" onclick="AddFavorite('http://www.kouclo.com','抠抠网kouclo.com-全球强势品牌销售及新品首发平台')">收藏本店</a></span>
+               <div id="collect">
+                 <div class="prompt">
+                     <a href="#" class="close"></a>
+                     <div class="prompt_con">
+                        <span class="text"><i class="yes"></i>成功收藏此店铺</span>
+                     </div>
+                     <!--<div class="prompt_con">
+                        <span class="text"><i class="no"></i>已收藏过此店铺</span>
+                     </div>-->
+                     <div class="like">
+                       <h3>你可能还喜欢的店铺</h3>
+                       <ul>
+                          <li><a href="#" title=""><img src="images/06.jpg" alt="" /></a><br /><a href="#" title="">店铺假字</a></li>
+                          <li><a href="#" title=""><img src="images/07.jpg" alt="" /></a><br /><a href="#" title="">店铺假字</a></li>
+                          <li><a href="#" title=""><img src="images/07.jpg" alt="" /></a><br /><a href="#" title="">店铺假字</a></li>
+                          <li><a href="#" title=""><img src="images/06.jpg" alt="" /></a><br /><a href="#" title="">店铺假字</a></li>
+                       </ul>
+                     </div>
+                 </div>
+               </div>
+           </div>
+        </div>
+        <!-- search -->
+        <div id="search">
+            <form method="post" name="">
+                 <input type="text" name="" class="search_inp" value=""/>
+                 <input type="button" name="" value="搜索" class="search_btn" />
+                 <input type="button" name="" value="搜本店" class="search_btn0" />
+            </form>
+        </div>
+    </div>
+</div>
+<!-- header end -->
+
+<!-- header_line -->
+<div class="header_line"></div>
+<!-- header_line end -->
+
+<!-- main -->
+<div class="main">
+   <!-- banner -->
+   <div id="banner"><a href="#"><img src="images/01.jpg" alt="" /></a></div>
+   <!-- banner end -->
+   
+   <!-- store_nav -->
+   <div id="store_nav">
+       <!-- store_feilei -->
+       <div class="store_feilei">
+          <a href="">所有分类<i class="icon_feilei"></i></a>
+          <div class="store_flz">
+             <ul>
+               <li class="list">
+                  <span class="store_tp"><a href="#">2014新款</a><i class="icon_st"></i></span>
+                  <div class="store_flz00">
+                    <ul>
+                        <li><a href="#">男装上衣</a></li>
+                        <li><a href="#">女装上衣</a></li>
+                        <li><a href="#">运动装</a></li>
+                        <li><a href="#">配饰</a></li>
+                    </ul>
+                  </div>
+               </li>
+               <li class="list">
+                  <span class="store_tp"><a href="#">针织衫</a><i class="icon_st"></i></span>
+                  <div class="store_flz00">
+                    <ul>
+                        <li><a href="#">男装上衣</a></li>
+                        <li><a href="#">女装上衣</a></li>
+                    </ul>
+                  </div>
+               </li>
+               <li class="list">
+                  <span class="store_tp"><a href="#">连衣裙</a><i class="icon_st"></i></span>
+                  <div class="store_flz00">
+                    <ul>
+                        <li><a href="#">男装上衣</a></li>
+                        <li><a href="#">运动装</a></li>
+                        <li><a href="#">配饰</a></li>
+                    </ul>
+                  </div>
+               </li>
+               <li class="list">
+                  <span class="store_tp"><a href="#">POLO</a><i class="icon_st"></i></span>
+                  <div class="store_flz00">
+                    <ul>
+                        <li><a href="#">男装上衣</a></li>
+                        <li><a href="#">女装上衣</a></li>
+                        <li><a href="#">运动装</a></li>
+                        <li><a href="#">配饰</a></li>
+                    </ul>
+                  </div>
+               </li>
+             
+             </ul>
+             
+             
+             
+             
+             
+          </div>
+       </div>
+       <!-- store_nav -->
+       <div class="store_nav">
+          <span><a href="#">首页</a></span>
+          <span><a href="#">[夏季经典款]</a></span>
+          <span><a href="#">[cicishope独家出售]</a></span>
+          <span><a href="#">店铺动态</a></span>
+       </div>
+       <!-- store_air -->
+       <div class="store_air">
+           <span class="icon_air"></span>
+           <div id="demo">
+              <div id="demo1">
+                  <a href="#">累积购买1000元即可成为会员，会员可享受正价9.5折</a><a href="#">下载手机新版客户端,首单送5元现金券</a>
+              </div> 
+              <div id="demo2"></div>  
+           </div>  
+       </div>
+   </div>
+   <!-- store_nav end -->
+   
+   
+   <!-- product -->
+   <div class="product clearfix">
+      <!-- product_left -->
+      <div class="product_left">
+         <!-- preview -->
+         <div id="preview">
+             <div id="imagezoom-wrap">
+                 <img src="images/17.jpg" width="418" height="418" alt="" title="" />
+                 <span style="left:0px; top:0px;" class="zoomCover"></span>
+                 <i class="icon_fd"></i>
+             </div>
+              
+          
+             <!-- thumbList_items -->
+             <div id="js_thumbList">
+                <div class="thumbList_items">
+                    <ul class="list">
+                      <li class="hover"><a href="#"><img src="images/17.jpg" alt="" /></a></li>
+                      <li><a href="#"><img src="images/12.jpg" alt="" /></a></li>
+                      <li><a href="#"><img src="images/18.jpg" alt="" /></a></li>
+                      <li><a href="#"><img src="images/17.jpg" alt="" /></a></li>
+                      <li><a href="#"><img src="images/12.jpg" alt="" /></a></li>
+                   </ul>
+               </div>
+               
+             </div>
+             
+             <div id="preview_imgZoom">
+                    <img src="">
+              </div>
+             
+          </div>
+          
+          <!-- product_center -->
+      <div class="product_center">
+         <!-- product_name -->
+         <div class="product_name">
+            <h1>NIKE AIR MAX 90 JACQUARD 男子复古跑鞋</h1>
+         </div>
+         
+         <!-- product_con -->
+         <div class="product_con clearfix">
+            <dl>
+                <dt>商品价格：</dt>
+                <dd>
+                  <span class="tt">￥</span><span class="pprice" id="goods_price">1,199.00</span>
+                 </dd>
+            </dl>
+            <dl>
+                <dt>商品评分：</dt>
+                <dd>
+                    <span class="star star2"></span><span class="text">0分（累计评价 0）</span>
+                </dd>
+            </dl>
+            <dl class="mb clearfix tb_li_area">
+                <dt>配送区域：</dt>
+                <dd>
+                   <span>福建泉州</span>
+                   <span class="arDiv">
+                      <span>至河北</span>
+                      <i class="icon_adr"></i>
+                   </span>
+                   
+                   <div class="psqy">
+                        <a href="#" class="psqy_close"></a>
+                        <ul class="psqy_city J_firstCity clearfix">
+                            <li><a href="javascript:;">北京</a></li>
+                            <li><a href="javascript:;">天津</a></li>
+                            <li><a href="javascript:;">河北</a></li>
+                            <li><a href="javascript:;">山西</a></li>
+                            <li><a href="javascript:;">内蒙古</a></li>
+                         </ul>
+                         <div class="psqy_hr"></div>
+                         <ul class="psqy_city clearfix J_twoCity">
+                         </ul>
+                   </div>
+                   
+                   
+                </dd>
+            </dl>
+            <div class="dot_line"></div>
+            <dl class="mt clearfix zd">
+                <dt>颜色：</dt>
+                <dd>
+                  <div class="pd_color jsClick">
+                    <a href="javascript:;" class="okIco" title="" name="issku">dff</a><a href="javascript:;" title="" name="issku"><img src="images/14.jpg" alt="" /></a><a href="javascript:;" title="" name="issku"><img src="images/14.jpg" alt="" /></a><a href="javascript:;" title="" name="issku"><img src="images/14.jpg" alt="" /></a>
+                  </div>
+                </dd>
+            </dl>
+            <dl class="mt clearfix zd">
+                <dt>尺码：</dt>
+                <dd>
+                   <div class="size jsClick">
+                      <a href="javascript:;" class="okIco" title="" name="issku">28码</a><a href="javascript:;" title="" name="issku">29码</a><a href="javascript:;" title="" name="issku">30码</a><a href="javascript:;" title="" name="issku">31码</a><a href="javascript:;" title="">32码</a><a href="javascript:;" title="" name="issku">33码</a><a href="javascript:;" title="" name="issku">34码</a><a href="javascript:;" title="" name="issku">35码</a><a href="javascript:;" title="" name="issku">35.5码</a>
+                   </div>
+                </dd>
+            </dl>
+            <dl class="mt clearfix">
+                <dt>选 数 量：</dt>
+                <dd>
+                   <div class="dd_sl_wrap">
+                      <input value="1" name="goods_num" id="goods_num" class="inp_txt" type="text" />
+                      <span class="add"></span>
+                      <span class="sub"></span>
+                   </div>
+                   <div class="number_text">(库存<span class="number_num MaxNum" id="goodsnum">4</span>件)</div>
+                   
+                </dd>
+            </dl>
+            <div class="cg_sub_div">
+                  <input name="sku_size" id="sku_size" value="" type="hidden">
+				  <input name="sku_color" id="sku_color" value="" type="hidden">
+				  <input name="sku_id" id="sku_id" value="28505" type="hidden">
+                  <script>
+					$(document).ready(function (){
+						var goods_num = 6;
+						var parent_category = 19059;
+					    if(parent_category != '17144')
+					    {
+					        if (goods_num == 0)
+							{
+								$('.count').html('<input type="button" value="已售罄" class="count_shop" onClick="javascript:is_over();" />');
+							}else{
+								$('.count').html('<input type="button" value="立即购买" class="count_shop" onclick="javascript:ljgm();" /><input type="button" value="加入购物车" class="count_car" onClick="javascript:but_buy();" />');
+							}
+					    } else{
+					        $('.count').html('<input type="button" value="立即购买" class="count_shop" onclick="javascript:xjgm();">');
+						}
+					})
+				 </script>
+                 <div class="count">
+                    <input type="button" class="count_shop" onclick="javascript:ljgm();" value="立即购买" />
+                    <input type="button" class="count_car" onclick="javascript:but_buy();" value="加入购物车" />
+                 </div>
+                 <div class="buy_box hide">
+                    
+                    <div id="loading_d" style="z-index:20; position:absolute; padding-left:160px; padding-top:70px; display:none;">
+                        <img src="images/loading2.gif">
+                    </div>
+                    <div class="close_buy"></div>
+                    <div id="goods_cart_info">
+                       <div class="goods_cart_text">
+                          <i class="state_img_right"></i><span class="row1" id="state_goods_title">商品成功添加到购物车</span>
+                       </div>
+                       <div class="padl0">
+                          购物车共有 <span class="fw" id="ajax_num">9</span> 种商品 合计<span class="fw" id="ajax_totle_price">￥792元</span>
+                       </div>
+                       <div class="padl">
+                          <a class="jxgw" href="javascript:;">
+                              <i class="goshop"></i>继续购物
+                          </a>
+                          <span class="gobuy" onclick="javascript:window.open('http://www.kouclo.com/shopcart');">
+                             <i class="goshop0"></i>去结算
+                          </span>
+                       </div>
+                    </div>
+                 </div>
+            </div>
+            
+                    
+                    
+            
+            <div class="product_sc">
+                <a href="#"><i span class="icon_sc0"></i>收藏该商品</a>
+                
+               
+            </div>
+            <!-- collect0 -->
+                 <div id="collect0">
+                    <div class="prompt">
+                        <a href="#" class="close"></a>
+                        <div class="prompt_con">
+                           <span class="text"><i class="yes"></i>成功收藏此商品</span>
+                        </div>
+                        <!--<div class="prompt_con">
+                           <span class="text"><i class="no"></i>已收藏过此商品</span>
+                        </div>-->
+                        <div class="like">
+                           <h3>你可能还喜欢的热品</h3>
+                           <ul>
+                             <li><a href="#" title=""><img src="images/06.jpg" alt="" /></a><br /><a href="#" title="">店铺假字</a></li>
+                             <li><a href="#" title=""><img src="images/07.jpg" alt="" /></a><br /><a href="#" title="">店铺假字</a></li>
+                             <li><a href="#" title=""><img src="images/07.jpg" alt="" /></a><br /><a href="#" title="">店铺假字</a></li>
+                             <li><a href="#" title=""><img src="images/06.jpg" alt="" /></a><br /><a href="#" title="">店铺假字</a></li>
+                          </ul>
+                      </div>
+                 </div>
+               </div>
+               <!-- collect0 -->
+         </div>
+        
+      </div>
+      <!-- product_center end -->
+      
+      
+          
+      </div>
+      <!-- product_left end -->
+      
+      
+      
+      <!-- product_right -->
+      <div class="product_right">
+          <div class="product_store">
+              <div class="product_store_pic">
+                 <a href="#"><img src="images/11.jpg" alt="" /></a>
+              </div>
+              <div class="product_store_btn">
+                 <a href="#">进入店铺</a>
+              </div>
+              <div class="product_store_btn">
+                 <a href="#">收藏店铺</a>
+              </div>
+              <div class="product_store_tel">
+                 <i class="icon_tel"></i>010-85690000
+              </div>
+          </div>
+          
+          <div class="product_store_pic0">
+             <a href="#"><img src="images/10.jpg" alt="" /></a>
+          </div>
+          
+      </div>
+      <!-- product_left end -->
+   </div>
+   <!-- product end -->
+   
+   
+   
+   <!-- content -->
+   <div class="content">
+       <!-- left -->
+       <div class="left">
+          <!-- sp_fl -->
+          <div class="sp_fl">
+             <div class="sp_fl_title">
+               <h2>商品分类</h2>
+             </div>
+          <div class="sp_fl_con">
+             <ul>
+                <li>
+                   <i class="icon_sp0"></i><a href="#">查看所有商品</a>
+                   <div class="sp_fl_con0">
+                      <ul>
+                         <li class="hover"><a href="#">按销量</a></li>
+                         <li><a href="#">按新品</a></li>
+                         <li><a href="#">按价格</a></li>
+                         <li><a href="#">按收藏</a></li>
+                      </ul>
+                   </div>
+                </li>
+                <li>
+                   <span class="sp_fl_text"><i class="icon_sp"></i><a href="javascript:void(0)">TOP</a></span>
+                   <div class="sp_fl_con01">
+                      <ul>
+                         <li class="hover"><span class="line"></span><a href="#">全部服饰</a><span class="ash0">120</span></li>
+                         <li><span class="line"></span><a href="#">鞋子</a><span class="ash0">12</span></li>
+                         <li><span class="line"></span><a href="#">袜子</a><span class="ash0">5</span></li>
+                         <li><span class="line"></span><a href="#">内衣</a><span class="ash0">77</span></li>
+                         <li><span class="line"></span><a href="#">配饰</a><span class="ash0">25</span></li>
+                      </ul>
+                   </div>
+                </li>
+                <li>
+                   <span class="sp_fl_text"><i class="icon_sp"></i><a href="javascript:void(0)">Bottom</a></span>
+                   <div class="sp_fl_con01">
+                      <ul>
+                         <li class="hover"><span class="line"></span><a href="#">全部服饰</a><span class="ash0">120</span></li>
+                         <li><span class="line"></span><a href="#">鞋子</a><span class="ash0">12</span></li>
+                         <li><span class="line"></span><a href="#">袜子</a><span class="ash0">5</span></li>
+                         <li><span class="line"></span><a href="#">内衣</a><span class="ash0">77</span></li>
+                         <li><span class="line"></span><a href="#">配饰</a><span class="ash0">25</span></li>
+                      </ul>
+                   </div>
+                </li>
+                <li>
+                    <span class="sp_fl_text"><i class="icon_sp"></i><a href="javascript:void(0)">Dress</a></span>
+                    <div class="sp_fl_con01">
+                      <ul>
+                         <li class="hover"><span class="line"></span><a href="#">全部服饰</a><span class="ash0">120</span></li>
+                         <li><span class="line"></span><a href="#">鞋子</a><span class="ash0">12</span></li>
+                         <li><span class="line"></span><a href="#">袜子</a><span class="ash0">5</span></li>
+                         <li><span class="line"></span><a href="#">内衣</a><span class="ash0">77</span></li>
+                         <li><span class="line"></span><a href="#">配饰</a><span class="ash0">25</span></li>
+                      </ul>
+                   </div>
+                </li>
+                <li>
+                    <span class="sp_fl_text"><i class="icon_sp"></i><a href="javascript:void(0)">ACC</a></span>
+                    <div class="sp_fl_con01">
+                      <ul>
+                         <li class="hover"><span class="line"></span><a href="#">全部服饰</a><span class="ash0">120</span></li>
+                         <li><span class="line"></span><a href="#">鞋子</a><span class="ash0">12</span></li>
+                         <li><span class="line"></span><a href="#">袜子</a><span class="ash0">5</span></li>
+                         <li><span class="line"></span><a href="#">内衣</a><span class="ash0">77</span></li>
+                         <li><span class="line"></span><a href="#">配饰</a><span class="ash0">25</span></li>
+                      </ul>
+                   </div>
+                 </li>
+                <li>
+                   <span class="sp_fl_text"><i class="icon_sp"></i><a href="javascript:void(0)">Bag</a></span>
+                   <div class="sp_fl_con01">
+                      <ul>
+                         <li class="hover"><span class="line"></span><a href="#">全部服饰</a><span class="ash0">120</span></li>
+                         <li><span class="line"></span><a href="#">鞋子</a><span class="ash0">12</span></li>
+                         <li><span class="line"></span><a href="#">袜子</a><span class="ash0">5</span></li>
+                         <li><span class="line"></span><a href="#">内衣</a><span class="ash0">77</span></li>
+                         <li><span class="line"></span><a href="#">配饰</a><span class="ash0">25</span></li>
+                      </ul>
+                   </div>
+                </li>
+             </ul>
+           </div>
+        </div>
+        
+        <!-- left_search -->
+        <div class="left_search">
+          <form method="post" name="">
+             <dl>
+                 <dt>关键字</dt>
+                 <dd><input name="" type="text" class="left_search_inp" /></dd>
+             </dl>
+             <dl>
+                 <dt>价格</dt>
+                 <dd><input name="" type="text" class="left_search_inp0" /><span class="left_search_text">到</span><input name="" type="text" class="left_search_inp0" /></dd>
+             </dl>
+             <div class="left_search_tj">
+                  <input name="" type="button" class="left_search_tj0" value="搜索" />
+             </div>
+          </form>
+        </div>
+        
+        
+        <!-- sp_fl -->
+        <div class="sp_fl">
+           <div class="hot_sale_title">
+             <h2><i class="icon_hot"></i>Hot Sale</h2>
+           </div>
+           <div class="hot_sale_title0">
+             <ul>
+               <li class="hover" id="pl1" onmouseover="setTab('pl',1,2)">销售量</li>
+               <li id="pl2" onmouseover="setTab('pl',2,2)" style="margin-left:13px;">收藏数</li>
+             </ul>
+           </div>
+           <div class="hot_sale" id="con_pl_1">
+             <ul>
+                <li>
+                   <a href="#" title=""><img src="images/04.jpg" alt="" /></a>
+                   <p>
+                      <a href="#" title="">特：小清新2014款</a><br />
+                      <span class="red fz_14">￥99</span>
+                   </p>
+                </li>
+                <li>
+                   <a href="#" title=""><img src="images/04.jpg" alt="" /></a>
+                   <p>
+                      <a href="#" title="">特：小清新2014款</a><br />
+                      <span class="red fz_14">￥99</span>
+                   </p>
+                </li>
+                <li>
+                   <a href="#" title=""><img src="images/04.jpg" alt="" /></a>
+                   <p>
+                      <a href="#" title="">特：小清新2014款</a><br />
+                      <span class="red fz_14">￥99</span>
+                   </p>
+                </li>
+                <li>
+                   <a href="#" title=""><img src="images/04.jpg" alt="" /></a>
+                   <p>
+                      <a href="#" title="">特：小清新2014款</a><br />
+                      <span class="red fz_14">￥99</span>
+                   </p>
+                </li>
+                <li>
+                   <a href="#" title=""><img src="images/04.jpg" alt="" /></a>
+                   <p>
+                      <a href="#" title="">特：小清新2014款</a><br />
+                      <span class="red fz_14">￥99</span>
+                   </p>
+                </li>
+                <li>
+                   <a href="#" title=""><img src="images/04.jpg" alt="" /></a>
+                   <p>
+                      <a href="#" title="">特：小清新2014款</a><br />
+                      <span class="red fz_14">￥99</span>
+                   </p>
+                </li>
+                <li>
+                   <a href="#" title=""><img src="images/04.jpg" alt="" /></a>
+                   <p>
+                      <a href="#" title="">特：小清新2014款</a><br />
+                      <span class="red fz_14">￥99</span>
+                   </p>
+                </li>
+                <li>
+                   <a href="#" title=""><img src="images/04.jpg" alt="" /></a>
+                   <p>
+                      <a href="#" title="">特：小清新2014款</a><br />
+                      <span class="red fz_14">￥99</span>
+                   </p>
+                </li>
+                <li>
+                   <a href="#" title=""><img src="images/04.jpg" alt="" /></a>
+                   <p>
+                      <a href="#" title="">特：小清新2014款</a><br />
+                      <span class="red fz_14">￥99</span>
+                   </p>
+                </li>
+                <li>
+                   <a href="#" title=""><img src="images/04.jpg" alt="" /></a>
+                   <p>
+                      <a href="#" title="">特：小清新2014款</a><br />
+                      <span class="red fz_14">￥99</span>
+                   </p>
+                </li>
+             </ul>
+           </div>
+           
+           <div class="hot_sale" id="con_pl_2" style="display:none;">
+             <ul>
+                <li>
+                   <a href="#" title=""><img src="images/04.jpg" alt="" /></a>
+                   <p>
+                      <a href="#" title="">特：gggg14款</a><br />
+                      <span class="red fz_14">￥99</span>
+                   </p>
+                </li>
+                <li>
+                   <a href="#" title=""><img src="images/04.jpg" alt="" /></a>
+                   <p>
+                      <a href="#" title="">特：小清新2014款</a><br />
+                      <span class="red fz_14">￥99</span>
+                   </p>
+                </li>
+                <li>
+                   <a href="#" title=""><img src="images/04.jpg" alt="" /></a>
+                   <p>
+                      <a href="#" title="">特：小清新2014款</a><br />
+                      <span class="red fz_14">￥99</span>
+                   </p>
+                </li>
+                <li>
+                   <a href="#" title=""><img src="images/04.jpg" alt="" /></a>
+                   <p>
+                      <a href="#" title="">特：小清新2014款</a><br />
+                      <span class="red fz_14">￥99</span>
+                   </p>
+                </li>
+                <li>
+                   <a href="#" title=""><img src="images/04.jpg" alt="" /></a>
+                   <p>
+                      <a href="#" title="">特：小清新2014款</a><br />
+                      <span class="red fz_14">￥99</span>
+                   </p>
+                </li>
+                <li>
+                   <a href="#" title=""><img src="images/04.jpg" alt="" /></a>
+                   <p>
+                      <a href="#" title="">特：小清新2014款</a><br />
+                      <span class="red fz_14">￥99</span>
+                   </p>
+                </li>
+                <li>
+                   <a href="#" title=""><img src="images/04.jpg" alt="" /></a>
+                   <p>
+                      <a href="#" title="">特：小清新2014款</a><br />
+                      <span class="red fz_14">￥99</span>
+                   </p>
+                </li>
+                <li>
+                   <a href="#" title=""><img src="images/04.jpg" alt="" /></a>
+                   <p>
+                      <a href="#" title="">特：小清新2014款</a><br />
+                      <span class="red fz_14">￥99</span>
+                   </p>
+                </li>
+                <li>
+                   <a href="#" title=""><img src="images/04.jpg" alt="" /></a>
+                   <p>
+                      <a href="#" title="">特：小清新2014款</a><br />
+                      <span class="red fz_14">￥99</span>
+                   </p>
+                </li>
+                <li>
+                   <a href="#" title=""><img src="images/04.jpg" alt="" /></a>
+                   <p>
+                      <a href="#" title="">特：小清新2014款</a><br />
+                      <span class="red fz_14">￥99</span>
+                   </p>
+                </li>
+             </ul>
+           </div>
+           
+           
+           <div class="hot_more"><a href="#">更多<i class="icon_hot0"></i></a></div>
+           
+        </div>
+        
+     </div>
+     <!-- left end -->
+     <!-- right -->
+     <div class="right" >
+             
+       <div class="detailCon_main">
+    	<div class="mainWrap">
+            <div style="position: relative; top: 0px; background: none repeat scroll 0% 0% rgb(255, 255, 255); border-bottom: medium none;" id="Js_TabBarBox">
+                <ul style="border-bottom: 1px solid rgb(230, 230, 230);" id="Js_TabBar" class="detailCon_tabBar">
+                    <li class="current"><a href="#Js_detail">商品详情</a></li>
+					                    <li><a href="#Js_rateGrad" class="total_pl">累计评价<span class="Js_ReviewsCountNum">0</span></a></li>
+                    <li><a href="#Js_monthStrike" class="goods_success">商品成交记录<span class="J_MonSales">0</span>件</a></li>
+					                </ul>
+            </div>
+            <div class="conDetail">
+				<style type="text/css">
+				.conDetail img{ vertical-align:bottom }
+				</style>
+            	<div class="Js_detailWrap">
+                    <a name="Js_detail" class="anchor"></a>
+                    <div class="Js_attr proAttr" id="Js_detail">
+						
+                        <strong class="hd">产品参数</strong>
+                        <ul class="proAttrUl">	
+                            <li title="袖长:短袖(袖长&lt;35cm)">袖长:短袖(袖长&lt;35cm)</li><li title="版型:">版型:</li><li title="领型:其它">领型:其它</li><li title="风格:">风格:</li><li title="面料分类:">面料分类:</li><li title="面料花型:">面料花型:</li><li title="面料主材质:">面料主材质:</li><li title="年份:">年份:</li><li title="场合:">场合:</li><li title="季节:">季节:</li><li title="面料功能分类:">面料功能分类:</li>                        </ul>
+                    </div>
+                    <!--产品参数结束-->
+                    <!--产品描述区，用户上传图片等信息-->
+                    <div id="Js_desc" class="mt20">
+                                                <p><img src="a21%202014%E5%A4%8F%E8%A3%85%E6%96%B0%E6%AC%BE%E7%94%B7%E8%A3%85%E7%BF%BB%E9%A2%86%E7%9F%AD%E8%A2%96Polo%E8%A1%AB%20%E7%94%B7%E5%A3%AB%E7%BA%AF%E6%A3%89%E6%97%B6%E5%B0%9A%E4%BC%91%E9%97%B2%E6%BD%AE%E6%B5%81Polo-%E6%8A%A0%E6%8A%A0%E7%BD%91kouclo.com_files/b_13994581545644.jpg"></p>                    </div><!--产品描述区-end-->
+                 </div>
+                <!--评价 -->
+                <style>
+                    .list_page{width:700px;}
+                </style>
+				                <div class="rateGradWrap clearfix">
+                   <a name="Js_rateGrad" class="anchor"></a>
+                   <h3>累计评价0</h3>
+                   <div class="rateGrad fl" id="Js_rateGrad">暂无评论！</div>
+                </div>
+
+                <script type="text/javascript">
+                    $().ready(function (){
+                  $('.p_pages').live('click',function (){
+                                  var p_count = $(this).text();
+
+                                    $.ajax({
+                                        type:"post",
+                                        url:"http://www.kouclo.com/item/order_evaluate",
+                                        data:{goods_id:7269,pages:p_count},
+                                        dataType:"json",
+                                        success: function (data){
+                                            $('.rateGrad').html('');
+                                            $('.rateGrad').html(data);
+                                        }
+                                    })
+                              })
+
+                        $('.p_prec').live('click',function (){
+                                            var prev_pages = $('.p_active').text();
+                                            
+                                            if(prev_pages != 1)
+                                            {
+                                                prev_pages = Number(Number(prev_pages)-1);
+                                                $.ajax({
+                                                    type:"post",
+                                                    url:"http://www.kouclo.com/item/order_evaluate",
+                                                    data:{goods_id:7269,pages:prev_pages},
+                                                    dataType:"json",
+                                                    success: function (data){
+                                                        $('.rateGrad').html('');
+                                                        $('.rateGrad').html(data);
+                                                    }
+                                                })
+                                            }
+                                   })
+                                   $('.p_next').live('click',function (){
+                                            var prev_pages = $('.p_active').text();
+                                                prev_pages = Number(Number(prev_pages)+1);
+                                                $.ajax({
+                                                    type:"post",
+                                                    url:"http://www.kouclo.com/item/order_evaluate",
+                                                    data:{goods_id:7269,pages:prev_pages},
+                                                    dataType:"json",
+                                                    success: function (data){
+                                                        $('.rateGrad').html('');
+                                                        $('.rateGrad').html(data);
+                                                    }
+                                                })
+
+                                   })
+                                   
+                    })
+                </script>
+                <br>
+                <div class="monthStrikeWrap fl">
+                    <a name="Js_monthStrike" class="anchor"></a>
+                    <h3>商品成交记录0件</h3>
+                    <div class="monthStrike mt10" id="Js_monthStrike">暂无成交！</div>
+                </div>
+                                <script type="text/javascript">
+                            $().ready(function (){
+                                  $('.y_pages').live('click',function (){
+                                      var p_count = $(this).text();
+                                      
+                                        $.ajax({
+                                            type:"post",
+                                            url:"http://www.kouclo.com/item/order_total",
+                                            data:{goods_id:7269,pages:p_count},
+                                            dataType:"json",
+                                            success: function (data){
+                                                $('.monthStrike').html('');
+                                                $('.monthStrike').html(data);
+                                            }
+                                        })
+                                  })
+                                   $('.y_prev').live('click',function (){
+                                            var prev_pages = $('.y_active').text();
+                                            if(prev_pages != 1)
+                                            {
+                                                prev_pages = Number(Number(prev_pages)-1);
+                                                $.ajax({
+                                                    type:"post",
+                                                    url:"http://www.kouclo.com/item/order_total",
+                                                    data:{goods_id:7269,pages:prev_pages},
+                                                    dataType:"json",
+                                                    success: function (data){
+                                                        $('.monthStrike').html('');
+                                                        $('.monthStrike').html(data);
+                                                    }
+                                                })
+                                            }
+                                   })
+                                   
+                                   $('.y_next').live('click',function (){
+                                            var prev_pages = $('.y_active').text();
+                                                prev_pages = Number(Number(prev_pages)+1);
+                                                $.ajax({
+                                                    type:"post",
+                                                    url:"http://www.kouclo.com/item/order_total",
+                                                    data:{goods_id:7269,pages:prev_pages},
+                                                    dataType:"json",
+                                                    success: function (data){
+                                                        $('.monthStrike').html('');
+                                                        $('.monthStrike').html(data);
+                                                    }
+                                                })
+                                            
+                                   })
+
+                                   $('.page_p_btn').live('click',function (){
+                                        var pages = $('.page_p_inp').val();
+                                        if(Number(pages) > 0)
+                                        {
+                                            
+                                            $.ajax({
+                                                    type:"post",
+                                                    url:"http://www.kouclo.com/item/order_evaluate",
+                                                    data:{goods_id:7269,pages:pages},
+                                                    dataType:"json",
+                                                    success: function (data){
+                                                        $('.rateGrad').html('');
+                                                        $('.rateGrad').html(data);
+                                                    }
+                                                })
+                                        }
+                                   })
+
+
+                                   $('.page_y_btn').live('click',function (){
+                                        var pages = $('.page_y_inp').val();
+                                        if(Number(pages) > 0)
+                                        {
+
+                                            $.ajax({
+                                                    type:"post",
+                                                    url:"http://www.kouclo.com/item/order_total",
+                                                    data:{goods_id:7269,pages:pages},
+                                                    dataType:"json",
+                                                    success: function (data){
+                                                        $('.monthStrike').html('');
+                                                        $('.monthStrike').html(data);
+                                                    }
+                                                })
+                                        }
+                                   })
+                            })
+                </script>
+            </div>
+        </div>
+    </div> 
+        
+        
+        
+        
+     </div>
+     <!-- right end -->
+
+      <div class="clear"></div>
+   </div>
+   <!-- content end -->
+  
+   <!-- look_pass -->
+   <div class="look_pass">
+      <div class="look_pass_title">
+         <div class="bg"></div>
+         <h2>最近浏览商品</h2>
+      </div>
+      <div class="look_pass_con">
+         <div class="pre_btn"></div>
+         <div class="next_btn"></div>
+         <div class="look_pass_nav">
+           <ul>
+                <li>
+                  <a href="#" title=""><img src="images/03.jpg" alt=""/></a>
+                  <p><a href="#" title="">cici-shop 复古碎花连衣裙</a></p>
+                  <p>
+                    <span class="past_price">￥288</span><span class="now_price0">￥</span><span class="now_price">158</span>
+                  </p>
+                </li>
+                <li>
+                  <a href="#" title=""><img src="images/03.jpg" alt=""/></a>
+                  <p><a href="#" title="">cici-shop 复古碎花连衣裙</a></p>
+                  <p>
+                    <span class="past_price">￥288</span><span class="now_price0">￥</span><span class="now_price">158</span>
+                  </p>
+                </li>
+                <li>
+                  <a href="#" title=""><img src="images/03.jpg" alt=""/></a>
+                  <p><a href="#" title="">cici-shop 复古碎花连衣裙</a></p>
+                  <p>
+                    <span class="past_price">￥288</span><span class="now_price0">￥</span><span class="now_price">158</span>
+                  </p>
+                </li>
+                <li>
+                  <a href="#" title=""><img src="images/03.jpg" alt=""/></a>
+                  <p><a href="#" title="">cici-shop 复古碎花连衣裙</a></p>
+                  <p>
+                    <span class="past_price">￥288</span><span class="now_price0">￥</span><span class="now_price">158</span>
+                  </p>
+                </li>
+                <li>
+                  <a href="#" title=""><img src="images/03.jpg" alt=""/></a>
+                  <p><a href="#" title="">cici-shop 复古碎花连衣裙</a></p>
+                  <p>
+                    <span class="past_price">￥288</span><span class="now_price0">￥</span><span class="now_price">158</span>
+                  </p>
+                </li>
+                <li>
+                  <a href="#" title=""><img src="images/03.jpg" alt=""/></a>
+                  <p><a href="#" title="">cici-shop 复古碎花连衣裙</a></p>
+                  <p>
+                    <span class="past_price">￥288</span><span class="now_price0">￥</span><span class="now_price">158</span>
+                  </p>
+                </li>
+                <li>
+                  <a href="#" title=""><img src="images/03.jpg" alt=""/></a>
+                  <p><a href="#" title="">cici-shop 复古碎花连衣裙</a></p>
+                  <p>
+                    <span class="past_price">￥288</span><span class="now_price0">￥</span><span class="now_price">158</span>
+                  </p>
+                </li>
+                <li>
+                  <a href="#" title=""><img src="images/03.jpg" alt=""/></a>
+                  <p><a href="#" title="">cici-shop 复古碎花连衣裙</a></p>
+                  <p>
+                    <span class="past_price">￥288</span><span class="now_price0">￥</span><span class="now_price">158</span>
+                  </p>
+                </li>
+           
+           </ul>
+         </div>
+      </div>
+   </div>
+   <!-- look_pass end -->
+  
+  
+
+</div>
+
+<!-- main end -->
+
+<!-- float_nav -->
+<div id="float_nav">
+  <div id="float_nav0">
+     <div id="float_nav_con">
+         <ul>
+           <li><a href="#">抠抠网首页</a></li>
+           <li><a href="#">抠抠商城</a></li>
+           <li><a href="#">抠抠品</a></li>
+           <li><a href="#">爱车汇</a></li>
+         </ul>
+         <div class="else"><a href="#">Click it ! <br />More SALES!</a></div>
+     </div>
+     <div id="float_nav_bg"></div>
+  </div>
+</div>
+<!-- float_nav end -->
+
+
+<script type="text/javascript">
+
+
+function count($num){
+	var goods_num = $num;
+		if (goods_num == 0)
+		{
+			$('.count').html('<input type="button" value="已售罄" class="count_shop" onClick="javascript:is_over();" />');
+		}else{
+			$('.count').html('<input type="button" value="立即购买" class="count_shop" onclick="javascript:ljgm();" /><input type="button" value="加入购物车" class="count_car" onClick="javascript:but_buy();" />');
+		}
+}
+				
+//已售罄按钮
+function is_over()
+{
+	alert('商品已卖完，请查看其他商品！');
+	return false;
+}
+//加入购物车按钮
+	function but_buy()
+	{
+		var sku_id = $('#sku_id').val();
+		var group_id = 0;
+		var goods_num = $('#goods_num').val();
+		//alert(sku_id+" "+goods_num);
+		if (goods_num == 0)
+		{
+			return false;
+		}
+		else
+		{
+			var ajax = $.ajax({url:'http://www.kouclo.com/shopcart/add_cart',
+						 type:'post',
+						 data:{group_id:group_id,sku_id:sku_id,goods_num:goods_num},
+						 dataType:'json',
+						 beforeSend:loading_img(),
+						 success:function(json){
+								 $('#ajax_num').html(json.buy_num);
+								 $('#ajax_totle_price').html('￥'+ json.total_price + "元");
+								 if(json.state_img == 'error')
+								 {
+								  	$('.state_img_right').hide();
+									$('.state_img_error').show();
+							     }
+								 else
+								 {
+								    $('.state_img_right').show();
+									$('.state_img_error').hide();
+								 }
+								 $('#state_goods_title').html(json.state);
+								 $('#loading_d').hide();
+								 $('#goods_cart_info').show();
+								 //$(".buy_box").removeClass("hide");
+							}
+						});
+		}
+	}
+	/*显示加载*/
+	function loading_img()
+	{
+		$('.buy_box').removeClass("hide");
+		$('#loading_d').show();
+	}
+	$(".close_buy").click(function() {
+		$(this).parent(".buy_box").addClass("hide");
+		$('#goods_cart_info').hide();
+    });
+	$(".jxgw").click(function() {
+		$(".buy_box").addClass("hide");
+		$('#goods_cart_info').hide();
+    });
+//搭配商品浮层弹出效果
+	/*
+	$("#pic1").click(function() {
+		$(".pos_buy").removeClass("hide");
+		var active = $("#pos_dp2_box").width()==470;
+    }, function() {
+		$(".pos_buy").addClass("hide");
+    });
+	$(".close_tj").click(function() {
+		$(".pos_buy").addClass("hide");
+    });
+
+	$("#pic2").click(function() {
+		$(".pos_buy").removeClass("hide");
+		var active = $("#pos_dp2_box").width()==470;
+    }, function() {
+		$(".pos_buy").addClass("hide");
+    });
+	$("#pic3").click(function() {
+		$(".pos_buy").removeClass("hide");
+		var active = $("#pos_dp2_box").width()==470;
+    }, function() {
+		$(".pos_buy").addClass("hide");
+    });
+	
+	*/
+
+	function ljgm()
+	{
+		var sku_id = $('#sku_id').val();
+		var group_id = 0;
+		var goods_num = $('#goods_num').val();
+		//alert(sku_id+" "+goods_num);
+		if (goods_num == 0)
+		{
+			return false;
+		}
+		else{
+			var ajax = $.ajax({url:'http://www.kouclo.com/shopcart/add_cart',
+						 type:'post',
+						 data:{group_id:group_id,sku_id:sku_id,goods_num:goods_num},
+						 dataType:'json',
+						 success:function(json){
+								 if (json.buy_num != '')
+								 {
+										window.location.href = '/shopcart';
+								 }
+							}
+						});
+		}
+	}
+
+	//虚拟物品购物
+	function xjgm()
+	{
+		var sku_id = $('#sku_id').val();
+	    var goods_id = '7269';
+	    var goods_num = $('#goods_num').val();
+	    if (goods_num == 0)
+	    {
+	        return false;
+	    }else{
+	        /*var ajax = $.ajax({url:'http://www.kouclo.com/shopcart/xjgm_cart',
+	            type:'get',
+	            data:{goods_id:goods_id,sku)id:sku_id,goods_num:goods_num},
+	            dataType:'json',
+	            success:function(json){
+
+	                window.location.href = '/order_Confirmation/xndd';
+			            
+			    }
+		    });*/
+	    	window.location.href = '/order_Confirmation/xndd?goods_id='+goods_id+'&sku_id='+sku_id+'&goods_num='+goods_num;
+		    //$.get("http://www.kouclo.com/shopcart/xjgm_cart",{goods_id:goods_id,sku_id:sku_id,goods_num:goods_num});
+		}
+	}
+
+
+
+$(function(){
+	
+		var arrInfo = [
+		{color:["天蓝色165/84"], num: "6" , price:"119.00" , sku_id:"28505" },{color:["天蓝色170/88"], num: "6" , price:"119.00" , sku_id:"28506" },{color:["天蓝色175/92"], num: "6" , price:"119.00" , sku_id:"28507" },{color:["天蓝色180/96"], num: "6" , price:"119.00" , sku_id:"28508" },{color:["天蓝色185/100"], num: "6" , price:"119.00" , sku_id:"28509" }	]
+
+	function isselct()
+	{
+		var iscld = '';
+		$('a[name="issku"]').each(function (){
+		   if ($(this).attr('class') =='okIco')
+		   {
+			  iscld += $(this).attr('title');
+		   }
+	   }) 
+		
+	   return iscld;
+
+	}
+	
+	//点击红色边框  对沟
+	function jsClick( $tag ){
+		$(".jsClick").find($tag).click(function(){
+			if( $(this).attr('class') =='dd_none'){
+				return false;
+			}
+			
+			$(this).addClass("okIco").siblings().removeClass("okIco");
+			
+			var rtslct = isselct();
+			
+			for(var i in arrInfo){
+				
+				if(arrInfo[i].color == rtslct ){
+					$('#goods_price').text(arrInfo[i].price);
+					$('#goodsnum').text(arrInfo[i].num);
+					
+					$('#sku_id').val(arrInfo[i].sku_id);
+					//alert( $(this).html() )
+					if( $(this).find('img').length>0 ){
+						$("#imagezoom-wrap img").attr( 'src', $(this).find('img').attr('src')  )
+					}
+					$('#goods_num').val(1);
+					count(arrInfo[i].num);
+				}
+			}
+			
+			
+			if(isIE6 || isIE7 || isIE8){
+				if($(this).find("span").length>0) return;
+				$(".okIco").append("<span class=after></span>");
+			}/**/
+		});
+	}
+
+
+	
+	  var data = [
+		{ name: "北京", cities: ["西城", "东城", "崇文", "宣武", "朝阳", "海淀", "丰台"],KD: ["11.00","12.00","10.00","12.00","10.00","12.00","10.00"],EMS: ["10.00","12.00","10.00","12.00","10.00","12.00","10.00"] },
+        { name: "天津", cities: ["青羊", "河东", "河西", "南开", "河北", "红桥", "塘沽", "汉沽", "大港", "开发区"], KD: ["1.00","2.00","3.00","4.00","5.00","6.00","7.00","8.00","9.00","10.00"], EMS: ["10.00","12.00","10.00","12.00","10.00","12.00","10.00","10.00","12.00s","10.00"] },
+          { name: "河北", cities: ["石家庄", "秦皇岛", "廊坊", "保定", "邯郸", "唐山", "邢台", "衡水", "张家口", "承德", "沧州", "衡水"],KD: ["1.00","2.00","3.00","4.00","5.00","6.00","7.00","8.00","9.00","10.00","11.00","12.00"], EMS: ["1","2","3","4","5","6","7","8","9","10","11","12"] },
+          { name: "山西", cities: ["太原", "大同", "长治", "晋中", "阳泉", "朔州", "运城", "临汾"],KD: ["1.00","2.00","3.00","4.00","5.00","6.00","7.00","8.00"], EMS: ["1","2","3","4","5","6","7","8"] },
+          { name: "内蒙古",cities: [""], KD:['1'], EMS:['2'] }
+      
+		  ];
+		  
+		  
+    add_Showbar( data );
+	jsClick("a");
+	add_sub(".dd_sl_wrap"); //数量
+	
+})
+</script>
+
+
+</body>
+</html>

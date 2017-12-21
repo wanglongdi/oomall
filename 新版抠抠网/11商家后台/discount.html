@@ -1,0 +1,323 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>抠抠网-商家后台</title>
+<link type="text/css" rel ="stylesheet" href="css/global.css"/>
+<link type="text/css" rel ="stylesheet" href="css/main.css"/>
+<link type="text/css" rel ="stylesheet" href="css/sellerAdmin.css"/>
+<link type="text/css" rel ="stylesheet" href="css/font.css"/>
+<link type="text/css" rel ="stylesheet" href="css/jquery-ui.css"/>
+<link rel="stylesheet" type="text/css" href="css/minus.css" />
+<link type="text/css" href="css/datepicker.css" rel="stylesheet" />
+<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+<script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
+<script type="text/javascript" src="js/discount.js"></script>
+<script type="text/javascript" src="js/jquery.datePicker-min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+
+	$(".datepicker").datePicker({
+		inline:true,
+		selectMultiple:false
+	});
+	
+	$("#datepicker").datePicker({
+		clickInput:true
+	});
+	$("#datepicker0").datePicker({
+		clickInput:true
+	});
+});
+</script>
+</head>
+
+<body>
+<div class="content mt15 clearfix">
+   <!--侧栏内容-->
+	<div class="aside busi_center fl">
+    	<h2 class="busi_center_hd"><b></b>卖家中心首页</h2>
+    	<ul id="js_bus_menu" class="bus_menu js_menu_0">
+        	<li class="bus_menu_item js_menu_1">
+            	<h3  class="bus_menuItem_hd js_menu_1_hd"><i></i>交易管理</h3>
+                <ul class="bus_subMenu js_menu_2">
+                	<li><a href="http://shop.kouclo-v4.com/trade/order_list">已卖出的商品</a></li>
+                    <li><a href="http://shop.kouclo-v4.com/trade_evaluate/index">评价管理</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+	<!--右侧主要内容区-->
+	<div class="mainCon fr">
+		<!--内容填充区-->
+		<div class="mainConMod marB17 clearfix">
+    	   <h2 class="conMod_Tit"><span class="normal">我是卖家 > </span>促销管理设置<div class="tRig_Div"><a href="#" class="helpIco"><i></i>查看帮助</a></div></h2>
+           <div class="conMod_Con stoData-wrap">
+        	 <ul class="stoData_tit tab_nav">
+               <li><a href="/goods/sell/" class="stoDat-a">满立减</a></li>
+               <li class="current"><a href="/goods/featured_products/" class="stoDat-a">限时折扣</a></li>
+               <li><a href="/goods/featured_products/" class="stoDat-a">优惠券</a></li>
+             </ul>
+             <div class="zhushi">
+               "<span class="red">*</span>"为必填项
+             </div>
+             <div class="fangqi_text">
+                <a href="javascript:;" id="fangqi">放弃创建</a>
+             </div>
+             <!-- discount -->
+             <div class="discount" id="discount1">
+                <div class="discount_title">
+                   <h3>第一步　设置活动名称和促销时段</h3>
+                   <div class="time">
+                     2014.10.26 <span class="bold">18:00</span> - 2014.10.26 <span class="bold">18:00</span>
+                   </div>
+                   <div class="modify">
+                     <a href="javascript:;" class="modify_xg">修改<b span class="modify_icon"></b></a>
+                   </div>
+                </div>
+                <div class="discount_con">
+                  <form action="" id="keep" onsubmit="return Keep()">
+                    <dl class="clearfix">
+                      <dt><span class="xing">*</span>设置促销名称：</dt>
+                      <dd>
+                        <input type="text" class="coupon_input" name="cx_name" />
+                        <span class="active_cue"></span>
+                      </dd>
+                    </dl>
+                    <dl class="clearfix">
+                      <dt><span class="xing">*</span>促销开始时间：</dt>
+                      <dd>
+                        <input class="coupon_input" type="text" id="datepicker" name="start_time">
+                        <select name="startTime" class="discount_sel">
+                          <option value="00:00">00:00</option>
+                          <option value="01:00">01:00</option>
+                          <option value="02:00">02:00</option>
+                          <option value="03:00">03:00</option>
+                          <option value="04:00">04:00</option>
+                          <option value="05:00">05:00</option>
+                          <option value="06:00">06:00</option>
+                          <option value="07:00">07:00</option>
+                          <option value="08:00">08:00</option>
+                          <option value="09:00">09:00</option>
+                          <option value="10:00">10:00</option>
+                          <option value="11:00">11:00</option>
+                          <option value="12:00">12:00</option>
+                          <option value="13:00">13:00</option>
+                          <option value="14:00">14:00</option>
+                          <option value="15:00">15:00</option>
+                          <option value="16:00">16:00</option>
+                          <option value="17:00">17:00</option>
+                          <option value="18:00">18:00</option>
+                          <option selected="" value="19:00">19:00</option>
+                          <option value="20:00">20:00</option>
+                          <option value="21:00">21:00</option>
+                          <option value="22:00">22:00</option>
+                          <option value="23:00">23:00</option>
+                        </select>
+                        <span class="active_cue"></span>
+                      </dd>
+                    </dl>
+                    <dl class="clearfix">
+                      <dt><span class="xing">*</span>促销结束时间：</dt>
+                      <dd>
+                        <input class="coupon_input" type="text" id="datepicker0" name="end_time">
+                        <select name="endTime" class="discount_sel">
+                          <option value="00:00">00:00</option>
+                          <option value="01:00">01:00</option>
+                          <option value="02:00">02:00</option>
+                          <option value="03:00">03:00</option>
+                          <option value="04:00">04:00</option>
+                          <option value="05:00">05:00</option>
+                          <option value="06:00">06:00</option>
+                          <option value="07:00">07:00</option>
+                          <option value="08:00">08:00</option>
+                          <option value="09:00">09:00</option>
+                          <option value="10:00">10:00</option>
+                          <option value="11:00">11:00</option>
+                          <option value="12:00">12:00</option>
+                          <option value="13:00">13:00</option>
+                          <option value="14:00">14:00</option>
+                          <option value="15:00">15:00</option>
+                          <option value="16:00">16:00</option>
+                          <option value="17:00">17:00</option>
+                          <option value="18:00">18:00</option>
+                          <option selected="" value="19:00">19:00</option>
+                          <option value="20:00">20:00</option>
+                          <option value="21:00">21:00</option>
+                          <option value="22:00">22:00</option>
+                          <option value="23:00">23:00</option>
+                        </select>
+                        <span class="active_cue"></span>
+                      </dd>
+                    </dl>
+                    <input type="submit" value="保存设置" class="set_discount" />
+                  </form>
+                </div>
+             </div>
+             <!-- discount end -->
+             
+             <!-- discount -->
+             <div class="discount" id="discount2">
+                <div class="discount_title">
+                   <h3>第二步　选择宝贝</h3>
+                   <div class="modify" style="display:none">
+                     <a href="javascript:;" class="modify_xg">修改<b span class="modify_icon"></b></a>
+                   </div>
+                </div>
+                <div class="discount_con0" style="">
+                  <div class="con">
+                   <table cellspacing="0" cellpadding="0">
+                     <thead>
+                       <tr>
+                         <td class="name" colspan="2">宝贝描述</td>
+                         <td class="bm">商家编码</td>
+                         <td class="yi">一口价</td>
+                         <td class="cz">操作</td>
+                       </tr>
+                     </thead>
+                     <tbody>
+                       <tr>
+                         <td class="qx"><input class="J_Item" type="checkbox" value="000" name="itemId"></td>
+                         <td class="cp">
+                           <div class="discount_cp">
+                             <dl>
+                                <dt>
+                                  <a href="#"><img src="images/18.jpg"/></a>
+                                </dt>
+                                <dd>
+                                  <a href="#">雅戈尔官方旗舰店 秋季长袖衬衫棉质免烫多色可选男装衬衣Z009</a>
+                                </dd>
+                             </dl>
+                           </div>
+                         </td>
+                         <td class="bm">&nbsp;</td>
+                         <td class="yi orange">100.00</td>
+                         <td class="cz"><a href="javascript:;" class="cj">参加打折</a></td>
+                       </tr>
+                       <tr>
+                         <td class="qx"><input class="J_Item" type="checkbox" value="111" name="itemId"></td>
+                         <td class="cp">
+                           <div class="discount_cp">
+                             <dl>
+                                <dt>
+                                  <a href="#"><img src="images/18.jpg"/></a>
+                                </dt>
+                                <dd>
+                                  <a href="#">雅戈尔官方旗舰店 秋季长袖衬衫棉质免烫多色可选男装衬衣Z009</a>
+                                </dd>
+                             </dl>
+                           </div>
+                         </td>
+                         <td class="bm">&nbsp;</td>
+                         <td class="yi orange">100.00</td>
+                         <td class="cz"><a href="javascript:;" class="cj">参加打折</a></td>
+                       </tr>
+                     </tbody>
+                   </table>
+                  </div>
+                  <div class="con0">
+                     <!--<div class="allsel_con">
+                        <input name="checkall" type="checkbox" class="discount_all" /><label for="_selectAll">全选</label>
+                     </div>
+                     <div class="lot_con">
+                        <button class="lot">批量参加</button>
+                     </div>-->
+                     <div class="wgBot_page" style="top:4px;">
+                         <a href="#" class="page">上一页</a><a href="#" class="current">1</a><a href="#">2</a><a href="#">3</a><a href="#" class="page">下一页</a>                           
+                     </div>
+
+                  </div>
+                  <input type="button" value="完成选择" class="set_discount" />
+                </div>
+                
+             </div>
+             <!-- discount end -->
+             
+             <!-- discount -->
+             <div class="discount" id="discount3">
+                <div class="discount_title">
+                   <h3>第三步　设置限时打折</h3>
+                   <div class="modify" style="display:none">
+                     <a href="javascript:;" class="modify_xg">修改<b span class="modify_icon"></b></a>
+                   </div>
+                </div>
+                <div class="discount_con01" style="">
+                  <div class="con">
+                   <table cellspacing="0" cellpadding="0">
+                     <thead>
+                       <tr>
+                         <td class="name" colspan="2">宝贝描述</td>
+                         <td class="yi">一口价</td>
+                         <td class="zk">限时折扣</td>
+                         <td class="cz">折后价</td>
+                         <td class="num">每人限购数</td>
+                         <td class="cz">操作</td>
+                       </tr>
+                     </thead>
+                     <tbody>
+                       <tr>
+                         <td class="cj">
+                            <input class="J_Item" type="hidden" value="40696381047" name="itemId">
+                         </td>
+                         <td class="ct">
+                           <div class="discount_cp0">
+                             <dl>
+                                <dt>
+                                  <a href="#"><img src="images/18.jpg"/></a>
+                                </dt>
+                                <dd>
+                                  <a href="#">雅戈尔官方旗舰店 秋季长袖衬衫<span class="gs">(12004件)</span></a>
+                                </dd>
+                             </dl>
+                           </div>
+                         </td>
+                         <td class="yi orange">100.00</td>
+                         <td class="zk"><input type="text" class="zk_inpt" />折</td>
+                         <td class="cz">30.00</td>
+                         <td class="num">
+                            <select name="xgnum" class="zk_sel">
+                              <option value="1" selected="">1</option>
+                              <option value="2">2</option>
+                              <option value="500">500</option>
+                            </select>
+                         </td>
+                         <td class="cz"><a href="#" class="del">删除</a></td>
+                       </tr>
+                     </tbody>
+                   </table>
+                  </div>
+                  <input type="button" value="创建完成" class="set_discount" />
+                </div>
+                
+                <input id="J_StartDateValue" type="hidden" value="2014-10-26 18:00:00" name="startDateValue">
+                <input id="J_ExpiredDateValue" type="hidden" value="2014-10-31 18:00:00" name="expiredDateValue">
+                <input id="J_PromoAddItem" type="hidden" value="" name="promoAddItem">
+                <input id="J_PromoDelItem" type="hidden" value="" name="promoDelItem">
+             </div>
+             <!-- discount end -->
+             
+             
+             
+           </div>
+        </div>
+    </div>
+</div>
+
+<!-- mask -->
+<div id="mask"></div>
+
+<!-- giveup -->
+<div id="giveup">
+  <div class="title">
+     <h3>放弃创建活动</h3>
+     <span class="close"></span>
+  </div>
+  <div class="con">
+     放弃后您的促销设置将丢失,您确定放弃活动创建吗?
+  </div>
+  <div class="con0">
+     <input type="button" value="确 定" class="sure" /><input type="button" value="取消" class="quxiao" />
+  </div>
+</div>
+</body>
+</html>

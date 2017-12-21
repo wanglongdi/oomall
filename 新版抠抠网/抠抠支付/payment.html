@@ -1,0 +1,154 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>抠抠支付</title>
+<link type="text/css" rel="stylesheet" href="css/payment.css"  />
+<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="js/payment.js"></script>
+</head>
+<body>
+<!-- payment_top -->
+<div class="payment_top">
+  <h1><img src="images/payment_logo.png" width="146" height="26" alt="抠抠支付" /></h1>
+</div>
+
+<!-- payment_con -->
+<div class="payment_con">
+  <!-- payment_con0 -->
+  <div class="payment_con0">
+     <!-- payment_tit -->
+     <div class="payment_tit">
+        <ul>
+           <li class="cur"><img src="images/yhk.png" width="49" height="16" alt="银行卡" /></li>
+           <li><img src="images/zfpt.png" width="65" height="16" alt="支付平台" /></li>
+        </ul>
+     </div>
+     <div id="tabs_container">
+            <form action="" method="post">
+                <div id="tabs-1">
+                   <h3>开通网上支付的储蓄卡和信用卡</h3>
+                   <ul>
+                     <li>
+                        <input type="radio" name="bank" id="icbc" value="BANK|ICBC-NET-B2C" />
+                        <label for="icbc"><img src="images/icbc.png"  title="工商银行" /></label>
+                     </li>
+                     <li>
+                        <input type="radio" name="bank" id="ccb" value="BANK|CCB-NET-B2C" />
+                        <label for="ccb"><img src="images/ccb.png"  title="建设银行" /></label>
+                     </li>
+                     <li>
+                        <input type="radio" name="bank" id="cmb" value="BANK|CMBCHINA-NET-B2C" />
+                        <label for="cmb"><img src="images/cmb.png" title="招商银行" /></label>
+                     </li>
+                     <li>
+                        <input type="radio" name="bank" id="abc" value="BANK|ABC-NET-B2C" />
+                        <label for="abc"><img src="images/abc.png" title="农业银行" /></label>
+                     </li>
+                   </ul>
+                   <ul>
+                      <li>
+                         <input type="radio" name="bank" id="bcom" value="BANK|BOCO-NET-B2C" />
+                         <label for="bcom"><img src="images/bcom.png"  title="中国交通银行" /></label>
+                      </li>
+                      <li>
+                         <input type="radio" name="bank" id="gdb" value="BANK|GDB-NET-B2C" />
+                         <label for="gdb"><img src="images/gdb.png"  title="广东发展银行" /></label>
+                      </li>
+                      <li>
+                         <input type="radio" name="bank" id="boc" value="BANK|BOC-NET-B2C" />
+                         <label for="boc"><img src="images/boc.png"  title="中国银行" /></label>
+                       </li>
+                       <li>
+                         <input type="radio" name="bank" id="cmbc" value="BANK|CMBC-NET-B2C" />
+                         <label for="cmbc"><img src="images/cmbc.png" title="中国民生银行" /></label>
+                       </li>
+                   </ul>
+                   <ul>
+                     <li>
+                        <input type="radio" name="bank" id="hxb" value="BANK|HXB-NET-B2C" />
+                        <label for="hxb"><img src="images/hxb.png" title="华夏银行" /></label>
+                     </li>
+                     <li>
+                        <input type="radio" name="bank" id="cib" value="BANK|CIB-NET-B2C" />
+                        <label for="cib"><img src="images/cib.png" title="兴业银行" /></label>
+                     </li>
+                     <li>
+                        <input type="radio" name="bank" id="ceb" value="BANK|CEB-NET-B2C" />
+                        <label for="ceb"><img src="images/ceb.png" title="中国光大银行" /></label>
+                     </li>
+                     <li>
+                        <input type="radio" name="bank" id="post" value="BANK|POST-NET-B2C" />
+                        <label for="post"><img src="images/post.png" title="邮政储蓄" /></label>
+                     </li>
+                   </ul>
+                   <ul>
+                      <li>
+                         <input type="radio" name="bank" id="citic" value="BANK|ECITIC-NET-B2C" />
+                         <label for="citic"><img src="images/citic.png" title="中信银行" /></label>
+                      </li>
+                      <li>
+                         <input type="radio" name="bank" id="spdb" value="BANK|SPDB-NET-B2C" />
+                         <label for="spdb"><img src="images/spdb.png" title="浦东发展银行" /></label>
+                      </li>
+                      <li>
+                         <input type="radio" name="bank" id="sdb" value="BANK|SDB-NET-B2C" />
+                         <label for="sdb"><img src="images/sdb.png" title="深圳发展银行" /></label></li>
+                      <li>
+                         <input type="radio" name="bank" id="bob" value="BANK|BCCB-NET-B2C" />
+                         <label for="bob"><img src="images/bob.png" title="北京银行" /></label>
+                      </li>
+                    </ul>
+                    <ul>
+                      <li>
+                         <input type="radio" name="bank" id="njcb" value="BANK|NJCB-NET-B2C" />
+                         <label for="njcb"><img src="images/njcb.png" title="南京银行" /></label>
+                      </li>
+                      <li>
+                         <input type="radio" name="bank" id="pab" value="BANK|PINGANBANK-NET" />
+                         <label for="pab"><img src="images/pab.png" title="平安银行" /></label>
+                      </li>
+                      <li>
+                         <input type="radio" name="bank" id="cbhb" value="BANK|CBHB-NET-B2C" />
+                         <label for="cbhb"><img src="images/cbhb.png" title="渤海银行" /></label>
+                      </li>
+                      <li>
+                         <input type="radio" name="bank" id="shb" value="BANK|SHB-NET-B2C" />
+                         <label for="shb"><img src="images/shb.png" title="上海银行" /></label>
+                      </li>
+                    </ul>
+                    <ul>
+                       <li>
+                         <input type="radio" name="bank" id="bjrcb" value="BANK|BJRCB-NET-B2C" />
+                         <label for="bjrcb"><img src="images/bjrcb.png" title="北京农村商业银行" /></label>
+                       </li>
+                    </ul>
+                    <input type="submit" value="下一步" class="submit" />
+                </div>
+                <div id="tabs-2">
+                   <ul>
+                       <li>
+                         <input type="radio" name="bank" id="yeepay" value="platform|yeepay" />
+                         <label for="yeepay"><img src="images/yeepay.png" title="易宝支付" /></label>
+                       </li>
+                    </ul>
+                    <input type="submit" value="下一步" class="submit" />
+                </div>
+            </form>
+        </div>
+  </div>
+</div>
+
+
+
+<!-- payment_foot -->
+<div class="payment_foot">
+  <div class="payment_foot_con">
+     <p>CopyRIGHT © 2009-2014 抠抠网 KOUCLO All RIGHTS RESERVED</p>
+     <p>闽ICP备13001618号 | 增值电信业务经营许可证：闽B1-20130053 | 互联网药品信息服务资质证书编号：（闽）-非经营性-2014-0008</p>
+  </div>
+</div>
+
+
+</body>
+</html>

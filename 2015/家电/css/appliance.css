@@ -1,0 +1,174 @@
+@charset "utf-8";
+/* bg */ 
+.appliance_icon li,.appliance_icon li.cur,.appliance_nav0 b,.appliance_cj .pre_btn,.appliance_cj .next_btn,.appliance_cj0 .pre_btn,.appliance_cj0 .next_btn,.appliance_pp .pre_btn,.appliance_pp .next_btn{background:url(../images/appliance_bg.png) no-repeat; overflow:hidden;}
+/* appliance */
+.appliance{width:100%; background:#fafafa; min-width:1000px; overflow:hidden; padding-bottom:100px;}
+
+/* appliance_con */
+.appliance_con{width:1200px; margin:5px auto 0px; overflow:hidden; position:relative; height:470px;}
+
+/* appliance_nav */
+.appliance_nav{width:210px; position:absolute; left:0px; top:0px; height:470px; overflow:hidden; padding-left:10px; z-index:9;}
+.appliance_nav h2{width:210px; line-height:28px; font-size:14px; color:#fff; margin-top:13px;}
+.appliance_nav h2 a{font-size:14px; color:#fff;}
+.appliance_nav .con{width:210px; overflow:hidden; }
+.appliance_nav .con a{width:70px; float:left; line-height:24px; color:#afd3ff;}
+.appliance_nav_bg{background:#1872e0; position:absolute; left:0px; top:0px; height:470px; overflow:hidden; width:220px; z-index:8;}
+
+.appliance_nav0{width:17px; height:116px; position:absolute; left:13px; top:80px; z-index:4; color:#fff; font-size:14px; cursor:pointer; display:none;}
+.appliance_nav0_bg{width:45px; height:116px; opacity:0.6; -moz-opacity:0.6; filter:alpha(opacity=60); position:absolute; left:0px; top:80px; z-index:2; background:#000; display:none;}
+.appliance_nav0 b{width:17px; height:12px; background-position:-104px -20px; display:block; margin:14px 0px 5px 0px;}
+@media screen and (max-width: 1200px){
+	.appliance_con{width:1000px;}
+	.appliance_nav{display:none;}
+	.appliance_nav_bg{display:none;}
+	.appliance_nav0{display:block;}
+	.appliance_nav0_bg{display:block;}	
+}
+
+
+/* appliance_pic */
+.appliance_pic{width:975px; margin-left:225px; position:relative; height:470px; overflow:hidden;}
+.appliance_pic_con{width:975px; overflow:hidden;}
+.appliance_pic_con li{width:975px; overflow:hidden; display:none;}
+.appliance_pic_con li img{height:470px;}
+.appliance_icon{width:68px; position:absolute; left:453px; bottom:15px; height:9px; z-index:2;}
+.appliance_icon li{width:9px; height:9px; float:left; margin:0px 4px; background-position:-17px 0px; cursor:pointer; display:inline;}
+.appliance_icon li.cur{background-position:0px 0px;}
+
+@media screen and (max-width: 1200px){
+	.appliance_pic{width:1000px; margin-left:0px;}
+	.appliance_pic_con{width:1000px;}
+    .appliance_pic_con li{width:1000px;}
+	.appliance_pic_con li img{width:1000px;}
+}
+
+
+/* appliance_con0 */
+.appliance_con0{width:1200px; margin:20px auto 0px; overflow:hidden;}
+.appliance_con0_tit{width:1200px; height:45px; line-height:45px;}
+.appliance_con0_tit h2{font-size:20px; color:#333; width:300px; float:left; font-weight:normal;}
+.appliance_con0_tit .else{width:695px; float:right; text-align:right; color:#aaa; padding-right:5px;}
+.appliance_con0_tit .else a{color:#666;}
+.appliance_con0_tit .else span{margin:0px 8px;}
+
+@media screen and (max-width: 1200px){
+	.appliance_con0{width:1000px;}
+	.appliance_con0_tit{width:1000px;}
+}
+
+/* appliance_hot */
+.appliance_hot{width:1200px; background:#fff; padding:10px 0px; overflow:hidden;}
+.appliance_hot ul li{width:239px; float:left; text-align:center; line-height:24px; border-left:#f1f1f1 1px solid; padding:0px;}
+.appliance_hot ul li .pic{width:239px; height:239px;}
+.appliance_hot ul li .text a{color:#666;}
+.appliance_hot ul li .price{color:#ff4e00;}
+.appliance_hot ul li .price i{font-size:22px; font-style:normal; vertical-align:-5px; margin-left:2px;}
+.appliance_hot ul li.hide{display:block;}
+.appliance_hot ul li img:hover{margin-top:-3px;}
+
+@media screen and (max-width: 1200px){
+	.appliance_hot{width:1000px;}
+	.appliance_hot ul li.hide{display:none;}
+	.appliance_hot ul li{padding:0px 5px;}
+}
+
+
+/* appliance_big */
+.appliance_big{width:1200px; overflow:hidden;}
+.appliance_big ul li{float:left; width:252px; border-left:#f1f1f1 1px solid; overflow:hidden; height:360px;}
+.appliance_big ul li img{width:252px; height:360px;}
+.appliance_big ul li.l{width:241px; border-left:0px;}
+.appliance_big ul li.l img{width:241px; height:360px;}
+.appliance_big ul li.hide{width:199px; display:block;}
+.appliance_big ul li.hide img{width:199px; height:360px;}
+.appliance_big ul li img:hover{opacity:0.8;}
+
+/* appliance_home */
+.appliance_home{width:1200px; overflow:hidden; border-top:#000 1px solid;}
+.appliance_home ul li{float:left; width:252px; padding-left:1px; overflow:hidden; height:360px; position:relative;}
+.appliance_home ul li img{width:252px; height:360px;}
+.appliance_home ul li.l{width:241px; padding-left:0px;}
+.appliance_home ul li.l img{width:241px; height:360px;}
+.appliance_home ul li.hide{width:199px; display:block;}
+.appliance_home ul li.hide img{width:199px; height:360px;}
+.appliance_home ul li img:hover{opacity:0.8; filter:alpha(opacity=80);}
+
+
+
+
+/* appliance_big0 */
+.appliance_big0{width:1200px; overflow:hidden;}
+.appliance_logo{width:242px; float:left; overflow:hidden;}
+.appliance_logo ul li{width:120px; height:60px; border-right:#f1f1f1 1px solid; border-top:#f1f1f1 1px solid; float:left;}
+.appliance_logo ul li img{width:120px; height:60px;}
+
+@media screen and (max-width: 1200px){
+	.appliance_big{width:1000px;}
+	.appliance_big0{width:1000px;}
+	.appliance_big ul li.hide{display:none;}
+	.appliance_home{width:1000px;}
+	.appliance_home ul li.hide{display:none;}
+}
+
+/* appliance_cj */
+.appliance_cj{width:958px; overflow:hidden; float:left; border-top:#f1f1f1 1px solid; position:relative; height:182px; background:#fff;}
+.appliance_cj .pre_btn{width:26px; height:43px; cursor:pointer; background-position:0px -20px; position:absolute; left:0px; top:65px; z-index:3;}
+.appliance_cj .next_btn{width:26px; height:43px; cursor:pointer; background-position:-53px -20px; position:absolute; right:0px; top:65px; z-index:3;}
+.appliance_cj_con{width:950px; margin:8px 4px 0px; overflow:hidden; height:171px;}
+.appliance_cj_con ul{width:9999px;}
+.appliance_cj_con ul li{width:190px; float:left; overflow:hidden; text-align:center;}
+.appliance_cj_con ul li .pic{margin-bottom:5px;}
+.appliance_cj_con ul li .pic img{width:120px; height:120px;}
+.appliance_cj_con ul li .text a{color:#666;}
+.appliance_cj_con ul li .price{color:#ff4e00; font-size:14px;}
+.appliance_cj_con ul li .price i{font-size:16px; font-style:normal;}
+
+
+/* appliance_cj0 */
+.appliance_cj0{width:1200px; overflow:hidden; border-top:#f1f1f1 1px solid; position:relative; height:176px; background:#fff;}
+.appliance_cj0 .pre_btn{width:26px; height:43px; cursor:pointer; background-position:0px -20px; position:absolute; left:0px; top:65px; z-index:3;}
+.appliance_cj0 .next_btn{width:26px; height:43px; cursor:pointer; background-position:-53px -20px; position:absolute; right:0px; top:65px; z-index:3;}
+.appliance_cj0_con{width:1140px; margin:5px 30px 0px; overflow:hidden; height:171px;}
+.appliance_cj0_con ul{width:9999px;}
+.appliance_cj0_con ul li{width:190px; float:left; overflow:hidden; text-align:center;}
+.appliance_cj0_con ul li .pic{margin-bottom:5px;}
+.appliance_cj0_con ul li .pic img{width:120px; height:120px;}
+.appliance_cj0_con ul li .text a{color:#666;}
+.appliance_cj0_con ul li .price{color:#ff4e00; font-size:14px;}
+.appliance_cj0_con ul li .price i{font-size:16px; font-style:normal;}
+
+/* appliance_store */
+.appliance_store{width:1200px; overflow:hidden; border-top:#000 1px solid;}
+.appliance_store ul li{float:left; width:249px; padding-right:1px; overflow:hidden; height:360px; position:relative;}
+.appliance_store ul li img{width:249px; height:360px;}
+.appliance_store ul li.hide{width:200px; display:block; padding-right:0px;}
+.appliance_store ul li.hide img{width:200px; height:360px;}
+.appliance_store ul li .bg{width:100%; height:80px; background:#000; opacity:0.5; z-index:2; position:absolute; bottom:0px; left:0px;}
+.appliance_store ul li .text{width:100%; height:30px; z-index:5; position:absolute; bottom:10px; left:0px; text-align:center; line-height:30px;}
+.appliance_store ul li .text a{color:#fff; font-size:16px;}
+.appliance_store ul li .logo{width:100%; height:42px; z-index:5; position:absolute; bottom:30px; left:0px; text-align:center;}
+.appliance_store ul li .logo img{width:120px; height:42px;}
+
+
+/* appliance_pp */
+.appliance_pp{width:1200px; overflow:hidden; position:relative; background:#fff;}
+.appliance_pp .pre_btn{width:25px; height:37px; cursor:pointer; background-position:0px -70px; position:absolute; left:0px; top:27px; z-index:3;}
+.appliance_pp .next_btn{width:25px; height:37px; cursor:pointer; background-position:-54px -70px; position:absolute; right:0px; top:27px; z-index:3;}
+.appliance_pp_con{width:1134px; margin:15px 33px; overflow:hidden;}
+.appliance_pp_con ul{width:9999px;}
+.appliance_pp_con ul li{width:120px; float:left; overflow:hidden; text-align:center; margin:0px 3px;}
+.appliance_pp_con ul li img{width:120px; height:60px;}
+
+
+@media screen and (max-width: 1200px){
+	.appliance_cj{width:758px;}
+	.appliance_cj_con{width:750px;}
+	.appliance_cj0{width:1000px;}
+	.appliance_cj0_con{width:960px;}
+	.appliance_pp{width:1000px;}
+	.appliance_pp_con{width:934px;}
+	.appliance_store{width:1000px;}
+	.appliance_store ul li.hide{display:none;}
+}
+

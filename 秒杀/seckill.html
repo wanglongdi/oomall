@@ -1,0 +1,1214 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>秒杀</title>
+<link rel="stylesheet" type="text/css" href="css/seckill.css" />
+<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+<script type="text/javascript" src="js/seckill.js"></script>
+</head>
+
+<body>
+<!-- 顶部区域开始 -->
+	<div id='top_out'>
+		<div class='top'>
+				<!-- 顶部左侧区域开始 -->
+			<div class='left'>
+				<span class='welcome'>您好,欢迎来到抠抠网!</span>
+				<ul class='loginBar'>
+					<li style='width:46px'><a href="" style='background:0;'>登录</a></li>
+					<li style='width:70px'><a href="" >免费注册</a></li>
+					<li style='width:70px'><a href="" >收藏本站</a></li>
+				</ul>
+			</div>
+				<!-- 顶部左侧区域结束 -->
+
+				<!-- 顶部右侧区域开始 -->
+			<div class='right'>
+				<div class='tu'>
+					<span class="tu1"></span>
+					<span class="tu2"></span>
+					<span class="tu3"></span>
+					<a href="" class='tu_a'>商家入驻</a>
+				</div>
+				<ul class='weibo_box'>
+					<li class='weibo_li'><a href="" class='weibo'>官方微博</a></li>
+					<li class='weibo_li w' id='weixin'>
+						<a href="" class='weixin'>官方微信</a>
+						<div class='weixin_hide'>
+							<a href="" class='erweima'><img src="images/erweima.jpg" alt="" /></a>
+							<p class='erweima_zi'>关注抠抠网微信</p>
+						</div>
+					</li>
+					<li class='weibo_li t'><a href="" class='tel'>400-8859-000</a></li>
+				</ul>
+			</div>
+				<!-- 顶部右侧区域结束 -->			
+		</div>
+
+	</div>
+
+
+	<!-- 顶部区域结束 -->
+    
+    
+    
+<!-- header begin -->
+<div id="header">
+   <!-- logo -->
+   <div id="logo">
+      <a href="#"><img src="images/logo.png" width="107" height="56" alt="抠抠网" /></a>
+   </div>
+   <!-- seckill_gg -->
+   <div id="seckill_gg">
+       <img src="images/01.jpg" width="104" height="17" alt="1元包邮主会场" />
+   </div>
+</div>
+
+<!-- header end -->
+
+<!-- seckill_banner begin -->
+<div id="seckill_banner">
+    <div class="banner">
+       <img src="images/seckill_banner.jpg" width="1230" height="233" alt="Click it!More SALES!" />
+    </div>
+    
+    <!-- clock begin -->
+    <div id="clock">
+       <div class="clock_text">
+           <img src="images/02.jpg" width="116" height="15" alt="距活动开始还有：" />
+       </div>
+       <div class="clock_con">
+           <div class="clock_t">
+              <div class="clock_d" id="day" style="display:none">
+                  <span class="day">00</span>
+                  <span class="time">天</span>
+              </div>
+              <div class="clock_h" id="dayh" style="display:none">:</div>
+              <div class="clock_d">
+                  <span class="hour">00</span>
+                  <span class="time">小时</span>
+              </div>
+              <div class="clock_h">:</div>
+              <div class="clock_d">
+                  <span class="minute">00</span>
+                  <span class="time">分</span>
+              </div>
+              <div class="clock_h">:</div>
+              <div class="clock_d">
+                  <span class="second">00</span>
+                  <span class="time">秒</span>
+              </div>
+           </div>
+       </div>
+    </div>
+    <!-- clock end -->
+</div>
+<!-- seckill_banner end -->
+
+<!-- seckill_product begin -->
+<div class="seckill_product">
+   <div class="seckill_con">
+      <!-- preview begin -->
+      <div id="preview">
+         <div id="imagezoom-wrap">
+              <a href="#"><img src="images/0001.jpg" onload="imagezoom.call(this, 415, 415);" alt="" title="" /></a>
+              <span style="left:0px; top:0px;" class="zoomCover"></span>
+              <i class="icon_fd"></i>
+          </div>
+          
+          <!-- thumbList_items -->
+          <div id="js_thumbList">
+              <div class="thumbList_items">
+                 <div class="pre_btn"></div>
+                 <div class="next_btn"></div>
+                 <div class="list">
+                    <ul>
+                       <li class="hover"><a href="#"><img src="images/001.jpg" alt="" /></a></li>
+                       <li><a href="#"><img src="images/12.jpg" alt="" /></a></li>
+                       <li><a href="#"><img src="images/18.jpg" alt="" /></a></li>
+                       <li><a href="#"><img src="images/17.jpg" alt="" /></a></li>
+                       <li><a href="#"><img src="images/12.jpg" alt="" /></a></li>
+                       <li><a href="#"><img src="images/17.jpg" alt="" /></a></li>
+                       <li><a href="#"><img src="images/12.jpg" alt="" /></a></li>
+                    </ul>
+                 </div>
+              </div>
+               
+          </div>
+             
+          <div id="preview_imgZoom">
+                    <img src="">
+          </div>
+              
+              
+      </div>
+      <!-- preview end -->
+      <!-- seckill_right begin -->
+      <div class="seckill_right">
+      
+         <!-- product_name -->
+         <div class="product_name">
+             <h2>Voiki 沃克凉鞋</h2>
+         </div>
+         
+         <!-- product_price -->
+         <div class="product_price">
+             促销价<span class="red">1</span>元
+             <span class="ml">市场价<span class="scprice">300元</span></span>
+         </div>
+         
+         <!-- product_line -->
+         <div class="product_line"></div>
+         
+         <!-- product_con -->
+         <div class="product_con">
+            <dl>
+               <dt>颜色</dt>
+               <dd>
+                  <div class="pd_color jsClick">
+                    <a href="javascript:;" title="" name="issku"><img src="images/011.jpg" alt=""/></a><a href="javascript:;" title="" name="issku"><img src="images/012.jpg" alt=""/></a><a href="javascript:;" title="" name="issku"><img src="images/013.jpg" alt=""/></a><a href="javascript:;" title="" name="issku"><img src="images/014.jpg" alt=""/></a><a href="javascript:;" title="" name="issku"><img src="images/015.jpg" alt=""/></a>
+                  </div>
+               </dd>
+            </dl>
+            <dl>
+               <dt>尺码</dt>
+               <dd>
+                  <div class="size jsClick">
+                      <a href="javascript:;" title="" name="issku">28码</a><a href="javascript:;" title="" name="issku">29码</a><a href="javascript:;" title="" name="issku">30码</a><a href="javascript:;" title="" name="issku">31码</a><a href="javascript:;" title="">32码</a><a href="javascript:;" title="" name="issku">33码</a>
+                   </div>
+               </dd>
+            </dl>
+            <dl>
+               <dt>属性</dt>
+               <dd>
+                  <div class="attr">
+                  </div> 
+               </dd>
+            </dl>
+         </div>
+         
+         <!-- seckill_btn -->
+         <div class="seckill_btn">
+             <input type="button" class="shop_btn" value="立即购买" onclick="javascript:shoppingsuc();"/>
+             
+             <!--<input type="button" class="shop_over" value="活动已结束" onClick="javascript:is_over();" />-->
+             
+         </div>
+         
+         <!-- share -->
+         <div class="share">
+            <div class="share_text">
+               分享商品到：
+            </div>
+            <div class="share_con">
+               <a href="#" class="sina" title=""></a>
+               <a href="#" class="ts" title=""></a>
+               <a href="#" class="qq" title=""></a>
+               <a href="#" class="renren" title=""></a>
+               <a href="#" class="tudou" title=""></a>
+               <a href="#" class="weixin" title=""></a>
+               
+            </div>
+         </div>
+         
+      </div>
+      <!-- seckill_right begin -->
+   </div>
+    
+</div>
+<!-- seckill_product end -->
+
+
+<!-- seckill_next begin -->
+<div class="seckill_next">
+   <div class="activity">
+      <!-- activity_title -->
+      <div class="activity_title">
+         <div class="activity_line"></div>
+         
+         <div class="activity_tit">
+            <span>活动预告</span>
+         </div>
+         <div class="activity_tit_con">
+            <ul>
+               <li class="cur">明天</li>
+               <li>6.18</li>
+               <li>6.19</li>
+               <li>6.20</li>
+               <li>6.22</li>
+            </ul>
+         </div>
+         <div class="activity_pic"></div>
+      </div>
+      <!-- activity_con -->
+      <div class="activity_con">
+         <ul>
+            <li class="cur"><a href="#"><img src="images/002.jpg" alt=""/></a></li>
+            <li><a href="#"><img src="images/003.jpg" alt=""/></a></li>
+            <li><a href="#"><img src="images/004.jpg" alt=""/></a></li>
+            <li><a href="#"><img src="images/005.jpg" alt=""/></a></li>
+            <li><a href="#"><img src="images/006.jpg" alt=""/></a></li>
+         </ul>
+      </div>
+   </div>
+
+</div>  
+<!-- seckill_next end -->
+
+
+<!-- seckill_review begin -->
+<div class="seckill_review">
+   <!-- review_title -->
+   <div class="review_title">
+      <h2>商品评价</h2>
+      <ul>
+         <li class="cur"><i></i>全部</li>
+         <li><i></i>好评</li>
+         <li><i></i>中评</li>
+         <li><i></i>差评</li>
+         <li><i></i>晒图</li>
+      </ul>
+   </div>
+   <!-- review_con -->
+   <div class="review_con">
+      <!-- review_con0 -->
+      <div class="review_con0">
+      
+         <div class="con clearfix">
+            <div class="user">
+               <a href="#"><img src="images/007.jpg" alt=""/></a><br />
+               <a href="#"><i>1798****com</i></a>
+            </div>
+            <div class="item">
+                <div class="item_text">
+                   <p class="item_ff">衣服很漂亮，穿着效果很好，很满意！</p>
+                   <p>
+                     <i>2014-04-26  16：33</i>
+                     <span class="item_tt"><i>颜色：深蓝色</i></span>
+                     <span class="item_tt"><i>尺码：M</i></span>
+                   </p>
+                </div>
+                <div class="item_pic">
+                   <a href="#"><img src="images/008.jpg" alt=""/></a><a href="#"><img src="images/008.jpg" alt=""/></a><a href="#"><img src="images/008.jpg" alt=""/></a>
+                </div>
+            </div>
+         </div>
+         
+         <div class="con clearfix">
+            <div class="user">
+               <a href="#"><img src="images/007.jpg" alt=""/></a><br />
+               <a href="#"><i>1798****com</i></a>
+            </div>
+            <div class="item">
+                <div class="item_text">
+                   <p class="item_ff">衣服很漂亮，穿着效果很好，很满意！</p>
+                   <p>
+                     <i>2014-04-26  16：33</i>
+                     <span class="item_tt"><i>颜色：深蓝色</i></span>
+                     <span class="item_tt"><i>尺码：M</i></span>
+                   </p>
+                </div>
+                <div class="item_pic">
+                   <a href="#"><img src="images/008.jpg" alt=""/></a><a href="#"><img src="images/008.jpg" alt=""/></a><a href="#"><img src="images/008.jpg" alt=""/></a>
+                </div>
+            </div>
+         </div>
+         
+         <div class="con clearfix">
+            <div class="user">
+               <a href="#"><img src="images/007.jpg" alt=""/></a><br />
+               <a href="#"><i>1798****com</i></a>
+            </div>
+            <div class="item">
+                <div class="item_text">
+                   <p class="item_ff">衣服很漂亮，穿着效果很好，很满意！</p>
+                   <p>
+                     <i>2014-04-26  16：33</i>
+                     <span class="item_tt"><i>颜色：深蓝色</i></span>
+                     <span class="item_tt"><i>尺码：M</i></span>
+                   </p>
+                </div>
+                <div class="item_pic">
+                   <a href="#"><img src="images/008.jpg" alt=""/></a><a href="#"><img src="images/008.jpg" alt=""/></a><a href="#"><img src="images/008.jpg" alt=""/></a>
+                </div>
+            </div>
+         </div>
+         
+         
+         <div class="con clearfix">
+            <div class="user">
+               <a href="#"><img src="images/007.jpg" alt=""/></a><br />
+               <a href="#"><i>1798****com</i></a>
+            </div>
+            <div class="item">
+                <div class="item_text">
+                   <p class="item_ff">衣服很漂亮，穿着效果很好，很满意！</p>
+                   <p>
+                     <i>2014-04-26  16：33</i>
+                     <span class="item_tt"><i>颜色：深蓝色</i></span>
+                     <span class="item_tt"><i>尺码：M</i></span>
+                   </p>
+                </div>
+                <div class="item_pic">
+                   <a href="#"><img src="images/008.jpg" alt=""/></a><a href="#"><img src="images/008.jpg" alt=""/></a><a href="#"><img src="images/008.jpg" alt=""/></a>
+                </div>
+            </div>
+         </div>
+         
+         
+         <div class="con clearfix">
+            <div class="user">
+               <a href="#"><img src="images/007.jpg" alt=""/></a><br />
+               <a href="#"><i>1798****com</i></a>
+            </div>
+            <div class="item">
+                <div class="item_text">
+                   <p class="item_ff">衣服很漂亮，穿着效果很好，很满意！</p>
+                   <p>
+                     <i>2014-04-26  16：33</i>
+                     <span class="item_tt"><i>颜色：深蓝色</i></span>
+                     <span class="item_tt"><i>尺码：M</i></span>
+                   </p>
+                </div>
+                <div class="item_pic">
+                   <a href="#"><img src="images/008.jpg" alt=""/></a><a href="#"><img src="images/008.jpg" alt=""/></a><a href="#"><img src="images/008.jpg" alt=""/></a>
+                </div>
+            </div>
+         </div>
+         
+         <div class="con clearfix">
+            <div class="user">
+               <a href="#"><img src="images/007.jpg" alt=""/></a><br />
+               <a href="#"><i>1798****com</i></a>
+            </div>
+            <div class="item">
+                <div class="item_text">
+                   <p class="item_ff">衣服很漂亮，穿着效果很好，很满意！</p>
+                   <p>
+                     <i>2014-04-26  16：33</i>
+                     <span class="item_tt"><i>颜色：深蓝色</i></span>
+                     <span class="item_tt"><i>尺码：M</i></span>
+                   </p>
+                </div>
+                <div class="item_pic">
+                   <a href="#"><img src="images/008.jpg" alt=""/></a><a href="#"><img src="images/008.jpg" alt=""/></a><a href="#"><img src="images/008.jpg" alt=""/></a>
+                </div>
+            </div>
+         </div>
+         
+         <!-- pages -->
+         <div class="pages">
+            <a href="#" class="pre">上一页</a><a href="#" class="next">下一页</a>
+         </div>
+         
+      </div>
+      
+      <!-- review_con0 -->
+      <div class="review_con0" style="display:none;">
+      
+         <div class="con clearfix">
+            <div class="user">
+               <a href="#"><img src="images/007.jpg" alt=""/></a><br />
+               <a href="#"><i>1798****com</i></a>
+            </div>
+            <div class="item">
+                <div class="item_text">
+                   <p class="item_ff">衣服很漂亮，穿着效果很好，很满意！</p>
+                   <p>
+                     <i>2014-04-26  16：33</i>
+                     <span class="item_tt"><i>颜色：深蓝色</i></span>
+                     <span class="item_tt"><i>尺码：M</i></span>
+                   </p>
+                </div>
+                <div class="item_pic">
+                  
+                </div>
+            </div>
+         </div>
+         
+         <div class="con clearfix">
+            <div class="user">
+               <a href="#"><img src="images/007.jpg" alt=""/></a><br />
+               <a href="#"><i>1798****com</i></a>
+            </div>
+            <div class="item">
+                <div class="item_text">
+                   <p class="item_ff">衣服很漂亮，穿着效果很好，很满意！</p>
+                   <p>
+                     <i>2014-04-26  16：33</i>
+                     <span class="item_tt"><i>颜色：深蓝色</i></span>
+                     <span class="item_tt"><i>尺码：M</i></span>
+                   </p>
+                </div>
+                <div class="item_pic">
+                  
+                </div>
+            </div>
+         </div>
+         
+         <div class="con clearfix">
+            <div class="user">
+               <a href="#"><img src="images/007.jpg" alt=""/></a><br />
+               <a href="#"><i>1798****com</i></a>
+            </div>
+            <div class="item">
+                <div class="item_text">
+                   <p class="item_ff">衣服很漂亮，穿着效果很好，很满意！</p>
+                   <p>
+                     <i>2014-04-26  16：33</i>
+                     <span class="item_tt"><i>颜色：深蓝色</i></span>
+                     <span class="item_tt"><i>尺码：M</i></span>
+                   </p>
+                </div>
+                <div class="item_pic">
+                   <a href="#"><img src="images/008.jpg" alt=""/></a><a href="#"><img src="images/008.jpg" alt=""/></a><a href="#"><img src="images/008.jpg" alt=""/></a>
+                </div>
+            </div>
+         </div>
+         
+         
+         <div class="con clearfix">
+            <div class="user">
+               <a href="#"><img src="images/007.jpg" alt=""/></a><br />
+               <a href="#"><i>1798****com</i></a>
+            </div>
+            <div class="item">
+                <div class="item_text">
+                   <p class="item_ff">衣服很漂亮，穿着效果很好，很满意！</p>
+                   <p>
+                     <i>2014-04-26  16：33</i>
+                     <span class="item_tt"><i>颜色：深蓝色</i></span>
+                     <span class="item_tt"><i>尺码：M</i></span>
+                   </p>
+                </div>
+                <div class="item_pic">
+                   
+                </div>
+            </div>
+         </div>
+         
+         
+         <div class="con clearfix">
+            <div class="user">
+               <a href="#"><img src="images/007.jpg" alt=""/></a><br />
+               <a href="#"><i>1798****com</i></a>
+            </div>
+            <div class="item">
+                <div class="item_text">
+                   <p class="item_ff">衣服很漂亮，穿着效果很好，很满意！</p>
+                   <p>
+                     <i>2014-04-26  16：33</i>
+                     <span class="item_tt"><i>颜色：深蓝色</i></span>
+                     <span class="item_tt"><i>尺码：M</i></span>
+                   </p>
+                </div>
+                <div class="item_pic">
+                   <a href="#"><img src="images/008.jpg" alt=""/></a><a href="#"><img src="images/008.jpg" alt=""/></a><a href="#"><img src="images/008.jpg" alt=""/></a>
+                </div>
+            </div>
+         </div>
+         
+         <div class="con clearfix">
+            <div class="user">
+               <a href="#"><img src="images/007.jpg" alt=""/></a><br />
+               <a href="#"><i>1798****com</i></a>
+            </div>
+            <div class="item">
+                <div class="item_text">
+                   <p class="item_ff">衣服很漂亮，穿着效果很好，很满意！</p>
+                   <p>
+                     <i>2014-04-26  16：33</i>
+                     <span class="item_tt"><i>颜色：深蓝色</i></span>
+                     <span class="item_tt"><i>尺码：M</i></span>
+                   </p>
+                </div>
+                <div class="item_pic">
+                   <a href="#"><img src="images/008.jpg" alt=""/></a><a href="#"><img src="images/008.jpg" alt=""/></a><a href="#"><img src="images/008.jpg" alt=""/></a>
+                </div>
+            </div>
+         </div>
+         
+         <!-- pages -->
+         <div class="pages">
+            <a href="#" class="pre">上一页</a><a href="#" class="next">下一页</a>
+         </div>
+         
+      </div>
+      
+      
+      <!-- review_con0 -->
+      <div class="review_con0" style="display:none;">
+      
+         <div class="con clearfix">
+            <div class="user">
+               <a href="#"><img src="images/007.jpg" alt=""/></a><br />
+               <a href="#"><i>1798****com</i></a>
+            </div>
+            <div class="item">
+                <div class="item_text">
+                   <p class="item_ff">衣服很漂亮，穿着效果很好，很满意！</p>
+                   <p>
+                     <i>2014-04-26  16：33</i>
+                     <span class="item_tt"><i>颜色：深蓝色</i></span>
+                     <span class="item_tt"><i>尺码：M</i></span>
+                   </p>
+                </div>
+                <div class="item_pic">
+                   <a href="#"><img src="images/008.jpg" alt=""/></a><a href="#"><img src="images/008.jpg" alt=""/></a><a href="#"><img src="images/008.jpg" alt=""/></a>
+                </div>
+            </div>
+         </div>
+         
+         <div class="con clearfix">
+            <div class="user">
+               <a href="#"><img src="images/007.jpg" alt=""/></a><br />
+               <a href="#"><i>1798****com</i></a>
+            </div>
+            <div class="item">
+                <div class="item_text">
+                   <p class="item_ff">衣服很漂亮，穿着效果很好，很满意！</p>
+                   <p>
+                     <i>2014-04-26  16：33</i>
+                     <span class="item_tt"><i>颜色：深蓝色</i></span>
+                     <span class="item_tt"><i>尺码：M</i></span>
+                   </p>
+                </div>
+                <div class="item_pic">
+                   <a href="#"><img src="images/008.jpg" alt=""/></a><a href="#"><img src="images/008.jpg" alt=""/></a><a href="#"><img src="images/008.jpg" alt=""/></a>
+                </div>
+            </div>
+         </div>
+         
+         <div class="con clearfix">
+            <div class="user">
+               <a href="#"><img src="images/007.jpg" alt=""/></a><br />
+               <a href="#"><i>1798****com</i></a>
+            </div>
+            <div class="item">
+                <div class="item_text">
+                   <p class="item_ff">衣服很漂亮，穿着效果很好，很满意！</p>
+                   <p>
+                     <i>2014-04-26  16：33</i>
+                     <span class="item_tt"><i>颜色：深蓝色</i></span>
+                     <span class="item_tt"><i>尺码：M</i></span>
+                   </p>
+                </div>
+                <div class="item_pic">
+                  
+                </div>
+            </div>
+         </div>
+         
+         
+         <div class="con clearfix">
+            <div class="user">
+               <a href="#"><img src="images/007.jpg" alt=""/></a><br />
+               <a href="#"><i>1798****com</i></a>
+            </div>
+            <div class="item">
+                <div class="item_text">
+                   <p class="item_ff">衣服很漂亮，穿着效果很好，很满意！</p>
+                   <p>
+                     <i>2014-04-26  16：33</i>
+                     <span class="item_tt"><i>颜色：深蓝色</i></span>
+                     <span class="item_tt"><i>尺码：M</i></span>
+                   </p>
+                </div>
+                <div class="item_pic">
+                   <a href="#"><img src="images/008.jpg" alt=""/></a><a href="#"><img src="images/008.jpg" alt=""/></a><a href="#"><img src="images/008.jpg" alt=""/></a>
+                </div>
+            </div>
+         </div>
+         
+         
+         <div class="con clearfix">
+            <div class="user">
+               <a href="#"><img src="images/007.jpg" alt=""/></a><br />
+               <a href="#"><i>1798****com</i></a>
+            </div>
+            <div class="item">
+                <div class="item_text">
+                   <p class="item_ff">衣服很漂亮，穿着效果很好，很满意！</p>
+                   <p>
+                     <i>2014-04-26  16：33</i>
+                     <span class="item_tt"><i>颜色：深蓝色</i></span>
+                     <span class="item_tt"><i>尺码：M</i></span>
+                   </p>
+                </div>
+                <div class="item_pic">
+                   <a href="#"><img src="images/008.jpg" alt=""/></a><a href="#"><img src="images/008.jpg" alt=""/></a><a href="#"><img src="images/008.jpg" alt=""/></a>
+                </div>
+            </div>
+         </div>
+         
+         <div class="con clearfix">
+            <div class="user">
+               <a href="#"><img src="images/007.jpg" alt=""/></a><br />
+               <a href="#"><i>1798****com</i></a>
+            </div>
+            <div class="item">
+                <div class="item_text">
+                   <p class="item_ff">衣服很漂亮，穿着效果很好，很满意！</p>
+                   <p>
+                     <i>2014-04-26  16：33</i>
+                     <span class="item_tt"><i>颜色：深蓝色</i></span>
+                     <span class="item_tt"><i>尺码：M</i></span>
+                   </p>
+                </div>
+                <div class="item_pic">
+                   <a href="#"><img src="images/008.jpg" alt=""/></a><a href="#"><img src="images/008.jpg" alt=""/></a><a href="#"><img src="images/008.jpg" alt=""/></a>
+                </div>
+            </div>
+         </div>
+         
+         <!-- pages -->
+         <div class="pages">
+            <a href="#" class="pre">上一页</a><a href="#" class="next">下一页</a>
+         </div>
+         
+      </div>
+      
+      
+      <!-- review_con0 -->
+      <div class="review_con0" style="display:none;">
+      
+         <div class="con clearfix">
+            <div class="user">
+               <a href="#"><img src="images/007.jpg" alt=""/></a><br />
+               <a href="#"><i>1798****com</i></a>
+            </div>
+            <div class="item">
+                <div class="item_text">
+                   <p class="item_ff">衣服很漂亮，穿着效果很好，很满意！</p>
+                   <p>
+                     <i>2014-04-26  16：33</i>
+                     <span class="item_tt"><i>颜色：深蓝色</i></span>
+                     <span class="item_tt"><i>尺码：M</i></span>
+                   </p>
+                </div>
+                <div class="item_pic">
+                   <a href="#"><img src="images/008.jpg" alt=""/></a><a href="#"><img src="images/008.jpg" alt=""/></a><a href="#"><img src="images/008.jpg" alt=""/></a>
+                </div>
+            </div>
+         </div>
+         
+         <div class="con clearfix">
+            <div class="user">
+               <a href="#"><img src="images/007.jpg" alt=""/></a><br />
+               <a href="#"><i>1798****com</i></a>
+            </div>
+            <div class="item">
+                <div class="item_text">
+                   <p class="item_ff">衣服很漂亮，穿着效果很好，很满意！</p>
+                   <p>
+                     <i>2014-04-26  16：33</i>
+                     <span class="item_tt"><i>颜色：深蓝色</i></span>
+                     <span class="item_tt"><i>尺码：M</i></span>
+                   </p>
+                </div>
+                <div class="item_pic">
+                   <a href="#"><img src="images/008.jpg" alt=""/></a><a href="#"><img src="images/008.jpg" alt=""/></a><a href="#"><img src="images/008.jpg" alt=""/></a>
+                </div>
+            </div>
+         </div>
+         
+         <div class="con clearfix">
+            <div class="user">
+               <a href="#"><img src="images/007.jpg" alt=""/></a><br />
+               <a href="#"><i>1798****com</i></a>
+            </div>
+            <div class="item">
+                <div class="item_text">
+                   <p class="item_ff">衣服很漂亮，穿着效果很好，很满意！</p>
+                   <p>
+                     <i>2014-04-26  16：33</i>
+                     <span class="item_tt"><i>颜色：深蓝色</i></span>
+                     <span class="item_tt"><i>尺码：M</i></span>
+                   </p>
+                </div>
+                <div class="item_pic">
+                   <a href="#"><img src="images/008.jpg" alt=""/></a><a href="#"><img src="images/008.jpg" alt=""/></a><a href="#"><img src="images/008.jpg" alt=""/></a>
+                </div>
+            </div>
+         </div>
+         
+         
+         <div class="con clearfix">
+            <div class="user">
+               <a href="#"><img src="images/007.jpg" alt=""/></a><br />
+               <a href="#"><i>1798****com</i></a>
+            </div>
+            <div class="item">
+                <div class="item_text">
+                   <p class="item_ff">衣服很漂亮，穿着效果很好，很满意！</p>
+                   <p>
+                     <i>2014-04-26  16：33</i>
+                     <span class="item_tt"><i>颜色：深蓝色</i></span>
+                     <span class="item_tt"><i>尺码：M</i></span>
+                   </p>
+                </div>
+                <div class="item_pic">
+                   
+                </div>
+            </div>
+         </div>
+         
+         
+         <div class="con clearfix">
+            <div class="user">
+               <a href="#"><img src="images/007.jpg" alt=""/></a><br />
+               <a href="#"><i>1798****com</i></a>
+            </div>
+            <div class="item">
+                <div class="item_text">
+                   <p class="item_ff">衣服很漂亮，穿着效果很好，很满意！</p>
+                   <p>
+                     <i>2014-04-26  16：33</i>
+                     <span class="item_tt"><i>颜色：深蓝色</i></span>
+                     <span class="item_tt"><i>尺码：M</i></span>
+                   </p>
+                </div>
+                <div class="item_pic">
+                   <a href="#"><img src="images/008.jpg" alt=""/></a><a href="#"><img src="images/008.jpg" alt=""/></a><a href="#"><img src="images/008.jpg" alt=""/></a>
+                </div>
+            </div>
+         </div>
+         
+         <div class="con clearfix">
+            <div class="user">
+               <a href="#"><img src="images/007.jpg" alt=""/></a><br />
+               <a href="#"><i>1798****com</i></a>
+            </div>
+            <div class="item">
+                <div class="item_text">
+                   <p class="item_ff">衣服很漂亮，穿着效果很好，很满意！</p>
+                   <p>
+                     <i>2014-04-26  16：33</i>
+                     <span class="item_tt"><i>颜色：深蓝色</i></span>
+                     <span class="item_tt"><i>尺码：M</i></span>
+                   </p>
+                </div>
+                <div class="item_pic">
+                   <a href="#"><img src="images/008.jpg" alt=""/></a><a href="#"><img src="images/008.jpg" alt=""/></a><a href="#"><img src="images/008.jpg" alt=""/></a>
+                </div>
+            </div>
+         </div>
+         
+         <!-- pages -->
+         <div class="pages">
+            <a href="#" class="pre">上一页</a><a href="#" class="next">下一页</a>
+         </div>
+         
+      </div>
+      
+      <!-- review_con0 -->
+      <div class="review_con0" style="display:none;">
+      
+         <div class="con clearfix">
+            <div class="user">
+               <a href="#"><img src="images/007.jpg" alt=""/></a><br />
+               <a href="#"><i>1798****com</i></a>
+            </div>
+            <div class="item">
+                <div class="item_text">
+                   <p class="item_ff">衣服很漂亮，穿着效果很好，很满意！</p>
+                   <p>
+                     <i>2014-04-26  16：33</i>
+                     <span class="item_tt"><i>颜色：深蓝色</i></span>
+                     <span class="item_tt"><i>尺码：M</i></span>
+                   </p>
+                </div>
+                <div class="item_pic">
+                   
+                </div>
+            </div>
+         </div>
+         
+         <div class="con clearfix">
+            <div class="user">
+               <a href="#"><img src="images/007.jpg" alt=""/></a><br />
+               <a href="#"><i>1798****com</i></a>
+            </div>
+            <div class="item">
+                <div class="item_text">
+                   <p class="item_ff">衣服很漂亮，穿着效果很好，很满意！</p>
+                   <p>
+                     <i>2014-04-26  16：33</i>
+                     <span class="item_tt"><i>颜色：深蓝色</i></span>
+                     <span class="item_tt"><i>尺码：M</i></span>
+                   </p>
+                </div>
+                <div class="item_pic">
+                   <a href="#"><img src="images/008.jpg" alt=""/></a><a href="#"><img src="images/008.jpg" alt=""/></a><a href="#"><img src="images/008.jpg" alt=""/></a>
+                </div>
+            </div>
+         </div>
+         
+         <div class="con clearfix">
+            <div class="user">
+               <a href="#"><img src="images/007.jpg" alt=""/></a><br />
+               <a href="#"><i>1798****com</i></a>
+            </div>
+            <div class="item">
+                <div class="item_text">
+                   <p class="item_ff">衣服很漂亮，穿着效果很好，很满意！</p>
+                   <p>
+                     <i>2014-04-26  16：33</i>
+                     <span class="item_tt"><i>颜色：深蓝色</i></span>
+                     <span class="item_tt"><i>尺码：M</i></span>
+                   </p>
+                </div>
+                <div class="item_pic">
+                   <a href="#"><img src="images/008.jpg" alt=""/></a><a href="#"><img src="images/008.jpg" alt=""/></a><a href="#"><img src="images/008.jpg" alt=""/></a>
+                </div>
+            </div>
+         </div>
+         
+         
+         <div class="con clearfix">
+            <div class="user">
+               <a href="#"><img src="images/007.jpg" alt=""/></a><br />
+               <a href="#"><i>1798****com</i></a>
+            </div>
+            <div class="item">
+                <div class="item_text">
+                   <p class="item_ff">衣服很漂亮，穿着效果很好，很满意！</p>
+                   <p>
+                     <i>2014-04-26  16：33</i>
+                     <span class="item_tt"><i>颜色：深蓝色</i></span>
+                     <span class="item_tt"><i>尺码：M</i></span>
+                   </p>
+                </div>
+                <div class="item_pic">
+                   <a href="#"><img src="images/008.jpg" alt=""/></a><a href="#"><img src="images/008.jpg" alt=""/></a><a href="#"><img src="images/008.jpg" alt=""/></a>
+                </div>
+            </div>
+         </div>
+         
+         
+         <div class="con clearfix">
+            <div class="user">
+               <a href="#"><img src="images/007.jpg" alt=""/></a><br />
+               <a href="#"><i>1798****com</i></a>
+            </div>
+            <div class="item">
+                <div class="item_text">
+                   <p class="item_ff">衣服很漂亮，穿着效果很好，很满意！</p>
+                   <p>
+                     <i>2014-04-26  16：33</i>
+                     <span class="item_tt"><i>颜色：深蓝色</i></span>
+                     <span class="item_tt"><i>尺码：M</i></span>
+                   </p>
+                </div>
+                <div class="item_pic">
+                   <a href="#"><img src="images/008.jpg" alt=""/></a><a href="#"><img src="images/008.jpg" alt=""/></a><a href="#"><img src="images/008.jpg" alt=""/></a>
+                </div>
+            </div>
+         </div>
+         
+         <div class="con clearfix">
+            <div class="user">
+               <a href="#"><img src="images/007.jpg" alt=""/></a><br />
+               <a href="#"><i>1798****com</i></a>
+            </div>
+            <div class="item">
+                <div class="item_text">
+                   <p class="item_ff">衣服很漂亮，穿着效果很好，很满意！</p>
+                   <p>
+                     <i>2014-04-26  16：33</i>
+                     <span class="item_tt"><i>颜色：深蓝色</i></span>
+                     <span class="item_tt"><i>尺码：M</i></span>
+                   </p>
+                </div>
+                <div class="item_pic">
+                   <a href="#"><img src="images/008.jpg" alt=""/></a><a href="#"><img src="images/008.jpg" alt=""/></a><a href="#"><img src="images/008.jpg" alt=""/></a>
+                </div>
+            </div>
+         </div>
+         
+         <!-- pages -->
+         <div class="pages">
+            <a href="#" class="pre">上一页</a><a href="#" class="next">下一页</a>
+         </div>
+         
+      </div>
+      
+      
+      
+      
+   </div>
+
+</div>  
+<!-- seckill_review end -->
+
+
+<!-- mask -->
+<div id="mask"></div>
+
+<!-- queue -->
+<div id="queue">
+   <div class="con">
+      正在排队 请等待 .......
+   </div>
+   <div class="tc">
+      <i><span id="play">10</span>秒钟自动跳出</i>
+   </div>
+</div>
+
+
+<!-- fail -->
+<div id="fail">
+   <div class="close"></div>
+   <div class="con">
+      <i class="tanhao"></i>亲，很遗憾，您这次抢购失败...
+   </div>
+   <div class="tc">
+      请继续关注后续抢购活动哦！
+   </div>
+</div>
+
+
+<!-- success -->
+<div id="success">
+   <div class="close"></div>
+   <div class="con">
+      <i class="tanhao"></i>亲，恭喜您抢购成功
+   </div>
+   <div class="tc">
+      <a href="#" class="sucbtn">去支付</a>
+   </div>
+   <div class="tc0">
+      <span id="play0">3</span>秒后支付
+   </div>
+</div>
+
+
+<!-- login -->
+<div id="login">
+   <div id="login_con">
+   
+      <div class="close"></div>
+      <div class="title">
+         <i class="tit_pic"></i>
+         <h2>用户登录</h2>
+      </div>
+      
+      <div class="login_con">
+        <form action="" class='form'>
+         <dl>
+            <dt>账号</dt>
+            <dd>
+               <input type="text" class="login_inp" onblur="if(this.value=='') {this.value='邮箱/用户名/手机号';}" onfocus="if(this.value=='邮箱/用户名/手机号') this.value='';" value="邮箱/用户名/手机号" onpaste="return false;" autocomplete="off" tabindex="1" id="username"/>
+               <div class='dui' style='display: none;'></div>
+               <div class='p_button_01' style='display: none;'>请输入用户名</div>
+               <div class='p_button_03' style='display: none;'>该用户名不存在</div>
+            </dd>
+         </dl>
+         <dl>
+            <dt>密码</dt>
+            <dd>
+              <input type="password" class="login_inp" maxlength="16" id='pwd' />
+              <div class='dui1' style='display: none;'></div>
+              <div class='p_button_02' style='display: none;'>请输入密码</div>
+              <div class='p_button_04' style='display: none;'>密码错误</div>
+            </dd>
+         </dl>
+         <dl>
+            <dt>验证码</dt>
+            <dd>
+              <input value='' name='' id='code' class="login_inp0" type="text" />
+              <div class="login_text login_yzm">
+                 <a href="#"><img src="images/017.jpg" width="80" height="32" /></a>
+              </div>
+              <div class="login_text login_yzm0">
+                 看不清？<br /><a href="#" class="login_text0">换一个</a>
+              </div>
+              <div class='p_button_06' style='display: none;'>验证码错误或已过期</div>
+            </dd>
+         </dl>
+         <div class="forget">
+            <a href="#">忘记密码？</a>
+         </div>
+         <div class="login_dl">
+            <button class="denglu_btn" type="submit">登录</button>
+         </div>
+         								
+		 
+
+		 
+		 
+		 <div class='p_button_05' style='display: none;'>用户名或密码错误</div>
+		 
+         </form>
+      </div>
+      
+      <div class="zc">
+         <i>还不是抠抠网会员？</i><a href="#">免费注册</a>
+      </div>
+      
+      
+   </div>
+</div>
+<script type="text/javascript">
+function shopping(){
+	
+	if(!$(".pd_color a").hasClass("okIco")||!$(".size a").hasClass("okIco")){
+			alert("请选择商品的颜色或尺码");
+			
+	}else{
+		$("#queue").show();
+		$("#mask").css({
+			     "height":$(document).height()
+              }).show();
+	   var count=10;
+    var timert=setInterval(function(){
+	  if(count--==0){
+		  clearInterval(timert);
+		    
+		  $("#queue").hide();
+		  $("#mask").hide();
+		   but_buy();
+		  }
+		  else{
+			  document.getElementById('play').innerHTML=count;
+			  }
+			  
+			  
+		},1000)
+		  
+		}
+	
+	
+	};
+	
+function shoppingsuc(){
+	
+        $("#success").show();
+		$("#mask").css({
+			     "height":$(document).height()
+              }).show();
+	   var count=3;
+       var timerm=setInterval(function(){
+	       if(count--==0){
+		      clearInterval(timerm);
+		    
+		      $("#success").hide();
+		      $("#mask").hide();
+		  }
+		  else{
+			  document.getElementById('play0').innerHTML=count;
+			  }
+			  
+			  
+		},1000)
+
+	};
+	
+// 倒计时
+$(function(){
+	countDown("2014/07/02 14:42:00","#clock");
+});
+function countDown(time,id){
+	var day_elem = $(id).find('#day');
+	var hour_elem = $(id).find('#hour');
+	var minute_elem = $(id).find('#minute');
+	//var second_elem = $(id).find('.second');
+	var end_time = new Date(time).getTime(),//月份是实际月份-1
+	sys_second = (end_time-new Date().getTime())/1000;
+	var timer = setInterval(function(){
+		if (sys_second > 1) {
+			sys_second -= 1;
+			var day = Math.floor((sys_second / 3600) / 24);
+			var hour = Math.floor((sys_second / 3600) % 24);
+			var minute = Math.floor((sys_second / 60) % 60);
+			//var second = Math.floor(sys_second % 60);
+			day_elem && $(day_elem).text(day);//计算天
+			$(day_elem).text(day<10?"0"+day:day);
+			$(hour_elem).text(hour<10?"0"+hour:hour);//计算小时
+			$(minute_elem).text(minute<10?"0"+minute:minute);//计算分钟
+			//$(second_elem).text(second<10?"0"+second:second);//计算秒杀
+			$('.seckill_btn').html('<input type="button" class="shop_start" value="立即购买" />');
+			/*if(day!=0){
+			 $("#clock").css("width","287");
+		    }*/
+		} else { 
+			clearInterval(timer);
+		}
+	}, 1000);
+}
+
+
+
+
+
+
+
+$(function(){
+	
+	var arrInfo = [
+		{color:["黑色39"], num: "10" , price:"86.00" , sku_id:"11443" },{color:["褐色39"], num: "10" , price:"86.00" , sku_id:"11444" },{color:["卡其色39"], num: "10" , price:"86.00" , sku_id:"11445" },{color:["浅灰色39"], num: "10" , price:"86.00" , sku_id:"11446" }	]
+	
+
+	function isselct()
+	{
+		var iscld = '';
+		$('a[name="issku"]').each(function (){
+		   if ($(this).attr('class') =='okIco')
+		   {
+			  iscld += $(this).attr('title');
+		   }
+	   }) 
+		
+	   return iscld;
+
+	}
+	
+	//点击红色边框  对沟
+	function jsClick( $tag ){
+		$(".jsClick").find($tag).click(function(){
+			if( $(this).attr('class') =='dd_none'){
+				return false;
+			}
+			
+			$(this).addClass("okIco").siblings().removeClass("okIco");
+			
+			// var rtslct = isselct();
+			
+			/*for(var i in arrInfo){
+				
+				if(arrInfo[i].color == rtslct ){
+					$('#goods_price').text(arrInfo[i].price);
+					$('#goodsnum').text(arrInfo[i].num);
+					
+					$('#sku_id').val(arrInfo[i].sku_id);
+					//alert( $(this).html() )
+					if( $(this).find('img').length>0 ){
+						$("#imagezoom-wrap img").attr( 'src', $(this).find('img').attr('src')  )
+					}
+					$('#goods_num').val(1);
+					count(arrInfo[i].num);
+				}
+			}
+			*/
+			
+			/*if(isIE6 || isIE7 || isIE8){
+				if($(this).find("span").length>0) return;
+				
+				$(".okIco").append("<span class=after></span>");
+			}*/
+			
+		});
+	}
+
+
+
+		  
+
+	jsClick("a");
+
+	
+})
+</script>
+</body>
+</html>

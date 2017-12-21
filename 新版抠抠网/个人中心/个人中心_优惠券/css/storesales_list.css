@@ -1,0 +1,25 @@
+@charset "utf-8";
+/* CSS Document */
+
+.storesales_con{width:795px; overflow:hidden; padding-bottom:200px;}
+.storesales_con ul li{width:223px; float:left; margin:20px 21px 0px; background:url(../images/storesales_bg.png) no-repeat 0px 0px; height:320px; overflow:hidden;}
+.storesales_con ul li.lan{background:url(../images/storesales_bg.png) no-repeat -253px 0px;}
+.storesales_con ul li.han{background:url(../images/storesales_bg.png) no-repeat -506px 0px;}
+.storesales_con ul li .con{width:203px; margin:20px 10px 0px; color:#fff; font-family:"Microsoft YaHei"; overflow:hidden; height:90px;}
+.storesales_con ul li .con h3{width:115px; float:left; font-size:56px; line-height:46px;}
+.storesales_con ul li .con .mon{font-size:26px; width:25px; float:left; line-height:26px;}
+.storesales_con ul li .yong{width:63px; float:right; font-size:14px; line-height:20px; text-align:right;}
+.storesales_con ul li .text{width:213px; margin:0px 0px 0px 10px; line-height:24px; color:#c38e10; overflow:hidden; font-size:12px; letter-spacing:-0.5px;}
+.storesales_con ul li .text a{color:#c38e10;}
+.storesales_con ul li.lan .text{color:#4990a4;}
+.storesales_con ul li.lan .text a{color:#4990a4;}
+.storesales_con ul li.han .text{color:#fff;}
+.storesales_con ul li.han .text a{color:#fff;}
+.storesales_con ul li .pic{width:216px; overflow:hidden; margin:32px 7px 20px 0px;}
+.storesales_con ul li .pic ul li{width:65px; float:left; margin:0px 0px 0px 7px; display:inline; height:65px;}
+.storesales_con ul li .pic ul li img{width:65px; height:65px;}
+.storesales_con ul li .enter{width:223px; line-height:20px; color:#ccc; text-align:center;}
+.storesales_con ul li .enter a{color:#848483;}
+.storesales_con ul li .enter a:hover{color:#2e5ed7; text-decoration:none;}
+.storesales_con ul li .enter span{margin:0px 10px;}
+

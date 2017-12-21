@@ -1,0 +1,35 @@
+@charset "utf-8";
+/* CSS Document */
+*{margin:0px; padding:0px; font-size:12px;}
+a{font-size:12px; text-decoration:none;}
+ul,li{list-style:none;}
+
+/* card */
+#card{width:1000px; overflow:hidden; margin:0px auto;}
+#card h2{font-size:14px; font-weight:bold; line-height:30px;}
+#card_con{width:px; background:#FFFCF3;  border:1px solid #F7E4A5; padding:10px;}
+#card_con h3{line-height:24px; font-weight:bold; color:#ff6600; font-size:12px;}
+#card_con p{margin:0px; padding:0px; line-height:24px;} 
+
+/* copy */
+#copy{width:600px; overflow:hidden; border:#ccc 1px solid; margin-top:10px;}
+.copy_title{width:560px; height:30px; background:#e8f2ff; line-height:30px; text-align:center;}
+.copy_title ul li{width:280px; float:left;}
+.copy_con{width:560px; height:34px; border-top:#ccc 1px solid; border-bottom:#ccc 1px solid; padding-top:8px;}
+.copy_inp{width:370px; border:#ccc 1px solid; float:left; margin:0px 10px 0px 15px; display:inline; height:22px; padding:0px 3px; line-height:22px;}
+.copy_btn{width:70px; border:0px; background:#ff6600; height:24px; line-height:24px; border-radius:5px; float:left; text-align:center; }
+.copy_btn a{font-weight:bold; color:#fff;}
+.copy_text{margin-left:10px; float:left; line-height:24px;}
+.copy_text a{color:#0000ff;}
+.copy_text a:hover{text-decoration:underline;}
+
+
+.copy_con0{width:560px; height:34px; border-top:#ccc 1px solid;}
+.copy_con0 ul li{width:280px; float:left; text-align:center; height:26px; padding:8px 0px; line-height:24px; text-align:center;}
+.copy_con0 ul li.m{width:279px; border-left:#ccc 1px solid;}
+
+.copy_btn0{width:70px; border:0px; background:#1874ff; height:24px; line-height:24px; border-radius:5px; text-align:center; margin-left:10px; display:inline-block;}
+.copy_btn0 a{font-weight:bold; color:#fff;}
+
+.blue{color:#0000ff;}
+.bold{font-weight:bold;}

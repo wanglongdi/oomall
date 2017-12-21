@@ -1,0 +1,59 @@
+@charset "utf-8";
+/* CSS Document */
+*{margin:0px; padding:0px;}
+body{font-size:12px; font-family:"Microsoft YaHei",Arial, Helvetica, sans-serif;}
+img{border:0px;}
+ul,li{list-style:none;}
+
+a{font-size:12px; text-decoration:none; color:#000;}
+
+.clear{clear:both; font-size:0px; height:0px; overflow:hidden;}
+.clearfix:after{content:"."; clear:both; display:block; visibility:hidden; height:0px;}
+.clearfix{zoom:1;}
+
+.bold{font-weight:bold;}
+:focus {outline: 0 none;}
+
+
+/* payment_top */
+.payment_top{width:1000px; height:80px; margin:0px auto; overflow:hidden;}
+.payment_top h1{width:146px; height:26px; margin-top:32px;}
+
+
+/* payment_con */
+.payment_con{width:100%; background:url(../images/shopcart_line.jpg) repeat-x; overflow:hidden;}
+
+.payment_con0{width:1000px; margin:44px auto; overflow:hidden;}
+.payment_tit{width:1000px; border-bottom:#2f2e2e 1px solid; height:36px;}
+.payment_tit ul li{width:88px; height:36px; float:left; text-align:center; line-height:36px; cursor:pointer;}
+.payment_tit ul li.cur{border-left:#2f2e2e 1px solid; border-right:#2f2e2e 1px solid; border-top:#2f2e2e 1px solid; height:35px;}
+.payment_tit ul li img{margin-top:10px; *margin-top:5px;}
+
+
+/* tabs_container */
+#tabs_container{width:1000px; overflow:hidden; margin-top:20px; height:500px;}
+#tabs-1{width:1000px;}
+#tabs-1 h3{color:#221900; font-size:14px; font-weight:normal; padding-left:20px; margin-bottom:5px; line-height:26px;}
+#tabs-1 ul{width:1000px; overflow:hidden;}
+#tabs-1 ul li{width:146px; float:left; margin-top:15px; position:relative; height:30px; overflow:hidden;}
+#tabs-1 ul li input{position:absolute; left:20px; top:10px;}
+#tabs-1 ul li label{padding-left:40px;}
+#tabs-1 ul li img{width:92px; height:20px; border:#d9d9d9 1px solid; padding:4px; }
+
+#tabs-2{width:1000px; display:none;}
+#tabs-2 ul{width:1000px; overflow:hidden;}
+#tabs-2 ul li{width:146px; float:left; margin-top:15px; position:relative; height:30px; overflow:hidden;}
+#tabs-2 ul li input{position:absolute; left:20px; top:10px;}
+#tabs-2 ul li label{padding-left:40px;}
+#tabs-2 ul li img{width:92px; height:20px; border:#d9d9d9 1px solid; padding:4px; }
+
+/* submit */
+.submit{width:114px; height:35px; background:#e5000a; text-align:center; color:#fff; font-size:14px; border:0px; cursor:pointer; margin:70px 0px 0px 240px;}
+
+
+
+/* payment_foot */
+.payment_foot{width:100%; height:114px; overflow:hidden; border-top:#000 5px solid;}
+.payment_foot_con{width:1000px; margin:25px auto 0px; overflow:hidden;}
+.payment_foot_con p{color:#aeaeb0; line-height:20px; text-align:center;}
+

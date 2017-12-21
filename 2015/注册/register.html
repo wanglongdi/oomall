@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>抠抠网--注册</title>
+	<link rel="stylesheet" type="text/css" href="css/register.css">
+	<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+	<script type="text/javascript" src="js/register.js"></script>
+</head>
+<body>
+<!-- header -->
+<div id="header">
+    <div class="header_con">
+    	<h1>
+	        <a href="#"><img src="images/logo.png" alt="抠抠网"></a>
+	    </h1>
+		<ul>
+			<li>100%正品保障</li>
+			<li>7天内退换货</li>
+			<li>100%质量保障</li>
+		</ul>
+    </div>
+</div>
+<!-- header end -->
+<!-- main -->
+<div id="main">
+	<!-- main_con -->
+	<div class="main_con">
+		<!-- register -->
+		<div id="register">
+			<h2>
+			    注册会员<span>已注册抠抠网账号？<a href="#"><b class="reg_icon"></b>登录</a></span>
+			</h2>
+			<form id="re_form" action="http://www.baidu.com">
+				<dl class="clearfix">
+					<dt>账号：</dt>
+					<dd>
+						<div class="inpt_con">
+							<input type="text"  class="inpt_text" id="reg_name" placeholder="请输入用户名 / 邮箱 / 手机号" tabindex='1'>
+							<span class="icon_zh"></span>
+							<span class="icon_right"></span>
+							<span class="icon_error"></span>
+						</div>
+						<div class="error_con"></div>
+					</dd>
+				</dl>
+				<dl class="clearfix">
+					<dt>登录密码：</dt>
+					<dd>
+						<div class="inpt_con">
+							<input type="password" class="inpt_text" id="reg_pwd" tabindex='2'>
+							<span class="icon_pwd"></span>
+							<span class="icon_right"></span>
+							<span class="icon_error"></span>
+						</div>
+						<div class="error_con"></div>
+						<div class="safe" id="safe">
+							安全程度：<span>弱</span><span>中</span><span>强</span>
+						</div>
+					</dd>
+				</dl>
+				<dl class="clearfix">
+					<dt>确认密码：</dt>
+					<dd>
+						<div class="inpt_con">
+							<input type="password" class="inpt_text" id="reg_pwd0" disabled="disabled" tabindex='3'>
+							<span class="icon_mm"></span>
+							<span class="icon_right"></span>
+							<span class="icon_error"></span>
+						</div>
+						<div class="error_con"></div>
+					</dd>
+				</dl>
+				<dl class="clearfix" id="yzm">
+					<dt>验证码：</dt>
+					<dd>
+						<div class="inpt_con0">
+							<input type="text" class="inpt_text0" id="reg_yzm" tabindex='4'>
+							<span class="icon_right"></span>
+							<span class="icon_error"></span>
+						</div>
+						<div class="yz_pic">
+							<img src="images/01.jpg">
+							<a href="javascript:void(0);">换一张</a>
+						</div>
+						<div class="error_con"></div>
+					</dd>
+				</dl>
+				<dl class="clearfix" id="dx">
+					<dt>短信验证码：</dt>
+					<dd>
+						<div class="inpt_con0">
+							<input type="text" class="inpt_text0" id="reg_duanxin" tabindex='5'>
+							<span class="icon_right"></span>
+							<span class="icon_error"></span>
+						</div>
+						<a href="#" class="phone_yzm">获取手机验证码</a>
+						<div class="error_con"></div>
+					</dd>
+				</dl>
+				<dl class="clearfix">
+					<dt>&nbsp;</dt>
+					<dd>
+						<p>
+						    <input type="submit" value="同意协议并注册" id="sub_btn" tabindex='6'>
+						</p>
+						<p class="ml">
+						    <a href="#">《抠抠用户注册协议》</a>
+						</p>
+					</dd>
+				</dl>
+			</form>
+		</div>
+		<!-- register end -->
+	</div>
+	<!-- main_con end -->
+	<!-- footer -->
+	<div id="footer">
+		<p>
+			<a href="#">关于抠抠</a>|<a href="#">商家入驻</a>|<a href="#">商家入口</a>|<a href="#">加入我们</a>|<a href="#">联系我们</a>|<a href="#">友情链接</a>
+		</p>
+		<p class="copy">
+		    CopyRIGHT © 2009-2014 抠抠网 KOUCLO All RIGHTS RESERVED 闽ICP备13001618号-1 
+		</p>
+	</div>
+	<!-- footer end -->
+</div>
+<!-- main end -->	
+</body>
+</html>

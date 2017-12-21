@@ -1,0 +1,577 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+<title>抠抠网-购物车</title>
+<link type="text/css" rel="stylesheet" href="css/index.css"  />
+<link type="text/css" rel="stylesheet" href="css/shopcart.css"  />
+<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+<script type="text/javascript" src="js/shopcart.js"></script>
+<script type="text/javascript">
+$(function(){
+	$('.custom0-checkbox input').customInput0();
+	$('.custom01-checkbox input').customInput01();
+	$('.custom02-checkbox input').customInput02();
+    $('.custom03-checkbox input').customInput03();
+	add_sub0('.sp_num',10);
+
+});
+
+
+
+
+</script>
+
+
+</head>
+
+<body>
+
+
+
+<!-- top -->
+<div id="top">
+   <!-- top_con -->
+   <div class="top_con" style="width:1000px;">
+      <!-- top_left -->
+      <!--<div class="top_left">
+         <span>hi,welcome to Kouclo</span>
+         <span><a href="#">请登录</a></span>
+         <span><a href="#">免费注册</a></span>
+      </div>-->
+      
+      <div class="top_left">
+         <span>hi,welcome to Kouclo</span>
+         <span><a href="#">退出</a></span>
+      </div>
+      <!-- top_right -->
+      <div class="top_right">
+      
+         <div class="top_home">
+            <a href="#"><b class="top_home_pic"></b>抠抠首页</a>
+         </div>
+         
+         <div class="top_my">
+            <a href="#">我的抠抠<b class="top_my_icon"></b></a>
+            <ul class="top_my_text">
+               <li><a href="#">待付款</a></li>
+               <li><a href="#">我的退换货</a></li>
+               <li class="bord_bn"><a href="#">待评价</a></li>
+            </ul>
+         </div>
+         
+         <div class="top_order"><a href="#">我的订单</a></div>
+         
+         <div class="top_fav">
+            <a href="#">收藏夹<b class="top_fav_icon"></b></a>
+            <ul class="top_fav_text">
+               <li><a href="#">商品</a></li>
+               <li class="bord_bn"><a href="#">店铺</a></li>
+            </ul>
+         </div>
+         <div class="top_phone_box">
+             <span class="top_phone">
+                <img src="images/app.png" alt="" />
+             </span>
+             <span class="ewm">
+               <img src="images/erweima.jpg" alt="" />
+             </span>
+         </div>
+         
+         <div class="top_help"><a href="#">帮助中心</a></div>
+         
+      </div>
+   </div>
+</div>
+<!-- top end -->
+
+
+<!-- shopcart_header -->
+<div id="shopcart_header" class="clearfix">
+   <h1>
+      <a href="#"><img src="images/shop_logo.png" alt="抠抠网" /></a>
+   </h1>
+   <div class="tit">
+      <img src="images/shopcart_tit.png" width="151" height="37" alt="我的购物车" />
+   </div>
+   <div class="pic"></div>
+</div>
+<!-- shopcart_header end -->
+
+<!-- shopcart -->
+<div class="shopcart">
+   <!-- shopcart_text -->
+   <div class="shopcart_text">
+      <span class="mr">全部商品</span>(<span class="sp_num">5</span>)
+   </div>
+   <!-- shopcart_tit -->
+   <div class="shopcart_tit">
+      <ul>
+         <li>
+            <span class="custom03-checkbox"><input name="" type="checkbox" value="" id="6" onclick="checkAll0(this,$('body'))"/><label for="6">全选</label></span>
+         </li>
+         <li class="x">商品信息</li>
+         <li class="d">单元(元)</li>
+         <li class="j">数量</li>
+         <li class="c">促销</li>
+         <li class="q">金额（元）</li>
+         <li class="e">操作</li>
+      </ul>
+   </div>
+   <!-- shopcart_no -->
+   <!--
+   <div class="shopcart_no">
+      <div class="car_bg"></div>
+      <div class="shopcart_no_con">
+         <p class="text">对不起，您的购物车暂无商品</p>
+         <p>
+            <a href="#" title="选购商品" class="xsp"></a><a href="#" title="查看订单" class="kdd"></a>
+         </p>
+      </div>
+   </div>
+   -->
+   <!-- shopcart_con -->
+   <div class="shopcart_con">
+      <table cellspacing="0" cellpadding="0">
+        <thead>
+           <tr>
+             <td colspan="8" class="tit">
+               <span class="custom02-checkbox"><input name="1" type="checkbox" value="" id="all" onclick="checkAll0(this,$(this).parents('table'))"/><label for="all"></label></span>
+               <a href="#">舒适吗内衣专营店</a><a href="#" class="touch" title="联系"></a>
+               <div class="shopcart_sale">
+                   <span class="cc">优惠券</span>
+                   <div class="shopcart_sale0">
+                     <div class="tit">
+                       有新优惠券领取~
+                       <span class="close"></span>
+                    </div>
+                    <div class="con">
+                      <ul>
+                        <li>
+                           <div class="quan">￥3</div>
+                           <div class="txt">
+                              <p>满100送30满100送30</p>
+                              <p class="dash">2014.09.10-2014.10.10</p>
+                           </div>
+                           <div class="get">
+                              <a href="#">领取</a>
+                           </div>
+                        </li>
+                        <li>
+                           <div class="quan dis">￥3</div>
+                           <div class="txt">
+                              <p>满100送30满100送30</p>
+                              <p class="dash">2014.09.10-2014.10.10</p>
+                           </div>
+                           <div class="get">
+                              已领取
+                           </div>
+                        </li>
+                        <li>
+                           <div class="quan">￥3</div>
+                           <div class="txt">
+                              <p>满100送30满100送30</p>
+                              <p class="dash">2014.09.10-2014.10.10</p>
+                           </div>
+                           <div class="get">
+                              <a href="#">领取</a>
+                           </div>
+                        </li>
+                        <li>
+                           <div class="quan">￥3</div>
+                           <div class="txt">
+                              <p>满100送30满100送30</p>
+                              <p class="dash">2014.09.10-2014.10.10</p>
+                           </div>
+                           <div class="get">
+                              <a href="#">领取</a>
+                           </div>
+                        </li>
+                        <li>
+                           <div class="quan">￥3</div>
+                           <div class="txt">
+                              <p>满100送30满100送30</p>
+                              <p class="dash">2014.09.10-2014.10.10</p>
+                           </div>
+                           <div class="get">
+                              <a href="#">领取</a>
+                           </div>
+                        </li>
+                        <li>
+                           <div class="quan">￥3</div>
+                           <div class="txt">
+                              <p>满100送30满100送30</p>
+                              <p class="dash">2014.09.10-2014.10.10</p>
+                           </div>
+                           <div class="get">
+                              <a href="#">领取</a>
+                           </div>
+                        </li>
+                        <li>
+                           <div class="quan">￥3</div>
+                           <div class="txt">
+                              <p>满100送30满100送30</p>
+                              <p class="dash">2014.09.10-2014.10.10</p>
+                           </div>
+                           <div class="get">
+                              <a href="#">领取</a>
+                           </div>
+                        </li>
+                     </ul>
+                  </div>
+                 </div>
+               
+               </div>
+               
+             </td>
+           </tr>
+        </thead>
+        <tbody>
+           <tr>
+             <td class="w1">
+                <span class="custom0-checkbox"><input name="2" type="checkbox" value="" id="1"/><label for="1"></label></span>
+             </td>
+             <td class="w2">
+               <div class="shopcart_cp">
+                 <dl>
+                   <dt>
+                      <a href="#"><img src="images/01.jpg" width="70" height="70" /></a>
+                   </dt>
+                   <dd>
+                     <p class="th">
+                       <a href="#">嘉利玛经典同名女士香水50ml嘉利玛经典同名</a>
+                     </p>
+                     <p class="mt">
+                       <span class="jian"></span><span class="zhen"></span><span class="zheng"></span>
+                     </p>
+                   </dd>
+                 </dl>
+               </div>
+             </td>
+             <td class="w3">
+                颜色：红色<br />尺码：X
+             </td>
+             <td class="w4">
+               <span class="now_p">99.00</span><br /><span class="old_p">199.00</span>
+             </td>
+             <td class="w5">
+               <div class="sp_con">
+                   <div class="sp_num">
+                     <span class="sub_num"></span>
+                     <input type="text" class="num_inp" value="1" />
+                     <span class="add_num"></span>
+                   </div>
+                   <div class="sp_no">此商品无库存</div>
+               </div>
+              
+             </td>
+             <td class="w8">
+                <div class="sp_sales">
+                  <div class="sp_sales_pic"></div>
+                  <div class="sp_sales_con">
+                     <p>
+                       <span class="text">满200减50</span>
+                     </p>
+                     <p>
+                       <span class="text">满100减5</span>
+                     </p>
+                  </div>
+                </div>
+                
+             </td>
+             <td class="w6">￥79</td>
+             <td class="w7">
+               <a href="#">移入收藏夹</a><br /><a href="#" class="del_goods">删除</a>
+               
+             </td>
+           </tr>
+           <tr>
+             <td class="w1">
+                <span class="custom0-checkbox"><input name="3" type="checkbox" value="" id="2"/><label for="2"></label></span>
+             </td>
+             <td class="w2">
+               <div class="shopcart_cp">
+                 <dl>
+                   <dt>
+                      <a href="#"><img src="images/01.jpg" width="70" height="70" /></a>
+                   </dt>
+                   <dd>
+                     <p class="th">
+                       <a href="#">嘉利玛经典同名女士香水50ml嘉利玛经典同名</a>
+                     </p>
+                     <p class="mt">
+                       <span class="jian"></span><span class="zhen"></span><span class="zheng"></span>
+                     </p>
+                   </dd>
+                 </dl>
+               </div>
+             </td>
+             <td class="w3">
+                颜色：红色<br />尺码：X
+             </td>
+             <td class="w4">
+               <span class="now_p">99.00</span><br /><span class="old_p">199.00</span>
+             </td>
+             <td class="w5">
+               <div class="sp_con">
+                   <div class="sp_num">
+                     <span class="sub_num"></span>
+                     <input type="text" class="num_inp" value="1" />
+                     <span class="add_num"></span>
+                   </div>
+                   <div class="sp_jz">库存紧张</div>
+               </div>  
+             </td>
+             <td class="w8">
+                <div class="sp_sales">
+                  <div class="sp_sales_pic"></div>
+                  <div class="sp_sales_con">
+                     <p>
+                       <span class="text">满200减50</span>
+                     </p>
+                    
+                  </div>
+                </div>
+                
+             </td>
+             <td class="w6">￥79</td>
+             <td class="w7">
+               <a href="#">移入收藏夹</a><br /><a href="#" class="del_goods">删除</a>
+             </td>
+           </tr>
+        </tbody>
+        
+     </table>
+     
+     <table cellspacing="0" cellpadding="0">
+        <thead>
+           <tr>
+             <td colspan="8" class="tit">
+               <span class="custom02-checkbox"><input name="4" type="checkbox" value="" id="all0" onclick="checkAll0(this,$(this).parents('table'))" /><label for="all0"></label></span>
+               <a href="#">舒适吗内衣专营店</a><a href="#" class="touch" title="联系"></a>
+             </td>
+           </tr>
+        </thead>
+        <tbody>
+           <tr class="disable">
+             <td class="w1">
+                <span class="disable_pc"></span>
+             </td>
+             <td class="w2">
+               <div class="shopcart_cp">
+                 <dl>
+                   <dt>
+                      <a href="#"><img src="images/01.jpg" width="70" height="70" /></a>
+                   </dt>
+                   <dd>
+                     <p class="th">
+                         <a href="#">嘉利玛经典同名女士香水50ml</a>
+                     </p>
+                     <p class="mt">
+                       <span class="jian"></span><span class="zhen"></span><span class="zheng"></span>
+                     </p>
+                   </dd>
+                 </dl>
+               </div>
+             </td>
+             <td class="w3">
+                颜色：红色<br />尺码：X
+             </td>
+             <td class="w4">
+               <span class="now_p">99.00</span><br /><span class="old_p">199.00</span>
+             </td>
+             <td class="w5">
+               <div class="sp_con">
+                   <div class="sp_num">
+                     <span class="sub_num"></span>
+                     <input type="text" class="num_inp" value="1" />
+                     <span class="add_num"></span>
+                   </div>
+               </div>
+              
+             </td>
+             <td class="w8">
+                <div class="sp_sales">
+                  
+                </div>
+                
+             </td>
+             <td class="w6">￥79</td>
+             <td class="w7">
+               <a href="#">移入收藏夹</a><br /><a href="#" class="del_goods">删除</a>
+             </td>
+           </tr>
+           <tr>
+             <td class="w1">
+                <span class="custom0-checkbox"><input name="5" type="checkbox" value="" id="20"/><label for="20"></label></span>
+             </td>
+             <td class="w2">
+               <div class="shopcart_cp">
+                 <dl>
+                   <dt>
+                      <a href="#"><img src="images/01.jpg" width="70" height="70" /></a>
+                   </dt>
+                   <dd>
+                     <p class="th">
+                       <a href="#">嘉利玛经典同名女士香水50ml嘉利玛经典同名</a>
+                     </p>
+                     <p class="mt">
+                       <span class="jian"></span><span class="zhen"></span><span class="zheng"></span>
+                     </p>
+                   </dd>
+                 </dl>
+               </div>
+             </td>
+             <td class="w3">
+                颜色：红色<br />尺码：X
+             </td>
+             <td class="w4">
+               <span class="now_p">99.00</span><br /><span class="old_p">199.00</span>
+             </td>
+             <td class="w5">
+               <div class="sp_con">
+                   <div class="sp_num">
+                     <span class="sub_num"></span>
+                     <input type="text" class="num_inp" value="1" />
+                     <span class="add_num"></span>
+                   </div>
+                   <div class="sp_jz">库存紧张</div>
+               </div>  
+             </td>
+             <td class="w8">
+                <div class="sp_sales">
+                  <div class="sp_sales_pic"></div>
+                  <div class="sp_sales_con">
+                     <p>
+                       <span class="text">满200减50</span>
+                     </p>
+                    
+                  </div>
+                </div>
+                
+             </td>
+             <td class="w6">￥79</td>
+             <td class="w7">
+               <a href="#">移入收藏夹</a><br /><a href="#" class="del_goods">删除</a>
+             </td>
+           </tr>
+        </tbody>
+        
+     </table>
+
+   </div>
+   
+</div>
+<!-- shopcart end -->
+
+<!-- shopcart_con0 -->
+<div class="shopcart_con0">
+   <!-- shopcart_cz -->
+   <div class="shopcart_cz">
+      <!-- shopcart_czl -->
+      <div class="shopcart_czl">
+        <span class="custom01-checkbox"><input name="" type="checkbox" value="" id="5" onclick="checkAll0(this,$('body'))"/><label for="5">全选</label></span>
+        <span><a href="javascript:;" class="del_lot">批量删除</a></span>
+        <span><a href="javascript:;" class="into">批量移入收藏夹</a></span>
+        <span><a href="javascript:;" class="clear_dis">消除失效商品</a></span>
+      </div>
+      <!-- shopcart_czr -->
+      <div class="shopcart_czr">
+         <div class="shopcart_czr_text">
+           已选商品 <span class="total_num">5</span> 件　　合计（不含运费）：￥<span class="total_price">118</span>
+        </div>
+        <div class="pay_con">
+          <input type="button" class="pay_btn" />
+        </div>
+     </div>
+     
+   </div>
+   
+</div>
+<!-- shopcart_con0 end -->
+
+<div id="mask"></div>
+
+
+
+<!-- footer -->
+<div id="footer">
+    <!-- footer_con -->
+    <div class="footer_con" style="width:1000px;">
+       <!-- footer_con0 -->
+       <div class="footer_con0" style="padding-left:200px;">
+          <h3><img src="images/news.jpg" alt="下载客户端，关注更多潮流咨询" /></h3>
+          <ul>
+             <li class="line"></li>
+             <li><img src="images/sina.jpg" alt="官方微博@kouclo" /></li>
+             <li class="line"></li>
+             <li class="wx"><img src="images/qq.jpg" alt="微信平台" /></li>
+             <li class="line"></li>
+             <li class="kh"><img src="images/phone.jpg" alt="客户端下载" /></li>
+          </ul>
+       </div>
+       <!-- footer_content -->
+       <div class="footer_content" style="margin-left:40px;">
+           <img src="images/content.png" alt="联系我们 400-8859-000" />
+       </div>
+    </div>
+</div>
+<!-- footer end -->
+
+<!-- service -->
+<div class="service" style="width:1000px">
+    <!-- service_left -->
+    <div class="service_left" style="margin:15px 110px 8px">
+       <div class="service_left_tit">
+          <ul>
+             <li>关于抠抠</li>
+             <li class="line"></li>
+             <li>新手指南 </li>
+             <li class="line"></li>
+             <li>维权中心</li>
+             <li class="line"></li>
+             <li>支付方式</li>
+             <li class="line"></li>
+             <li>售后服务</li>
+             <li class="line"></li>
+             <li>配送说明</li>
+           </ul>
+       </div>
+       <div class="service_left_con">
+          <ul>
+             <li>
+               <a href="#">关于抠抠</a><a href="#">商家入驻</a><a href="#">加入我们</a><a href="#">联系我们</a><a href="#">友情链接</a> 
+             </li>
+             <li>
+               <a href="#">用户注册</a><a href="#">用户注册协议</a><a href="#">购物流程</a><a href="#">网站地图</a> 
+             </li>
+             <li>
+               <a href="#">客服中心</a><a href="#">找回密码</a><a href="#">邮件订阅</a><a href="#">产品册订阅</a><a href="#">隐私声明</a> 
+             </li>
+             <li class="l">
+               <a href="#">货到付款</a><a href="#">在线支付</a><a href="#">礼品卡及账户余额</a><a href="#">其他支付方式</a>
+             </li>
+             <li class="n">
+               <a href="#">退款政策</a><a href="#">退货流程</a><a href="#">退款说明</a> 
+             </li>
+             <li>
+               <a href="#">发货规定</a><a href="#">国内配送</a><a href="#">海外配送</a><a href="#">订单拆分</a>
+             </li>
+          </ul>
+       </div>
+        
+    </div>
+   
+</div>
+
+<!-- copyright -->
+<div class="copyright" style="width:1000px">
+     CopyRIGHT © 2009-2014 抠抠网 KOUCLO All RIGHTS RESERVED<br /> 闽ICP备13001618号 | 增值电信业务经营许可证：闽B1-20130053 | 互联网药品信息服务资质证书编号：（闽）-非经营性-2014-0008
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,1224 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+<title>抠抠网_店铺列表页</title>
+<link type="text/css" rel="stylesheet" href="css/index.css"  />
+<link type="text/css" rel="stylesheet" href="css/product.css"  />
+<link type="text/css" rel="stylesheet" href="css/store.css"  />
+<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+<script type="text/javascript" src="js/store.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+<script type="text/javascript" src="js/product.js"></script>
+<script src="js/simplefoucs.js" type="text/javascript"></script>
+<script type="text/javascript">
+$(function(){
+	$('.custom-checkbox input').customInput();
+	add_sub('.num',10)
+	Allnumber();
+	setTotal();
+	
+});
+$(function(){
+	$(".indexShowBox").slideJ({
+		leftBtn:".indexShowLeft",
+		rightBtn:".indexShowRight",
+		speed:800
+	});
+});
+</script>
+
+</head>
+
+<body>
+
+
+
+<!-- top -->
+<div id="top">
+   <!-- top_con -->
+   <div class="top_con">
+      <!-- top_left -->
+      <!--<div class="top_left">
+         <span>hi,welcome to Kouclo</span>
+         <span><a href="#">请登录</a></span>
+         <span><a href="#">免费注册</a></span>
+      </div>-->
+      
+      <div class="top_left">
+         <span>hi,welcome to Kouclo</span>
+         <span><a href="#">退出</a></span>
+      </div>
+      <!-- top_right -->
+      <div class="top_right">
+      
+         <div class="top_home">
+            <a href="#"><b class="top_home_pic"></b>抠抠首页</a>
+         </div>
+         
+         <div class="top_my">
+            <a href="#">我的抠抠<b class="top_my_icon"></b></a>
+            <ul class="top_my_text">
+               <li><a href="#">待付款</a></li>
+               <li><a href="#">我的退换货</a></li>
+               <li class="bord_bn"><a href="#">待评价</a></li>
+            </ul>
+         </div>
+         
+         <div class="top_order"><a href="#">我的订单</a></div>
+         
+         <div class="top_fav">
+            <a href="#">收藏夹<b class="top_fav_icon"></b></a>
+            <ul class="top_fav_text">
+               <li><a href="#">商品</a></li>
+               <li class="bord_bn"><a href="#">店铺</a></li>
+            </ul>
+         </div>
+         <div class="top_phone_box">
+             <span class="top_phone">
+                <img src="images/app.png" alt="" />
+             </span>
+             <span class="ewm">
+               <img src="images/erweima.jpg" alt="" />
+             </span>
+         </div>
+         
+         <div class="top_help"><a href="#">帮助中心</a></div>
+         
+      </div>
+   </div>
+</div>
+<!-- top end -->
+
+<!-- product_header -->
+<div id="product_header" >
+   <!-- h1 -->
+   <h1>
+     <a href="#"><img src="images/product_logo.png" alt="" /></a>
+   </h1>
+   <!-- line -->
+   <div class="line"></div>
+   <!-- store -->
+   <div class="store">
+      <h2><a href="#">CICISHOP 官方旗舰专卖店</a></h2>
+      <div class="store_con">
+         <span class="enter"><a href="#">进入店铺</a></span>
+         <span class="coll"><a href="#">收藏本店</a></span>
+         <span class="text">成功收藏本店！</span>
+         <!--<span class="text">已收藏过本店！</span>-->
+      </div>
+   </div>
+   <!-- product_search -->
+   <div id="product_search">
+      <form method="post" action="">
+        <div class="con">
+          <input type="text" class="inpt" />
+          <input type="submit" class="search_btn" value="">
+        </div>
+        <div class="con0">
+          <input type="button" class="search_btn0" value="">
+        </div>
+      </form>
+   </div>
+   <!-- shopcar -->
+   <div class="shopcar" style="margin-top:29px">
+             <!-- shopcar_con -->
+             <div class="shopcar_con">
+               <span class="shopcar_icon"></span>
+               <a href="#">我的购物车<span class="shopcar_text0">(</span><span class="shopcar_tt0 shopcar_text0">0</span><span class="shopcar_text0">)</span></a>
+               <span class="shopcar_sj"></span>
+             </div>
+            <!-- shopcar_box -->
+            <div class="shopcar_box">
+               <!-- shopcar_lose -->
+               <!--<div class="shopcar_lose">
+                       <span class="shopcar_lose_icon"></span>
+                       <div class="shopcar_lose_text">
+                          您购物车中的商品均已失效
+                       </div>
+                       <div class="shopcar_lose_btn">
+                          <a href="#">查看购物车</a>
+                       </div>
+                   </div>-->
+              <!-- shopcar_box0 -->
+              <div class="shopcar_box0">
+                  <!-- shopcar_cp -->
+                  <div class="shopcar_cp">
+                     <ul>
+                        <li>
+                           <div class="sel">
+                              <span class="custom-checkbox"><input name="" type="checkbox" value="" id="1"/><label for="1"></label></span>
+                           </div>
+                           <div class="cp">
+                              <dl>
+                                <dt>
+                                  <a href="#"><img src="images/17.jpg" alt="" /></a>
+                                </dt> 
+                                <dd>
+                                  <h3><a href="#">Babyghost</a></h3>
+                                  <p><a href="#" title="">2014秋  绿色纹样...</a></p>
+                                  <p>￥<span class="price">339.00</span></p>
+                               </dd>
+                             </dl>
+                           </div>
+                           <div class="num">
+                             <span class="sub"></span>
+                             <input type="text" class="num_inp" value="1" />
+                             <span class="add"></span>
+                           </div>
+                          <span class="shopcar_close"></span>
+                       </li>
+                       <li>
+                           <div class="sel">
+                              <span class="custom-checkbox"><input name="" type="checkbox" value="" id="2"/><label for="2"></label></span>
+                           </div>
+                           <div class="cp">
+                              <dl>
+                                <dt>
+                                  <a href="#"><img src="images/18.jpg" alt="" /></a>
+                                </dt> 
+                                <dd>
+                                  <h3><a href="#">Babyghost</a></h3>
+                                  <p><a href="#" title="">2014秋  绿色纹样...</a></p>
+                                  <p>￥<span class="price">339.00</span></p>
+                               </dd>
+                             </dl>
+                           </div>
+                           <div class="num">
+                             <span class="sub"></span>
+                             <input type="text" class="num_inp" value="1" />
+                             <span class="add"></span>
+                           </div>
+                          <span class="shopcar_close"></span>
+                       </li>
+                       <li>
+                           <div class="sel">
+                              <span class="custom-checkbox"><input name="" type="checkbox" value="" id="3"/><label for="3"></label></span>
+                           </div>
+                           <div class="cp">
+                              <dl>
+                                <dt>
+                                  <a href="#"><img src="images/18.jpg" alt="" /></a>
+                                </dt> 
+                                <dd>
+                                  <h3><a href="#">Babyghost</a></h3>
+                                  <p><a href="#" title="">2014秋  绿色纹样...</a></p>
+                                  <p>￥<span class="price">339.00</span></p>
+                               </dd>
+                             </dl>
+                           </div>
+                           <div class="num">
+                             <span class="sub"></span>
+                             <input type="text" class="num_inp" value="1" />
+                             <span class="add"></span>
+                           </div>
+                          <span class="shopcar_close"></span>
+                       </li>
+                       <li>
+                           <div class="sel">
+                              <span class="custom-checkbox"><input name="" type="checkbox" value="" id="4"/><label for="4"></label></span>
+                           </div>
+                           <div class="cp">
+                              <dl>
+                                <dt>
+                                  <a href="#"><img src="images/18.jpg" alt="" /></a>
+                                </dt> 
+                                <dd>
+                                  <h3><a href="#">Babyghost</a></h3>
+                                  <p><a href="#" title="">2014秋  绿色纹样...</a></p>
+                                  <p>￥<span class="price">339.00</span></p>
+                               </dd>
+                             </dl>
+                           </div>
+                           <div class="num">
+                             <span class="sub"></span>
+                             <input type="text" class="num_inp" value="1" />
+                             <span class="add"></span>
+                           </div>
+                          <span class="shopcar_close"></span>
+                       </li>
+                       <li>
+                           <div class="sel">
+                              <span class="custom-checkbox"><input name="" type="checkbox" value="" id="5"/><label for="5"></label></span>
+                           </div>
+                           <div class="cp">
+                              <dl>
+                                <dt>
+                                  <a href="#"><img src="images/18.jpg" alt="" /></a>
+                                </dt> 
+                                <dd>
+                                  <h3><a href="#">Babyghost</a></h3>
+                                  <p><a href="#" title="">2014秋  绿色纹样...</a></p>
+                                  <p>￥<span class="price">339.00</span></p>
+                               </dd>
+                             </dl>
+                           </div>
+                           <div class="num">
+                             <span class="sub"></span>
+                             <input type="text" class="num_inp" value="1" />
+                             <span class="add"></span>
+                           </div>
+                          <span class="shopcar_close"></span>
+                       </li>
+                       
+                    </ul>
+
+                </div>
+             
+           
+            <!-- shopcar_all -->
+            <div class="shopcar_all">
+               <div class="shopcar_all_text">
+                  <p>
+                     <span class="custom-checkbox"><input name="" type="checkbox" value="" id="allcheck" onclick="checkAll(this,$('.shopcar_cp'))" checked="checked"/><label for="allcheck" >全选</label></span><a href="javascript:void(0);" class="del">删除</a>，共 <span class="shopcar_tt shopcar_tt0">0</span> 件
+                  </p>
+                  <p class="p_left">合计　￥<span class="total_price">0</span></p>
+               </div>
+               <div class="shopcar_jsbtn">
+                  <a href="#">立即结算</a>
+               </div>
+            </div>
+            
+            
+            
+            </div>
+        
+          </div>
+        </div>
+   <!-- shopcar end --> 
+         
+   
+</div>
+<!-- product_header end -->
+<!-- header end -->
+
+
+
+
+<!-- pro_banner -->
+<div class="pro_banner">
+   <div class="pro_banner_img">
+     <a href="#"><img src="images/020.jpg" alt=""/></a>
+   </div>
+   
+</div>
+
+
+<!-- product_nav -->
+<div id="product_nav">
+   <!-- product_nav0 -->
+   <div id="product_nav0">
+       <!-- product_class -->
+       <div id="product_class">
+          <h3><a href="#">所有分类<b class="class_icon"></b></a></h3>
+          <div id="product_class_con">
+             <ul>
+               <li>
+                  <a href="#">2014新款</a><span class="bg_icon"></span>
+                  <ul class="con">
+                     <li><a href="#">男装上衣</a></li>
+                     <li><a href="#">女装上衣</a></li>
+                     <li><a href="#">运动装</a></li>
+                     <li><a href="#">配饰</a></li>
+                     <li><a href="#">女鞋</a></li>
+                  </ul>
+               </li>
+               <li>
+                  <a href="#">T恤背心<b class="bg_icon"></b></a>
+                  <ul class="con">
+                     <li><a href="#">男装上衣</a></li>
+                     <li><a href="#">女装上衣</a></li>
+                     <li><a href="#">运动装</a></li>
+                     <li><a href="#">配饰</a></li>
+                     <li><a href="#">女鞋</a></li>
+                  </ul>
+               </li>
+               <li>
+                  <a href="#">针织衫<b class="bg_icon"></b></a>
+                  <ul class="con">
+                     <li><a href="#">男装上衣</a></li>
+                     <li><a href="#">女装上衣</a></li>
+                     <li><a href="#">运动装</a></li>
+                     <li><a href="#">配饰</a></li>
+                     <li><a href="#">女鞋</a></li>
+                  </ul>
+               </li>
+               <li>
+                  <a href="#">连衣裙<b class="bg_icon"></b></a>
+                  <ul class="con">
+                     <li><a href="#">男装上衣</a></li>
+                     <li><a href="#">女装上衣</a></li>
+                     <li><a href="#">运动装</a></li>
+                     <li><a href="#">配饰</a></li>
+                     <li><a href="#">女鞋</a></li>
+                  </ul>
+               </li>
+               <li>
+                  <a href="#">休闲裤<b class="bg_icon"></b></a>
+                  <ul class="con">
+                     <li><a href="#">男装上衣</a></li>
+                     <li><a href="#">女装上衣</a></li>
+                     <li><a href="#">运动装</a></li>
+                     <li><a href="#">配饰</a></li>
+                     <li><a href="#">女鞋</a></li>
+                  </ul>
+               </li>
+               <li>
+                  <a href="#">POLO<b class="bg_icon"></b></a>
+                  <ul class="con">
+                     <li><a href="#">男装上衣</a></li>
+                     <li><a href="#">女装上衣</a></li>
+                     <li><a href="#">运动装</a></li>
+                     <li><a href="#">配饰</a></li>
+                     <li><a href="#">女鞋</a></li>
+                  </ul>
+               </li>
+               
+             </ul>
+             <div class="bg"></div>
+          </div>
+       </div>
+       <!-- product_class end -->
+       
+       <!-- product_nav_con -->
+       <div id="product_nav_con">
+          <a href="#">首页</a><a href="#">[夏季经典款]</a><a href="#">[cicishope独家出售]</a><a href="#">店铺动态</a>
+       </div>
+       
+       <!-- store_air -->
+       <div class="store_air">
+           <span class="icon_air"></span>
+           <div id="demo">
+              <div id="demo1">
+                  <a href="#">累积购买1000元即可成为会员，会员可享受正价9.5折</a><a href="#">下载手机新版客户端,首单送5元现金券</a>
+              </div> 
+              <div id="demo2"></div>  
+           </div>  
+       </div>
+       
+   </div>
+</div>
+<!-- product_nav end -->
+
+<!-- store -->
+<div class="store">
+  <!-- store_left -->
+  <div class="store_left">
+     <!-- store_fl -->
+     <div class="store_fl">
+        <div class="store_fl_tit">
+           <h3>商品分类</h3>
+        </div>
+        <div class="store_fl_con">
+           <h4>查看所有商品</h4>
+           <span><a href="#">按销量</a></span><span><a href="#">按新品</a></span><span><a href="#">按价格</a></span><span><a href="#">按收藏</a></span>
+        </div>
+        <div class="store_fl_con0">
+           <ul>
+              <li>
+                 <span><a href="javascript:void(0)"><b class="fl_icon"></b>TOP</a></span>
+                 <ul class="con">
+                    <li><a href="#">全部鞋靴1474</a></li>
+                    <li><a href="#">休闲/运动鞋884</a></li>
+                    <li><a href="#">靴子160</a></li>
+                    <li><a href="#">时装鞋217</a></li>
+                    <li><a href="#">裤装74</a></li>
+                 </ul>
+              </li>
+              <li>
+                 <span><a href="javascript:void(0)"><b class="fl_icon"></b>上衣6630</a></span>
+                 <ul class="con">
+                    <li><a href="#">全部鞋靴1474</a></li>
+                    <li><a href="#">休闲/运动鞋884</a></li>
+                    <li><a href="#">靴子160</a></li>
+                 </ul>
+              </li>
+              <li>
+                 <span><a href="javascript:void(0)"><b class="fl_icon"></b>裤装2265</a></span>
+                 <ul class="con">
+                    <li><a href="#">全部鞋靴1474</a></li>
+                    <li><a href="#">休闲/运动鞋884</a></li>
+                    <li><a href="#">靴子160</a></li>
+                    <li><a href="#">时装鞋217</a></li>
+                    <li><a href="#">裤装74</a></li>
+                 </ul>
+              </li>
+              <li>
+                 <span><a href="javascript:void(0)"><b class="fl_icon"></b>鞋靴1474</a></span>
+                 <ul class="con">
+                    <li><a href="#">全部鞋靴1474</a></li>
+                    <li><a href="#">休闲/运动鞋884</a></li>
+                    <li><a href="#">靴子160</a></li>
+                    <li><a href="#">时装鞋217</a></li>
+                    <li><a href="#">裤装74</a></li>
+                 </ul>
+              </li>
+              <li>
+                 <span><a href="javascript:void(0)"><b class="fl_icon"></b>包类1421</a></span>
+                 <ul class="con">
+                    <li><a href="#">全部鞋靴1474</a></li>
+                    <li><a href="#">休闲/运动鞋884</a></li>
+                    <li><a href="#">靴子160</a></li>
+
+                 </ul>
+              </li>
+           </ul>
+        </div>
+     </div>
+     
+     <!-- store_search -->
+     <div class="store_search">
+        <dl>
+           <dt>关键字</dt>
+           <dd><input type="text" name="" class="key_ipt" /></dd>
+        </dl>
+        <dl>
+           <dt>价格</dt>
+           <dd>
+             <input type="text" name="" class="price_ipt" /><span class="line">-----</span><input type="text" name="" class="price_ipt" />
+           </dd>
+        </dl>
+        <div class="con">
+           <input type="submit" class="sr_btn" value="搜索" />
+        </div>
+     </div>
+     
+     <!-- store_sc -->
+     <div class="store_sc">
+        <div class="store_sc_tit">
+           <h3>Hot Sale</h3>
+        </div>
+        <div class="store_sc_tit0">
+           <ul>
+              <li class="cur">销售量</li>
+              <li class="l">收藏数</li>
+           </ul>
+        </div>
+        <div class="store_sc_con">
+           <dl>
+              <dt>
+                 <a href="#"><img src="images/0031.jpg" alt="" /></a>
+              </dt>
+              <dd>
+                 <a href="#" title="">小清新2014款...</a><br /><span class="sprice">￥9.009</span>
+              </dd>
+           </dl>
+           <dl>
+              <dt>
+                 <a href="#"><img src="images/0031.jpg" alt="" /></a>
+              </dt>
+              <dd>
+                 <a href="#" title="">小清新2014款...</a><br /><span class="sprice">￥99</span>
+              </dd>
+           </dl>
+           <dl>
+              <dt>
+                 <a href="#"><img src="images/0031.jpg" alt="" /></a>
+              </dt>
+              <dd>
+                 <a href="#" title="">小清新2014款...</a><br /><span class="sprice">￥99</span>
+              </dd>
+           </dl>
+           <dl>
+              <dt>
+                 <a href="#"><img src="images/0031.jpg" alt="" /></a>
+              </dt>
+              <dd>
+                 <a href="#" title="">小清新2014款...</a><br /><span class="sprice">￥99</span>
+              </dd>
+           </dl>
+           <dl>
+              <dt>
+                 <a href="#"><img src="images/0031.jpg" alt="" /></a>
+              </dt>
+              <dd>
+                 <a href="#" title="">小清新2014款...</a><br /><span class="sprice">￥99</span>
+              </dd>
+           </dl>
+           <dl>
+              <dt>
+                 <a href="#"><img src="images/0031.jpg" alt="" /></a>
+              </dt>
+              <dd>
+                 <a href="#" title="">小清新2014款...</a><br /><span class="sprice">￥99</span>
+              </dd>
+           </dl>
+           <dl>
+              <dt>
+                 <a href="#"><img src="images/0031.jpg" alt="" /></a>
+              </dt>
+              <dd>
+                 <a href="#" title="">小清新2014款...</a><br /><span class="sprice">￥99</span>
+              </dd>
+           </dl>
+           <dl>
+              <dt>
+                 <a href="#"><img src="images/0031.jpg" alt="" /></a>
+              </dt>
+              <dd>
+                 <a href="#" title="">小清新2014款...</a><br /><span class="sprice">￥99</span>
+              </dd>
+           </dl>
+           <dl>
+              <dt>
+                 <a href="#"><img src="images/0031.jpg" alt="" /></a>
+              </dt>
+              <dd>
+                 <a href="#" title="">小清新2014款...</a><br /><span class="sprice">￥99</span>
+              </dd>
+           </dl>
+           <dl>
+              <dt>
+                 <a href="#"><img src="images/0031.jpg" alt="" /></a>
+              </dt>
+              <dd>
+                 <a href="#" title="">小清新2014款...</a><br /><span class="sprice">￥99</span>
+              </dd>
+           </dl>
+           <div class="store_sc_more">
+              <a href="#">更多<b class="icon"></b></a>
+           </div>
+        </div>
+        <div class="store_sc_con" style="display:none">
+           <dl>
+              <dt>
+                 <a href="#"><img src="images/0031.jpg" alt="" /></a>
+              </dt>
+              <dd>
+                 <a href="#" title="">小清vcv款...</a><br /><span class="sprice">￥99</span>
+              </dd>
+           </dl>
+           <dl>
+              <dt>
+                 <a href="#"><img src="images/0031.jpg" alt="" /></a>
+              </dt>
+              <dd>
+                 <a href="#" title="">小清新2014款...</a><br /><span class="sprice">￥99</span>
+              </dd>
+           </dl>
+           <dl>
+              <dt>
+                 <a href="#"><img src="images/0031.jpg" alt="" /></a>
+              </dt>
+              <dd>
+                 <a href="#" title="">小清新2014款...</a><br /><span class="sprice">￥99</span>
+              </dd>
+           </dl>
+           <dl>
+              <dt>
+                 <a href="#"><img src="images/0031.jpg" alt="" /></a>
+              </dt>
+              <dd>
+                 <a href="#" title="">小清新2014款...</a><br /><span class="sprice">￥99</span>
+              </dd>
+           </dl>
+           <dl>
+              <dt>
+                 <a href="#"><img src="images/0031.jpg" alt="" /></a>
+              </dt>
+              <dd>
+                 <a href="#" title="">小清新2014款...</a><br /><span class="sprice">￥99</span>
+              </dd>
+           </dl>
+           <dl>
+              <dt>
+                 <a href="#"><img src="images/0031.jpg" alt="" /></a>
+              </dt>
+              <dd>
+                 <a href="#" title="">小清新2014款...</a><br /><span class="sprice">￥99</span>
+              </dd>
+           </dl>
+           <dl>
+              <dt>
+                 <a href="#"><img src="images/0031.jpg" alt="" /></a>
+              </dt>
+              <dd>
+                 <a href="#" title="">小清新2014款...</a><br /><span class="sprice">￥99</span>
+              </dd>
+           </dl>
+           <dl>
+              <dt>
+                 <a href="#"><img src="images/0031.jpg" alt="" /></a>
+              </dt>
+              <dd>
+                 <a href="#" title="">小清新2014款...</a><br /><span class="sprice">￥99</span>
+              </dd>
+           </dl>
+           <dl>
+              <dt>
+                 <a href="#"><img src="images/0031.jpg" alt="" /></a>
+              </dt>
+              <dd>
+                 <a href="#" title="">小清新2014款...</a><br /><span class="sprice">￥99</span>
+              </dd>
+           </dl>
+           <dl>
+              <dt>
+                 <a href="#"><img src="images/0031.jpg" alt="" /></a>
+              </dt>
+              <dd>
+                 <a href="#" title="">小清新2014款...</a><br /><span class="sprice">￥99</span>
+              </dd>
+           </dl>
+           <div class="store_sc_more">
+              <a href="#">更多<b class="icon"></b></a>
+           </div>
+        </div>
+        
+        
+     </div>
+     
+     
+  </div>
+  <!-- store_left end -->
+  <!-- store_right -->
+  <div class="store_right">
+     <!-- indexShow -->
+     <div class="indexShow">
+         <a href="javascript:void(0)" class="indexShowLeft"></a>
+		 <a href="javascript:void(0)" class="indexShowRight"></a>
+         <div class="indexShowBox">
+           <ul>
+             <li><a href="#"><img src="images/0033.jpg" alt=""/></a></li>
+             <li><a href="#"><img src="images/0034.jpg" alt="" /></a></li>
+             <li><a href="#"><img src="images/0035.jpg" alt="" /></a></li>
+           </ul>
+         </div> 
+     </div>
+    <!-- indexShow end -->
+    <!-- sel_term -->
+    <div class="sel_term">
+       <!-- sel_term_con -->
+       <div class="sel_term_con">
+          <!-- sel_term_tit -->
+          <div class="sel_term_tit">
+             <div class="sel_term_tit_con">
+               <a href="#">所有宝贝</a><span>&gt;</span><a href="#">TOP</a><span>&gt;</span><a class="hover" href="javascript:void(0)">浅红色<b class="close"></b></a><a class="hover" href="javascript:void(0)">跑步鞋<b class="close"></b></a>
+             </div>
+             <div class="sel_term_tit_kong">
+                <a href="javascript:;"><b class="empty"></b>清空筛选条件</a>
+             </div>
+          </div>
+          <!-- sel_term_tit -->
+          <div class="sel_term_con0">
+             <dl>
+                <dt>分类</dt>
+                <dd>
+                   <div class="text">
+                      <div class="text_con attrs_rigFirst">
+                         <a href="javascript:void(0)">帆布鞋</a><a href="javascript:void(0)">跑步鞋</a><a href="javascript:void(0)">网球鞋</a><a href="javascript:void(0)">跑步鞋</a><a href="javascript:void(0)">帆布鞋</a><a href="javascript:void(0)">跑步鞋</a><a href="javascript:void(0)">网球鞋</a><a href="javascript:void(0)">跑步鞋</a><a href="javascript:void(0)">帆布鞋</a><a href="javascript:void(0)">跑步鞋</a><a href="#">网球鞋</a><a href="javascript:void(0)">跑步鞋</a>
+                      </div>
+                      <div class="text_con0 attrs_rigFirst" style="display:none">
+                         <a href="javascript:void(0)">帆布鞋</a><a href="javascript:void(0)">跑步鞋</a><a href="javascript:void(0)">网球鞋</a><a href="javascript:void(0)">跑步鞋</a><a href="javascript:void(0)">帆布鞋</a><a href="javascript:void(0)">跑步鞋</a><a href="javascript:void(0)">网球鞋</a><a href="javascript:void(0)">跑步鞋</a><a href="javascript:void(0)">帆布鞋</a><a href="javascript:void(0)">跑步鞋</a><a href="#">网球鞋</a><a href="javascript:void(0)">跑步鞋</a><a href="javascript:void(0)">帆布鞋</a><a href="javascript:void(0)">跑步鞋</a><a href="javascript:void(0)">网球鞋</a><a href="javascript:void(0)">跑步鞋</a><a href="javascript:void(0)">帆布鞋</a><a href="javascript:void(0)">跑步鞋</a><a href="javascript:void(0)">网球鞋</a><a href="javascript:void(0)">跑步鞋</a><a href="javascript:void(0)">帆布鞋</a><a href="javascript:void(0)">跑步鞋</a><a href="#">网球鞋</a><a href="javascript:void(0)">跑步鞋</a>
+                      </div>
+                   </div>
+                   <div class="more_con">
+                      <span class="gd">更多</span><b class="more_bg"></b>
+                   </div>
+                </dd>
+             </dl>
+             <dl>
+                <dt>颜色</dt>
+                <dd>
+                   <div class="text">
+                      <div class="text_con attrs_rigFirst">
+                         <a href="javascript:void(0)">蓝色</a><a href="javascript:void(0)">黑色</a><a href="javascript:void(0)">红色</a><a href="javascript:void(0)">白色</a>
+                      </div>
+                      <div class="text_con0 attrs_rigFirst" style="display:none">
+                         <a href="javascript:void(0)">蓝色</a><a href="javascript:void(0)">黑色</a><a href="javascript:void(0)">红色</a><a href="javascript:void(0)">白色</a><a href="javascript:void(0)">蓝色</a><a href="javascript:void(0)">黑色</a><a href="javascript:void(0)">红色</a><a href="javascript:void(0)">白色</a><a href="javascript:void(0)">蓝色</a><a href="javascript:void(0)">黑色</a><a href="javascript:void(0)">红色</a><a href="javascript:void(0)">白色</a><a href="javascript:void(0)">蓝色</a><a href="javascript:void(0)">黑色</a><a href="javascript:void(0)">红色</a><a href="javascript:void(0)">白色</a><a href="javascript:void(0)">蓝色</a><a href="javascript:void(0)">黑色</a><a href="javascript:void(0)">红色</a><a href="javascript:void(0)">白色</a><a href="javascript:void(0)">蓝色</a><a href="javascript:void(0)">黑色</a><a href="javascript:void(0)">红色</a><a href="javascript:void(0)">白色</a>
+                      </div>
+                   </div>
+                   <div class="more_con">
+                      <span class="gd">更多</span><b class="more_bg"></b>
+                   </div>
+                </dd>
+             </dl>
+             <dl>
+                <dt>尺码</dt>
+                <dd>
+                   <div class="text">
+                      <div class="text_con attrs_rigFirst">
+                         <a href="javascript:void(0)">27.5</a><a href="javascript:void(0)">28</a><a href="javascript:void(0)">28.5</a><a href="javascript:void(0)">29</a><a href="javascript:void(0)">29.5</a><a href="javascript:void(0)">30</a><a href="javascript:void(0)">30.5</a><a href="javascript:void(0)">31</a>
+                      </div>
+                      <div class="text_con0 attrs_rigFirst" style="display:none">
+                         <a href="javascript:void(0)">27.5</a><a href="javascript:void(0)">28</a><a href="javascript:void(0)">28.5</a><a href="javascript:void(0)">29</a><a href="javascript:void(0)">29.5</a><a href="javascript:void(0)">30</a><a href="javascript:void(0)">30.5</a><a href="javascript:void(0)">31</a><a href="javascript:void(0)">27.5</a><a href="javascript:void(0)">28</a><a href="javascript:void(0)">28.5</a><a href="javascript:void(0)">29</a><a href="javascript:void(0)">29.5</a><a href="javascript:void(0)">30</a><a href="javascript:void(0)">30.5</a><a href="javascript:void(0)">31</a><a href="javascript:void(0)">27.5</a><a href="javascript:void(0)">28</a><a href="javascript:void(0)">28.5</a><a href="javascript:void(0)">29</a><a href="javascript:void(0)">29.5</a><a href="javascript:void(0)">30</a><a href="javascript:void(0)">30.5</a><a href="javascript:void(0)">31</a>
+                      </div>
+                   </div>
+                   <div class="more_con">
+                      <span class="gd">更多</span><b class="more_bg"></b>
+                   </div>
+                </dd>
+             </dl>
+             <dl class="hide">
+                <dt>尺码00</dt>
+                <dd>
+                   <div class="text">
+                      <div class="text_con attrs_rigFirst">
+                         <a href="javascript:void(0)">27.5</a><a href="javascript:void(0)">28</a><a href="javascript:void(0)">28.5</a><a href="javascript:void(0)">29</a><a href="javascript:void(0)">29.5</a><a href="javascript:void(0)">30</a><a href="javascript:void(0)">30.5</a><a href="javascript:void(0)">31</a>
+                      </div>
+                      <div class="text_con0 attrs_rigFirst" style="display:none">
+                         <a href="javascript:void(0)">27.5</a><a href="javascript:void(0)">28</a><a href="javascript:void(0)">28.5</a><a href="javascript:void(0)">29</a><a href="javascript:void(0)">29.5</a><a href="javascript:void(0)">30</a><a href="javascript:void(0)">30.5</a><a href="javascript:void(0)">31</a><a href="javascript:void(0)">27.5</a><a href="javascript:void(0)">28</a><a href="javascript:void(0)">28.5</a><a href="javascript:void(0)">29</a><a href="javascript:void(0)">29.5</a><a href="javascript:void(0)">30</a><a href="javascript:void(0)">30.5</a><a href="javascript:void(0)">31</a><a href="javascript:void(0)">27.5</a><a href="javascript:void(0)">28</a><a href="javascript:void(0)">28.5</a><a href="javascript:void(0)">29</a><a href="javascript:void(0)">29.5</a><a href="javascript:void(0)">30</a><a href="javascript:void(0)">30.5</a><a href="javascript:void(0)">31</a>
+                      </div>
+                   </div>
+                   <div class="more_con">
+                      <span class="gd">更多</span><b class="more_bg"></b>
+                   </div>
+                </dd>
+             </dl>
+             <dl class="hide">
+                <dt>尺码0</dt>
+                <dd>
+                   <div class="text">
+                      <div class="text_con attrs_rigFirst">
+                         <a href="javascript:void(0)">27.5</a><a href="javascript:void(0)">28</a><a href="javascript:void(0)">28.5</a><a href="javascript:void(0)">29</a><a href="javascript:void(0)">29.5</a><a href="javascript:void(0)">30</a><a href="javascript:void(0)">30.5</a><a href="javascript:void(0)">31</a>
+                      </div>
+                      <div class="text_con0 attrs_rigFirst" style="display:none">
+                         <a href="javascript:void(0)">27.5</a><a href="javascript:void(0)">28</a><a href="javascript:void(0)">28.5</a><a href="javascript:void(0)">29</a><a href="javascript:void(0)">29.5</a><a href="javascript:void(0)">30</a><a href="javascript:void(0)">30.5</a><a href="javascript:void(0)">31</a><a href="javascript:void(0)">27.5</a><a href="javascript:void(0)">28</a><a href="javascript:void(0)">28.5</a><a href="javascript:void(0)">29</a><a href="javascript:void(0)">29.5</a><a href="javascript:void(0)">30</a><a href="javascript:void(0)">30.5</a><a href="javascript:void(0)">31</a><a href="javascript:void(0)">27.5</a><a href="javascript:void(0)">28</a><a href="javascript:void(0)">28.5</a><a href="javascript:void(0)">29</a><a href="javascript:void(0)">29.5</a><a href="javascript:void(0)">30</a><a href="javascript:void(0)">30.5</a><a href="javascript:void(0)">31</a>
+                      </div>
+                   </div>
+                   <div class="more_con">
+                      <span class="gd">更多</span><b class="more_bg"></b>
+                   </div>
+                </dd>
+             </dl>
+          </div>
+       </div>
+       
+       <!-- sel_term_more -->
+       <div class="sel_term_more">
+          <div class="sel_term_more0">
+             <span class="msel">更多选项</span><b class="more_icon"></b>
+          </div>
+       </div>
+       
+    </div>
+    <!-- sel_term end -->
+    
+    <!-- shop_sort -->
+    <div class="shop_sort">
+       <ul>
+          <li class="l">
+            <a href="#">人气<b class="sj"></b></a>
+          </li>
+          <li class="l">
+            <a href="#">销量<b class="sj"></b></a>
+          </li>
+          <li class="n">
+            <a href="#">新品<b class="sj"></b></a>
+          </li>
+          <li class="m">
+            <a href="#">收藏<b class="sj"></b></a>
+          </li>
+          <li class="f">
+            <a href="#">价格<b class="jg"></b></a>
+          </li>
+          <li class="d">
+            ￥<input type="text" class="inp_txt" onkeyup="value=value.replace(/[^\d]/g,'')" onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^\d]/g,''))"/><span class="xian">-</span>￥<input type="text" class="inp_txt" onkeyup="value=value.replace(/[^\d]/g,'')" onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^\d]/g,''))" /><span class="tt"><a href="#" class="sure">确定</a></span>
+          </li>
+          <li class="x">
+            显示 :　<a href="#"><b class="dapic"></b>大图</a><a href="#" class="hover"><b class="smallpic"></b>小图</a>
+          </li>
+       </ul>
+       <div class="shop_page">
+         <a href="#" title="上一页">&lt;</a><span>1/23</span><a href="#" title="下一页">&gt;</a>
+       </div>
+    </div>
+    
+    <!-- shop_sort end -->
+    <!-- xiaopic -->
+    <div class="xiaopic">
+       <ul class="clearfix">
+          <li>
+             <div class="pic">
+                <a href="#"><img src="images/0032.jpg" alt="" /></a>
+             </div>
+             <div class="text">
+                <p>
+                  <a href="#" class="ash" title="CONVERSE匡威 中性高邦中性高邦">CONVERSE匡威 中性高邦中性高邦</a>
+                </p>
+                <p>
+                  <a href="#" class="ash0" title="匡威专卖店">匡威专卖店</a>
+                </p>
+                <p>
+                  <span class="oldp">￥288</span><span class="pcolor">￥</span><span class="psize">158</span>
+                </p>
+             </div>
+          </li>
+          <li>
+             <div class="pic">
+                <a href="#"><img src="images/0032.jpg" alt="" /></a>
+             </div>
+             <div class="text">
+                <p>
+                  <a href="#" class="ash" title="CONVERSE匡威 中性高邦中性高邦">CONVERSE匡威 中性高邦中性高邦</a>
+                </p>
+                <p>
+                  <a href="#" class="ash0" title="匡威专卖店">匡威专卖店</a>
+                </p>
+                <p>
+                  <span class="oldp">￥288</span><span class="pcolor">￥</span><span class="psize">158</span>
+                </p>
+             </div>
+          </li>
+          <li>
+             <div class="pic">
+                <a href="#"><img src="images/0032.jpg" alt="" /></a>
+             </div>
+             <div class="text">
+                <p>
+                  <a href="#" class="ash" title="CONVERSE匡威 中性高邦中性高邦">CONVERSE匡威 中性高邦中性高邦</a>
+                </p>
+                <p>
+                  <a href="#" class="ash0" title="匡威专卖店">匡威专卖店</a>
+                </p>
+                <p>
+                  <span class="pcolor">￥</span><span class="psize">158</span>
+                </p>
+             </div>
+          </li>
+          <li>
+             <div class="pic">
+                <a href="#"><img src="images/0032.jpg" alt="" /></a>
+             </div>
+             <div class="text">
+                <p>
+                  <a href="#" class="ash" title="CONVERSE匡威 中性高邦中性高邦">CONVERSE匡威 中性高邦中性高邦</a>
+                </p>
+                <p>
+                  <a href="#" class="ash0" title="匡威专卖店">匡威专卖店</a>
+                </p>
+                <p>
+                  <span class="oldp">￥288</span><span class="pcolor">￥</span><span class="psize">158</span>
+                </p>
+             </div>
+          </li>
+          <li>
+             <div class="pic">
+                <a href="#"><img src="images/0032.jpg" alt="" /></a>
+             </div>
+             <div class="text">
+                <p>
+                  <a href="#" class="ash" title="CONVERSE匡威 中性高邦中性高邦">CONVERSE匡威 中性高邦中性高邦</a>
+                </p>
+                <p>
+                  <a href="#" class="ash0" title="匡威专卖店">匡威专卖店</a>
+                </p>
+                <p>
+                  <span class="oldp">￥288</span><span class="pcolor">￥</span><span class="psize">158</span>
+                </p>
+             </div>
+          </li>
+          <li>
+             <div class="pic">
+                <a href="#"><img src="images/0032.jpg" alt="" /></a>
+             </div>
+             <div class="text">
+                <p>
+                  <a href="#" class="ash" title="CONVERSE匡威 中性高邦中性高邦">CONVERSE匡威 中性高邦中性高邦</a>
+                </p>
+                <p>
+                  <a href="#" class="ash0" title="匡威专卖店">匡威专卖店</a>
+                </p>
+                <p>
+                  <span class="oldp">￥288</span><span class="pcolor">￥</span><span class="psize">158</span>
+                </p>
+             </div>
+          </li>
+          <li>
+             <div class="pic">
+                <a href="#"><img src="images/0032.jpg" alt="" /></a>
+             </div>
+             <div class="text">
+                <p>
+                  <a href="#" class="ash" title="CONVERSE匡威 中性高邦中性高邦">CONVERSE匡威 中性高邦中性高邦</a>
+                </p>
+                <p>
+                  <a href="#" class="ash0" title="匡威专卖店">匡威专卖店</a>
+                </p>
+                <p>
+                  <span class="oldp">￥288</span><span class="pcolor">￥</span><span class="psize">158</span>
+                </p>
+             </div>
+          </li>
+          <li>
+             <div class="pic">
+                <a href="#"><img src="images/0032.jpg" alt="" /></a>
+             </div>
+             <div class="text">
+                <p>
+                  <a href="#" class="ash" title="CONVERSE匡威 中性高邦中性高邦">CONVERSE匡威 中性高邦中性高邦</a>
+                </p>
+                <p>
+                  <a href="#" class="ash0" title="匡威专卖店">匡威专卖店</a>
+                </p>
+                <p>
+                  <span class="oldp">￥288</span><span class="pcolor">￥</span><span class="psize">158</span>
+                </p>
+             </div>
+          </li>
+          <li>
+             <div class="pic">
+                <a href="#"><img src="images/0032.jpg" alt="" /></a>
+             </div>
+             <div class="text">
+                <p>
+                  <a href="#" class="ash" title="CONVERSE匡威 中性高邦中性高邦">CONVERSE匡威 中性高邦中性高邦</a>
+                </p>
+                <p>
+                  <a href="#" class="ash0" title="匡威专卖店">匡威专卖店</a>
+                </p>
+                <p>
+                  <span class="oldp">￥288</span><span class="pcolor">￥</span><span class="psize">158</span>
+                </p>
+             </div>
+          </li>
+          <li>
+             <div class="pic">
+                <a href="#"><img src="images/0032.jpg" alt="" /></a>
+             </div>
+             <div class="text">
+                <p>
+                  <a href="#" class="ash" title="CONVERSE匡威 中性高邦中性高邦">CONVERSE匡威 中性高邦中性高邦</a>
+                </p>
+                <p>
+                  <a href="#" class="ash0" title="匡威专卖店">匡威专卖店</a>
+                </p>
+                <p>
+                  <span class="oldp">￥288</span><span class="pcolor">￥</span><span class="psize">158</span>
+                </p>
+             </div>
+          </li>
+          <li>
+             <div class="pic">
+                <a href="#"><img src="images/0032.jpg" alt="" /></a>
+             </div>
+             <div class="text">
+                <p>
+                  <a href="#" class="ash" title="CONVERSE匡威 中性高邦中性高邦">CONVERSE匡威 中性高邦中性高邦</a>
+                </p>
+                <p>
+                  <a href="#" class="ash0" title="匡威专卖店">匡威专卖店</a>
+                </p>
+                <p>
+                  <span class="oldp">￥288</span><span class="pcolor">￥</span><span class="psize">158</span>
+                </p>
+             </div>
+          </li>
+          <li>
+             <div class="pic">
+                <a href="#"><img src="images/0032.jpg" alt="" /></a>
+             </div>
+             <div class="text">
+                <p>
+                  <a href="#" class="ash" title="CONVERSE匡威 中性高邦中性高邦">CONVERSE匡威 中性高邦中性高邦</a>
+                </p>
+                <p>
+                  <a href="#" class="ash0" title="匡威专卖店">匡威专卖店</a>
+                </p>
+                <p>
+                  <span class="oldp">￥288</span><span class="pcolor">￥</span><span class="psize">158</span>
+                </p>
+             </div>
+          </li>
+          <li>
+             <div class="pic">
+                <a href="#"><img src="images/0032.jpg" alt="" /></a>
+             </div>
+             <div class="text">
+                <p>
+                  <a href="#" class="ash" title="CONVERSE匡威 中性高邦中性高邦">CONVERSE匡威 中性高邦中性高邦</a>
+                </p>
+                <p>
+                  <a href="#" class="ash0" title="匡威专卖店">匡威专卖店</a>
+                </p>
+                <p>
+                  <span class="oldp">￥288</span><span class="pcolor">￥</span><span class="psize">158</span>
+                </p>
+             </div>
+          </li>
+          <li>
+             <div class="pic">
+                <a href="#"><img src="images/0032.jpg" alt="" /></a>
+             </div>
+             <div class="text">
+                <p>
+                  <a href="#" class="ash" title="CONVERSE匡威 中性高邦中性高邦">CONVERSE匡威 中性高邦中性高邦</a>
+                </p>
+                <p>
+                  <a href="#" class="ash0" title="匡威专卖店">匡威专卖店</a>
+                </p>
+                <p>
+                  <span class="oldp">￥288</span><span class="pcolor">￥</span><span class="psize">158</span>
+                </p>
+             </div>
+          </li>
+          <li>
+             <div class="pic">
+                <a href="#"><img src="images/0032.jpg" alt="" /></a>
+             </div>
+             <div class="text">
+                <p>
+                  <a href="#" class="ash" title="CONVERSE匡威 中性高邦中性高邦">CONVERSE匡威 中性高邦中性高邦</a>
+                </p>
+                <p>
+                  <a href="#" class="ash0" title="匡威专卖店">匡威专卖店</a>
+                </p>
+                <p>
+                  <span class="oldp">￥288</span><span class="pcolor">￥</span><span class="psize">158</span>
+                </p>
+             </div>
+          </li>
+          <li>
+             <div class="pic">
+                <a href="#"><img src="images/0032.jpg" alt="" /></a>
+             </div>
+             <div class="text">
+                <p>
+                  <a href="#" class="ash" title="CONVERSE匡威 中性高邦中性高邦">CONVERSE匡威 中性高邦中性高邦</a>
+                </p>
+                <p>
+                  <a href="#" class="ash0" title="匡威专卖店">匡威专卖店</a>
+                </p>
+                <p>
+                  <span class="oldp">￥288</span><span class="pcolor">￥</span><span class="psize">158</span>
+                </p>
+             </div>
+          </li>
+          <li>
+             <div class="pic">
+                <a href="#"><img src="images/0032.jpg" alt="" /></a>
+             </div>
+             <div class="text">
+                <p>
+                  <a href="#" class="ash" title="CONVERSE匡威 中性高邦中性高邦">CONVERSE匡威 中性高邦中性高邦</a>
+                </p>
+                <p>
+                  <a href="#" class="ash0" title="匡威专卖店">匡威专卖店</a>
+                </p>
+                <p>
+                  <span class="oldp">￥288</span><span class="pcolor">￥</span><span class="psize">158</span>
+                </p>
+             </div>
+          </li>
+          <li>
+             <div class="pic">
+                <a href="#"><img src="images/0032.jpg" alt="" /></a>
+             </div>
+             <div class="text">
+                <p>
+                  <a href="#" class="ash" title="CONVERSE匡威 中性高邦中性高邦">CONVERSE匡威 中性高邦中性高邦</a>
+                </p>
+                <p>
+                  <a href="#" class="ash0" title="匡威专卖店">匡威专卖店</a>
+                </p>
+                <p>
+                  <span class="oldp">￥288</span><span class="pcolor">￥</span><span class="psize">158</span>
+                </p>
+             </div>
+          </li>
+       </ul>
+       <!-- pages -->
+       <div id="pages">
+           <div class="pages_con">
+              <a href="#" class="pre">&lt;&lt;上一页</a><a href="#">1</a><a href="#">2</a><a href="#" class="active1">3</a><span class="dot">...</span><a href="#" class="pre">下一页&gt;&gt;</a><span class="text">共7页，到第<input name="" type="text" class="int" value="1" />页</span><input name="" type="button" class="sure" value="确定"/>
+          </div>
+      </div>
+       
+    </div>
+    <!-- xiaopic end -->
+  </div>
+  <!-- store_right end -->
+  <div class="clear"></div>
+</div>
+
+<!-- store end -->
+
+
+
+<!-- footer -->
+<div id="footer">
+    <!-- footer_con -->
+    <div class="footer_con">
+       <!-- footer_con0 -->
+       <div class="footer_con0">
+          <h3><img src="images/news.jpg" alt="下载客户端，关注更多潮流咨询" /></h3>
+          <ul>
+             <li class="line"></li>
+             <li><img src="images/sina.jpg" alt="官方微博@kouclo" /></li>
+             <li class="line"></li>
+             <li class="wx"><img src="images/qq.jpg" alt="微信平台" /></li>
+             <li class="line"></li>
+             <li class="kh"><img src="images/phone.jpg" alt="客户端下载" /></li>
+          </ul>
+       </div>
+       <!-- footer_content -->
+       <div class="footer_content">
+           <img src="images/content.png" alt="联系我们 400-8859-000" />
+       </div>
+    </div>
+</div>
+<!-- footer end -->
+
+<!-- service -->
+<div class="service">
+    <!-- service_left -->
+    <div class="service_left">
+       <div class="service_left_tit">
+          <ul>
+             <li>关于抠抠</li>
+             <li class="line"></li>
+             <li>新手指南 </li>
+             <li class="line"></li>
+             <li>维权中心</li>
+             <li class="line"></li>
+             <li>支付方式</li>
+             <li class="line"></li>
+             <li>售后服务</li>
+             <li class="line"></li>
+             <li>配送说明</li>
+           </ul>
+       </div>
+       <div class="service_left_con">
+          <ul>
+             <li>
+               <a href="#">关于抠抠</a><a href="#">商家入驻</a><a href="#">加入我们</a><a href="#">联系我们</a><a href="#">友情链接</a> 
+             </li>
+             <li>
+               <a href="#">用户注册</a><a href="#">用户注册协议</a><a href="#">购物流程</a><a href="#">网站地图</a> 
+             </li>
+             <li>
+               <a href="#">客服中心</a><a href="#">找回密码</a><a href="#">邮件订阅</a><a href="#">产品册订阅</a><a href="#">隐私声明</a> 
+             </li>
+             <li class="l">
+               <a href="#">货到付款</a><a href="#">在线支付</a><a href="#">礼品卡及账户余额</a><a href="#">其他支付方式</a>
+             </li>
+             <li class="n">
+               <a href="#">退款政策</a><a href="#">退货流程</a><a href="#">退款说明</a> 
+             </li>
+             <li>
+               <a href="#">发货规定</a><a href="#">国内配送</a><a href="#">海外配送</a><a href="#">订单拆分</a>
+             </li>
+          </ul>
+       </div>
+        
+    </div>
+    <!-- service_right -->
+    <div class="service_right hide">
+       <div class="bg_pic"></div>
+       <ul>
+          <li>7天内退换货</li>
+          <li class="l">百分之百正品保障</li>
+          <li class="n">百分之百质量保障</li>
+       </ul>
+    </div>
+</div>
+
+<!-- copyright -->
+<div class="copyright">
+     CopyRIGHT © 2009-2014 抠抠网 KOUCLO All RIGHTS RESERVED 闽ICP备13001618号 | 增值电信业务经营许可证：闽B1-20130053 | 互联网药品信息服务资质证书编号：（闽）-非经营性-2014-0008
+</div>
+
+</body>
+</html>

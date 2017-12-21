@@ -1,0 +1,389 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>抠抠网-飞机票</title>
+<link rel="stylesheet" type="text/css" href="css/public.css" />
+<link rel="stylesheet" type="text/css" href="css/airticket.css" />
+<link rel="stylesheet" type="text/css" href="css/datePicker.css" />
+<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
+<script type="text/javascript" src="js/airticket.js"></script>
+<script type="text/javascript" src="js/date.js"></script>
+<script type="text/javascript" src="js/jquery.datepicker.js"></script>
+<script type="text/javascript" charset="utf-8" src="js/jquery.date.js"></script>
+
+</head>
+<body>
+<!--- air_header -->
+<div id="air_header">
+  <h1>
+    <a href="#"><img src="images/logo.png" alt="抠抠网" /></a>
+  </h1>
+  <div class="tit">
+    <a href="#"><img src="images/air_text.png" alt="机票预定" /></a>
+  </div>
+</div>
+<!--- air_header end -->
+<!-- air -->
+<div id="air" class="clear">
+  <!-- air_con -->
+  <div id="air_con">
+    <!-- air_con0 -->
+    <div class="air_con0">
+      <h2>机票预定</h2>
+      <!-- air_right -->
+      <div class="air_right">
+        <form method="" action="">
+          <!-- air_right_tit -->
+          <div class="air_right_tit">
+            <lable><input name="airline" type="radio" id="single" checked="checked" />单程</lable>
+            <lable><input name="airline" type="radio" id="return" value="" />往返</lable>
+          </div>
+          <!-- air_right_con -->
+          <div class="air_right_con">
+            <!-- air_box-->
+            <div class="air_box">
+              <input type="text" id="inp_form" value="出发城市" readonly="readonly" /><b class="adrform adr_icon"></b>
+            </div>
+            <!-- air_box end-->
+            <div class="exchange"></div>
+            <!-- air_box-->
+            <div class="air_box">
+              <input type="text" id="inp_to" value="到达城市" readonly="readonly" /><b class="adrto adr_icon"></b>
+            </div>
+            <!-- air_box end-->
+            <!-- air_time -->
+            <div class="air_time">
+              <input type="text" readonly="readonly" name="start-date" id="startDatepicker" class="date-pick" placeholder="出发日期" />
+            </div>
+            <!-- air_time end -->
+            <!-- air_time -->
+            <div class="air_time air_time0">
+              <input type="text" readonly="readonly" name="end-date" id="endDatepicker" class="date-pick" disabled="disabled" placeholder="返程日期" />
+            </div>
+            <!-- air_adress-->
+            <div class="air_adress">
+              <div class="air_adress_nav">
+                <span class="cur">国内热门</span>
+                <span>ABCDE</span>
+                <span>FGHJ</span>
+                <span>KLMNP</span>
+                <span>QRSTW</span>
+                <span>XYZ</span>
+                <div class="air_close"></div>
+             </div>
+             <div class="air_adress_con" style="display:block">
+               <dl>
+                 <dt>城市</dt>
+                 <dd>
+                   <span><a href="#">上海</a></span>
+                   <span><a href="#">北京</a></span>
+                   <span><a href="#">广州</a></span>
+                   <span><a href="#">昆明</a></span>
+                   <span><a href="#">西安</a></span>
+                   <span><a href="#">乌鲁木齐</a></span>
+                   <span><a href="#">南京</a></span>
+                   <span><a href="#">成都</a></span>
+                   <span><a href="#">深圳</a></span>
+                   <span><a href="#">哈尔滨</a></span>
+                   <span><a href="#">南京</a></span>
+                   <span><a href="#">成都</a></span>
+                   <span><a href="#">深圳</a></span>
+                   <span><a href="#">哈尔滨</a></span>
+                   <span><a href="#">广州</a></span>
+                   <span><a href="#">昆明</a></span>
+                   <span><a href="#">西安</a></span>
+                   <span><a href="#">乌鲁木齐木齐</a></span>
+                 </dd>
+               </dl>
+             </div>
+             <div class="air_adress_con">
+               <dl>
+                 <dt>A</dt>
+                 <dd>
+                   <span><a href="#">上海</a></span>
+                   <span><a href="#">北京</a></span>
+                   <span><a href="#">广州</a></span>
+                   <span><a href="#">昆明</a></span>
+                   <span><a href="#">西安</a></span>
+                   <span><a href="#">乌鲁木齐</a></span>
+                   <span><a href="#">南京</a></span>
+                 </dd>
+               </dl>
+               <dl>
+                 <dt>B</dt>
+                 <dd>
+                   <span><a href="#">上海</a></span>
+                   <span><a href="#">北京</a></span>
+                   <span><a href="#">广州</a></span>
+                   <span><a href="#">昆明</a></span>
+                   <span><a href="#">西安</a></span>
+                   <span><a href="#">乌鲁木齐</a></span>
+                   <span><a href="#">南京</a></span>
+                 </dd>
+               </dl>
+               <dl>
+                 <dt>C</dt>
+                 <dd>
+                   <span><a href="#">上海</a></span>
+                   <span><a href="#">北京</a></span>
+                   <span><a href="#">广州</a></span>
+                   <span><a href="#">昆明</a></span>
+                   <span><a href="#">西安</a></span>
+                   <span><a href="#">乌鲁木齐</a></span>
+                   <span><a href="#">南京</a></span>
+                 </dd>
+               </dl>
+               <dl>
+                 <dt>D</dt>
+                 <dd>
+                   <span><a href="#">上海</a></span>
+                   <span><a href="#">北京</a></span>
+                   <span><a href="#">广州</a></span>
+                   <span><a href="#">昆明</a></span>
+                   <span><a href="#">西安</a></span>
+                   <span><a href="#">乌鲁木齐</a></span>
+                   <span><a href="#">南京</a></span>
+                 </dd>
+               </dl>
+               <dl>
+                 <dt>E</dt>
+                 <dd>
+                   <span><a href="#">上海</a></span>
+                   <span><a href="#">北京</a></span>
+                   <span><a href="#">广州</a></span>
+                   <span><a href="#">昆明</a></span>
+                   <span><a href="#">西安</a></span>
+                   <span><a href="#">乌鲁木齐</a></span>
+                   <span><a href="#">南京</a></span>
+                 </dd>
+               </dl>
+             </div>
+             <div class="air_adress_con">
+               <dl>
+                 <dt>F</dt>
+                 <dd>
+                   <span><a href="#">上海</a></span>
+                   <span><a href="#">北京</a></span>
+                   <span><a href="#">广州</a></span>
+                   <span><a href="#">昆明</a></span>
+                   <span><a href="#">西安</a></span>
+                   <span><a href="#">乌鲁木齐</a></span>
+                   <span><a href="#">南京</a></span>
+                 </dd>
+               </dl>
+               <dl>
+                 <dt>G</dt>
+                 <dd>
+                   <span><a href="#">上海</a></span>
+                   <span><a href="#">北京</a></span>
+                   <span><a href="#">广州</a></span>
+                   <span><a href="#">昆明</a></span>
+                   <span><a href="#">西安</a></span>
+                   <span><a href="#">乌鲁木齐</a></span>
+                   <span><a href="#">南京</a></span>
+                 </dd>
+               </dl>
+               <dl>
+                 <dt>H</dt>
+                 <dd>
+                   <span><a href="#">上海</a></span>
+                   <span><a href="#">北京</a></span>
+                   <span><a href="#">广州</a></span>
+                   <span><a href="#">昆明</a></span>
+                   <span><a href="#">西安</a></span>
+                   <span><a href="#">乌鲁木齐</a></span>
+                   <span><a href="#">南京</a></span>
+                 </dd>
+               </dl>
+               <dl>
+                 <dt>J</dt>
+                 <dd>
+                   <span><a href="#">上海</a></span>
+                   <span><a href="#">北京</a></span>
+                   <span><a href="#">广州</a></span>
+                   <span><a href="#">昆明</a></span>
+                   <span><a href="#">西安</a></span>
+                   <span><a href="#">乌鲁木齐</a></span>
+                   <span><a href="#">南京</a></span>
+                 </dd>
+               </dl>
+             </div>
+             <div class="air_adress_con">
+               <dl>
+                 <dt>K</dt>
+                 <dd>
+                   <span><a href="#">上海</a></span>
+                   <span><a href="#">北京</a></span>
+                   <span><a href="#">广州</a></span>
+                   <span><a href="#">昆明</a></span>
+                   <span><a href="#">西安</a></span>
+                   <span><a href="#">乌鲁木齐</a></span>
+                   <span><a href="#">南京</a></span>
+                 </dd>
+               </dl>
+               <dl>
+                 <dt>L</dt>
+                 <dd>
+                   <span><a href="#">上海</a></span>
+                   <span><a href="#">北京</a></span>
+                   <span><a href="#">广州</a></span>
+                   <span><a href="#">昆明</a></span>
+                   <span><a href="#">西安</a></span>
+                   <span><a href="#">乌鲁木齐</a></span>
+                   <span><a href="#">南京</a></span>
+                 </dd>
+               </dl>
+               <dl>
+                 <dt>M</dt>
+                 <dd>
+                   <span><a href="#">上海</a></span>
+                   <span><a href="#">北京</a></span>
+                   <span><a href="#">广州</a></span>
+                   <span><a href="#">昆明</a></span>
+                   <span><a href="#">西安</a></span>
+                   <span><a href="#">乌鲁木齐</a></span>
+                   <span><a href="#">南京</a></span>
+                 </dd>
+               </dl>
+               <dl>
+                 <dt>N</dt>
+                 <dd>
+                   <span><a href="#">上海</a></span>
+                   <span><a href="#">北京</a></span>
+                   <span><a href="#">广州</a></span>
+                   <span><a href="#">昆明</a></span>
+                   <span><a href="#">西安</a></span>
+                   <span><a href="#">乌鲁木齐</a></span>
+                   <span><a href="#">南京</a></span>
+                 </dd>
+               </dl>
+               <dl>
+                 <dt>P</dt>
+                 <dd>
+                   <span><a href="#">上海</a></span>
+                   <span><a href="#">北京</a></span>
+                   <span><a href="#">广州</a></span>
+                   <span><a href="#">昆明</a></span>
+                   <span><a href="#">西安</a></span>
+                   <span><a href="#">乌鲁木齐</a></span>
+                   <span><a href="#">南京</a></span>
+                 </dd>
+               </dl>
+             </div>
+             <div class="air_adress_con">
+               <dl>
+                 <dt>Q</dt>
+                 <dd>
+                   <span><a href="#">上海</a></span>
+                   <span><a href="#">北京</a></span>
+                   <span><a href="#">广州</a></span>
+                   <span><a href="#">昆明</a></span>
+                   <span><a href="#">西安</a></span>
+                   <span><a href="#">乌鲁木齐</a></span>
+                   <span><a href="#">南京</a></span>
+                 </dd>
+               </dl>
+               <dl>
+                 <dt>R</dt>
+                 <dd>
+                   <span><a href="#">上海</a></span>
+                   <span><a href="#">北京</a></span>
+                   <span><a href="#">广州</a></span>
+                   <span><a href="#">昆明</a></span>
+                   <span><a href="#">西安</a></span>
+                   <span><a href="#">乌鲁木齐</a></span>
+                   <span><a href="#">南京</a></span>
+                 </dd>
+               </dl>
+               <dl>
+                 <dt>S</dt>
+                 <dd>
+                   <span><a href="#">上海</a></span>
+                   <span><a href="#">北京</a></span>
+                   <span><a href="#">广州</a></span>
+                   <span><a href="#">昆明</a></span>
+                   <span><a href="#">西安</a></span>
+                   <span><a href="#">乌鲁木齐</a></span>
+                   <span><a href="#">南京</a></span>
+                 </dd>
+               </dl>
+               <dl>
+                 <dt>T</dt>
+                 <dd>
+                   <span><a href="#">上海</a></span>
+                   <span><a href="#">北京</a></span>
+                   <span><a href="#">广州</a></span>
+                   <span><a href="#">昆明</a></span>
+                   <span><a href="#">西安</a></span>
+                   <span><a href="#">乌鲁木齐</a></span>
+                   <span><a href="#">南京</a></span>
+                 </dd>
+               </dl>
+               <dl>
+                 <dt>W</dt>
+                 <dd>
+                   <span><a href="#">上海</a></span>
+                   <span><a href="#">北京</a></span>
+                   <span><a href="#">广州</a></span>
+                   <span><a href="#">昆明</a></span>
+                   <span><a href="#">西安</a></span>
+                   <span><a href="#">乌鲁木齐</a></span>
+                   <span><a href="#">南京</a></span>
+                 </dd>
+               </dl>
+             </div>
+             <div class="air_adress_con">
+               <dl>
+                 <dt>X</dt>
+                 <dd>
+                   <span><a href="#">上海</a></span>
+                   <span><a href="#">北京</a></span>
+                   <span><a href="#">广州</a></span>
+                   <span><a href="#">昆明</a></span>
+                   <span><a href="#">西安</a></span>
+                   <span><a href="#">乌鲁木齐</a></span>
+                   <span><a href="#">南京</a></span>
+                 </dd>
+               </dl>
+               <dl>
+                 <dt>Y</dt>
+                 <dd>
+                   <span><a href="#">上海</a></span>
+                   <span><a href="#">北京</a></span>
+                   <span><a href="#">广州</a></span>
+                   <span><a href="#">昆明</a></span>
+                   <span><a href="#">西安</a></span>
+                   <span><a href="#">乌鲁木齐</a></span>
+                   <span><a href="#">南京</a></span>
+                 </dd>
+               </dl>
+               <dl>
+                 <dt>Z</dt>
+                 <dd>
+                   <span><a href="#">上海</a></span>
+                   <span><a href="#">北京</a></span>
+                   <span><a href="#">广州</a></span>
+                   <span><a href="#">昆明</a></span>
+                   <span><a href="#">西安</a></span>
+                   <span><a href="#">乌鲁木齐</a></span>
+                   <span><a href="#">南京</a></span>
+                 </dd>
+               </dl>
+             </div>
+           </div>
+            <!-- air_time end -->
+            <input type="submit" id="cx_btn" value="查&nbsp;询" />
+        </div>
+        </form>
+      </div>
+     
+   </div>
+    
+  </div>
+</div>
+<!-- air end -->
+
+</body>
+</html>

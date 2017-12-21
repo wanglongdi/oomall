@@ -1,0 +1,96 @@
+@charset "utf-8";
+/* CSS Document */
+*{margin:0px; padding:0px;}
+body{font-size:12px; font-family:"Microsoft YaHei",Arial, Helvetica, sans-serif; color:#333;background: #fff;}
+img{border:0px;}
+ul,li{list-style:none;}
+a{font-size:12px; text-decoration:none; color:#666;}
+em{font-style: normal;}
+
+.clearfix:after{content:"."; clear:both; display:block; visibility:hidden; height:0px;}
+.clearfix{zoom:1;}
+
+.top_sc b,.top_right .car b,.top_right .phone b,.qi_icon,.bao_icon,.wen_icon,#footer_about ul li b,#footer_about .duan_icon a b,.top_right .phone_con{background:url(../images/bg.png) no-repeat; overflow:hidden;}
+
+.st{font-family:宋体;}
+
+/* top */
+#top{width:100%; border-bottom:#f1f1f1 1px solid; height:30px; min-width:1000px; z-index:20; position:relative;}
+.top_con{width:1000px; margin:0px auto; color:#666; line-height:31px;}
+
+/* top_sc */
+.top_sc{width:100px; float:left; overflow:hidden; padding-left:17px; position:relative; cursor:pointer;}
+.top_sc b{background-position:-121px 0px; width:13px; height:13px; position:absolute; left:0px; top:9px;}
+
+
+/* top_right */
+.top_right{width:800px; float:right; text-align:right; color:#999; z-index:5;}
+.top_right .text,.top_right .zc{margin-right:15px;}
+.top_right a{color:#999;}
+.top_right .zc a{margin:0px 5px;}
+.top_right .line{margin:0px 15px;}
+.top_right .phone{padding-left:14px; position:relative; display:inline-block; cursor:pointer; z-index:11;}
+.top_right .phone:hover{color:#c8ae53;}
+.top_right .phone b{width:9px; height:16px; background-position:-143px 0px; position:absolute; left:0px; top:7px;}
+.top_right .phone:hover b{background-position:-264px -32px;}
+.top_right .phone_con{width:190px; height:185px; background-position:0px -642px; position:absolute; left:-65px; top:23px; z-index:15; text-align:center; display:none;}
+.top_right .phone_con .pic{margin:28px 0px 10px 0px;}
+.top_right .car{padding-left:21px; position:relative; display:inline-block;}
+.top_right .car b{width:16px; height:16px; background-position:-169px 0px; position:absolute; left:0px; top:7px;}
+.top_right .car a{color:#666;}
+
+
+
+
+/* header */
+#header{width:1000px; margin:0px auto; overflow:hidden; height:142px;}
+#header_con{width:300px; float:left; overflow:hidden; padding-top:40px;}
+#header_con h1{width:140px; float: left;}
+#header_con .cir{width:6px; height:6px; border-radius:3px; background:#bbb; margin: 40px 20px 0; overflow: hidden; float:left;}
+#header_con h2{width:106px; float:left; overflow:hidden; margin-top:35px;}
+
+
+/* search */
+#search{width: 522px;float: right;overflow: hidden;margin-top: 50px;}
+#search_inp{width: 428px;float: left;background: #fff;overflow: hidden;border: #c8ae53 2px solid;border-right: 0;padding-left: 10px;height: 34px;}
+#search_btn{width: 82px;height: 38px;float: left;cursor: pointer;border: 0;text-align: center;color: #fff;background: #c8ae53;font-size: 14px;font-weight: bold;font-family: 宋体;}
+
+
+
+/* footer_about */
+#footer_about{width:1000px; margin:15px auto; overflow:hidden; border-top: #e1e1e1 1px solid; padding-top: 15px;}
+#footer_about ul{width:120px; float:left; overflow:hidden; margin-top:5px;}
+#footer_about ul h3{font-size:14px; line-height:30px;}
+#footer_about ul li{width:152px; padding-left:8px; line-height:22px; position:relative;}
+#footer_about ul li b{width:2px; height:2px; position:absolute; left:0px; top:10px; background-position:-233px -136px;}
+#footer_about .duan{width:375px; border-left:#e1e1e1 2px solid; height:128px; padding:17px 0px 0px 66px; float:right; margin-top:9px;}
+#footer_about .duan_pic{width:90px; float:left;}
+#footer_about .duan_text{padding-left:20px; float:left; width:265px; line-height:22px; color:#666;}
+#footer_about .text{font-size:14px; color:#333; font-weight:bold; margin-top:5px;}
+#footer_about .duan_icon{margin-top:15px; line-height:22px;}
+#footer_about .duan_icon a{border:#ddd 1px solid; border-left:2px #ddd solid; height:22px; color:#666; margin-right:13px; padding-left:25px; display:inline-block; position:relative;}
+#footer_about .duan_icon a.iph{width:45px;}
+#footer_about .duan_icon a.iph b{width:10px; height:18px; left:7px; top:2px; background-position:-170px -32px; position:absolute;}
+#footer_about .duan_icon a.ipa{width:30px;}
+#footer_about .duan_icon a.ipa b{width:18px; height:14px; left:3px; top:5px; background-position:-202px -32px; position:absolute;}
+#footer_about .duan_icon a.and{width:47px;}
+#footer_about .duan_icon a.and b{width:16px; height:20px; left:4px; top:1px; background-position:-236px -32px; position:absolute;}
+
+
+/* footer_copy */
+#footer_copy{width:100%; background:#000; min-width:1000px;}
+#footer_copy_con{width:1000px; margin:0px auto; color:#fff; height:260px;}
+.copy_con{width:720px; float:left; color:#fff; line-height:20px;}
+.copy_con .about{margin:20px 0px 15px; line-height:32px; width:720px;}
+.copy_con .about span{margin:0px 8px;}
+.copy_con .about a{color:#fff;}
+.copy_con .ml{margin-left:30px;}
+.copy_con .gs{margin-top:10px; text-align: center;}
+.copy_con .gs span{background:#fff; display:inline-block; margin-right:30px; vertical-align:middle;}
+
+/* footer_logo */
+.footer_logo{width:278px; float:right; border-top:5px #9f8529 solid; height:260px; margin-top:-5px; position:relative; }
+.footer_logo .bg{background:#333; opacity:0.4; -moz-opacity:0.4; filter:alpha(opacity:40); height:260px; width:278px; }
+.footer_logo h2{position:absolute; left:44px; top:56px; z-index:2;}
+
+

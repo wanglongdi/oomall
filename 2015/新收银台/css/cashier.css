@@ -1,0 +1,493 @@
+@charset "utf-8";
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	color: #333;
+	font-size: 12px;
+	font-family: "Microsoft YaHei",Arial,Helvetica,sans-serif;
+	background: #fff;
+}
+img{
+	border: 0;
+}
+ul,li{
+	list-style: none;
+}
+a{
+	color: #333;
+	text-decoration: none;
+}
+a:hover{
+	text-decoration: underline;
+}
+.clearfix:after{
+	clear: both;
+	height: 0;
+	display: block;
+	content: ".";
+	visibility: hidden;
+}
+.clearfix{
+	zoom: 1;
+}
+
+/* bg */
+.order_icon,#order_infor b,.pay_wx .jia_icon,.pay_wx .sj_icon,.pay_bank h2 b,#close,#finised_icon{
+	background: url('../images/cashier_bg.png') no-repeat;
+	overflow: hidden;
+}
+
+/* cashier_header */
+#cashier_header{
+	width: 1000px;
+	margin: 0 auto;
+	padding: 7px 0px 13px 0px;
+	overflow: hidden;
+	height: 40px;
+}
+#cashier_header h1{
+	width: 77px;
+	float: left;
+}
+#cashier_header h2{
+	font-size: 18px;
+	float: left;
+	border-left: 1px #e7e7e7 solid;
+	padding-left: 12px;
+	color: #555;
+	margin: 12px 0px 0px 12px;
+	height: 28px;
+	line-height: 28px;
+	font-weight: normal;
+}
+#cashier_header .else_text{
+	width: 500px;
+	float: right;
+	text-align: right;
+	color: #888;
+	line-height: 40px;
+}
+#cashier_header .else_text a{
+	color: #888;
+}
+#cashier_header .else_text span{
+	color: #e1dde1;
+	margin: 0 16px;
+}
+#cashier_main{
+	width: 100%;
+	min-width: 1000px;
+	border-top: #e8e8e8 3px solid;
+	background: #f1f1f1;
+	overflow: hidden;
+}
+
+.cashier_con{
+	width: 1000px;
+	margin: 30px auto 0;
+	padding: 25px 0;
+	overflow: hidden;
+	background: #fff;
+}
+.order_right{
+	width: 920px;
+	margin: 0 40px;
+	position: relative;
+	overflow: hidden;
+}
+.order_icon{
+	width: 65px;
+	height: 65px;
+	position: absolute;
+	background-position: 0 0;
+	left: 0;
+	top: 10px;
+}
+.order_lcon{
+	width: 515px;
+	padding-left: 85px;
+	float: left;
+	overflow: hidden;
+}
+.order_lcon h2{
+	font-size: 22px;
+	font-weight: normal;
+	margin-bottom: 5px;
+	line-height: 32px;
+}
+.order_lcon p{
+	color: #666;
+	font-weight: bold;
+	line-height: 22px;
+	font-size: 14px;
+}
+.order_lcon .hour{
+	color: #f93000;
+}
+.order_rcon{
+	width: 320px;
+	float: right;
+	overflow: hidden;
+	text-align: right;
+	color: #555;
+	font-size: 14px;
+	line-height: 32px;
+}
+.order_rcon .money{
+	font-size: 24px;
+	color: #f93000;
+	font-weight: bold;
+}
+#order_infor{
+	cursor: pointer;
+}
+#order_infor b{
+	width: 10px;
+	height: 6px;
+	display: inline-block;
+	margin-left: 5px;
+	vertical-align: 1px;
+}
+#order_infor b.infor_icon{
+	background-position: -186px 0;
+}
+#order_infor b.infor_icon0{
+	background-position: -220px 0;
+}
+#order_infor_con{
+	width: 840px;
+	padding-left: 80px;
+	margin: 25px 40px 0;
+	border-top: #ececec 1px solid;
+	overflow: hidden;
+	padding-top: 20px;
+	line-height: 28px;
+	color: #7c7c7c;
+	font-size: 14px;
+	display: none;
+}
+#order_infor_con .ml{
+	margin-left: 20px;
+}
+.pay_con{
+	width: 1000px;
+	margin: 0 auto;
+	overflow: hidden;
+	padding-top: 20px;
+}
+
+.pay_often{
+	padding: 0 40px 40px 40px;
+	overflow: hidden;
+	border-bottom: #ececec 1px solid;
+	display: none;
+	width: 920px;
+	position: relative;
+}
+
+.pay_often li{
+	width: 916px;
+	border: #f0f0f0 2px solid;
+	overflow: hidden;
+	margin-top: 20px;
+	cursor: pointer;
+}
+.pay_often li .con{
+	width: 916px;
+	overflow: hidden;
+	
+}
+.pay_often li.cur{
+	border: #f93000 2px solid;
+}
+.pay_often li:hover{
+	border: #feb49d 2px solid;
+}
+.pay_often li input{
+	margin: 14px 0 0 55px;
+	padding: 0;
+	float: left;
+}
+.pay_often li .lcon img{
+	width: 128px;
+	height: 40px;
+	cursor: pointer;
+}
+
+.pay_often li .lcon{
+	width: 450px;
+	overflow: hidden;
+	height: 40px;
+	float: left;
+	padding: 5px 0;
+}
+.pay_often li .rcon{
+	width: 436px;
+	text-align: right;
+	overflow: hidden;
+	line-height: 40px;
+	font-size: 14px;
+	color: #555;
+	height: 40px;
+	float: right;
+	padding: 5px 30px 5px 0;
+}
+.pay_often li .rcon span{
+	color: #f93000;
+	font-size: 20px;
+	margin: 0 3px;
+}
+.pay_often li input{
+	display: none;
+}
+.pay_wx{
+	width: 836px;
+	overflow: hidden;
+	margin: 0px 40px;
+	background: url('../images/weixin.png') no-repeat right;
+	padding: 15px 0px 35px 0;
+	display: none;
+}
+.pay_wx .wx_text{
+	border: #e6e6e6 1px solid;
+	width: 149px;
+	height: 165px;
+	float: left;
+	background: #f9f9f9;
+	color: #f94726;
+	font-size: 18px;
+	position: relative;
+	padding: 113px 0 0 105px;
+}
+.pay_wx .jia_icon{
+	width: 41px;
+	height: 41px;
+	position: absolute;
+	left: 52px;
+	top: 120px;
+	background-position: 0 -163px;
+}
+.pay_wx .sj_icon{
+	width: 15px;
+	height: 34px;
+	position: absolute;
+	right: -15px;
+	top: 122px;
+	background-position: -57px -163px;
+}
+.pay_wx .wx_pic{
+	border: #e6e6e6 1px solid;
+	border-left: 0;
+	width: 278px;
+	height: 278px;
+	float: left;
+}
+.pay_wx .wx_pic img{
+	width: 234px;
+	height: 234px;
+	margin: 22px;
+}
+.pay_btn{
+	width: 190px;
+	height: 40px;
+	text-align: center;
+	color: #fff;
+	font-size: 16px;
+	background: #d7d5d5;
+	border: 0;
+	margin: 30px 0 0 0;
+}
+.pay_btn0{
+	cursor: pointer;
+	background: #f93000;
+}
+.pay_bank{
+	width: 1000px;
+	background: #fff;
+	overflow: hidden;
+}
+.pay_bg{
+	background: #f9f9f9;
+}
+.pay_bank h2{
+	width: 920px;
+	margin: 0px 40px;
+	overflow: hidden;
+	position: relative;
+	font-size: 18px;
+	font-weight: normal;
+	color: #444;
+	line-height: 67px;
+	cursor: pointer;
+}
+.pay_bank h2 b{
+	width: 17px;
+	height: 11px;
+	position: absolute;
+	right: 0;
+	top: 30px;
+}
+.pay_bank_line{
+	border-bottom: #ccc 1px dashed;
+	height:0;
+	width: 920px;
+	margin: 10px 40px 0;
+}
+.pay_bank h2 b.bank_icon{
+	background-position: -90px 0;
+}
+.pay_bank h2 b.bank_icon0{
+	background-position: -140px 0;
+}
+.pay_bank h2 span{
+	color: #999;
+	font-size: 12px;
+	margin: 0 10px;
+	vertical-align: 3px;
+}
+.pay_bank_con,.pay_bank_con0{
+	overflow: hidden;
+	width: 930px;
+	padding: 0 40px 20px 30px;
+	border-bottom: #ececec 1px solid;
+	display: none;
+}
+.pay_bank_con li,.pay_bank_con0 li{
+	width: 176px;   
+    float: left;
+    margin: 0 0 10px 10px;
+    background: #fff;
+    text-align: center;
+    height: 40px;
+    overflow: hidden;
+    padding: 10px 22px;
+    border: #ececec 1px solid;
+    cursor: pointer;
+}
+.pay_bank_con li.cur,.pay_bank_con0 li.cur{
+	 border: #f93000 2px solid;
+	 padding: 9px 21px;
+}
+.pay_bank_con li:hover,.pay_bank_con0 li:hover{
+	 border: #feb49d 2px solid;
+	 padding: 9px 21px;
+}
+.pay_bank_con li input,.pay_bank_con0 li input{
+	display: none;
+}
+
+.pay_bank_con li img,.pay_bank_con0 li img{
+	width: 126px;
+	height: 40px;
+	cursor: pointer;
+} 
+
+.pay_bank_con li.more_bank{
+	color: #999;
+    font-size: 14px;
+    line-height: 40px;
+    cursor: pointer;
+    border: #ececec 1px solid;
+
+}
+.pay_bank_con li:hover.more_bank{
+	border: #feb49d 2px solid;
+	padding: 9px 21px;
+}
+.md{margin-bottom: 40px;}
+#cashier_footer{
+	width: 100%;
+	overflow: hidden;
+    background: #f1f1f1;
+}
+.cashier_footer_con{
+	width: 1000px;
+	margin: 0 auto;
+	overflow: hidden;
+	line-height: 30px;
+	text-align: center;
+	color: #666;
+	padding: 20px 0 25px;
+}
+#mask{
+	width: 100%;
+	position: fixed;
+	left: 0;
+	top:0;
+	background: #000;
+	opacity: 0.45;
+	filter:alpha(opacity=45);
+	z-index: 9999;
+	overflow: hidden;
+	display: none;
+}
+#finised{
+	width: 486px;
+	height: 220px;
+	background: #fff;
+	position: fixed;
+	margin-left: -243px;
+	margin-top: -110px;
+	left: 50%;
+	top: 50%;
+	z-index: 10000;
+	display: none;
+}
+#close{
+	width: 19px;
+	height: 19px;
+	margin: 10px 10px 0 446px;
+	background-position: -251px 0;
+	display: block;
+	cursor: pointer;
+}
+.finised_con{
+	width: 426px;
+	margin: 17px auto 0;
+}
+#finised_icon{
+	width: 53px;
+	height: 53px;
+	background-position: -404px 0;
+	display: block;
+	float: left;
+}
+.finised_text{
+	width: 350px;
+	float: left;
+	padding-left: 23px;
+	line-height: 24px;
+}
+.finised_text .text{
+	font-size: 14px;
+	margin-bottom: 10px;
+}
+.finised_text .btn,.finised_text .btn0{
+	width: 120px;
+	height: 40px;
+	line-height: 40px;
+	font-size: 14px;
+	color: #fff;
+	margin-right: 12px;
+	text-align: center;
+	display: inline-block;
+}
+.finised_text a.btn{
+	background: #f02e00;
+}
+.finised_text a.btn0{
+	background: #ffa089;
+}
+.finised_text a:hover{
+	text-decoration: none;
+}
+.finised_text .text0{
+	text-align: right;
+	margin-top: 20px;
+}
+.finised_text .text0 a{
+	color: #999;
+	text-decoration: underline;
+}

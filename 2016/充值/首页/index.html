@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>首页</title>
+	<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+	<style type="text/css">
+		*{margin: 0;padding: 0;font-size: 12px;}
+		ul,li{list-style: none;}
+		.clearfix:after{content:"."; clear:both; display:block; visibility:hidden; height:0px;}
+		.clearfix{zoom:1;}
+		#index_hf_tit span.line,.index_hfcz .inp_icon,.index_hfcz .tel_gs b,.index_hfcz .tel_error b,#hf_chong b{background: url('images/hf_bg.png') no-repeat;overflow: hidden;}
+		#index_hf{width: 272px;background: #fff;position: absolute;left: 500px;top: 0;min-height: 200px;z-index: 10;font-family:'Microsoft YaHei';display: none;}
+		#index_hf_tit{width: 220px;margin: 30px auto 0;overflow: hidden;color: #cdcdcd;position: relative;height: 30px;line-height: 30px;}
+		#index_hf_tit span{width: 70px;display: inline-block;text-align: center;font-size: 14px;color: #333;}
+		#index_hf_tit span.cur{color: #f93000;font-weight: bold;}
+		#index_hf_tit span.line{position: absolute;left: 7px;bottom: 0;background-position: -90px 0;width: 55px;height: 5px;display: inline-block;}
+		#index_hf_con{width: 210px;overflow: hidden; margin: 20px auto 0;}
+		#index_hf_tit0{width: 210px;overflow: hidden;}
+		#index_hf_tit0 span{color: #000;width: 60px;height: 24px;line-height: 24px;text-align: center;margin-right: 25px;display: inline-block;cursor: pointer;}
+		#index_hf_tit0 span.cur{background: #f93000;color: #fff;}
+		.index_hfcz{width: 210px;overflow: hidden;margin: 0 auto;}
+		.index_hfcz>div{position: relative; min-height: 35px;margin-top: 15px;line-height: 35px;}
+		.index_hfcz .hm{height: 75px;z-index: 10;}
+		.index_hfcz .mz{width: 222px;margin-left: -12px;overflow: hidden;}
+		.index_hfcz .mz span{width: 60px;height: 33px;text-align: center;border: #ccc 1px solid;color: #000;margin: 0 0 15px 12px;display:inline-block;line-height: 33px;cursor: pointer;}
+		.index_hfcz .mz span.cur{color: #fff;background: #f93000;border: #f93000 1px solid;}
+		.index_hfcz .sj{color: #333;font-size: 14px;margin-top: 5px;overflow: hidden;}
+		.index_hfcz .sj span{font-size: 18px;color: #f93000;}
+		.index_hfcz .sj em{font-style: normal;font-weight: bold;font-size: 18px;color: #f93000;}
+		.index_hfcz .tit{font-size: 14px;font-weight: normal;color: #333;line-height: 40px;margin-top: 0;}
+		.index_hfcz .m{margin-top: 0;}
+		.index_hfcz .t{color: #999;line-height: 17px;}
+		.index_hfcz .tj_btn{width: 210px;height: 50px;line-height: 50px;text-align: center;color: #fff;background: #f93000;border: 0;cursor: pointer;font-weight: bold;font-size: 18px;margin-top: 50px;}
+		.inp_hf{width: 198px;height: 38px;line-height: 38px;padding-left: 10px;border: #ccc 1px solid;font-size: 14px;color: #000;}
+		.index_hfcz .inp_icon{width: 16px;height: 16px;background-position: -56px 0;position: absolute;top: 12px;right: 10px;cursor: pointer;}
+		.index_hfcz .tel_gs,.index_hfcz .tel_error{width: 210px;position: absolute;left: 0;bottom: 5px;display: none;}
+		.index_hfcz .tel_gs b,.index_hfcz .tel_error b{width: 13px;height: 13px;background-position: -30px 0;display: inline-block;margin-right: 5px;vertical-align: -2px;*vertical-align: 2px;}
+		.index_hfcz .tel_gs{color: #333;}
+		.index_hfcz .tel_error{color: #f93000;}
+		.index_hfcz .tel_error b{background-position: 0 0;}
+		.index_hfcz .tel_gs b{background-position: -30px 0;}
+		/* tel_list */
+		.tel_list,.tel_list0,.tel_list01{width: 208px;background: #fff;border: #ccc 1px solid;position: absolute;top: 39px;left: 0;display: none;}
+		.tel_list h3{font-size: 12px;font-weight: normal;color: #333;padding: 10px 0 0 10px;line-height: 30px;}
+		.tel_list li{width: 100%;height: 40px;line-height: 40px;text-align: center;font-size: 14px;color: #f93000;}
+		.tel_list li:hover{background: #f2f2f2;}
+		.tel_list0{height: 110px;}
+		.tel_list0 li{width: 100%;line-height: 110px;text-align: center;font-size: 14px;color: #f93000;}
+		.tel_list01{height: 30px;color: #f93000;text-indent: 1em;line-height: 30px;}
+
+
+		#hf_chong{width: 36px;height: 36px;position: absolute;top: 450px;left: 0;cursor: pointer;}
+		#hf_chong b{width: 21px;height: 21px;display: block;margin: 7px 0 0 7px;background-position: -160px 0;}
+		#hf_chong:hover{background: #c8ae53;}
+		#hf_chong:hover b{background-position: -196px 0;}
+	</style>
+	<script>
+	/* 手机号码 */
+function stopPropagation(e) {
+  if (e.stopPropagation)
+     e.stopPropagation();
+  else
+     e.cancelBubble = true;
+}
+
+function isPhone(oVal){
+    var reg=/^1[3|5|7|8][0-9]\d{8}$/;
+    if(reg.test(oVal)){
+		return true;
+	}
+}
+
+
+$(function(){
+	$('#index_hf_tit0 span').hover(function(){
+		$(this).addClass('cur').siblings().removeClass('cur');
+		$(this).parents('#index_hf_con').find('div.index_hfcz').eq($(this).index()).show().siblings('div.index_hfcz').hide();
+
+	})
+
+	$('#tel_mz span,#tel_mz0 span').click(function(){
+		$(this).addClass('cur').siblings().removeClass('cur');
+	})
+
+	$('.inp_icon').click(function(){
+		$(this).parent().find('ul.tel_list').show();
+	})
+
+	$('#tel_inp,#tel_inp0').focus(function(){
+		
+		if($(this).val() ==''){
+			$(this).parent().find('ul.tel_list').show();
+		}else{
+			$(this).parent().find('ul.tel_list0').show();
+		}
+		
+		$(this).parent().find('.tel_error').hide();
+	})
+
+	$('.tel_list li').click(function(){
+		var oText=$(this).text();
+		oText=oText.replace(/-/g,'');
+		var o_error=$(this).parent().siblings('.tel_error');
+		var o_right=$(this).parent().siblings('.tel_gs');
+		$(this).parents('.hm').find('input').val(oText);
+		o_right.show();
+		o_error.hide();
+	})
+
+	$('#tel_inp,#tel_inp0').blur(function(){
+		var o_val=$(this).val();
+		var o_error=$(this).parent().find('.tel_error');
+		var o_right=$(this).parent().find('.tel_gs');
+		$(this).parent().find('.tel_list0').hide();
+		if(o_val==''){
+			o_error.show();
+			o_right.hide();
+		}else if(!isPhone(o_val)){
+			o_error.show();
+			o_right.hide();
+		}else{
+			o_error.hide();
+			o_right.show();
+		}
+	})
+
+	$(document).bind('click',function(){
+          $('.tel_list,.tel_list0').css('display','none');
+    });
+
+    $('#tel_inp,.inp_icon,#tel_inp0').bind('click',function(e){
+          stopPropagation(e);
+    });
+
+    $("#tel_inp,#tel_inp0").keypress(function(event) {  
+        var keyCode = event.which; 
+        if (keyCode == 46 || (keyCode >= 48 && keyCode <=57)|| keyCode == 8)  
+            return true;  
+        else  
+            return false;  
+    })
+
+    $('#tel_inp,#tel_inp0').keyup(function(e){
+		var oVal=$(this).val();
+		var oArr=oVal.split('');
+		var len=oVal.length;
+		var oLi=$(this).parent().find('.tel_list li');
+		if(len>3){
+			oArr.splice(3,0,'-');
+		}
+		if(len>7){
+			oArr.splice(8,0,'-');	
+		}
+		if(len==11){
+			$(this).parents().find('.tel_list0').hide();
+		}
+		if(oVal==''){
+        	$(this).parent().find('.tel_list0').hide();
+        }else{
+        	$(this).parent().find('.tel_list').hide();
+        	$(this).parent().find('.tel_list0').show();
+			$(this).parent().find('.tel_list0 li').text(oArr.join(''));
+        }
+        
+	})
+})
+
+$(function(){
+	$('#hf_chong').click(function(){
+		if($('#index_hf').is(':hidden')){
+			$('#index_hf').show();
+		}else{
+			$('#index_hf').hide();
+		}
+		
+	})
+})
+	</script>
+</head>
+<body>
+<div id="hf_chong">
+	<b></b>
+</div>
+<div id="index_hf">
+	<div id="index_hf_tit">
+		<span class="cur">话费快充</span>|<span>游戏点卡</span>|<span>生活缴费</span><span class="line"></span>
+	</div>
+	<div id="index_hf_con">
+		<div id="index_hf_tit0">
+			<span class="cur">话费充值</span><span>流量充值</span>
+		</div>
+		<div class="index_hfcz">
+			<div class="hm">
+				<input type="text" class="inp_hf" id="tel_inp" autocomplete="off" maxlength="11" />
+				<span class="inp_icon"></span>
+				<span class="tel_error"><b></b>输入的手机号错误</span>
+				<span class="tel_gs"><b></b>北京移动</span>
+				<ul class="tel_list">
+					<h3>近期充值记录</h3>
+					<li>182-1015-4119</li>
+					<li>156-3333-5566</li>
+				</ul>
+				<ul class="tel_list0">
+					<li></li>
+				</ul>
+				<span class="tel_list01">您还没有充值记录</span>
+			</div>
+			<div class="mz" id="tel_mz">
+				<span>10元</span><span>20元</span><span>30元</span><span>50元</span><span class="cur">100元</span><span>200元</span><span>300元</span><span>500元</span>
+			</div>
+			<div class="sj">
+				售价：<span>￥</span><em>99.5</em>
+			</div>
+			<button type="text" class="tj_btn">立即充值</button>
+		</div>
+		<div class="index_hfcz" style="display: none">
+			<div class="hm">
+				<input type="text" class="inp_hf" id="tel_inp0" autocomplete="off" maxlength="11" />
+				<span class="inp_icon"></span>
+				<span class="tel_error"><b></b>输入的手机号错误</span>
+				<span class="tel_gs"><b></b>北京移动</span>
+				<ul class="tel_list">
+					<h3>近期充值记录</h3>
+					<li>182-1015-4119</li>
+					<li>156-3333-5566</li>
+				</ul>
+				<ul class="tel_list0">
+					<li></li>
+				</ul>
+				<span class="tel_list01">您还没有充值记录</span>
+			</div>
+			<div class="tit">流量面值：</div>
+			<div class="mz m" id="tel_mz0">
+				<span class="cur">1G</span><span>500M</span><span>300M</span>
+			</div>
+			<div class="sj">
+				售价：<span>￥</span><em>99.5</em>
+			</div>
+			<div class="m t">
+				商品描述： 当月有效,即时生效; 支持2G/3G/4G;每月限充99次
+			</div>
+			<button type="text" class="tj_btn">立即充值</button>
+		</div>
+	</div>
+	
+</div>
+</body>
+</html>

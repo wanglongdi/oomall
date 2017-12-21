@@ -1,0 +1,115 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>抠抠网-商家后台</title>
+<link type="text/css" rel ="stylesheet" href="css/global.css"/>
+<link type="text/css" rel ="stylesheet" href="css/main.css"/>
+<link type="text/css" rel ="stylesheet" href="css/sellerAdmin.css"/>
+<link type="text/css" rel ="stylesheet" href="css/font.css"/>
+<link type="text/css" rel ="stylesheet" href="css/jquery-ui.css"/>
+<link rel="stylesheet" type="text/css" href="css/minus.css" />
+<link type="text/css" href="css/datepicker.css" rel="stylesheet" />
+<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+<script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
+<script type="text/javascript" src="js/minus.js"></script>
+<script type="text/javascript" src="js/jquery.datePicker-min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+
+	$(".datepicker").datePicker({
+		inline:true,
+		selectMultiple:false
+	});
+	
+	$("#datepicker").datePicker({
+		clickInput:true
+	});
+	$("#datepicker0").datePicker({
+		clickInput:true
+	});
+});
+</script>
+</head>
+
+<body>
+<div class="content mt15 clearfix">
+   <!--侧栏内容-->
+	<div class="aside busi_center fl">
+    	<h2 class="busi_center_hd"><b></b>卖家中心首页</h2>
+    	<ul id="js_bus_menu" class="bus_menu js_menu_0">
+        	<li class="bus_menu_item js_menu_1">
+            	<h3  class="bus_menuItem_hd js_menu_1_hd"><i></i>交易管理</h3>
+                <ul class="bus_subMenu js_menu_2">
+                	<li><a href="http://shop.kouclo-v4.com/trade/order_list">已卖出的商品</a></li>
+                    <li><a href="http://shop.kouclo-v4.com/trade_evaluate/index">评价管理</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+	<!--右侧主要内容区-->
+	<div class="mainCon fr">
+		<!--内容填充区-->
+		<div class="mainConMod marB17 clearfix">
+    	   <h2 class="conMod_Tit"><span class="normal">我是卖家 > </span>促销管理设置<div class="tRig_Div"><a href="#" class="helpIco"><i></i>查看帮助</a></div></h2>
+           <div class="conMod_Con stoData-wrap">
+        	 <ul class="stoData_tit tab_nav">
+               <li class="current"><a href="/goods/sell/" class="stoDat-a">满立减</a></li>
+               <li><a href="/goods/featured_products/" class="stoDat-a">限时折扣</a></li>
+               <li><a href="/goods/featured_products/" class="stoDat-a">优惠券</a></li>
+             </ul>
+             <div class="zhushi">
+               "<span class="red">*</span>"为必填项
+             </div>
+             <div class="active">
+                <h3>活动信息设置</h3>
+                <form action="" method="post" id="minus" onsubmit="return Minus()">
+                   <dl class="clearfix">
+                      <dt><span class="xing">*</span>活动名称：</dt>
+                      <dd>
+                        <input class="active_input" type="text" value="" name="minus_name">
+                        <span class="active_text">直冲和自动发货商品不参加活动</span>
+                        <span class="active_cue"></span>
+                      </dd>
+                   </dl>
+                   <dl class="clearfix">
+                      <dt><span class="xing">*</span>活动时间：</dt>
+                      <dd>
+                         <input class="active_time" type="text" id="datepicker" name="start_time"><span class="mz">至</span><input class="active_time" type="text" id="datepicker0" name="end_time">
+                         <span class="active_cue"></span>
+                      </dd>
+                   </dl>
+                   <dl class="clearfix">
+                      <dt><span class="xing">*</span>优惠方式：</dt>
+                      <dd>
+                         <p><input name="youhui" type="radio" class="radio" checked="checked" id="putong" />普通优惠</p>
+                         <p><input name="youhui" type="radio" class="radio" id="duoji" />多级优惠</p>
+                      </dd>
+                   </dl>
+                   <dl class="clearfix bt">
+                      <dt><span class="xing">*</span>优惠条件：</dt>
+                      <dd>
+                        <p class="mb">
+                             买家消费满<input class="active_input0" type="text" value="" name="full_1">元<span class="ml">减</span><input class="active_input0" type="text" value="" name="jian_1">元
+                             <span class="active_cue"></span>
+                        </p>
+                        <p class="hidden mb">
+                             买家消费满<input class="active_input0" type="text" value="" name="full_2">元<span class="ml">减</span><input class="active_input0" type="text" value="" name="jian_2">元
+                             <span class="active_cue"></span>
+                        </p>
+                        <p class="hidden mb">
+                             买家消费满<input class="active_input0" type="text" value="" name="full_3">元<span class="ml">减</span><input class="active_input0" type="text" value="" name="jian_3">元
+                             <span class="active_cue"></span>
+                        </p>
+                      </dd>
+                   </dl>
+                  
+                   <input class="set_active" type="submit" value="保存设置"><input class="out_active" type="button" value="取消设置">
+                </form>
+             </div>
+           </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

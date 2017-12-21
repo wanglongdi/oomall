@@ -1,0 +1,108 @@
+/* top */
+.top_sc b,.top_right .car b,.top_right .phone b,.top_right .phone_con{background:url(../images/bg.png) no-repeat; overflow:hidden;}
+#top{width:100%; border-bottom:#f1f1f1 1px solid; height:30px; min-width:1000px; z-index:20; position:relative;}
+.top_con{width:1000px; margin:0px auto; color:#666; line-height:31px;}
+
+/* top_sc */
+.top_sc{width:100px; float:left; overflow:hidden; padding-left:17px; position:relative; cursor:pointer;}
+.top_sc b{background-position:-121px 0px; width:13px; height:13px; position:absolute; left:0px; top:9px;}
+
+
+/* top_right */
+.top_right{width:800px; float:right; text-align:right; color:#999; z-index:5;}
+.top_right .text,.top_right .zc{margin-right:15px;}
+.top_right a{color:#999;}
+.top_right .zc a{margin:0px 5px;}
+.top_right .line{margin:0px 15px;}
+.top_right .phone{padding-left:14px; position:relative; display:inline-block; cursor:pointer; z-index:11;}
+.top_right .phone:hover{color:#c8ae53;}
+.top_right .phone b{width:9px; height:16px; background-position:-143px 0px; position:absolute; left:0px; top:7px;}
+.top_right .phone:hover b{background-position:-264px -32px;}
+.top_right .phone_con{width:190px; height:185px; background-position:0px -642px; position:absolute; left:-65px; top:23px; z-index:15; text-align:center; display:none;}
+.top_right .phone_con .pic{margin:28px 0px 0px 0px;}
+.top_right .car{padding-left:21px; position:relative; display:inline-block;}
+.top_right .car b{width:16px; height:16px; background-position:-169px 0px; position:absolute; left:0px; top:7px;}
+.top_right .car a{color:#666;}
+
+/* cashier_suc_header */
+.suc_tit_bg,.cashier_suc_con h2 b{
+	background:url('../images/cashier_bg.png') no-repeat;
+	overflow: hidden;
+}
+#cashier_main0{
+	width: 100%;
+	min-width: 1000px;
+	background: #fff;
+	overflow: hidden;
+}
+.cashier_suc_header{
+	width: 1000px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+.cashier_suc_header h1{
+	width: 109px;
+	float: left;
+	overflow: hidden;
+	padding-top: 30px;
+}
+.suc_tit{
+	width: 760px;
+	float: right;
+	margin-top: 35px;
+	overflow: hidden;
+}
+.suc_tit_bg{
+	width: 760px;
+	height: 30px;
+	background-position: 0 -90px;
+}
+.suc_tit span{
+	font-size: 14px;
+	color: #666;
+	margin: 0 0 0 95px;
+}
+.suc_tit span.mt{
+	margin-left: 110px;
+}
+.suc_tit .ml{
+	margin-top: 5px;
+}
+.cashier_suc_con{
+	width: 1000px;
+	margin: 0 auto;
+	overflow: hidden;
+	padding: 120px 0 230px 0;
+	line-height: 26px;
+	text-align: center;
+}
+.cashier_suc_con h2{
+	font-size: 20px;
+	color: #f93000;
+	line-height: 37px;
+}
+.cashier_suc_con h2 b{
+	width: 37px;
+	height: 37px;
+	background-position: -300px 0;
+	display: inline-block;
+	margin-right: 20px;
+	vertical-align: -10px;
+}
+.cashier_suc_con .text{
+	font-size: 14px;
+	margin-top: 15px;
+}
+.cashier_suc_con .pr{
+	color: #f93000;
+}
+.cashier_suc_con .ml{
+	margin-left: 15px;
+}
+.cashier_suc_con .tt a{
+	color: #1d7ae4;
+}
+.cashier_suc_con .tt span{
+	color: #a4a4a4;
+	margin: 0 5px
+}

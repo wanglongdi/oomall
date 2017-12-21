@@ -1,0 +1,626 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>抠抠网-飞机票</title>
+<link rel="stylesheet" type="text/css" href="css/air_public.css" />
+<link rel="stylesheet" type="text/css" href="css/airorder.css" />
+<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="js/airorder.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+<script type="text/javascript" src="js/calendar.js"></script>
+<script type="text/javascript" src="js/md5.js"></script>
+
+</head>
+<body>
+<!-- top -->
+<div id="top">
+  <div class="top_con st">
+    <!-- top_sc -->
+    <div class="top_sc">
+      <b></b>收藏抠抠网
+    </div>
+    <!-- top_right -->
+    <div class="top_right">
+      <span class="text">欢迎光临抠抠网</span><span class="zc">[<a href="#">请登录</a>][<a href="#">免费注册</a>]</span><a href="#">我的订单</a><span class="line">|</span>      <span class="phone">
+       <b></b>手机版
+       <div class="phone_con">
+          <p class="pic"><img src="images/ewm01.jpg"/></p>
+          <p><img src="images/ewm_text.jpg"/></p>
+       </div> 
+      </span><span class="line">|</span><a href="#">帮助中心</a><span class="line">|</span><span class="car"><a href="#"><b></b>购物车</a></span>
+    </div>
+  </div>
+</div>
+<!-- top end -->
+
+
+<!--- air_header -->
+<div id="air_header">
+  <h1>
+    <a href="#"><img src="images/logo.png" alt="抠抠网" /></a>
+  </h1>
+  <div class="tit">
+    <a href="#"><img src="images/order_tit.png" alt="填写订单" /></a>
+  </div>
+  <div class="rcon">
+    <div class="bg"></div>
+    <div class="rcon_text">
+      <span class="cur sel">航班选择</span><span class="cur">旅客信息</span><span>支付订单</span><span>完成支付</span>
+    </div>
+  </div>
+</div>
+<!--- air_header end -->
+
+<!-- airorder_main -->
+<div id="airorder_main">
+  <!-- airorder -->
+  <div id="airorder" class="st">
+    <!-- airorder_lcon -->
+    <div id="airorder_lcon">
+      <!-- airorder_fl -->
+      <div class="airorder_fl">
+         <!-- airorder_tit -->
+         <div class="airorder_tit">
+            <h2>航班信息</h2>
+            <div class="huan">
+              <a href="#">更换航班</a>
+            </div>
+         </div>
+         <!-- airorder_line -->
+         <div class="airorder_line"></div>
+         <!-- airorder_fl_con -->
+         <div class="airorder_fl_con">
+            <ul class="tit">
+              <li>行程（单程）</li>
+              <li class="t">起降时间/机场</li>
+              <li>舱位</li>
+              <li>票价</li>
+            </ul>
+            <ul class="con clearfix">
+              <li>
+                <p class="fz">北京<span class="arrow"></span>长沙</p>
+                <p>2015-05-05</p>
+              </li>
+              <li class="t">
+                 <p>
+                   <span class="qi f14 fa">10:20</span>
+                   <span class="jt"></span>
+                   <span class="qi f14 fa">15:33</span>
+                 </p>
+                 <p>
+                   <span class="qi">上海国际机场T1</span>
+                   <span class="jt0">3小时</span>
+                   <span class="qi">新白云国际机场</span>
+                 </p>
+              </li>
+              <li>
+                <div><b class="hb_icon"></b>上海国际航空</div>
+                <div> 
+                  <div class="air_num">CZ3124</div> 
+                  <div class="pass">
+                    <span class="text">经停</span>
+                    <div class="stop_pass">
+                       <p class="tit">
+                         <span>经停城市</span><span>经停时间</span><span>出发时间</span>
+                       </p>
+                       <p>
+                         <span>南昌</span><span>18:15</span><span>19:00</span>
+                       </p>
+                     </div>
+                  </div>
+                </div> 
+                <div>头等舱</div>
+              </li>
+              <li>￥<span class="pr">1021</span>/成人</li>
+            </ul>
+            <ul class="con clearfix">
+              <li>
+                <p class="fz">北京<span class="arrow"></span>长沙</p>
+                <p>2015-05-05</p>
+              </li>
+              <li class="t">
+                 <p>
+                   <span class="qi f14 fa">10:20</span>
+                   <span class="jt"></span>
+                   <span class="qi f14 fa">15:33</span>
+                 </p>
+                 <p>
+                   <span class="qi">上海国际机场T1</span>
+                   <span class="jt0">3小时</span>
+                   <span class="qi">新白云国际机场</span>
+                 </p>
+              </li>
+              <li>
+                <div><b class="hb_icon"></b>上海国际航空</div>
+                <div> 
+                  <div class="air_num">CZ3124</div> 
+                  <div class="pass">直飞</div>
+                </div> 
+                <div>头等舱</div>
+              </li>
+              <li>￥<span class="pr">1021</span>/成人</li>
+            </ul>
+         </div>
+         <!-- airorder_line0 -->
+         <div class="airorder_line0"></div>
+      </div>
+      <!-- airorder_fl end -->
+      
+      <!-- airorder_cj -->
+      <div class="airorder_cj">
+        <!-- airorder_tit -->
+        <div class="airorder_tit bl">
+          <h2>1.乘机人信息</h2>
+          <div class="del_con">删除</div>
+        </div>
+        <!-- airorder_cj_con -->
+        <div class="airorder_cj_con">
+          <div class="del_sure">
+            <h3>确认删除？</h3>
+            <p>
+              <span class="quxiao">取消</span><span class="queren">确认</span>
+            </p>
+          </div>
+          <div class="keep">
+            <input name="" type="checkbox" value="" />存为常用乘机人
+          </div>
+          <form action="" name="">
+            <dl class="clearfix">
+              <dt>&nbsp;</dt>
+              <dd>
+                <span class="peo"><input class="raido_input" name="peo" type="radio" checked="checked" /><label for="">李嘉欣</label></span>
+                <span class="peo"><input class="raido_input" name="peo" type="radio" /><label for="">张学友</label></span>
+                <span class="peo"><input class="raido_input" name="peo" type="radio" /><label for="">那英</label></span>
+              </dd>
+            </dl>
+            <dl class="clearfix mt">
+              <dt>
+                <span class="star">*</span>乘机人类型
+              </dt>
+              <dd>
+                <div class="raido_item">
+                  <input name="years" type="radio" class="raido_input" checked="checked" /><label for="">成人(12岁以上)</label>
+                </div>
+                <div class="raido_item child">
+                  <input name="years" type="radio" class="raido_input" value="" /><label for="">儿童(2-12岁)</label>
+                  <div class="notice">
+                    <h3>儿童购票须知</h3>
+                    <p>1.登记时年龄在2-12周岁的人可以购买儿童票，儿童乘机需要有成人陪伴。1名乘客最多携带2名儿童。</p>
+                    <p>2.儿童单独乘机请到航空公司柜台购买(5-12周岁）</p>
+                    <p>3.购买儿童票可选择类型为身份证（填写户口本上的等级身份证号），乘机时可用户口本登记。</p>
+                    <p>4.乘客类型选择：儿童，票价通常为成人票价的50%，机场建设费用免燃油税为成人价格一半。</p>
+                  </div>
+                </div>
+              </dd>
+            </dl>
+            <dl class="clearfix">
+              <dt>
+                <span class="star">*</span>乘机人姓名
+              </dt>
+              <dd>
+                <input class="name cj_name" type="text" />
+                <div class="what">
+                  <b></b>
+                  <div class="notice_nm">
+                    <h3>乘客姓名填写说明</h3>
+                    <p>乘客姓名需与登机所持证件上的名字一致。</p>
+                    <h3>中文姓名：</h3>
+                    <p>1.若持护照登机，必须确认护照上的中文姓名。<br />2.生僻字可用拼音代替，例如："王艳丽"可输为王yanli</p>
+                    <h3>英文姓名：</h3>
+                    <p>1.若持护照登机，必须确认护照上的中文姓名。<br />2.生僻字可用拼音代替，例如："王艳丽"可输为王yanli<br />3.若持护照登机，必须确认护照上的中文姓名。<br />4.生僻字可用拼音代替，例如："王艳丽"可输为王yanli</p>
+
+                  </div>
+                </div>
+                <div class="wrong">
+                  <span><b></b>请输入正确乘机人姓名</span>
+                </div>
+              </dd>
+            </dl>
+            <dl class="clearfix">
+              <dt>
+                <span class="star">*</span>证件信息
+              </dt>
+              <dd>
+                <div class="sel_ipt">
+                  <span class="text">二代身份证</span>
+                  <ul>
+                    <li>二代身份证</li>
+                    <li>护照</li>
+                    <li>港澳通行证</li>
+                    <li>回乡证</li>
+                  </ul>
+                </div>
+                <input class="name cj_xx" type="text" />
+                <div class="wrong">
+                  <span><b></b>请输入正确身份证号码</span>
+                </div>
+              </dd>
+            </dl>
+            <dl class="clearfix">
+              <dt>
+                <span class="star">*</span>生 日
+              </dt>
+              <dd>
+                <input type="text"  name="birthday" readonly="true" class="name birthday" id="birthday"/>
+                <div class="wrong">
+                  <span><b></b>请输入正确生日</span>
+                </div>
+              </dd>
+            </dl>
+            <dl class="clearfix">
+              <dt>发信息给乘机人</dt>
+              <dd>
+                <input class="name cj_num" type="text" />
+                <div class="wrong">
+                  <span><b></b>请输入正确手机号码</span>
+                </div>
+              </dd>
+            </dl>
+            <dl class="clearfix">
+              <dt>购买航空险</dt>
+              <dd>
+                <div class="sel_ipt">
+                  <span class="text">1份</span>
+                  <ul>
+                    <li>1份</li>
+                    <li>2份</li>
+                    <li>不购买</li>
+                  </ul>
+                </div>
+                <div class="text">￥20/份 </div>
+                <div class="agree"><input name="" type="checkbox" checked="checked" />阅读并且同意条款</div>
+              </dd>
+            </dl>
+            <div class="add_news">新增乘机人信息</div>
+          </form>
+        </div>
+      </div>
+      <!-- airorder_cj end -->
+      
+      <!-- airorder_lx -->
+      <div class="airorder_lx">
+        <!-- airorder_tit -->
+        <div class="airorder_tit bl">
+          <h2>联系人信息</h2>
+        </div>
+        <!-- airorder_cj_con -->
+        <div class="airorder_cj_con">
+          <div class="keep">
+            <input name="" type="checkbox" value="" />存为常用联系人
+          </div>
+          <form action="" name="">
+            <dl class="clearfix">
+              <dt>&nbsp;</dt>
+              <dd>
+                <span class="peo"><input class="raido_input" name="peo" type="radio" checked="checked" /><label for="">李嘉欣</label></span>
+                <span class="peo"><input class="raido_input" name="peo" type="radio" /><label for="">张学友</label></span>
+                <span class="peo"><input class="raido_input" name="peo" type="radio" /><label for="">那英</label></span>
+              </dd>
+            </dl>
+            <dl class="clearfix mt">
+              <dt>
+                <span class="star">*</span>姓名
+              </dt>
+              <dd>
+                <input class="lx_inpt" type="text" id="lx_name" />
+                <div class="wrong">
+                  <span><b></b>请输入正确联系人姓名</span>
+                </div>
+              </dd>
+            </dl>
+            <dl class="clearfix">
+              <dt>
+                <span class="star">*</span>手机号码
+              </dt>
+              <dd>
+                <input class="lx_inpt" type="text" id="lx_num" />
+                <div class="wrong">
+                  <span><b></b>请输入正确手机号码</span>
+                </div>
+              </dd>
+            </dl>
+            <dl class="clearfix">
+              <dt>备用电话号码</dt>
+              <dd>
+                <input class="lx_inpt" type="text" id="lx_num0" />
+                <div class="wrong">
+                  <span><b></b>请输入正确电话号码</span>
+                </div>
+              </dd>
+            </dl>
+            <dl class="clearfix">
+              <dt>
+                <span class="star">*</span>电子邮箱
+              </dt>
+              <dd>
+                <input class="lx_inpt" type="text" id="lx_email" />
+                <div class="wrong">
+                  <span><b></b>请输入正确电子邮箱</span>
+                </div>
+              </dd>
+            </dl>
+            <dl class="clearfix">
+              <dt>&nbsp;</dt>
+              <dd>
+                <div class="agree"><input name="" type="checkbox" checked="checked" />需要发送短信通知？</div>
+                <div class="agree"><input name="" type="checkbox" checked="checked" />需要发送邮件通知？</div>
+              </dd>
+            </dl>
+           </form>
+         </div>
+      </div>
+      <!-- airorder_lx end -->
+      
+      <!-- airorder_bx -->
+      <div class="airorder_bx">
+        <!-- airorder_tit -->
+        <div class="airorder_tit bl">
+          <h2>报销凭证<span>（含行程单、保险发票、快递费发票）</span></h2>
+        </div>
+        <!-- airorder_bx_con -->
+        <div class="airorder_bx_con">
+           <div class="con">
+              <input name="" type="checkbox" /><label for="">行程单<span class="ash">（办理登记凭证件即可）</span></label>
+           </div>
+           <div class="con">
+              <input name="" type="checkbox" id="baoxiao" /><label for="">报销发票<span class="ash">（此票有保险公司单独寄出）</span></label>
+           </div>
+           <div class="airorder_adr">
+              <h4>邮寄地址</h4>
+              <ul>
+                <li>
+                  <input type="radio" name="air_adr" class="raido_input" checked="checked" /><span class="mail_name">张飞</span><span class="mail_adr">北京市丰台区马家堡31号院1号楼</span><span class="mail_tel">电话 13366668888</span><span class="edit">编辑</span><span class="del">删除</span>
+                </li>
+                <li>
+                  <input type="radio" name="air_adr" class="raido_input"/><span class="mail_name">张飞</span><span class="mail_adr">北京市丰台区马家堡31号院1号楼</span><span class="mail_tel">电话 13366668888</span><span class="edit">编辑</span><span class="del">删除</span>
+                </li>
+              </ul>
+           </div>
+           <div class="add_adr">添加新地址</div> 
+           <div class="add_adr_con clearfix">
+             <form id="new_adr">
+               <dl class="clearfix">
+                 <dt>
+                   <span class="star">*</span>收件人姓名
+                 </dt>
+                 <dd>
+                   <input class="sj" type="text" id="adr_name" />
+                   <div class="wrong">
+                     <span><b></b>请输入正确收件人姓名</span>
+                   </div>
+                 </dd>
+               </dl>
+               <dl class="clearfix">
+                 <dt>
+                   <span class="star">*</span>收件人手机
+                 </dt>
+                 <dd>
+                   <input class="sj" type="text" id="adr_num" />
+                   <div class="wrong">
+                     <span><b></b>请输入正确收件人手机号码</span>
+                   </div>
+                 </dd>
+               </dl>
+               <dl class="clearfix">
+                 <dt>
+                   <span class="star">*</span>地址
+                 </dt>
+                 <dd>
+                   <select id="sel_sheng">
+                     <option value="">请选择</option>
+                     <option value="1">北京</option>
+                     <option value="2">天津</option>
+                   </select>
+                   <select id="sel_shi">
+                     <option value="">请选择</option>
+                     <option value="1">北京</option>
+                     <option value="2">天津</option>
+                   </select>
+                   <select id="sel_qu">
+                     <option value="">请选择</option>
+                     <option value="1">北京</option>
+                     <option value="2">天津</option>
+                   </select>
+                   <div class="wrong wrong0">
+                      <span><b></b>请输入正确地址</span>
+                    </div>
+                 </dd>
+               </dl>
+               <dl class="clearfix">
+                 <dt>&nbsp;</dt>
+                 <dd>
+                   <div class="dz">
+                     <input class="sj" type="text" id="adr_adr" />
+                     <div class="wrong wrong0">
+                       <span><b></b>请输入正确地址</span>
+                     </div>
+                   </div>
+                   <div class="tis">请填写详细地址，不需要重复填写省市区/县</div>
+                 </dd>
+               </dl>
+               <dl class="clearfix">
+                 <dt>&nbsp;</dt>
+                 <dd>快递费用 ￥20</dd>
+               </dl>
+               <dl class="clearfix">
+                 <dt>&nbsp;</dt>
+                 <dd><input value="保存新建收货地址" type="submit" id="adr_keep" /></dd>
+               </dl>
+             </form>
+           </div>
+        </div>
+      </div>
+      <!-- airorder_bx end -->
+      
+      <!-- airorder_money -->
+      <div class="airorder_money">
+        <!-- airorder_tit0 -->
+        <div class="airorder_tit0 bl">
+          <h2>订单金额</h2>
+          <div class="text fw">
+            <span>机票: ￥1200</span><span>机建: ￥50</span><span>保险: ￥20</span><span>快递: ￥20</span>
+          </div>
+        </div>
+        <!-- airorder_money_con -->
+        <div class="airorder_money_con">
+          <div class="price">
+            <span class="fw">￥</span>1021
+          </div>
+          <div class="tijiao">
+            <input type="button" value="提交订单" id="tijiao_btn" onclick="Submitorder()"/>
+          </div>
+        </div>
+      </div>
+      <!-- airorder_money end -->
+    </div>
+    <!-- airorder_rcon end -->
+    <!-- airorder_rcon -->
+    <div id="airorder_rcon">
+      <!-- airorder_rx -->
+      <div class="airorder_rx">
+        <h2>往返</h2>
+        <div class="airorder_rx_con">
+          <h3>去程</h3>
+          <dl>
+            <dt>成人票：</dt>
+            <dd>￥1200</dd>
+          </dl>
+          <dl>
+            <dt>机建：</dt>
+            <dd>
+              ￥5
+              <div class="rf">
+                x<span class="s">1</span><span class="r">人</span>
+              </div>
+            </dd>
+          </dl>
+          <dl class="l">
+            <dt>燃油附加：</dt>
+            <dd>￥0</dd>
+          </dl>
+          <dl class="b">
+            <dt>保险：</dt>
+            <dd>
+              ￥20
+              <div class="rf">
+                x<span class="s">1</span><span class="r">人</span>
+              </div>
+            </dd>
+          </dl>
+        </div>
+        <div class="airorder_rx_con">
+          <h3>返程</h3>
+          <dl>
+            <dt>成人票：</dt>
+            <dd>￥1200</dd>
+          </dl>
+          <dl>
+            <dt>机建：</dt>
+            <dd>
+              ￥5
+              <div class="rf">
+                x<span class="s">1</span><span class="r">人</span>
+              </div>
+            </dd>
+          </dl>
+          <dl class="l">
+            <dt>燃油附加：</dt>
+            <dd>￥0</dd>
+          </dl>
+          <dl class="b">
+            <dt>保险：</dt>
+            <dd>
+              ￥20
+              <div class="rf">
+                x<span class="s">1</span><span class="r">人</span>
+              </div>
+            </dd>
+          </dl>
+        </div>
+        <div class="airorder_rx_price">
+          <span class="z">总计：</span>
+          <span class="apr"><b>￥</b>1250</span>
+        </div>
+      </div>
+      <!-- airorder_rx end -->
+      <!-- airorder_dh -->
+      <div class="airorder_dh">
+        <div class="airorder_dh_tit">
+          东华国旅
+        </div>
+        <div class="airorder_dh_con">
+          <span class="pic"></span>
+          <span class="tel">400-070-9997</span>
+          <span class="tel">010-65811338</span>
+          <span class="text">7×24小时客服电话</span>
+        </div>
+      </div>
+      <!-- airorder_dh end -->
+    </div>
+    <!-- airorder_rcon end -->
+  </div>
+  <!-- airorder end -->
+</div>
+<!-- air_main end -->
+
+<div id="bg" class="bg_login" style="display:none;"></div>
+<!-- popDiv -->
+<div id='popDiv' class="zhucemydiv" style="display:none;">
+    <form class="form" action="" method="post">
+       <div class="guanbi_box">
+          <p class="guanbi">用户登录</p>
+          <p class="guanli"  onclick="closeDiv('popDiv')"><img src="images/close1.png" /></p>
+       </div>
+
+        <!-- 账号 -->
+        <p class='zhanghao'><span>账号</span><label for=""><input type="text"  name="login_name" id="username"  class='input_text' onblur="if(this.value=='') {this.value='邮箱/用户名/手机号';}" onfocus="if(this.value=='邮箱/用户名/手机号') this.value='';" value="邮箱/用户名/手机号"  autocomplete="off" tabindex="0"  /></label></p>
+        <p class='dui' style='display: none;'></p>
+
+        <!-- 密码 -->
+        <p class='mima'><span>密码</span><input  class='input_password' value=''  name="password" type="password"  maxlength="20" id='pwd' autocomplete="off" onpaste="return false"/></p>        
+        <p class='dui1' style='display: none;'></p>
+
+        <input type="hidden" name="click_type" value="" />
+        <p class='text'><a href="http://www.kouclo.com/user/lookpwd">忘记密码？</a></p>
+            <p class='login_button'><input type='submit' class='btn' value='登录'  /></p>
+            <!-- 点击登录按钮事件 -->
+            <p class='p_button_01'></p>                
+            <p class='p_button_02'></p>
+
+            <p class='p_button_03' style='display: none;'>该用户名不存在</p>
+            <p class='p_button_04' style='display: none;'>密码错误</p>
+            <p class='p_button_05' style='display: none;'>用户名或密码错误</p>
+            <p class='p_button_06' style='display: none;'>验证码错误或已过期</p>  <!-- （清空验证码内容并刷新验证码更换一张） -->
+      </form>
+</div>
+<!-- popDiv end -->
+
+
+<!-- footer_copy -->
+<div id="footer_copy">
+  <div id="footer_copy_con" class="clearfix">
+    <div class="copy_con st">
+       <p class="about">
+         <a href="#">关于抠抠网</a><span>|</span><a href="#">帮助中心</a><span>|</span><a href="#">网站合作</a><span>|</span><a href="#">热门搜索</a><span>|</span><a href="#">友情链接</a><span>|</span><a href="#">法律声明</a><span>|</span><a href="#">诚征英才</a><span>|</span><a href="#">商家登录</a><span>|</span><a href="#">供应商登录</a>
+       </p>
+       <p>
+        CopyRIGHT © 2009-2014 抠抠网 KOUCLO All RIGHTS RESERVED 闽ICP备13001618号-1<span class="ml">增值电信业务经营许可证：闽B1-20130053</span><br />
+互联网药品信息服务资质证书编号：（闽）-非经营性-2014-0008
+       </p>
+       <p class="gs">
+         <span><img src="images/001.jpg"/></span><span><img src="images/002.jpg"/></span>
+       </p>
+    </div>
+    <!-- footer_logo -->
+    <div class="footer_logo">
+       <h2><a href="#"><img src="images/logo0.png" alt="抠抠网" /></a></h2>
+       <div class="bg"></div>
+    </div>
+  </div>
+</div>
+<!-- footer_copy end -->
+
+
+</body>
+</html>

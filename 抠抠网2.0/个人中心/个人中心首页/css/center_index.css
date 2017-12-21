@@ -1,0 +1,90 @@
+.person_text .sj_icon,.person_text .email,.person_quan a,.wuliu_icon,.wuliu ul li b{background: url('../images/center_bg.png') no-repeat;overflow: hidden;}
+.fz14{font-size: 14px;}
+/* person */
+.person{padding: 30px;width: 1020px;background: #fff;overflow: hidden;color: #666;}
+.person_pic{width: 400px;float: left;overflow: hidden;}
+.person_pic img{border: #e2e2e2 1px solid;float: left;padding: 3px;width: 94px;border-radius: 51px;}
+.person_pic .text{width: 260px;float: left;padding: 20px 20px 0 18px;overflow: hidden;line-height: 32px;}
+.person_pic .text h3 a{font-size: 20px;color: #666;font-weight: normal;}
+.person_pic .text h3 a:hover{color: #dead00;}
+.person_text{width: 250px;padding: 25px 70px 0;float: left;line-height: 30px;}
+.person_text a{color: #666;text-decoration: underline;}
+.person_text a.r{color: #db2424;}
+.person_text a.y{color: #333;}
+.person_text .aq{width: 98px;height: 9px;border-radius: 4px;background: #d6d6d6;display: inline-block;margin: 5px 8px 0 0;position: relative;}
+.person_text .aq b{height: 9px;border-radius: 4px;position: absolute;left: 0;top: 0;}
+.person_text .aq b.low{width: 24px;background: #db2424;}
+.person_text .aq b.zhong{width: 49px;background: #f7a200;}
+.person_text .aq b.jh{width: 74px;background: #e9e600;}
+.person_text .aq b.high{width: 98px;background: #6fba2c;}
+.person_text .text{width: 97px;display: inline-block;}
+.person_text .ml{margin-left: 34px;}
+.person_text .sj_icon{width: 10px;height: 13px;background-position: -45px 0;margin-right: 4px;vertical-align: -2px;}
+.person_text .email{width: 14px;height: 10px;background-position: -120px -33px;margin-right: 4px;vertical-align: -1px;}
+.person_line{width: 1px;height: 45px;background: #e1e1e1;overflow: hidden;float: left;margin-top: 31px;}
+.person_quan{width: 158px;float: right;padding: 27px 0 0 70px;line-height: 24px;}
+.person_quan i{color: #dead00;font-weight: bold;margin: 0 5px;font-size: 16px;font-family: Arial;}
+.person_quan a{width: 95px;height: 25px;background-position: 0 -33px;display: block;}
+
+/* center_my */
+.center_my,.center_store,.center_zj{padding: 15px 20px 10px;margin-top: 10px;background: #fff;position: relative;line-height: 20px;}
+.center_my h2,.center_store h2,.center_zj h2{font-size: 16px;color: #444;line-height: 26px;margin-bottom: 5px;}
+.center_store{width: 720px;float: left;}
+.center_zj{width: 270px;float: left;margin-left: 10px;}
+.center_my{width: 1040px;}
+.center_more{width: 60px;position: absolute;right: 10px;top: 20px;}
+.center_more a{text-decoration: underline;color: #666;}
+.center_sel{width: 300px;position: absolute;top: 20px;right: 105px;color: #e1e1e1;text-align: right;}
+.center_sel span{margin: 0 12px;}
+.center_sel a{color: #666;font-weight: bold;}
+.center_sel a i{color: #db2424;font-family: Arial;margin-left: 5px;font-size: 14px;}
+.center_my table{color: #666;width: 100%;border: 0;line-height: 24px;}
+.center_my table td{padding: 10px 0;text-align: center;}
+.center_my table td a{color: #666;}
+.center_my table td a:hover{color: #dead00;text-decoration: underline;}
+.center_my table td.pic{width: 280px;}
+.center_my table td.gs{width: 140px;}
+.center_my table td.my{width: 150px;}
+.center_my table td.time{width: 210px;}
+.center_my table td.zf{width: 120px;}
+.center_my table td.pic a img{width: 75px;height: 75px;float: left;margin-right: 10px;}
+.center_my table td.pic a:hover img{width: 73px;height: 73px;border: #dead00 1px solid;}
+.center_my table td i{color: #db2424;}
+.center_my table td a.pay{width: 80px;height: 25px;color: #fff;line-height: 25px;background: #db2424;display: block;float: right;}
+.center_my table td a.kan{width: 78px;height: 23px;color: #666;line-height: 23px;background: #fff;border: #dedede 1px solid;display: block;float: right;}
+
+/* center_sc */
+.center_sc{width: 1060px;padding: 20px 20px 10px 0;overflow: hidden;}
+.center_sc li{width: 192px;margin-left: 20px;overflow: hidden;float: left;}
+.center_sc li img{width: 192px;height: 192px;display: block;margin-bottom: 12px;}
+.center_sc li a:hover img{width: 190px;height: 190px;border: #dead00 1px solid;}
+.center_sc li span{height: 18px;display: inline-block;margin-right: 2px;line-height: 18px;overflow: hidden;}
+.center_sc li .pr{color: #db2424;width: 73px;}
+.center_sc li .pr i{font-size: 14px;}
+.center_sc li .ll{color: #fff;font-family: 宋体;text-align: center;border-radius: 2px;}
+.center_sc li .mj{width: 41px;background: #dead00;}
+.center_sc li .xs{width: 29px;background: #db2424;}
+
+.center_zj ul{width: 280px;margin-left: -10px;overflow: hidden;}
+.center_zj li{width: 60px;margin: 10px 0 0 10px;float: left;overflow: hidden;}
+.center_zj li a img{width: 60px;height: 60px;}
+.center_zj li a:hover img{width: 58px;height: 58px;border: #dead00 1px solid;}
+
+.center_store ul{width: 744px;margin: 19px -24px 0 0;padding-bottom: 14px;overflow: hidden;}
+.center_store li{width: 82px;float: left;margin-right: 24px;text-align: center;line-height: 16px;overflow: hidden;}
+.center_store li img{border: #e1e1e1 1px solid;padding: 3px;width: 74px;height: 74px;border-radius: 50%;margin-bottom: 5px;}
+.center_store li a:hover img{border: #dead00 1px solid;}
+.center_store li a{color: #888;}
+.center_store li a:hover{color: #dead00;}
+
+.track{position: relative;}
+.wuliu_icon{width: 14px;height: 7px;background-position: -52px -72px;position: absolute;left: 63px;top: 20px;z-index: 100;display: none;}
+.wuliu{width: 375px;border: #dead00 1px solid;position: absolute;left: -120px;top: 26px;background: #fff;z-index: 99;padding: 10px 18px 15px;display: none; }
+.wuliu .tit{border-bottom: #eee 1px solid;font-size: 14px;padding-left: 10px;text-align: left;line-height: 32px;}
+.wuliu .tit span{margin-left: 12px;}
+.wuliu ul{margin-top: 10px;}
+.wuliu ul li{border-left: #d5d5d5 1px solid;position: relative;color: #666;line-height: 22px;text-align: left;margin-left: 18px;padding: 10px 0 10px 15px;}
+.wuliu ul li b{position: absolute;left: -4px;top: 17px;width: 7px;height: 7px;background-position: 0 -72px;}
+.wuliu ul li .time{color: #999;}
+.wuliu ul li.cur,.wuliu ul li.cur .time{color: #dead00;}
+.wuliu ul li.cur b{width: 13px;height: 15px;background-position: -20px -70px;left: -7px;top: 13px;}

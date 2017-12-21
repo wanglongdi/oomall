@@ -1,0 +1,98 @@
+@charset "utf-8";
+/* bg */
+.collect_bg,#pages .go,.collect_con ul li .jian,.del,.collect_no_icon,.collect_con0 .tit,.del0,.collect_no0_icon{background:url(../images/collect_bg.png) no-repeat; overflow:hidden;}
+
+/* collect */
+.collect{width:788px; border:#dbdbdb 1px solid; float:right; background:#fff;}
+.collect_tit{width:788px; border-bottom:#e8e8e8 1px solid; height:38px; line-height:38px;}
+.collect_tit ul li{width:116px; float:left; text-align:center; position:relative;}
+.collect_tit ul li.l{border-right:#e8e8e8 1px solid}
+.collect_tit ul li a{color:#333; font-size:14px;}
+.collect_bg{width:118px; height:6px; position:absolute; left:-1px; bottom:0px; background-position:-86px 0px;}
+
+/* collect_con */
+.collect_con{width:788px; overflow:hidden;}
+.collect_con ul li{width:151px; float:left; margin:26px 23px 0px 23px; line-height:26px; overflow:hidden; position:relative; height:240px;}
+.collect_con ul li .img{width:151px; height:151px; margin-bottom:8px; position:relative;}
+.collect_con ul li .img a img{width:149px; height:149px; border:#e0e0e0 1px solid;}
+.collect_con ul li .text a{color:#343434; font-size:14px;}
+.collect_con ul li .text0 a{color:#aaa; font-size:14px;}
+.collect_con ul li .tl{width:75px; float:left; color:#ff3f00;}
+.collect_con ul li .tr{width:75px; float:right; text-align:right;}
+.collect_con ul li .price{font-size:16px;}
+.collect_con ul li .yuan{font-size:14px;}
+.collect_con ul li .old{color:#ccc; font-size:14px; text-decoration:line-through;}
+.collect_con ul li .jian{width:18px; height:16px; background-position:-281px 0px; display:inline-block; vertical-align:-2px; *vertical-align:1px;}
+
+.pass{width:151px; height:46px; position:absolute; bottom:0px; left:0px; background:#000; filter:alpha(opacity:50); opacity:0.50; -moz-opacity:0.50;}
+.pass_text{width:151px; height:46px; line-height:46px; text-align:center; color:#fff; position:absolute; bottom:0px; left:0px;}
+
+.hui{color:#8d8d8d;}
+
+/* collect_no */
+.collect_no{width:788px; height:500px; position:relative;}
+.collect_no_icon{width:62px; height:71px; left:360px; top:130px; background-position:0px 0px; position:absolute;}
+.collect_no_text{text-align:center; font-size:18px; color:#9d9d9d; line-height:30px; padding-top:210px;}
+
+
+/* collect_no0 */
+.collect_no0{width:788px; height:500px; position:relative;}
+.collect_no0_icon{width:63px; height:63px; left:360px; top:130px; background-position:-391px 0px; position:absolute;}
+.collect_no0_text{text-align:center; font-size:18px; color:#9d9d9d; line-height:30px; padding-top:210px;}
+
+/* del */
+.del{width:34px; height:31px; position:absolute; top:0px; right:0px; background-position:-315px 0px; cursor:pointer; display:none;}
+
+/* del0 */
+.del0{width:34px; height:31px; position:absolute; top:0px; right:0px; *top:-19px; background-position:-315px 0px; cursor:pointer; display:none;}
+
+/* del_con */
+.del_con{width:151px; height:151px; position:absolute; top:0px; right:0px; text-align:center;}
+.del_con_bg{width:151px; height:151px; position:absolute; top:0px; right:0px; background:#000; filter:alpha(opacity:50); opacity:0.50; -moz-opacity:0.50;}
+.del_con .text{color:#fff; font-size:14px; line-height:24px; padding:42px 0px 20px 0px; width:151px;}
+.del_con .sure{width:50px; height:20px; line-height:20px; background:#ded0b2; margin-left:17px; display:inline-block; float:left;}
+.del_con .sure a{color:#141001;}
+.del_con .quxiao{width:50px; height:20px; line-height:20px; background:#fff; margin-left:17px; display:inline-block; float:left;}
+.del_con .quxiao a{color:#141001;}
+
+/* del_con0 */
+.del_con0{width:198px; height:215px; position:absolute; top:0px; right:0px; text-align:center;}
+.del_con_bg0{width:198px; height:215px; position:absolute; top:0px; right:0px; background:#000; filter:alpha(opacity:50); opacity:0.50; -moz-opacity:0.50;}
+.del_con0 .text{color:#fff; font-size:14px; line-height:24px; padding:50px 0px 20px 0px; width:198px;}
+.del_con0 .sure{width:50px; height:20px; line-height:20px; background:#ded0b2; margin-left:40px; display:inline-block; float:left;}
+.del_con0 .sure a{color:#141001;}
+.del_con0 .quxiao{width:50px; height:20px; line-height:20px; background:#fff; margin-left:17px; display:inline-block; float:left;}
+.del_con0 .quxiao a{color:#141001;}
+
+.collect_line{width:748px; border-top:#e8e8e8 1px solid; margin:20px 20px 0px; overflow:hidden;}
+
+/* collect_con0 */
+.collect_con0{width:746px; margin:24px 20px 0px; border:#eaeaea 1px solid; position:relative;}
+.collect_con0 .bg{background:#fafafa; width:746px; height:3px; position:absolute; left:0px; bottom:-4px;}
+.collect_con0 .tit{width:198px; height:215px; background-position:0px -90px; float:left; position:relative;}
+.collect_con0 .tit_pic{width:198px; padding-top:19px; *padding-top:0px; *margin-top:19px; height:104px; position:relative; line-height:104px;}
+.collect_con0 .tit_pic .pic{position:absolute; left:50%; top:50%;}
+.collect_con0 .tit_pic .pic img{position:relative; left:-50%; top:-50%;}
+
+
+.collect_con0 .tit p{text-align:center; line-height:30px;}
+.collect_con0 .text{margin:5px 0px;}
+.collect_con0 .text a{color:#575757; font-size:14px;}
+.collect_con0 a.enter{width:65px; height:18px; background:#120e01; line-height:18px; text-align:center; color:#ded0b2; display:inline-block;}
+.collect_con0 .con{width:548px; float:left; overflow:hidden;}
+.collect_con0 .con ul li{width:182px; float:left; border-right:#f0f0f0 1px solid; line-height:22px; text-align:center; height:215px;}
+.collect_con0 .con ul li .pic{width:130px; height:130px; margin:11px 26px 15px;}
+.collect_con0 .con ul li img{width:130px; height:130px;}
+.collect_con0 .con ul li .text a{color:#666;}
+.collect_con0 .con ul li .pc{color:#ff3f00;}
+.fz14{font-size:14px;}
+
+
+/* pages */
+#pages{width:100%; overflow:hidden; padding:43px 0px 34px 0px;}
+#pages .pages_con{width:auto; float:right; padding-right:22px; color:#999; line-height:30px; font-size:14px;}
+#pages .pages_con a{padding:0px 10px; line-height:28px; border:#d3d3d3 1px solid; color:#696969; font-size:14px; margin:0px 4px; display:inline-block;}
+#pages .pages_con a.hover,#pages .pages_con a:hover{background:#666; color:#fff; border:#666 1px solid;}
+#pages .inp{width:29px; height:28px; line-height:28px; text-align:center; border:#d3d3d3 1px solid; margin:0px 4px; *vertical-align:-5px;}
+#pages .m{margin-left:23px;}
+#pages .go{width:31px; height:31px; border:0px; cursor:pointer; margin-left:4px; background-position:-236px 0px; float:right; *float:inherit; *vertical-align:-5px;}

@@ -1,0 +1,259 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>抠抠网-商家后台</title>
+<link type="text/css" rel ="stylesheet" href="css/global.css"/>
+<link type="text/css" rel ="stylesheet" href="css/main.css"/>
+<link type="text/css" rel ="stylesheet" href="css/sellerAdmin.css"/>
+<link type="text/css" rel ="stylesheet" href="css/font.css"/>
+<link type="text/css" rel ="stylesheet" href="css/jquery-ui.css"/>
+<link rel="stylesheet" type="text/css" href="css/minus.css" />
+<link type="text/css" href="css/datepicker.css" rel="stylesheet" />
+<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+<script src="js/jquery.zclip.js"></script>
+<script src="js/jquery.zclip.min.js"></script>
+<script>
+  $('.copy_btn').zclip({
+      path: "ZeroClipboard.swf",
+      copy: function(){
+        return $('.copy_inp').val();
+  　　}
+   });
+   
+   $(function(){
+	   $('.fuzhi').each(function(){
+		   $(this).click(function(){
+			  $('#copy').show();
+		   })
+		});
+	  $('#copy').find('.close').click(function(){
+	     $(this).parents('#copy').hide();   
+      }) 
+	   
+	})
+</script>
+</head>
+
+<body>
+<div class="content mt15 clearfix">
+   <!--侧栏内容-->
+	<div class="aside busi_center fl">
+    	<h2 class="busi_center_hd"><b></b>卖家中心首页</h2>
+    	<ul id="js_bus_menu" class="bus_menu js_menu_0">
+        	<li class="bus_menu_item js_menu_1">
+            	<h3  class="bus_menuItem_hd js_menu_1_hd"><i></i>交易管理</h3>
+                <ul class="bus_subMenu js_menu_2">
+                	<li><a href="http://shop.kouclo-v4.com/trade/order_list">已卖出的商品</a></li>
+                    <li><a href="http://shop.kouclo-v4.com/trade_evaluate/index">评价管理</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+	<!--右侧主要内容区-->
+	<div class="mainCon fr">
+		<!--内容填充区-->
+		<div class="mainConMod marB17 clearfix">
+    	   <h2 class="conMod_Tit"><span class="normal">我是卖家 > </span>促销管理设置<div class="tRig_Div"><a href="#" class="helpIco"><i></i>查看帮助</a></div></h2>
+           <div class="conMod_Con stoData-wrap">
+        	 <ul class="stoData_tit tab_nav">
+               <li><a href="/goods/sell/" class="stoDat-a">满立减</a></li>
+               <li><a href="/goods/featured_products/" class="stoDat-a">限时折扣</a></li>
+               <li class="current"><a href="/goods/featured_products/" class="stoDat-a">优惠券</a></li>
+             </ul>
+             <div class="zhushi">
+               "<span class="red">*</span>"为必填项
+             </div>
+             <div class="coupon_cj">
+                <a href="#">创建优惠券</a>
+             </div>
+             <div class="coupon_con">
+                <table cellspacing="0" cellpadding="0">
+                  <thead>
+                     <tr>
+                        <td class="name">名称</td>
+                        <td class="money">面额</td>
+                        <td class="time">时间</td>
+                        <td class="num">限领/人</td>
+                        <td class="tj">条件</td>
+                        <td class="num">发行量</td>
+                        <td class="num">已领取</td>
+                        <td class="num">使用数据</td>
+                        <td class="num">全部</td>
+                        <td class="cz">操作</td>
+                     </tr>
+                  </thead>
+                  <tbody>
+                     <tr>
+                        <td class="name">
+                          <p>50</p>
+                          <p><a href="#" class="lq">买家领取</a></p>
+                        </td>
+                        <td class="money orange">50</td>
+                        <td class="time">
+                          <p>起：2014-10-28</p>
+                          <p>止：2014-11-11</p>
+                        </td>
+                        <td class="num">不限</td>
+                        <td class="tj">满100元</td>
+                        <td class="num">1000</td>
+                        <td class="num">33</td>
+                        <td class="num sj">--</td>
+                        <td class="num">已结束</td>
+                        <td class="cz">
+                           <a href="#" class="lan">修改</a><a href="javascript:;" class="lan fuzhi">复制链接</a><a href="javascript:;" class="lan">结束</a>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="name">
+                          <p>50</p>
+                          <p><a href="#" class="lq">买家领取</a></p>
+                        </td>
+                        <td class="money orange">50</td>
+                        <td class="time">
+                          <p>起：2014-10-28</p>
+                          <p>止：2014-11-11</p>
+                        </td>
+                        <td class="num">不限</td>
+                        <td class="tj">满100元</td>
+                        <td class="num">1000</td>
+                        <td class="num">33</td>
+                        <td class="num sj">--</td>
+                        <td class="num">已结束</td>
+                        <td class="cz">
+                           <a href="#" class="lan">修改</a><a href="javascript:;" class="lan fuzhi">复制链接</a><a href="javascript:;" class="lan">结束</a>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="name">
+                          <p>50</p>
+                          <p><a href="#" class="lq">买家领取</a></p>
+                        </td>
+                        <td class="money orange">50</td>
+                        <td class="time">
+                          <p>起：2014-10-28</p>
+                          <p>止：2014-11-11</p>
+                        </td>
+                        <td class="num">不限</td>
+                        <td class="tj">满100元</td>
+                        <td class="num">1000</td>
+                        <td class="num">33</td>
+                        <td class="num sj">--</td>
+                        <td class="num">已结束</td>
+                        <td class="cz">
+                           <a href="#" class="lan">修改</a><a href="javascript:;" class="lan fuzhi">复制链接</a><a href="javascript:;" class="lan">结束</a>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="name">
+                          <p>50</p>
+                          <p><a href="#" class="lq">买家领取</a></p>
+                        </td>
+                        <td class="money orange">50</td>
+                        <td class="time">
+                          <p>起：2014-10-28</p>
+                          <p>止：2014-11-11</p>
+                        </td>
+                        <td class="num">不限</td>
+                        <td class="tj">满100元</td>
+                        <td class="num">1000</td>
+                        <td class="num">33</td>
+                        <td class="num sj">--</td>
+                        <td class="num">已结束</td>
+                        <td class="cz">
+                           <a href="#" class="lan">修改</a><a href="javascript:;" class="lan fuzhi">复制链接</a><a href="javascript:;" class="lan">结束</a>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="name">
+                          <p>50</p>
+                          <p><a href="#" class="lq">买家领取</a></p>
+                        </td>
+                        <td class="money orange">50</td>
+                        <td class="time">
+                          <p>起：2014-10-28</p>
+                          <p>止：2014-11-11</p>
+                        </td>
+                        <td class="num">不限</td>
+                        <td class="tj">满100元</td>
+                        <td class="num">1000</td>
+                        <td class="num">33</td>
+                        <td class="num sj">--</td>
+                        <td class="num">已结束</td>
+                        <td class="cz">
+                           <a href="#" class="lan">修改</a><a href="javascript:;" class="lan fuzhi">复制链接</a><a href="javascript:;" class="lan">结束</a>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="name">
+                          <p>50</p>
+                          <p><a href="#" class="lq">买家领取</a></p>
+                        </td>
+                        <td class="money orange">50</td>
+                        <td class="time">
+                          <p>起：2014-10-28</p>
+                          <p>止：2014-11-11</p>
+                        </td>
+                        <td class="num">不限</td>
+                        <td class="tj">满100元</td>
+                        <td class="num">1000</td>
+                        <td class="num">33</td>
+                        <td class="num sj">--</td>
+                        <td class="num">已结束</td>
+                        <td class="cz">
+                           <a href="#" class="lan">修改</a><a href="javascript:;" class="lan fuzhi">复制链接</a><a href="javascript:;" class="lan">结束</a>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="name">
+                          <p>50</p>
+                          <p><a href="#" class="lq">买家领取</a></p>
+                        </td>
+                        <td class="money orange">50</td>
+                        <td class="time">
+                          <p>起：2014-10-28</p>
+                          <p>止：2014-11-11</p>
+                        </td>
+                        <td class="num">不限</td>
+                        <td class="tj">满100元</td>
+                        <td class="num">1000</td>
+                        <td class="num">33</td>
+                        <td class="num sj">--</td>
+                        <td class="num">已结束</td>
+                        <td class="cz">
+                           <a href="#" class="lan">修改</a><a href="javascript:;" class="lan fuzhi">复制链接</a><a href="#" class="lan">结束</a>
+                        </td>
+                     </tr>
+                  </tbody>
+              </table>
+
+             </div>
+           </div>
+        </div>
+    </div>
+</div>
+
+<!-- copy -->
+<div id="copy">
+  <div class="title">
+     <h3>链接地址</h3>
+     <span class="close"></span>
+  </div>
+  <div class="con">
+     <input type="text" class="copy_inp" /><input type="button" value="复制" class="copy_btn" />
+  </div>
+</div>
+
+<!-- copy0 -->
+<div id="copy0">
+  <div class="title">
+     <h3>提示</h3>
+     <span class="close"></span>
+  </div>
+  <div class="con">
+     复制成功
+  </div>
+</div>
+
+</body>
+</html>

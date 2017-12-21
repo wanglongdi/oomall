@@ -1,0 +1,100 @@
+TABLE.jCalendar {
+	   background:#fff; BORDER-COLLAPSE:separate; border-spacing: 0; width:240px; 
+}
+
+TABLE.jCalendar thead th{ background:#fff;}
+TABLE.jCalendar TH {
+	PADDING-RIGHT: 5px; PADDING-LEFT: 5px; FONT-WEIGHT: bold; BACKGROUND:#fff; PADDING-BOTTOM: 3px; color:#333; PADDING-TOP: 3px; border:0; font: normal 12px Arial, Helvetica, sans-serif;
+}
+TABLE.jCalendar TD {
+	 BACKGROUND: #fff;  COLOR: #000; TEXT-ALIGN: center;
+	 padding:0 5px;
+	 height:30px;
+}
+TABLE.jCalendar TD.other-month {
+	BACKGROUND: #ddd; COLOR: #aaa
+}
+TABLE.jCalendar TD.today {
+	BACKGROUND: #FFCCCC; COLOR: #fff
+}
+TABLE.jCalendar TD.selected {
+	BACKGROUND: #FFCCCC; COLOR: #fff
+}
+TABLE.jCalendar TD.selected:hover,TABLE.jCalendar TD.today:hover {
+	BACKGROUND: #f33; COLOR: #fff
+}
+
+
+TABLE.jCalendar TD.disabled {
+	COLOR: #888
+}
+TABLE.jCalendar TD.disabled:hover {
+	COLOR: #888
+}
+DIV.dp-popup {
+	 FONT-SIZE: 12px;   WIDTH: 500px;  overflow:hidden; LINE-HEIGHT: 30px; PADDING-TOP: 2px; FONT-FAMILY: arial, sans-serif; POSITION: relative; color:#666; background:#fff; border:#ccc 1px solid;
+}
+DIV#dp-popup {
+	Z-INDEX: 199; POSITION: absolute
+}
+DIV.dp-popup H2 {
+	 FONT-SIZE: 14px; PADDING: 4px 0px; margin:0; TEXT-ALIGN: center
+}
+DIV.dp-popup H2 span{width:245px; display:inline-block;}
+A#dp-close {
+	PADDING-RIGHT: 0px; DISPLAY: block; PADDING-LEFT: 0px; FONT-SIZE: 11px; PADDING-BOTTOM: 4px; PADDING-TOP: 4px; TEXT-ALIGN: center
+}
+A#dp-close:hover {
+	TEXT-DECORATION: underline
+}
+A.dp-choose-date {
+	float :left;
+	width: 16px;
+	height: 16px;
+	padding: 0;
+	margin: 5px 3px 0;
+	display: block;
+	text-indent: -2000px;
+	overflow: hidden;
+	background: url(images/ico_date.gif) no-repeat; 
+}
+input.date-pick{float :left;}
+DIV.dp-popup A {
+	PADDING-RIGHT: 2px; PADDING-LEFT: 2px; PADDING-BOTTOM: 0px; COLOR: #000; PADDING-TOP: 3px; TEXT-DECORATION: none
+}
+DIV.dp-popup DIV.dp-nav-prev {
+	LEFT: 4px; WIDTH: 11px; POSITION: absolute; TOP: 12px
+}
+DIV.dp-popup DIV.dp-nav-prev A {
+	FLOAT: left; 
+}
+DIV.dp-popup DIV.dp-nav-prev A {
+	CURSOR: pointer
+}
+DIV.dp-popup DIV.dp-nav-next A {
+	CURSOR: pointer
+}
+DIV.dp-popup DIV.dp-nav-prev A.disabled {
+	CURSOR: default
+}
+DIV.dp-popup DIV.dp-nav-next A.disabled {
+	CURSOR: default
+}
+DIV.dp-popup DIV.dp-nav-next {
+	RIGHT: 4px; WIDTH: 11px; POSITION: absolute; TOP: 12px
+}
+DIV.dp-popup DIV.dp-nav-next A {
+	FLOAT: right
+}
+DIV.dp-popup A{ color:#fff;}
+DIV.dp-popup A.disabled {
+	CURSOR: default; COLOR: #aaa
+}
+DIV.dp-popup TD {
+	CURSOR: pointer;
+}
+DIV.dp-popup TD.disabled {
+	CURSOR: default
+}
+.jCalendar2{width:240px; padding:0px 4px; border-right:#eee 1px solid; margin-right:-1px; overflow:hidden;}
+TABLE.jCalendar TH.weekend{color:#c8ae53}

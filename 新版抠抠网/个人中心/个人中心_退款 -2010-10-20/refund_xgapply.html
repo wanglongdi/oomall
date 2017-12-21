@@ -1,0 +1,517 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>个人中心_修必退款申请</title>
+<link rel="stylesheet" type="text/css" href="css/Personal_home.css">
+<link rel="stylesheet" type="text/css" href="css/refund.css">
+<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+<script type="text/javascript" src='js/personal_home.js'></script>
+<script type="text/javascript" src='js/refund.js'></script>
+<script type="text/javascript" src='js/select.js'></script>
+<script type="text/javascript">
+   $(document).ready(function(){
+     $("select").selectCss();
+  }); 
+</script>
+</head>
+
+<body>
+	<!-- top -->
+<div id="top">
+   <!-- top_con -->
+   <div class="top_con">
+      <!-- top_left -->
+      <!--<div class="top_left">
+         <span>hi,welcome to Kouclo</span>
+         <span><a href="#">请登录</a></span>
+         <span><a href="#">免费注册</a></span>
+      </div>-->
+      
+      <div class="top_left">
+         <span>hi,welcome to Kouclo</span>
+         <span><a href="#">退出</a></span>
+      </div>
+      <!-- top_right -->
+      <div class="top_right">
+      
+         <div class="top_home">
+            <a href="#"><b class="top_home_pic"></b>抠抠首页</a>
+         </div>
+         
+         <div class="top_my">
+            <a href="#">我的抠抠<b class="top_my_icon"></b></a>
+            <ul class="top_my_text">
+               <li><a href="#">待付款</a></li>
+               <li><a href="#">我的退换货</a></li>
+               <li class="bord_bn"><a href="#">待评价</a></li>
+            </ul>
+         </div>
+         
+         <div class="top_order"><a href="#">我的订单</a></div>
+         
+         <div class="top_fav">
+            <a href="#">收藏夹<b class="top_fav_icon"></b></a>
+            <ul class="top_fav_text">
+               <li><a href="#">商品</a></li>
+               <li class="bord_bn"><a href="#">店铺</a></li>
+            </ul>
+         </div>
+         <div class="top_phone_box">
+             <span class="top_phone">
+                <img src="images/app.png" alt="" />
+             </span>
+             <span class="ewm">
+               <img src="images/erweima.jpg" alt="" />
+             </span>
+         </div>
+         
+         <div class="top_help"><a href="#">帮助中心</a></div>
+         
+      </div>
+   </div>
+</div>
+<!-- top end -->
+
+<!-- header -->
+<div id="header">
+   <div class="header_con">
+      <div class="header_con0">
+         <!-- h1-->
+         <h1>
+           <a href="#"><img src="images/logo.png" alt="抠抠网" /></a>
+         </h1>
+         <!-- search -->
+         <div id="search">
+            <div class="search_key">
+               <b class="search_icon0"></b>
+               <span class="text">商品</span>
+               <div class="keyword">
+                 <span class="tt">店铺</span>
+               </div>
+           </div>
+           <input name="" type="text" id="search_inp" />
+           <button name="" type="submit" id="search_btn" ></button>
+         </div>
+         <!-- shopcar -->
+         <div class="shopcar">
+             <!-- shopcar_con -->
+             <div class="shopcar_con">
+               <span class="shopcar_icon"></span>
+               <a href="#">我的购物车<span class="shopcar_text0">(</span><span class="shopcar_tt0 shopcar_text0">0</span><span class="shopcar_text0">)</span></a>
+               <span class="shopcar_sj"></span>
+             </div>
+            <!-- shopcar_box -->
+            <div class="shopcar_box">
+               <!-- shopcar_lose -->
+               <!--<div class="shopcar_lose">
+                       <span class="shopcar_lose_icon"></span>
+                       <div class="shopcar_lose_text">
+                          您购物车中的商品均已失效
+                       </div>
+                       <div class="shopcar_lose_btn">
+                          <a href="#">查看购物车</a>
+                       </div>
+                   </div>-->
+              <!-- shopcar_box0 -->
+              <div class="shopcar_box0">
+                  <!-- shopcar_cp -->
+                  <div class="shopcar_cp">
+                     <ul>
+                        <li>
+                           <div class="sel">
+                              <span class="custom-checkbox"><input name="" type="checkbox" value="" id="1"/><label for="1"></label></span>
+                           </div>
+                           <div class="cp">
+                              <dl>
+                                <dt>
+                                  <a href="#"><img src="images/17.jpg" alt="" /></a>
+                                </dt> 
+                                <dd>
+                                  <h3><a href="#">Babyghost</a></h3>
+                                  <p><a href="#" title="">2014秋  绿色纹样...</a></p>
+                                  <p>￥<span class="price">339.00</span></p>
+                               </dd>
+                             </dl>
+                           </div>
+                           <div class="num">
+                             <span class="sub"></span>
+                             <input type="text" class="num_inp" value="1" />
+                             <span class="add"></span>
+                           </div>
+                          <span class="shopcar_close"></span>
+                       </li>
+                       <li>
+                           <div class="sel">
+                              <span class="custom-checkbox"><input name="" type="checkbox" value="" id="2"/><label for="2"></label></span>
+                           </div>
+                           <div class="cp">
+                              <dl>
+                                <dt>
+                                  <a href="#"><img src="images/18.jpg" alt="" /></a>
+                                </dt> 
+                                <dd>
+                                  <h3><a href="#">Babyghost</a></h3>
+                                  <p><a href="#" title="">2014秋  绿色纹样...</a></p>
+                                  <p>￥<span class="price">339.00</span></p>
+                               </dd>
+                             </dl>
+                           </div>
+                           <div class="num">
+                             <span class="sub"></span>
+                             <input type="text" class="num_inp" value="1" />
+                             <span class="add"></span>
+                           </div>
+                          <span class="shopcar_close"></span>
+                       </li>
+                       <li>
+                           <div class="sel">
+                              <span class="custom-checkbox"><input name="" type="checkbox" value="" id="3"/><label for="3"></label></span>
+                           </div>
+                           <div class="cp">
+                              <dl>
+                                <dt>
+                                  <a href="#"><img src="images/18.jpg" alt="" /></a>
+                                </dt> 
+                                <dd>
+                                  <h3><a href="#">Babyghost</a></h3>
+                                  <p><a href="#" title="">2014秋  绿色纹样...</a></p>
+                                  <p>￥<span class="price">339.00</span></p>
+                               </dd>
+                             </dl>
+                           </div>
+                           <div class="num">
+                             <span class="sub"></span>
+                             <input type="text" class="num_inp" value="1" />
+                             <span class="add"></span>
+                           </div>
+                          <span class="shopcar_close"></span>
+                       </li>
+                       <li>
+                           <div class="sel">
+                              <span class="custom-checkbox"><input name="" type="checkbox" value="" id="4"/><label for="4"></label></span>
+                           </div>
+                           <div class="cp">
+                              <dl>
+                                <dt>
+                                  <a href="#"><img src="images/18.jpg" alt="" /></a>
+                                </dt> 
+                                <dd>
+                                  <h3><a href="#">Babyghost</a></h3>
+                                  <p><a href="#" title="">2014秋  绿色纹样...</a></p>
+                                  <p>￥<span class="price">339.00</span></p>
+                               </dd>
+                             </dl>
+                           </div>
+                           <div class="num">
+                             <span class="sub"></span>
+                             <input type="text" class="num_inp" value="1" />
+                             <span class="add"></span>
+                           </div>
+                          <span class="shopcar_close"></span>
+                       </li>
+                       <li>
+                           <div class="sel">
+                              <span class="custom-checkbox"><input name="" type="checkbox" value="" id="5"/><label for="5"></label></span>
+                           </div>
+                           <div class="cp">
+                              <dl>
+                                <dt>
+                                  <a href="#"><img src="images/18.jpg" alt="" /></a>
+                                </dt> 
+                                <dd>
+                                  <h3><a href="#">Babyghost</a></h3>
+                                  <p><a href="#" title="">2014秋  绿色纹样...</a></p>
+                                  <p>￥<span class="price">339.00</span></p>
+                               </dd>
+                             </dl>
+                           </div>
+                           <div class="num">
+                             <span class="sub"></span>
+                             <input type="text" class="num_inp" value="1" />
+                             <span class="add"></span>
+                           </div>
+                          <span class="shopcar_close"></span>
+                       </li>
+                       
+                    </ul>
+
+                </div>
+             
+           
+            <!-- shopcar_all -->
+            <div class="shopcar_all">
+               <div class="shopcar_all_text">
+                  <p>
+                     <span class="custom-checkbox"><input name="" type="checkbox" value="" id="allcheck" onclick="checkAll(this,$('.shopcar_cp'))" checked="checked"/><label for="allcheck" >全选</label></span><a href="javascript:void(0);" class="del">删除</a>，共 <span class="shopcar_tt shopcar_tt0">0</span> 件
+                  </p>
+                  <p class="p_left">合计　￥<span class="total_price">0</span></p>
+               </div>
+               <div class="shopcar_jsbtn">
+                  <a href="#">立即结算</a>
+               </div>
+            </div>
+            
+            
+            
+            </div>
+        
+          </div>
+        </div>
+        <!-- shopcar end -->  
+      </div>
+      <div class="header_bg"></div>
+   </div>
+
+</div>
+
+<!-- header end -->
+
+
+<!-- personal_home -->
+<div id='personal_out'>
+
+	<div class='personal'>
+		<!-- personal_top -->
+		<div class='personal_up'>
+			<a href="#" class='sy'>抠抠首页</a>
+			<span>></span>
+			<a href="#" class='sy'>个人中心</a>
+            <span>></span>
+			<a href="#" class='per_center'>退款管理</a>			
+		</div>
+		<!-- personal_top  end-->
+
+		<!-- refund_tit -->
+		<div class="refund_tit refund_bg">
+           <ul>
+              <li class="cur">1.<span class="n"></span>申请退款</li>
+              <li><span class="n">2.</span>卖家处理退款申请</li>
+              <li><span class="n">3.</span>退款到抠抠宝</li>
+           </ul>
+        </div>
+		<!-- refund_tit  end -->
+        
+        <!-- refund_con -->
+        <div class="refund_con">
+           <!-- refund_left -->
+           <div class="refund_left">
+              <!-- refund_left_tit -->
+              <div class="refund_left_tit">
+                 <h3>商品信息</h3>
+              </div>
+              <!-- refund_left_pic -->
+              <div class="refund_left_pic">
+                <dl>
+                  <dt>
+                    <a href="#"><img src="images/01.jpg" alt=""/></a>
+                  </dt>
+                  <dd>
+                    <p><a href="#" title="夏季新品女装 韩版鞋百搭">夏季新品女装 韩版鞋百搭</a></p>
+                    <p class="text">颜色：粉色<span class="ml">尺码：均码</span></p>
+                    <p class="mt">
+                       <span class="zhen"></span><span class="zheng"></span><span class="jian"></span>
+                    </p>
+                  </dd>
+                </dl>
+              </div>
+              
+              <!-- refund_left_con -->
+              <div class="refund_left_con">
+                <ul>
+                  <li class="l">
+                    买家：<a href="#">苹果妞妞的店</a><a href="#" class="call_pic"></a>
+                  </li>
+                  <li>单价：<span class="nu">98.60</span></li>
+                  <li>数量：<span class="nu">1</span></li>
+                  <li>优惠：优惠</li>
+                  <li>小计：<span class="nu">98.60</span></li>
+                </ul>
+              </div>
+              
+              
+              <!-- refund_left_tit -->
+              <div class="refund_left_tit bd_top">
+                 <h3>订单信息</h3>
+              </div>
+              
+              <!-- refund_left_con -->
+              <div class="refund_left_con">
+                <ul>
+                  <li>订单编号：<span class="nu">3568155081971001</span></li>
+                  <li>抠 抠 宝：<span class="nu">18710005804</span></li>
+                  <li>运　　费：<span class="nu">10.00</span></li>
+                  <li>总 优 惠：无优惠</li>
+                  <li>总　　计：<span class="nu">98.60</span></li>
+                  <li>成交时间：<span class="nu">2013-06-02  14:02:43</span></li>
+                </ul>
+              </div>
+              
+           </div>
+           
+           <!-- refund_right -->
+           <div class="refund_right">
+             <!-- refund_right_tit -->
+             <div class="refund_right_tit">
+               <h2>填写退款申请信息</h2>
+               <div class="else">
+                 "<span class="xx">*</span>"为必填项
+               </div>
+             </div>
+             <!-- refund_con02 -->
+             <div class="refund_con02">
+                <!-- refund_con02_con -->
+                <div class="refund_con02_con clearfix">
+                  <form action="" id="xiugai" onsubmit="return Xiugai()">
+                      <dl>
+                         <dt>
+                            <span class="xing">*</span>退款原因：
+                         </dt>
+                         <dd style="position:relative;">
+                           <select name="">
+                              <option value="1">请选择退款原因</option>
+                              <option value="2">大小尺寸不符</option>
+                              <option value="3">材质、面料不符</option>
+                              <option value="4">工艺/手艺问题</option>
+                              <option value="5">颜色、款式、图案与描述不符</option>
+                              <option value="6">发货问题</option>
+                              <option value="7">服务/态度</option>
+                              <option value="8">不喜欢/穿着效果不好</option>
+                              <option value="9">拍错/多拍</option>
+                              <option value="10">其他</option>
+                            </select> 
+                            <div class="cue"></div>
+                         </dd>
+                      </dl>
+                      <dl>
+                         <dt>
+                            <span class="xing">*</span>退款金额：
+                         </dt>
+                         <dd>
+                            <input type="text" class="refund_inp" />
+                            <div class="tishi">最多不能高于(订单金额)元</div>
+                            <div class="cue"></div>
+                         </dd>
+                      </dl>
+                      <dl>
+                         <dt>
+                            <span class="xing">*</span>退款说明：<br /><span class="zi">(0-200字)</span>
+                         </dt>
+                         <dd>
+                           <textarea name="" class="refund_area" onkeydown="this.value=this.value.substring(0, 200)" >退款说明不能为空</textarea>
+                           <div class="cue"></div>
+                         </dd>
+                      </dl>
+                     
+                      <input type="submit" class="tijiao" value="提交申请" />
+                     </form>
+                   </div>
+                   
+             </div>
+             <!-- refund_con02 end -->
+           </div>
+           <!-- refund_right end -->
+           
+        </div>
+        <!-- refund_con end -->
+	</div>
+    
+    <!-- question -->
+    <div class="question">
+      <div class="question_tit">
+        <h3>退款常见问题</h3>
+      </div>
+      <div class="question_con">
+        <h3>1、买家申请退款后接下来该做什么？</h3>
+        <p>答：买家在交易过程中遇到问题，建议积极联系卖家沟通协商。买家申请退款操作后，可以联系卖家确认同意退款协议。若买卖双方无法协商解决，在买家申请退款3天后可以要求客服介入帮忙核实处理。</p>
+        <h3>2、卖家拒绝退款给我怎么办？</h3>
+        <p>答：买家在交易过程中遇到问题，建议积极联系卖家沟通协商。买家申请退款操作后，可以联系卖家确认同意退款协议。若买卖双方无法协商解决，在买家申请退款3天后可以要求客服介入帮忙核实处理。</p>
+        <h3>3、我想修改退款协议怎么操作？</h3>
+        <p>答：退款协议达成前，买家可以修改申请的退款协议，具体操作点击了解。</p>
+        <p class="mt">
+          <a href="#">更多帮助</a>
+        </p>
+      </div>
+    </div>
+</div>
+
+<!-- personal_home  end-->
+
+
+<!-- footer -->
+<div id="footer">
+    <!-- footer_con -->
+    <div class="footer_con" style="width:1000px;">
+       <!-- footer_con0 -->
+       <div class="footer_con0" style="padding-left:200px;">
+          <h3><img src="images/news.jpg" alt="下载客户端，关注更多潮流咨询" /></h3>
+          <ul>
+             <li class="line"></li>
+             <li><img src="images/sina.jpg" alt="官方微博@kouclo" /></li>
+             <li class="line"></li>
+             <li class="wx"><img src="images/qq.jpg" alt="微信平台" /></li>
+             <li class="line"></li>
+             <li class="kh"><img src="images/phone.jpg" alt="客户端下载" /></li>
+          </ul>
+       </div>
+       <!-- footer_content -->
+       <div class="footer_content" style="margin-left:40px;">
+           <img src="images/content.png" alt="联系我们 400-8859-000" />
+       </div>
+    </div>
+</div>
+<!-- footer end -->
+
+<!-- service -->
+<div class="service" style="width:1000px">
+    <!-- service_left -->
+    <div class="service_left" style="margin:15px 110px 8px">
+       <div class="service_left_tit">
+          <ul>
+             <li>关于抠抠</li>
+             <li class="line"></li>
+             <li>新手指南 </li>
+             <li class="line"></li>
+             <li>维权中心</li>
+             <li class="line"></li>
+             <li>支付方式</li>
+             <li class="line"></li>
+             <li>售后服务</li>
+             <li class="line"></li>
+             <li>配送说明</li>
+           </ul>
+       </div>
+       <div class="service_left_con">
+          <ul>
+             <li>
+               <a href="#">关于抠抠</a><a href="#">商家入驻</a><a href="#">加入我们</a><a href="#">联系我们</a><a href="#">友情链接</a> 
+             </li>
+             <li>
+               <a href="#">用户注册</a><a href="#">用户注册协议</a><a href="#">购物流程</a><a href="#">网站地图</a> 
+             </li>
+             <li>
+               <a href="#">客服中心</a><a href="#">找回密码</a><a href="#">邮件订阅</a><a href="#">产品册订阅</a><a href="#">隐私声明</a> 
+             </li>
+             <li class="l">
+               <a href="#">货到付款</a><a href="#">在线支付</a><a href="#">礼品卡及账户余额</a><a href="#">其他支付方式</a>
+             </li>
+             <li class="n">
+               <a href="#">退款政策</a><a href="#">退货流程</a><a href="#">退款说明</a> 
+             </li>
+             <li>
+               <a href="#">发货规定</a><a href="#">国内配送</a><a href="#">海外配送</a><a href="#">订单拆分</a>
+             </li>
+          </ul>
+       </div>
+        
+    </div>
+   
+</div>
+
+<!-- copyright -->
+<div class="copyright" style="width:1000px">
+     CopyRIGHT © 2009-2014 抠抠网 KOUCLO All RIGHTS RESERVED<br /> 闽ICP备13001618号 | 增值电信业务经营许可证：闽B1-20130053 | 互联网药品信息服务资质证书编号：（闽）-非经营性-2014-0008
+</div>
+
+</body>
+</html>

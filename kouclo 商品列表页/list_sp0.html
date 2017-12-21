@@ -1,0 +1,407 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>kouclo 商品列表页</title>
+<link rel="stylesheet" href="css/sp_list.css" />
+<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+
+<script type="text/javascript" src="js/pp.js"></script>
+
+<script type="text/javascript">
+$(function(){
+	
+	$('.custom-checkbox input').customInput();
+});
+</script>
+
+ 
+  
+
+</head>
+
+<body>
+<div class="all_bg">
+<!-- position -->
+<div class="position">
+  <div class="position_con">
+   <a href="#">首页</a><span>&gt;</span><a href="#">男鞋</a><span>&gt;</span><a href="#">运动鞋</a>
+  </div>
+  <div class="position_all">共 234件相关商品</div>
+  <div class="clear"></div>
+</div>
+<!-- position end -->
+
+<!-- choose -->
+<div class="choose">
+  <dl>
+    <dt>已选条件</dt>
+    <dd>
+      <div class="con"><span><a href="#" class="hover">匡威<b></b></a></span><span><a href="#" class="hover">网球鞋<b></b></a></span></div>
+      <div class="else"><a href="#">清空筛选条件</a></div>
+    </dd>
+  </dl>
+  <dl class="line">
+    <dt>品牌</dt>
+    <dd>
+      <div class="con">
+       <div class="con01">
+          <span><a href="#">匡威</a></span><span><a href="#">耐克</a></span><span><a href="#">阿迪达斯</a></span><span><a href="#">新百伦</a></span><span><a href="#">李宁</a></span>
+        </div>
+       <div class="con0">
+        <a href="#">匡威</a></span><span><a href="#">耐克</a></span><span><a href="#">阿迪达斯</a></span><span><a href="#">新百伦</a></span><span><a href="#">李宁</a></span><a href="#">匡威</a></span><span><a href="#">耐克</a></span><span><a href="#">阿迪达斯</a></span><span><a href="#">新百伦</a></span><span><a href="#">李宁</a></span><a href="#">匡威</a></span><span><a href="#">耐克</a></span><span><a href="#">阿迪达斯</a></span><span><a href="#">新百伦</a></span><span><a href="#">李宁</a></span><a href="#">匡威</a></span><span><a href="#">耐克</a></span><span><a href="#">阿迪达斯</a></span><span><a href="#">新百伦</a></span><span><a href="#">李宁</a></span><a href="#">匡威</a></span><span><a href="#">耐克</a></span><span><a href="#">阿迪达斯</a></span><span><a href="#">新百伦</a></span><span><a href="#">李宁</a></span><a href="#">匡威</a></span><span><a href="#">耐克</a></span><span><a href="#">阿迪达斯</a></span><span><a href="#">新百伦</a></span><span><a href="#">李宁</a></span><a href="#">匡威</a></span><span><a href="#">耐克</a></span><span><a href="#">阿迪达斯</a></span><span><a href="#">新百伦</a></span><span><a href="#">李宁</a></span><a href="#">匡威</a></span><span><a href="#">耐克</a></span><span><a href="#">阿迪达斯</a></span><span><a href="#">新百伦</a></span><span><a href="#">李宁</a></span><span><a href="#">阿迪达斯</a></span><span><a href="#">新百伦</a></span><span><a href="#">李宁</a></span><a href="#">匡威</a></span><span><a href="#">耐克</a></span><span><a href="#">阿迪达斯</a></span><span><a href="#">新百伦</a></span><span><a href="#">李宁</a></span><a href="#">匡威</a></span><span><a href="#">耐克</a></span><span><a href="#">阿迪达斯</a></span><span><a href="#">新百伦</a></span><span><a href="#">李宁</a></span>
+       </div>
+      </div>
+      <div class="else"><a href="#" class="ash show">更多 </a><span class="sx" id="Direction"></span></div>
+    </dd>
+  </dl>
+  <dl class="line">
+    <dt>分类</dt>
+    <dd>
+     <div class="con">
+       <div class="con01">
+         <span><a href="#">帆布鞋</a></span><span><a href="#">跑步鞋</a></span><span><a href="#">网球鞋</a></span>
+        </div>
+       <div class="con0">
+        <a href="#">匡威</a></span><span><a href="#">耐克</a></span><span><a href="#">阿迪达斯</a></span><span><a href="#">新百伦</a></span><span><a href="#">李宁</a></span><a href="#">匡威</a></span><span><a href="#">耐克</a></span><span><a href="#">阿迪达斯</a></span><span><a href="#">新百伦</a></span><span><a href="#">李宁</a></span><a href="#">匡威</a></span><span><a href="#">耐克</a></span><span><a href="#">阿迪达斯</a></span><span><a href="#">新百伦</a></span><span><a href="#">李宁</a></span><a href="#">匡威</a></span><span><a href="#">耐克</a></span><span><a href="#">阿迪达斯</a></span><span><a href="#">新百伦</a></span><span><a href="#">李宁</a></span><a href="#">匡威</a></span><span><a href="#">耐克</a></span><span><a href="#">阿迪达斯</a></span><span><a href="#">新百伦</a></span><span><a href="#">李宁</a></span><a href="#">匡威</a></span><span><a href="#">耐克</a></span><span><a href="#">阿迪达斯</a></span><span><a href="#">新百伦</a></span><span><a href="#">李宁</a></span><a href="#">匡威</a></span><span><a href="#">耐克</a></span><span><a href="#">阿迪达斯</a></span><span><a href="#">新百伦</a></span><span><a href="#">李宁</a></span><a href="#">匡威</a></span><span><a href="#">耐克</a></span><span><a href="#">阿迪达斯</a></span><span><a href="#">新百伦</a></span><span><a href="#">李宁</a></span><span><a href="#">阿迪达斯</a></span><span><a href="#">新百伦</a></span><span><a href="#">李宁</a></span><a href="#">匡威</a></span><span><a href="#">耐克</a></span><span><a href="#">阿迪达斯</a></span><span><a href="#">新百伦</a></span><span><a href="#">李宁</a></span><a href="#">匡威</a></span><span><a href="#">耐克</a></span><span><a href="#">阿迪达斯</a></span><span><a href="#">新百伦</a></span><span><a href="#">李宁</a></span>
+      </div>
+     </div>
+     <div class="else"><a href="#" class="ash show">更多 </a><span class="sx" id="Direction"></span></div>
+    </dd>
+  </dl>
+  <dl>
+    <dt>尺码</dt>
+    <dd>
+      <div class="con">
+       <div class="con01">
+        <span><a href="#">27.5</a></span><span><a href="#">28</a></span><span><a href="#">27.5</a></span><span><a href="#">28.5</a></span><span><a href="#">29</a></span><span><a href="#">29.5</a></span><span><a href="#">30</a></span><span><a href="#">30.5</a></span><span><a href="#">31</a></span><span><a href="#">31.5</a></span><span><a href="#">32</a></span><span><a href="#">32.5</a></span><span><a href="#">33</a></span><span><a href="#">33.5</a></span><span><a href="#">34</a></span><span><a href="#">34.5</a></span><span><a href="#">35</a></span>
+        </div>
+        <div class="con0">
+        <a href="#">匡威</a></span><span><a href="#">耐克</a></span><span><a href="#">阿迪达斯</a></span><span><a href="#">新百伦</a></span><span><a href="#">李宁</a></span><a href="#">匡威</a></span><span><a href="#">耐克</a></span><span><a href="#">阿迪达斯</a></span><span><a href="#">新百伦</a></span><span><a href="#">李宁</a></span><a href="#">匡威</a></span><span><a href="#">耐克</a></span><span><a href="#">阿迪达斯</a></span><span><a href="#">新百伦</a></span><span><a href="#">李宁</a></span><a href="#">匡威</a></span><span><a href="#">耐克</a></span><span><a href="#">阿迪达斯</a></span><span><a href="#">新百伦</a></span><span><a href="#">李宁</a></span><a href="#">匡威</a></span><span><a href="#">耐克</a></span><span><a href="#">阿迪达斯</a></span><span><a href="#">新百伦</a></span><span><a href="#">李宁</a></span><a href="#">匡威</a></span><span><a href="#">耐克</a></span><span><a href="#">阿迪达斯</a></span><span><a href="#">新百伦</a></span><span><a href="#">李宁</a></span><a href="#">匡威</a></span><span><a href="#">耐克</a></span><span><a href="#">阿迪达斯</a></span><span><a href="#">新百伦</a></span><span><a href="#">李宁</a></span><a href="#">匡威</a></span><span><a href="#">耐克</a></span><span><a href="#">阿迪达斯</a></span><span><a href="#">新百伦</a></span><span><a href="#">李宁</a></span><span><a href="#">阿迪达斯</a></span><span><a href="#">新百伦</a></span><span><a href="#">李宁</a></span><a href="#">匡威</a></span><span><a href="#">耐克</a></span><span><a href="#">阿迪达斯</a></span><span><a href="#">新百伦</a></span><span><a href="#">李宁</a></span><a href="#">匡威</a></span><span><a href="#">耐克</a></span><span><a href="#">阿迪达斯</a></span><span><a href="#">新百伦</a></span><span><a href="#">李宁</a></span>
+      </div>
+      </div>
+      <div class="else"><a href="#" class="ash show">更多 </a><span class="sx" id="Direction"></span></div>
+    </dd>
+  </dl>
+  <div class="clear"></div>
+</div>
+<!-- choose end -->
+
+<!-- select -->
+<div class="select clearfix">
+  <!-- select_place -->
+  <div class="select_place select_fl js-address" lw="http://www.kouclo.com/search/index/0/all/none/st/none/all/all/all/" ui=",">
+    
+      <b class="flip0">发货地</b>
+      <i class="select_trig"></i>
+    <div class="select_city clearfix">
+      <ul class="clearfix" id="seaBotADiv" data-atp=",{text},,,shop-floc,20,floc,">
+        <li><a href="javascript:void(0)">北京</a></li>
+		<li><a href="javascript:void(0)">上海</a></li>
+		<li><a href="javascript:void(0)">杭州</a></li>
+		<li><a href="javascript:void(0)">温州</a></li>
+		<li><a href="javascript:void(0)">宁波</a></li>
+		<li><a href="javascript:void(0)">南京</a></li>
+		<li><a href="javascript:void(0)">苏州</a></li>
+		<li><a href="javascript:void(0)">济南</a></li>
+		<li><a href="javascript:void(0)">青岛</a></li>
+		<li><a href="javascript:void(0)">大连</a></li>
+		<li><a href="javascript:void(0)">无锡</a></li>
+		<li><a href="javascript:void(0)">合肥</a></li>
+		<li><a href="javascript:void(0)">天津</a></li>
+		<li><a href="javascript:void(0)">长沙</a></li>
+		<li><a href="javascript:void(0)">武汉</a></li>
+		<li><a href="javascript:void(0)">郑州</a></li>
+		<li><a href="javascript:void(0)">石家庄</a></li>
+		<li><a href="javascript:void(0)">成都</a></li>
+		<li><a href="javascript:void(0)">重庆</a></li>
+		<li><a href="javascript:void(0)">西安</a></li>
+		<li><a href="javascript:void(0)">昆明</a></li>
+		<li><a href="javascript:void(0)">南宁</a></li>
+		<li><a href="javascript:void(0)">福州</a></li>
+		<li><a href="javascript:void(0)">厦门</a></li>
+		<li><a href="javascript:void(0)">南昌</a></li>
+		<li><a href="javascript:void(0)">东莞</a></li>
+		<li><a href="javascript:void(0)">沈阳</a></li>
+		<li><a href="javascript:void(0)">长春</a></li>
+		<li><a href="javascript:void(0)">哈尔滨</a></li>
+      </ul>
+      <ul class="clearfix" data-atp=",{text},,,shop-floc,20,floc,">
+		<li><a href="javascript:void(0)">安徽</a></li>
+		<li><a href="javascript:void(0)">福建</a></li>
+		<li><a href="javascript:void(0)">甘肃</a></li>
+		<li><a href="javascript:void(0)">广东</a></li>
+		<li><a href="javascript:void(0)">广西</a></li>
+		<li><a href="javascript:void(0)">贵州</a></li>
+		<li><a href="javascript:void(0)">海南</a></li>
+		<li><a href="javascript:void(0)">河北</a></li>
+		<li><a href="javascript:void(0)">河南</a></li>
+		<li><a href="javascript:void(0)">湖北</a></li>
+		<li><a href="javascript:void(0)">湖南</a></li>
+		<li><a href="javascript:void(0)">江苏</a></li>
+		<li><a href="javascript:void(0)">黑龙江</a></li>
+		<li><a href="javascript:void(0)">江西</a></li>
+		<li><a href="javascript:void(0)">吉林</a></li>
+		<li><a href="javascript:void(0)">辽宁</a></li>
+		<li><a href="javascript:void(0)">内蒙古</a></li>
+		<li><a href="javascript:void(0)">宁夏</a></li>
+		<li><a href="javascript:void(0)">青海</a></li>
+		<li><a href="javascript:void(0)">山东</a></li>
+		<li><a href="javascript:void(0)">山西</a></li>
+		<li><a href="javascript:void(0)">陕西</a></li>
+		<li><a href="javascript:void(0)">四川</a></li>
+		<li><a href="javascript:void(0)">西藏</a></li>
+		<li><a href="javascript:void(0)">新疆</a></li>
+		<li><a href="javascript:void(0)">云南</a></li>
+		<li><a href="javascript:void(0)">浙江</a></li>
+		<li><a href="javascript:void(0)">香港</a></li>
+		<li><a href="javascript:void(0)">澳门</a></li>
+		<li><a href="javascript:void(0)">台湾</a></li>
+	 </ul>
+    </div>
+  </div>
+  <!-- select_sort -->
+  <div class="select_sort select_fl" id="seaBotB">
+    <div class="flip" >默认排序<i class="select_trig"></i></div>
+    <div class="sort_con" id="seaBotBDiv">
+      <ul>
+        <li><a href="#">价格从低到高</a></li>
+        <li><a href="#">价格从高到低</a></li>
+        <li><a href="#">按发布时间排序</a></li>
+        <li><a href="#">恢复默认排序</a></li>
+      </ul>
+    </div>
+  </div>
+  <!-- select_price -->
+  <div class="select_price select_fl">
+    <a href="#">价格</a><i class="price_pic"></i>
+  </div>
+  <!-- select_price0 -->
+  <div class="select_price0 select_fl">
+    <form id="focus">￥<input type="text" class="input_txt" id="pp" onkeyup="value=value.replace(/[^\d]/g,'')" onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^\d]/g,''))"/>-￥<input type="text" id="pp" class="input_txt" onkeyup="value=value.replace(/[^\d]/g,'')" onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^\d]/g,''))"/><span style="display:none" class="tt"><a href="#" class="sure">确定</a></span></form>
+  </div>
+  <!-- chklist -->
+  <div id="chklist">
+    <span class="custom-checkbox"><input name="baoyou" type="checkbox" value="包邮" id="baoyou" tul="http://www.kouclo.com/search/index/0/all/none/st/" uri="/all/all/all/all/," /><label for="baoyou">包邮</label></span>
+    <span class="custom-checkbox"><input name="zhikou" type="checkbox" value="折扣" id="zhikou" tul="http://www.kouclo.com/search/index/0/all/none/st/" uri="/all/all/all/all/,"/><label for="zhikou">折扣</label></span>
+  </div>
+  <!-- select_pic -->
+  <div class="select_pic">
+    <a href="#"><i class="store"></i>店铺</a><a href="#"><i class="bigpic"></i>大图</a><a href="#" class="hover"><i class="smallpic"></i>小图</a>
+  </div>
+  <!-- select_right -->
+  <div class="select_right">1/23<a href="#">&lt;</a><a href="#">&gt;</a></div>
+</div>
+<!-- select end -->
+
+<!-- store_con -->
+<div class="store_con clearfix">
+  <!-- store_top -->
+  <div class="store_top">
+    <div class="store_pic">
+      <a href="#"><img src="images/05.jpg" alt=" " onload="imagezoom.call(this, 98, 98);" /></a>
+    </div>
+    <div class="store_text">
+      <h3><a href="#">蚂蚁城旗舰店</a><span class="brand"><img src="images/brand.jpg" alt="品牌直销"/></span></h3>
+      <p>主营品牌：蚂蚁城旗舰店</p>
+      <p>所在地：石狮市宝盖鞋业工业园</p>
+    </div>
+    <div class="store_text0">
+      <div class="store_enter"><a href="#">进入店铺 &gt;&gt;</a></div>
+      <div class="store_all"><a href="#"><span>46件相关商品<i class="store_sq"></i></span></a></div>
+    </div>
+    <div class="clear"></div>
+  </div>
+  <!-- store_wares -->
+  <div class="store_wares">
+    <ul >
+      <li>
+        <p class="pic"><a href="#"><img src="images/02.jpg" alt=" "/></a></p>
+        <p><a href="#">CONVERSE匡威 中性高邦</a></p>
+        <p><a href="#">匡威专卖店</a></p>
+        <p><span class="past_price">￥288</span><span class="jq">￥</span><span class="now_price">158</span></p>
+      </li>
+      <li>
+        <p class="pic"><a href="#"><img src="images/02.jpg" alt=" "/></a></p>
+        <p><a href="#">CONVERSE匡威 中性高邦</a></p>
+        <p><a href="#">匡威专卖店</a></p>
+        <p><span class="past_price">￥288</span><span class="jq">￥</span><span class="now_price">158</span></p>
+      </li>
+      <li>
+        <p class="pic"><a href="#"><img src="images/02.jpg" alt=" "/></a></p>
+        <p><a href="#">CONVERSE匡威 中性高邦</a></p>
+        <p><a href="#">匡威专卖店</a></p>
+        <p><span class="past_price">￥288</span><span class="jq">￥</span><span class="now_price">158</span></p>
+      </li>
+      <li>
+        <p class="pic"><a href="#"><img src="images/02.jpg" alt=" "/></a></p>
+        <p><a href="#">CONVERSE匡威 中性高邦</a></p>
+        <p><a href="#">匡威专卖店</a></p>
+        <p><span class="past_price">￥288</span><span class="jq">￥</span><span class="now_price">158</span></p>
+      </li>
+      <li>
+        <p class="pic"><a href="#"><img src="images/02.jpg" alt=" "/></a></p>
+        <p><a href="#">CONVERSE匡威 中性高邦</a></p>
+        <p><a href="#">匡威专卖店</a></p>
+        <p><span class="past_price">￥288</span><span class="jq">￥</span><span class="now_price">158</span></p>
+      </li>
+      <li>
+        <p class="pic"><a href="#"><img src="images/02.jpg" alt=" "/></a></p>
+        <p><a href="#">CONVERSE匡威 中性高邦</a></p>
+        <p><a href="#">匡威专卖店</a></p>
+        <p><span class="past_price">￥288</span><span class="jq">￥</span><span class="now_price">158</span></p>
+      </li>
+    </ul>
+    <div class="clear"></div>
+  </div>
+</div>
+
+<!-- store_con end -->
+
+<!-- store_con -->
+<div class="store_con clearfix">
+  <!-- store_top -->
+  <div class="store_top">
+     <div class="store_pic">
+      <a href="#"><img src="images/04.jpg" alt=" " onload="imagezoom.call(this, 98, 98);" /></a>
+    </div>
+    <div class="store_text">
+      <h3><a href="#">蚂蚁城旗舰店</a><span class="brand"><img src="images/brand.jpg" alt="品牌直销"/></span></h3>
+      <p>主营品牌：蚂蚁城旗舰店</p>
+      <p>所在地：石狮市宝盖鞋业工业园</p>
+    </div>
+    <div class="store_text0">
+      <div class="store_enter"><a href="#">进入店铺 &gt;&gt;</a></div>
+      <div class="store_all"><a href="#"><span>46件相关商品<i class="store_sq"></i></span></a></div>
+    </div>
+    <div class="clear"></div>
+  </div>
+  <!-- store_wares -->
+  <div class="store_wares">
+    <ul>
+      <li>
+        <p class="pic"><a href="#"><img src="images/02.jpg" alt=" "/></a></p>
+        <p><a href="#">CONVERSE匡威 中性高邦</a></p>
+        <p><a href="#">匡威专卖店</a></p>
+        <p><span class="past_price">￥288</span><span class="jq">￥</span><span class="now_price">158</span></p>
+      </li>
+      <li>
+        <p class="pic"><a href="#"><img src="images/02.jpg" alt=" "/></a></p>
+        <p><a href="#">CONVERSE匡威 中性高邦</a></p>
+        <p><a href="#">匡威专卖店</a></p>
+        <p><span class="past_price">￥288</span><span class="jq">￥</span><span class="now_price">158</span></p>
+      </li>
+      <li>
+        <p class="pic"><a href="#"><img src="images/02.jpg" alt=" "/></a></p>
+        <p><a href="#">CONVERSE匡威 中性高邦</a></p>
+        <p><a href="#">匡威专卖店</a></p>
+        <p><span class="past_price">￥288</span><span class="jq">￥</span><span class="now_price">158</span></p>
+      </li>
+      <li>
+        <p class="pic"><a href="#"><img src="images/02.jpg" alt=" "/></a></p>
+        <p><a href="#">CONVERSE匡威 中性高邦</a></p>
+        <p><a href="#">匡威专卖店</a></p>
+        <p><span class="past_price">￥288</span><span class="jq">￥</span><span class="now_price">158</span></p>
+      </li>
+      <li>
+        <p class="pic"><a href="#"><img src="images/02.jpg" alt=" "/></a></p>
+        <p><a href="#">CONVERSE匡威 中性高邦</a></p>
+        <p><a href="#">匡威专卖店</a></p>
+        <p><span class="past_price">￥288</span><span class="jq">￥</span><span class="now_price">158</span></p>
+      </li>
+      <li>
+        <p class="pic"><a href="#"><img src="images/02.jpg" alt=" "/></a></p>
+        <p><a href="#">CONVERSE匡威 中性高邦</a></p>
+        <p><a href="#">匡威专卖店</a></p>
+        <p><span class="past_price">￥288</span><span class="jq">￥</span><span class="now_price">158</span></p>
+      </li>
+    </ul>
+    <div class="clear"></div>
+  </div>
+</div>
+
+<!-- store_con end -->
+
+
+<!-- store_con -->
+<div class="store_con clearfix">
+  <!-- store_top -->
+  <div class="store_top">
+    <div class="store_pic">
+      <a href="#"><img src="images/06.jpg" alt=" " onload="imagezoom.call(this, 98, 98);" /></a>
+    </div>
+    <div class="store_text">
+      <h3><a href="#">蚂蚁城旗舰店</a><span class="brand"><img src="images/brand.jpg" alt="品牌直销"/></span></h3>
+      <p>主营品牌：蚂蚁城旗舰店</p>
+      <p>所在地：石狮市宝盖鞋业工业园</p>
+    </div>
+    <div class="store_text0">
+      <div class="store_enter"><a href="#">进入店铺 &gt;&gt;</a></div>
+      <div class="store_all"><a href="#"><span>46件相关商品<i class="store_sq"></i></span></a></div>
+    </div>
+    <div class="clear"></div>
+  </div>
+  <!-- store_wares -->
+  <div class="store_wares">
+    <ul>
+      <li>
+        <p class="pic"><a href="#"><img src="images/02.jpg" alt=" "/></a></p>
+        <p><a href="#">CONVERSE匡威 中性高邦</a></p>
+        <p><a href="#">匡威专卖店</a></p>
+        <p><span class="past_price">￥288</span><span class="jq">￥</span><span class="now_price">158</span></p>
+      </li>
+      <li>
+        <p class="pic"><a href="#"><img src="images/02.jpg" alt=" "/></a></p>
+        <p><a href="#">CONVERSE匡威 中性高邦</a></p>
+        <p><a href="#">匡威专卖店</a></p>
+        <p><span class="past_price">￥288</span><span class="jq">￥</span><span class="now_price">158</span></p>
+      </li>
+      <li>
+        <p class="pic"><a href="#"><img src="images/02.jpg" alt=" "/></a></p>
+        <p><a href="#">CONVERSE匡威 中性高邦</a></p>
+        <p><a href="#">匡威专卖店</a></p>
+        <p><span class="past_price">￥288</span><span class="jq">￥</span><span class="now_price">158</span></p>
+      </li>
+      <li>
+        <p class="pic"><a href="#"><img src="images/02.jpg" alt=" "/></a></p>
+        <p><a href="#">CONVERSE匡威 中性高邦</a></p>
+        <p><a href="#">匡威专卖店</a></p>
+        <p><span class="past_price">￥288</span><span class="jq">￥</span><span class="now_price">158</span></p>
+      </li>
+      <li>
+        <p class="pic"><a href="#"><img src="images/02.jpg" alt=" "/></a></p>
+        <p><a href="#">CONVERSE匡威 中性高邦</a></p>
+        <p><a href="#">匡威专卖店</a></p>
+        <p><span class="past_price">￥288</span><span class="jq">￥</span><span class="now_price">158</span></p>
+      </li>
+      <li>
+        <p class="pic"><a href="#"><img src="images/02.jpg" alt=" "/></a></p>
+        <p><a href="#">CONVERSE匡威 中性高邦</a></p>
+        <p><a href="#">匡威专卖店</a></p>
+        <p><span class="past_price">￥288</span><span class="jq">￥</span><span class="now_price">158</span></p>
+      </li>
+    </ul>
+    <div class="clear"></div>
+  </div>
+</div>
+
+<!-- store_con end -->
+
+
+
+
+
+
+
+
+<!-- pages -->
+<div id="pages">
+  <div class="pages_con">
+    <a href="#">&lt;&lt;上一页</a><a href="#" class="active">1</a><a href="#">2</a><a href="#">3</a><span class="dot">&hellip;</span><a href="#">上一页&gt;&gt;</a><span class="text">共7页，到第<input name="" type="text" class="pages_input" value="1" onFocus="this.value=''" onBlur="if(!value){value=defaultValue;}"/>页</span><input name="" type="button" class="sure" value="确定"/>
+  </div>
+</div>
+<!-- pages end -->
+
+</div>
+</body>
+</html>

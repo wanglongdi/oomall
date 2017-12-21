@@ -1,0 +1,163 @@
+@charset "utf-8";
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	font-size: 12px;
+	background: #f2f2f2;
+	line-height: 1;
+	font-family: "Microsoft YaHei",Arial,Helvetica,sans-serif;
+}
+ul,li{
+	list-style: none;
+}
+img{
+	border: 0;
+	display: block;
+	width: 100%;
+}
+html,body{
+	height: 100%;
+}
+a{
+	text-decoration: none;
+}
+.clearfix:after{
+	clear: both;
+	content: '.';
+	height: 0;
+	display: block;
+	visibility: hidden;
+}
+
+/* paysuc_header */
+#paysuc_header{
+	width: 100%;
+	height: 44px;
+	background: #f5f5f5;
+	overflow: hidden;
+	position: relative;
+}
+#paysuc_header h1{
+	text-align: center;
+	color: #666;
+	font-size: 17px;
+	line-height: 44px;
+	font-weight: normal;
+}
+#paysuc_header b{
+	width: 13px;
+	height: 20px;
+	background: url('../images/paysuc_app02.png') no-repeat center;
+	position: absolute;
+	left: 10px;
+	top: 13px;
+	overflow: hidden;
+	background-size: cover;
+	padding: 10px 0 0 10px;
+}
+
+/* paysuc_con */
+#paysuc_con{
+	background: #fff;
+	padding: 30px 0;
+	overflow: hidden;
+	border-bottom: #ebebeb 1px solid;
+	border-top: #ebebeb 2px solid;
+	text-align: center;
+	color: #333;
+	box-shadow: 2px 0px 2px #ccc;
+}
+#paysuc_con_pic{
+    width: 57px;
+    height: 71px;
+    background: url('../images/paysuc_app01.png') no-repeat center;
+    margin: 0 auto;
+    background-size: cover;
+}
+#paysuc_con h2{
+	font-size: 20px;
+	font-weight: normal;
+	margin-top: 20px;
+	line-height: 1.6;
+	width: 100%;
+}
+#paysuc_con_price{
+    font-size: 16px;
+    line-height: 1.6;
+    width: 100%;
+}
+#paysuc_con_price em{
+	color: #e93b39;
+	font-style: normal;
+}
+#paysuc_con0{
+	width: 100%;
+	margin-top: 25px;
+}
+#paysuc_con0 a{
+	border: #cbcbcb 1px solid;
+	width: 40%;
+	height: 40px;
+	display: inline-block;
+	font-size: 16px;
+	color: #666;
+	line-height: 40px;
+	border-radius: 5px;
+}
+#paysuc_con0 a.l{
+	margin-left: 20px;
+}
+
+/* paysuc_go */
+#paysuc_go{
+	width: 100%;
+	background: #fff;
+	border-bottom: #ebebeb 1px solid;
+	border-top: #ebebeb 1px solid;
+	box-shadow: 2px 0px 2px #ccc;
+	overflow: hidden;
+	margin-top: 20px;
+	padding-bottom: 20px;
+}
+#paysuc_go h2{
+	padding-left: 20px;
+	font-size: 16px;
+	color: #525252;
+    margin: 15px 0;
+    font-weight: normal;
+}
+#paysuc_go_con{
+	width: 100%;
+	text-align: center;
+}
+#paysuc_go_con a{
+	color: #888;
+	font-size: 14px;
+	display: inline-block;
+	width: 80px;
+	text-align: center;
+}
+#paysuc_go_con a.l{
+	margin: 0 25px;
+}
+#paysuc_go_con a b{
+	width: 40px;
+	height: 40px;
+	display: block;
+	margin: 0 auto 10px;	
+}
+#paysuc_go_con a b.kkp{
+	background: url('../images/paysuc_app03.png') no-repeat center;
+	background-size: cover;
+}
+#paysuc_go_con a b.car{
+	background: url('../images/paysuc_app04.png') no-repeat center;
+	background-size: cover;
+}
+#paysuc_go_con a b.mykk{
+	background: url('../images/paysuc_app05.png') no-repeat center;
+	background-size: cover;
+}

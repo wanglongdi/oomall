@@ -1,0 +1,69 @@
+@charset "utf-8";
+/* CSS Document */
+body{font-size:12px; font-family:"Microsoft YaHei";}
+*{margin:0px; padding:0px;}
+img{border:0px;}
+ul,li{list-style:none;}
+
+a{font-size:12px; text-decoration:none; color:#088ccd;}
+a:hover{text-decoration:underline;}
+
+
+.clearfix:after{content:"."; clear:both; display:block; visibility:hidden; height:0px;}
+.clearfix{zoom:1;}
+
+.mr{margin-right:19px;}
+
+.login_con h2 .pp,.login_btn{background:url(../images/koukoubao_bg.png) no-repeat; overflow:hidden;}
+
+
+/* top */
+#top{width:100%; height:30px; overflow:hidden; line-height:30px; background:#333;}
+#top_con{width:1000px; color:#ccc; margin:0px auto; text-align:right;}
+#top_con .line{color:#4a4a4a; margin:0px 13px;}
+#top_con a{color:#ccc;}
+
+/* header */
+#header{width:1000px; margin:0px auto; overflow:hidden;}
+#header h1{float:left; width:146px; padding:16px 0px 16px 4px;}
+
+
+
+
+
+/* header_nav */
+#header_nav{width:443px; float:right; margin:15px 0px; height:36px; text-align:right;}
+#header_nav ul li{margin-right:40px; line-height:34px; height:34px; border-bottom:#fff 2px solid; width:76px; float:left; display:inline; text-align:center;}
+#header_nav ul li.sy{width:55px;}
+#header_nav ul li a{font-size:18px; color:#202020;}
+#header_nav ul li a:hover{text-decoration:none; color:#ff3c00;}
+#header_nav ul li.cur{border-bottom:#ff6000 2px solid;}
+#header_nav ul li.cur a{color:#ff3c00;}
+
+/* login */
+#login{width:1280px; height:450px; margin:0px auto; overflow:hidden; background:url(../images/login_kkb.jpg) no-repeat;}
+#login_con{width:1000px; margin:0px auto; overflow:hidden;}
+.login_con{width:290px; margin:63px 25px 0px 685px; overflow:hidden;}
+.login_con h2{font-size:16px; padding-left:33px; line-height:20px; position:relative; overflow:hidden;}
+.login_con h2 .pp{width:26px; height:19px; background-position:0px 0px; position:absolute; left:0px; top:0px;}
+
+.login_con0{width:290px; padding-top:15px; overflow:hidden;}
+.login_con0 dl{margin-top:26px; overflow:hidden; line-height:34px; height:34px;}
+.login_con0 dt{width:60px; float:left; font-size:16px; overflow:hidden;}
+.login_con0 dd{width:230px; float:left; overflow:hidden;}
+
+.login_inp{width:210px; height:32px; background:#fff; border:#bec6bf 1px solid; padding:0px 4px; line-height:32px; *height:31px;}
+.login_inp0{width:70px; height:32px; background:#fff; border:#bec6bf 1px solid; padding:0px 2px; line-height:32px; margin-right:14px; float:left; *height:31px;}
+.login_text{padding-left:60px; width:230px; color:#ff0000; line-height:30px; height:30px; overflow:hidden; margin-top:13px;}
+.login_denglu{margin-left:60px; width:230px; overflow:hidden;}
+.login_btn{width:169px; height:41px; border:0; cursor:pointer; line-height:41px; background-position:-45px 0px;}
+.login_fg{width:290px; text-align:right; text-align:right; line-height:20px; margin-top:20px;}
+.login_fg a{font-size:14px; color:#475349;}
+
+
+
+/* footer */
+#footer{width:1000px; margin:20px auto; overflow:hidden; line-height:28px; color:#999; text-align:center; font-family:宋体;}
+#footer .tt{line-height:30px;}
+#footer a{color:#333; font-size:14px;}
+#footer .line{margin:0px 5px;}

@@ -1,0 +1,77 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="css/css.css" />
+<script src="js/jquery.zclip.js"></script>
+<script src="js/jquery.zclip.min.js"></script>
+<title>复制</title>
+<script>
+        $('.copy_btn').zclip({
+            path: "ZeroClipboard.swf",
+            copy: function(){
+                return $('.copy_inp').val();
+  　　　 　　}
+        });
+</script>
+</head>
+
+<body>
+<!-- card -->
+<div id="card">
+   <h2>卡号和密码</h2>
+   
+   <!-- card_con -->
+   <div id="card_con">
+      <h3>请通过以下充值地址进行充值，切勿通过他人提供的网站或充值渠道进行充值操作！</h3>
+      <p>淘宝提醒您，谨防卖家通过低价优惠等手段设置的消费陷阱！</p>
+      <p>交易遇到问题请直接联系卖家：<a href="#"><span class="bold">福禄网游数卡专营店</span></a> <a href="#" class="blue">旺旺在线</a></p>
+      <p>或向淘宝志愿者咨询或举报！<a href="#"><span class="bold">反欺诈咨询</span></a> <a href="#" class="blue">旺旺离线</a></p>
+      <p>由于库存不足，系统未能自动发货。请您在24小时内直接向卖家索取卡号密码或在24小时后 <a href="#" class="blue">申请退款！</a></p>
+   </div>
+   
+   <!-- copy -->
+   <div id="copy">
+       <div class="copy_title">
+          充值地址
+      </div>
+      <div class="copy_con">
+          <input name="" type="text" class="copy_inp"/>
+          <span class="copy_btn"><a href="#">去充值</a></span>
+          <span class="copy_text"><a href="#">去复制</a></span>
+      </div>
+      <div class="copy_title">
+         <ul>
+            <li>卡号</li>
+            <li>密码</li>
+         </ul>
+     </div>
+     <div class="copy_con0">
+        <ul>
+           <li>
+              <span id="tt">32465412165</span><span class="copy_btn0"><a href="#">复制卡号</a></span>
+           </li>
+           <li class="m">
+              <span id="tt">534654132</span><span class="copy_btn0"><a href="#">复制密码</a></span>
+          </li>
+      </ul>
+    </div>
+</div>
+   
+   
+   
+</div>
+
+
+<SCRIPT LANGUAGE="JavaScript">
+function copyToClipBoard(){ 
+window.clipboardData.setData("Text",$("span").html());     
+alert("复制成功！");     
+}
+</SCRIPT>
+
+<a onClick="copyToClipBoard('code1');">点击复制</a>
+<span id="code1">987654321a</span>
+
+</body>
+</html>

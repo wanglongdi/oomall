@@ -1,0 +1,1322 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+<title>抠抠网_商品详情页</title>
+<link type="text/css" rel="stylesheet" href="css/index.css"  />
+<link type="text/css" rel="stylesheet" href="css/product.css"  />
+<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+<script type="text/javascript" src="js/modernizr.custom.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+<script type="text/javascript" src="js/product.js"></script>
+<script type="text/javascript">
+$(function(){
+	$('.custom-checkbox input').customInput();
+	$('.custom-radio input').customInput0();
+	add_sub('.num',10)
+	Allnumber();
+	setTotal();
+	add_sub0(".sel_num");
+	preview();
+});
+
+
+
+</script>
+
+</head>
+
+<body>
+
+
+
+<!-- top -->
+<div id="top">
+   <!-- top_con -->
+   <div class="top_con">
+      <!-- top_left -->
+      <!--<div class="top_left">
+         <span>hi,welcome to Kouclo</span>
+         <span><a href="#">请登录</a></span>
+         <span><a href="#">免费注册</a></span>
+      </div>-->
+      
+      <div class="top_left">
+         <span>hi,welcome to Kouclo</span>
+         <span><a href="#">退出</a></span>
+      </div>
+      <!-- top_right -->
+      <div class="top_right">
+      
+         <div class="top_home">
+            <a href="#"><b class="top_home_pic"></b>抠抠首页</a>
+         </div>
+         
+         <div class="top_my">
+            <a href="#">我的抠抠<b class="top_my_icon"></b></a>
+            <ul class="top_my_text">
+               <li><a href="#">待付款</a></li>
+               <li><a href="#">我的退换货</a></li>
+               <li class="bord_bn"><a href="#">待评价</a></li>
+            </ul>
+         </div>
+         
+         <div class="top_order"><a href="#">我的订单</a></div>
+         
+         <div class="top_fav">
+            <a href="#">收藏夹<b class="top_fav_icon"></b></a>
+            <ul class="top_fav_text">
+               <li><a href="#">商品</a></li>
+               <li class="bord_bn"><a href="#">店铺</a></li>
+            </ul>
+         </div>
+         <div class="top_phone_box">
+             <span class="top_phone">
+                <img src="images/app.png" alt="" />
+             </span>
+             <span class="ewm">
+               <img src="images/erweima.jpg" alt="" />
+             </span>
+         </div>
+         
+         <div class="top_help"><a href="#">帮助中心</a></div>
+         
+      </div>
+   </div>
+</div>
+<!-- top end -->
+
+<!-- product_header -->
+<div id="product_header" >
+   <!-- h1 -->
+   <h1>
+     <a href="#"><img src="images/product_logo.png" alt="" /></a>
+   </h1>
+   <!-- line -->
+   <div class="line"></div>
+   <!-- store -->
+   <div class="store">
+      <h2><a href="#">CICISHOP 官方旗舰专卖店</a></h2>
+      <div class="store_con">
+         <span class="enter"><a href="#">进入店铺</a></span>
+         <span class="coll"><a href="#">收藏本店</a></span>
+         <span class="text">成功收藏本店！</span>
+         <!--<span class="text">已收藏过本店！</span>-->
+      </div>
+   </div>
+   <!-- product_search -->
+   <div id="product_search">
+      <form method="post" action="">
+        <div class="con">
+          <input type="text" class="inpt" />
+          <input type="submit" class="search_btn">
+        </div>
+        <div class="con0">
+          <input type="button" class="search_btn0">
+        </div>
+      </form>
+   </div>
+   <!-- shopcar -->
+   <div class="shopcar" style="margin-top:29px">
+             <!-- shopcar_con -->
+             <div class="shopcar_con">
+               <span class="shopcar_icon"></span>
+               <a href="#">我的购物车<span class="shopcar_text0">(</span><span class="shopcar_tt0 shopcar_text0">0</span><span class="shopcar_text0">)</span></a>
+               <span class="shopcar_sj"></span>
+             </div>
+            <!-- shopcar_box -->
+            <div class="shopcar_box">
+               <!-- shopcar_lose -->
+               <!--<div class="shopcar_lose">
+                       <span class="shopcar_lose_icon"></span>
+                       <div class="shopcar_lose_text">
+                          您购物车中的商品均已失效
+                       </div>
+                       <div class="shopcar_lose_btn">
+                          <a href="#">查看购物车</a>
+                       </div>
+                   </div>-->
+              <!-- shopcar_box0 -->
+              <div class="shopcar_box0">
+                  <!-- shopcar_cp -->
+                  <div class="shopcar_cp">
+                     <ul>
+                        <li>
+                           <div class="sel">
+                              <span class="custom-checkbox"><input name="" type="checkbox" value="" id="1"/><label for="1"></label></span>
+                           </div>
+                           <div class="cp">
+                              <dl>
+                                <dt>
+                                  <a href="#"><img src="images/17.jpg" alt="" /></a>
+                                </dt> 
+                                <dd>
+                                  <h3><a href="#">Babyghost</a></h3>
+                                  <p><a href="#" title="">2014秋  绿色纹样...</a></p>
+                                  <p>￥<span class="price">339.00</span></p>
+                               </dd>
+                             </dl>
+                           </div>
+                           <div class="num">
+                             <span class="sub"></span>
+                             <input type="text" class="num_inp" value="1" />
+                             <span class="add"></span>
+                           </div>
+                          <span class="shopcar_close"></span>
+                       </li>
+                       <li>
+                           <div class="sel">
+                              <span class="custom-checkbox"><input name="" type="checkbox" value="" id="2"/><label for="2"></label></span>
+                           </div>
+                           <div class="cp">
+                              <dl>
+                                <dt>
+                                  <a href="#"><img src="images/18.jpg" alt="" /></a>
+                                </dt> 
+                                <dd>
+                                  <h3><a href="#">Babyghost</a></h3>
+                                  <p><a href="#" title="">2014秋  绿色纹样...</a></p>
+                                  <p>￥<span class="price">339.00</span></p>
+                               </dd>
+                             </dl>
+                           </div>
+                           <div class="num">
+                             <span class="sub"></span>
+                             <input type="text" class="num_inp" value="1" />
+                             <span class="add"></span>
+                           </div>
+                          <span class="shopcar_close"></span>
+                       </li>
+                       <li>
+                           <div class="sel">
+                              <span class="custom-checkbox"><input name="" type="checkbox" value="" id="3"/><label for="3"></label></span>
+                           </div>
+                           <div class="cp">
+                              <dl>
+                                <dt>
+                                  <a href="#"><img src="images/18.jpg" alt="" /></a>
+                                </dt> 
+                                <dd>
+                                  <h3><a href="#">Babyghost</a></h3>
+                                  <p><a href="#" title="">2014秋  绿色纹样...</a></p>
+                                  <p>￥<span class="price">339.00</span></p>
+                               </dd>
+                             </dl>
+                           </div>
+                           <div class="num">
+                             <span class="sub"></span>
+                             <input type="text" class="num_inp" value="1" />
+                             <span class="add"></span>
+                           </div>
+                          <span class="shopcar_close"></span>
+                       </li>
+                       <li>
+                           <div class="sel">
+                              <span class="custom-checkbox"><input name="" type="checkbox" value="" id="4"/><label for="4"></label></span>
+                           </div>
+                           <div class="cp">
+                              <dl>
+                                <dt>
+                                  <a href="#"><img src="images/18.jpg" alt="" /></a>
+                                </dt> 
+                                <dd>
+                                  <h3><a href="#">Babyghost</a></h3>
+                                  <p><a href="#" title="">2014秋  绿色纹样...</a></p>
+                                  <p>￥<span class="price">339.00</span></p>
+                               </dd>
+                             </dl>
+                           </div>
+                           <div class="num">
+                             <span class="sub"></span>
+                             <input type="text" class="num_inp" value="1" />
+                             <span class="add"></span>
+                           </div>
+                          <span class="shopcar_close"></span>
+                       </li>
+                       <li>
+                           <div class="sel">
+                              <span class="custom-checkbox"><input name="" type="checkbox" value="" id="5"/><label for="5"></label></span>
+                           </div>
+                           <div class="cp">
+                              <dl>
+                                <dt>
+                                  <a href="#"><img src="images/18.jpg" alt="" /></a>
+                                </dt> 
+                                <dd>
+                                  <h3><a href="#">Babyghost</a></h3>
+                                  <p><a href="#" title="">2014秋  绿色纹样...</a></p>
+                                  <p>￥<span class="price">339.00</span></p>
+                               </dd>
+                             </dl>
+                           </div>
+                           <div class="num">
+                             <span class="sub"></span>
+                             <input type="text" class="num_inp" value="1" />
+                             <span class="add"></span>
+                           </div>
+                          <span class="shopcar_close"></span>
+                       </li>
+                       
+                    </ul>
+
+                </div>
+             
+           
+            <!-- shopcar_all -->
+            <div class="shopcar_all">
+               <div class="shopcar_all_text">
+                  <p>
+                     <span class="custom-checkbox"><input name="" type="checkbox" value="" id="allcheck" onclick="checkAll(this,$('.shopcar_cp'))" checked="checked"/><label for="allcheck" >全选</label></span><a href="javascript:void(0);" class="del">删除</a>，共 <span class="shopcar_tt shopcar_tt0">0</span> 件
+                  </p>
+                  <p class="p_left">合计　￥<span class="total_price">0</span></p>
+               </div>
+               <div class="shopcar_jsbtn">
+                  <a href="#">立即结算</a>
+               </div>
+            </div>
+            
+            
+            
+            </div>
+        
+          </div>
+        </div>
+   <!-- shopcar end --> 
+         
+   
+</div>
+<!-- product_header end -->
+<!-- header end -->
+
+
+
+
+<!-- pro_banner -->
+<div class="pro_banner">
+   <div class="pro_banner_img">
+     <a href="#"><img src="images/020.jpg" alt=""/></a>
+   </div>
+   
+</div>
+
+
+<!-- product_nav -->
+<div id="product_nav">
+   <!-- product_nav0 -->
+   <div id="product_nav0">
+       <!-- product_class -->
+       <div id="product_class">
+          <h3><a href="#">所有分类<b class="class_icon"></b></a></h3>
+          <div id="product_class_con">
+             <ul>
+               <li>
+                  <a href="#">2014新款</a><span class="bg_icon"></span>
+                  <ul class="con">
+                     <li><a href="#">男装上衣</a></li>
+                     <li><a href="#">女装上衣</a></li>
+                     <li><a href="#">运动装</a></li>
+                     <li><a href="#">配饰</a></li>
+                     <li><a href="#">女鞋</a></li>
+                  </ul>
+               </li>
+               <li>
+                  <a href="#">T恤背心<b class="bg_icon"></b></a>
+                  <ul class="con">
+                     <li><a href="#">男装上衣</a></li>
+                     <li><a href="#">女装上衣</a></li>
+                     <li><a href="#">运动装</a></li>
+                     <li><a href="#">配饰</a></li>
+                     <li><a href="#">女鞋</a></li>
+                  </ul>
+               </li>
+               <li>
+                  <a href="#">针织衫<b class="bg_icon"></b></a>
+                  <ul class="con">
+                     <li><a href="#">男装上衣</a></li>
+                     <li><a href="#">女装上衣</a></li>
+                     <li><a href="#">运动装</a></li>
+                     <li><a href="#">配饰</a></li>
+                     <li><a href="#">女鞋</a></li>
+                  </ul>
+               </li>
+               <li>
+                  <a href="#">连衣裙<b class="bg_icon"></b></a>
+                  <ul class="con">
+                     <li><a href="#">男装上衣</a></li>
+                     <li><a href="#">女装上衣</a></li>
+                     <li><a href="#">运动装</a></li>
+                     <li><a href="#">配饰</a></li>
+                     <li><a href="#">女鞋</a></li>
+                  </ul>
+               </li>
+               <li>
+                  <a href="#">休闲裤<b class="bg_icon"></b></a>
+                  <ul class="con">
+                     <li><a href="#">男装上衣</a></li>
+                     <li><a href="#">女装上衣</a></li>
+                     <li><a href="#">运动装</a></li>
+                     <li><a href="#">配饰</a></li>
+                     <li><a href="#">女鞋</a></li>
+                  </ul>
+               </li>
+               <li>
+                  <a href="#">POLO<b class="bg_icon"></b></a>
+                  <ul class="con">
+                     <li><a href="#">男装上衣</a></li>
+                     <li><a href="#">女装上衣</a></li>
+                     <li><a href="#">运动装</a></li>
+                     <li><a href="#">配饰</a></li>
+                     <li><a href="#">女鞋</a></li>
+                  </ul>
+               </li>
+               
+             </ul>
+             <div class="bg"></div>
+          </div>
+       </div>
+       <!-- product_class end -->
+       
+       <!-- product_nav_con -->
+       <div id="product_nav_con">
+          <a href="#">首页</a><a href="#">[夏季经典款]</a><a href="#">[cicishope独家出售]</a><a href="#">店铺动态</a>
+       </div>
+       
+       <!-- store_air -->
+       <div class="store_air">
+           <span class="icon_air"></span>
+           <div id="demo">
+              <div id="demo1">
+                  累积购买1000元即可成为会员，会员可享受正价9.5折<a href="#">下载手机新版客户端,首单送5元现金券</a>
+              </div> 
+              <div id="demo2"></div>  
+           </div>  
+       </div>
+       
+   </div>
+</div>
+<!-- product_nav end -->
+
+<!-- product -->
+<div class="product clearfix">
+   <!-- product_left -->
+   <div class="product_left">
+      <!-- preview begin -->
+      <div id="preview">
+         <div id="imagezoom-wrap">
+              <a href="#"><img src="images/0217.jpg" width="418" height="418" alt="" title="" /></a>
+              <span style="left:0px; top:0px;" class="zoomCover"></span>
+              <i class="icon_fd"></i>
+          </div>
+          
+          <!-- thumbList_items -->
+          <div id="js_thumbList">
+              <div class="thumbList_items">
+                 <div class="pre_btn"></div>
+                 <div class="next_btn"></div>
+                 <div class="list">
+                    <ul>
+                       <li class="hover"><a href="#"><img src="images/0217.jpg" alt="" /></a></li>
+                       <li><a href="#"><img src="images/0018.jpg" alt="" /></a></li>
+                       <li><a href="#"><img src="images/0217.jpg" alt="" /></a></li>
+                       <li><a href="#"><img src="images/0018.jpg" alt="" /></a></li>
+                       <li><a href="#"><img src="images/0217.jpg" alt="" /></a></li>
+                       <li><a href="#"><img src="images/0018.jpg" alt="" /></a></li>
+                       <li><a href="#"><img src="images/0217.jpg" alt="" /></a></li>
+                    </ul>
+                 </div>
+              </div>
+               
+          </div>
+             
+          <div id="preview_imgZoom">
+                    <img src="">
+          </div>
+              
+              
+      </div>
+      <!-- preview end -->
+      <!-- product_text -->
+      <div class="product_text">
+         <h2>NIKE AIR MAX 90 JACQUARD 男子复古跑鞋</h2>
+         <!-- product_text_con -->
+         <div class="product_text_con">
+            <dl class="price_bg clearfix">
+               <dt class="price_right">原价格：</dt>
+               <dd>
+                 <span class="price_old0">￥500</span>
+               </dd>
+            </dl>
+            <dl class="price_bg clearfix">
+               <dt class="price_right">促销价：</dt>
+               <dd>
+                 <span class="orange">￥</span><span class="orange price0" id="goods_price">1,199.00</span><span class="eleven_icon"></span>
+               </dd>
+            </dl>
+            <dl class="price_bg clearfix">
+               <dt class="price_sale price_right">优　惠：</dt>
+               <dd class="orange price_sale">
+                  <p>满500送正品9折券一张;  2014.11.14结束</p>
+                  <p>满49包邮；</p>
+                  <p>全场三折优惠，领取优惠券抵。</p>
+               </dd>
+            </dl>
+            <dl style="z-index:10">
+               <dt class="mb">配送区域：</dt>
+               <dd class="mb">
+                 福建泉州
+                 <span class="address">
+                    至<span class="to_adr">河北</span><b class="ad_icon"></b>
+                    <div class="address_con">
+                    <ul>
+                       <li>
+                         <span>北京</span>
+                       </li>
+                       <li>
+                         <span>天津</span>
+                       </li>
+                       <li>
+                          <span>上海</span>
+                       </li>
+                       <li>
+                          <span>重庆</span>
+                       </li>
+                       <li>
+                          <span>成都</span>
+                       </li>
+                    </ul>
+                    <ul>
+                       <li>
+                          <span>河北</span>
+                          <ul class="con">
+                             <li><span id="1">朝阳区</span></li>
+                             <li><span id="2">丰台区</span></li>
+                             <li><span id="31">通州区</span></li>
+                             <li><span id="4">昌平区</span></li>
+                             <li><span id="5">崇文区</span></li>
+                             <li><span id="1">朝阳区</span></li>
+                             <li><span id="2">丰台区</span></li>
+                             <li><span id="31">通州区</span></li>
+                             <li><span id="4">昌平区</span></li>
+                             <li><span id="5">崇文区</span></li>
+                             <li><span id="1">朝阳区</span></li>
+                             <li><span id="2">丰台区</span></li>
+                             <li><span id="31">通州区</span></li>
+                             <li><span id="4">昌平区</span></li>
+                             <li><span id="5">崇文区</span></li>
+                              <li><span id="1">朝阳区</span></li>
+                             <li><span id="2">丰台区</span></li>
+                             <li><span id="31">通州区</span></li>
+                             <li><span id="4">昌平区</span></li>
+                             <li><span id="5">崇文区</span></li>
+                              <li><span id="1">朝阳区</span></li>
+                             <li><span id="2">丰台区</span></li>
+                             <li><span id="31">通州区</span></li>
+                             <li><span id="4">昌平区</span></li>
+                             <li><span id="5">崇文区</span></li>
+                              <li><span id="1">朝阳区</span></li>
+                             <li><span id="2">丰台区</span></li>
+                             <li><span id="31">通州区</span></li>
+                             <li><span id="4">昌平区</span></li>
+                             <li><span id="5">崇文区</span></li>
+                          </ul>
+                       </li>
+                       <li>
+                          <span>山西</span>
+                          <ul class="con">
+                             <li><span>朝阳区</span></li>
+                             <li><span>丰台区</span></li>
+                             <li><span>通州区</span></li>
+                             <li><span>昌平区</span></li>
+                             <li><span>崇文区</span></li>
+                          </ul>
+                       </li>
+                       <li>
+                          <a href="#">内蒙古</a>
+                          <ul class="con">
+                             <li><span>朝阳区</span></li>
+                             <li><span>丰台区</span></li>
+                             <li><span>通州区</span></li>
+                             <li><span>昌平区</span></li>
+                             <li><span>崇文区</span></li>
+                          </ul>
+                       </li>
+                       <li>
+                          <a href="#">辽宁</a>
+                          <ul class="con">
+                             <li><span>朝阳区</span></li>
+                             <li><span>丰台区</span></li>
+                             <li><span>通州区</span></li>
+                             <li><span>昌平区</span></li>
+                             <li><span>崇文区</span></li>
+                          </ul>
+                       </li>
+                       <li>
+                          <a href="#">吉林</a>
+                          <ul class="con">
+                             <li><span>朝阳区</span></li>
+                             <li><span>丰台区</span></li>
+                             <li><span>通州区</span></li>
+                             <li><span>昌平区</span></li>
+                             <li><span>崇文区</span></li>
+                          </ul>
+                       </li>
+                       <li>
+                          <a href="#">黑龙江</a>
+                          <ul class="con">
+                             <li><span>朝阳区</span></li>
+                             <li><span>丰台区</span></li>
+                             <li><span>通州区</span></li>
+                             <li><span>昌平区</span></li>
+                             <li><span>崇文区</span></li>
+                          </ul>
+                       </li>
+                       <li>
+                          <a href="#">江苏</a>
+                          <ul class="con">
+                             <li><span>朝阳区</span></li>
+                             <li><span>丰台区</span></li>
+                             <li><span>通州区</span></li>
+                             <li><span>昌平区</span></li>
+                             <li><span>崇文区</span></li>
+                          </ul>
+                       </li>
+                    </ul>
+                 </div>
+                 </span>
+                 <i class="ml0" id="fast">快递：￥10.00</i><i class="ml0" id="ems">EMS：25.00</i>
+                 
+               </dd>
+            </dl>
+         </div>
+         <!-- product_text_con0 -->
+         <div class="product_text_con0">
+            <dl>
+              <dt>颜 色：</dt>
+              <dd>
+                 <div class="pd_color jsClick">
+                    <a href="javascript:;" name="issku">黑色</a><a href="javascript:;" name="issku">天蓝色</a><a href="javascript:;" name="issku">黑色</a><a href="javascript:;" name="issku">黑色</a><a href="javascript:;" name="issku">黑色</a><a href="javascript:;" name="issku">黑色</a><a href="javascript:;" name="issku">黑色</a><a href="javascript:;" name="issku">黑色</a><a href="javascript:;" name="issku">黑色</a><a href="javascript:;" name="issku">黑色</a>
+                 </div>
+              </dd>
+            </dl>
+            <dl>
+              <dt>尺 码：</dt>
+              <dd>
+                 <div class="size jsClick">
+                    <a href="javascript:;" name="issku">28码</a><a href="javascript:;" name="issku">29码</a><a href="javascript:;" name="issku">30码</a><a href="javascript:;" name="issku">31码</a><a href="javascript:;" name="issku">32码</a><a href="javascript:;" name="issku">33码</a>
+                 </div>
+              </dd>
+            </dl>
+            <dl>
+              <dt>数 量：</dt>
+              <dd>
+                 <div class="sel_num">
+                    <span class="sel_sub"></span>
+                    <input name="" type="text" class="inp_num" value="1" id="goods_num" />
+                    <span class="sel_add"></span>
+                 </div>
+                 <div class="sel_text">(库存 <span id="goodsnum">4</span> 件)</div>
+              </dd>
+            </dl>
+         </div>
+         <!-- product_buy -->
+         <div class="product_buy">
+            <input type="hidden" name="sku_size" id="sku_size" value="" />
+			<input type="hidden" name="sku_color" id="sku_color" value="" />
+			<input type="hidden" name="sku_id" id="sku_id" value="126802" />
+                <script>
+					$(document).ready(function (){
+						var goods_num = 6;
+						var parent_category = 19059;
+					    if(parent_category != '17144')
+					    {
+					        if (goods_num == 0)
+							{
+								$('.count').html('<input type="button" class="no" onClick="javascript:is_over();" />');
+							}else{
+								$('.count').html('<input type="button" class="buy" onclick="javascript:ljgm();" /><input type="button" class="scar" onClick="javascript:but_buy();" />');
+							}
+					    } else{
+					        $('.count').html('<input type="button" class="count_shop" onclick="javascript:xjgm();">');
+						}
+					})
+				 </script>
+			<div class="count" >
+               <input type="button" class="buy" onclick="javascript:ljgm();"/>
+               <input type="button" class="scar" onclick="javascript:but_buy();"  />
+           </div>
+            <div class="sc">
+              <div class="sc_con">
+                 <b class="sc_icon" title="收藏该商品"></b>
+              </div>
+              <div class="sc_ts">
+                 <div class="sc_ts_con">
+                    <b class="sc_ts_icon0"></b>成功收藏商品
+                 </div>
+                 <!--<div class="sc_ts_con0">
+                    已收藏过该商品
+                 </div>-->
+              </div>
+            </div>
+         </div>
+         <!-- shopcar_cg -->
+         <div id="shopcar_cg">
+            <div id="shopcar_cg_con">
+               <div class="close"></div>
+               <div class="con">
+                  <b class="right_icon"></b><span id="state_goods_title">商品成功添加到购物</span>
+               </div>
+               <div class="text">
+                  购物车共有 <span class="red" id="ajax_num">1</span> 种商品 合计<span class="red" id="ajax_totle_price">￥6750元</span>
+               </div>
+               <div class="con0">
+                  <a href="javascript:;" title="继续购物" class="goshop"></a><a href="#" title="立即支付" class="zhifu"></a>
+               </div>
+            </div>
+
+         </div>
+        <!-- shopcar_cg end -->  
+        
+        
+         <!-- promise -->
+         <div class="promise">
+            <dl>
+               <dt>服务承诺：</dt>
+               <dd>
+                  <a href="#"><b class="pro_zp"></b>正品保证</a>
+                  <a href="#"><b class="pro_tui"></b>7天内包退</a>
+                  <a href="#" class="l"><b class="pro_huan"></b>免费换货服务</a>
+               </dd>
+            </dl>
+         </div>
+         
+         <!-- share -->
+         <div class="share">
+            <dl>
+               <dt>分享商品到：</dt>
+               <dd>
+                  <a title="分享到新浪微博" href="#" class="sina"></a>
+                  <a title="分享到腾讯微博" href="#" class="tqq"></a>
+                  <a title="分享到QQ空间" href="#" class="qzone"></a>
+                  <a title="分享到人人网" href="#" class="renren"></a>
+                  <a title="分享到豆瓣" href="#" class="douban"></a>
+                  <a title="分享到微信" href="#" class="weixin"></a>
+               </dd>
+            </dl>
+         </div>
+   
+      </div>
+      
+   </div>
+   <!-- product_left end -->
+   
+   <!-- groom -->
+   <div class="groom">
+     <div class="groom0">
+        <!-- groom_con -->
+       <div class="groom_con">
+         <div class="groom_con_tit">
+            <h3><b class="bg_icon"></b>本店推荐搭配</h3>
+         </div>
+         <div class="groom_pic">
+            <div class="groom_pic_con">
+               <ul>
+                 <li><a href="#"><img src="images/0019.jpg" alt="" /></a></li>
+                 <li><a href="#"><img src="images/0020.jpg" alt="" /></a></li>
+                 <li><a href="#"><img src="images/0021.jpg" alt="" /></a></li>
+               </ul>
+            </div>
+            <div class="groom_pic_con" style="display:none;">
+              <ul>
+                 <li><a href="#"><img src="images/0021.jpg" alt="" /></a></li>
+                 <li><a href="#"><img src="images/0020.jpg" alt="" /></a></li>
+                 <li><a href="#"><img src="images/0019.jpg" alt="" /></a></li>
+              </ul>
+            </div>
+            <div class="groom_pic_con" style="display:none;">
+              <ul>
+                 <li><a href="#"><img src="images/0020.jpg" alt="" /></a></li>
+                 <li><a href="#"><img src="images/0019.jpg" alt="" /></a></li>
+                 <li><a href="#"><img src="images/0021.jpg" alt="" /></a></li>
+              </ul>
+            </div>
+            <div class="groom_icon">
+              <ul>
+                 <li class="cur"><a href="#"></a></li>
+                 <li><a href="#"></a></li>
+                 <li><a href="#"></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- groom_ss -->
+        <div class="groom_ss"></div>
+    </div>
+     
+     
+     <!-- groom_lxwm -->
+     <div class="groom_kf">
+       <a href="#" title="联系客服" class="groom_kf_pic"></a>
+     </div>
+     
+     
+   </div>
+   
+   
+   
+</div>
+<!-- product end -->
+
+<!-- product -->
+<div class="product clearfix">
+  <!-- score -->
+  <div class="score">
+     <div class="score_pic">
+        <a href="#"><img src="images/022.jpg" alt="" /></a>
+     </div>
+     <div class="score_con">
+        <p>
+          <span class="score_l">综 合 评 分</span><span class="score_num score_num0"></span><span class="score_text">4.8</span>
+        </p>
+        <p>
+          商品满意度<span class="score_num score_num1"></span><span class="score_text">4.8</span>
+        </p>
+        <p>
+          服务满意度<span class="score_num score_num2"></span><span class="score_text">4.8</span>
+        </p>
+        <p>
+          物流满意度<span class="score_num score_num3"></span><span class="score_text">4.8</span>
+        </p>
+     </div>
+     <div class="score_phone">
+        <b class="score_icon"></b>010-85690000
+     </div>
+     <div class="score_kf">
+        <a href="#" title="联系客服" class="score_kf_pic"></a>
+     </div>
+     <div class="score_sc">
+        <a href="#" class="score_r">进入店铺</a><a href="#">收藏店铺</a>
+        <div class="sc_ts">
+           <div class="sc_ts_con">
+              <b class="sc_ts_icon0"></b>成功收藏商品
+           </div>
+           <!--<div class="sc_ts_con0">
+              已收藏过该商品
+          </div>-->
+         </div>
+     </div>
+  </div>
+  <!-- score end -->
+  <!-- product_xq -->
+  <div class="product_xq">
+     <!-- product_xq_tit -->
+     <div class="product_xq_tit">
+        <!-- tit -->
+        <div class="tit">
+           <a href="javascript:void(0)" class="hover"><span class="bg_ml"></span><span class="text">商品详情</span><span class="bg_mr"></span></a>
+           <a href="javascript:void(0)"><span class="bg_ml"></span><span class="text">商品参数</span><span class="bg_mr"></span></a>
+           <a href="javascript:void(0)"><span class="bg_ml"></span><span class="text">商品评价 (5)</span><span class="bg_mr"></span></a>
+           <a href="javascript:void(0)"><span class="bg_ml"></span><span class="text">交易记录 (12)</span><span class="bg_mr"></span></a>
+        </div>
+        <!-- product_erm -->
+        <div class="product_erm">
+           扫一扫，手机购买<span class="product_erm_icon"></span>
+           <div class="product_erm_pic">
+              <img src="images/erweima.jpg" alt="" />
+           </div>
+        </div>
+     </div>
+     <!-- product_xq_con -->
+     <div class="product_xq_con">
+        <!-- con -->
+        <div class="con">
+           <div class="xq_con">
+              <h3>产品参数</h3>
+              <ul>
+                <li>主题：风尚男装</li>
+                <li>人群：男</li>
+                <li>风格：商务简约</li>
+                <li>主题：风尚男装</li>
+                <li>场合：上班商务居家旅行宴会</li>
+                <li>衣门襟：单排扣</li>
+                <li>主题：风尚男装</li>
+                <li>人群：男</li>
+                <li>场合：上班商务居家旅行宴会</li>
+                <li>人群：男</li>
+                <li>风格：商务简约</li>
+                <li>主题：风尚男装</li>
+              
+              </ul>
+           </div>
+        </div>
+        <!-- con -->
+        <div class="con" style="display:none">
+           <p>
+               2014秋冬新款休闲舒适甜美平底过膝长靴 高筒靴子平跟秋款单靴子筒高52厘米，筒围38厘米。跟高3.5厘米 店主160，110斤，穿37码得无拉链刚好合适 ，（亲 由于活动期间发货量大，靴子在打了快递单配完货之后，我们打包之前还需要一双一双的检查，以免发出有问题的鞋子麻烦您，所以可能在填了单号之后3天左右才能查到物流哦，还希望亲能耐心的等待，质量才是最重要的呢） 
+           </p>
+           <p>
+               2014秋冬新款休闲舒适甜美平底过膝长靴 高筒靴子平跟秋款单靴子筒高52厘米，筒围38厘米。跟高3.5厘米 店主160，110斤，穿37码得无拉链刚好合适 ，（亲 由于活动期间发货量大，靴子在打了快递单配完货之后，我们打包之前还需要一双一双的检查，以免发出有问题的鞋子麻烦您，所以可能在填了单号之后3天左右才能查到物流哦，还希望亲能耐心的等待，质量才是最重要的呢） 
+           </p>
+           <p>
+               2014秋冬新款休闲舒适甜美平底过膝长靴 高筒靴子平跟秋款单靴子筒高52厘米，筒围38厘米。跟高3.5厘米 店主160，110斤，穿37码得无拉链刚好合适 ，（亲 由于活动期间发货量大，靴子在打了快递单配完货之后，我们打包之前还需要一双一双的检查，以免发出有问题的鞋子麻烦您，所以可能在填了单号之后3天左右才能查到物流哦，还希望亲能耐心的等待，质量才是最重要的呢） 
+           </p>
+        </div>
+        <!-- con end -->
+        <!-- con -->
+        <div class="con" style="display:none">
+           <div class="none">
+              <p><i>还没有任何评论！</i></p>
+           </div>
+           <!-- product_pl_tit -->
+           <div class="product_pl_tit">
+              <ul>
+                 <li>
+                   <span class="custom-radio"><input name="pinglun" type="radio" id="quanbu" /><label for="quanbu">全部</label></span>
+                 </li>
+                 <li>
+                   <span class="custom-radio"><input name="pinglun" type="radio" id="haoping" /><label for="haoping">好评</label></span>
+                 </li>
+                 <li>
+                   <span class="custom-radio"><input name="pinglun" type="radio" id="zhongping" /><label for="zhongping">中评</label></span>
+                 </li>
+                 <li>
+                   <span class="custom-radio"><input name="pinglun" type="radio" id="chaping" /><label for="chaping">差评</label></span>
+                 </li>
+                 <li>
+                   <span class="custom-radio"><input name="pinglun" type="radio" id="shantu" /><label for="shantu">晒图</label></span>
+                 </li>
+              </ul>
+           </div>
+           <!-- pinglun -->
+           <div class="pinglun">
+              <dl>
+                <dt>
+                   <a href="#"><img src="images/18.jpg" alt=""/></a><br /><a href="#">1798****com</a>
+                </dt>
+                <dd>
+                   <p class="text">
+                      衣服很漂亮，穿着效果很好，很满意！
+                   </p>
+                   <p class="time">
+                      <i>2014-04-26  16：33</i><i class="ml">颜色：深蓝色 </i><i class="ml">尺码：M</i>
+                   </p>
+                </dd>
+              </dl>
+              <dl>
+                <dt>
+                   <a href="#"><img src="images/18.jpg" alt=""/></a><br /><a href="#">1798****com</a>
+                </dt>
+                <dd>
+                   <p class="text">
+                      衣服很漂亮，穿着效果很好，很满意！
+                   </p>
+                   <p class="time">
+                      <i>2014-04-26  16：33</i><i class="ml">颜色：深蓝色 </i><i class="ml">尺码：M</i>
+                   </p>
+                </dd>
+              </dl>
+              <dl>
+                <dt>
+                   <a href="#"><img src="images/18.jpg" alt=""/></a><br /><a href="#">1798****com</a>
+                </dt>
+                <dd>
+                   <p class="text">
+                      衣服很漂亮，穿着效果很好，很满意！
+                   </p>
+                   <p class="time">
+                      <i>2014-04-26  16：33</i><i class="ml">颜色：深蓝色 </i><i class="ml">尺码：M</i>
+                   </p>
+                </dd>
+              </dl>
+              <dl>
+                <dt>
+                   <a href="#"><img src="images/18.jpg" alt=""/></a><br /><a href="#">1798****com</a>
+                </dt>
+                <dd>
+                   <p class="text">
+                      衣服很漂亮，穿着效果很好，很满意！
+                   </p>
+                   <p class="time">
+                      <i>2014-04-26  16：33</i><i class="ml">颜色：深蓝色 </i><i class="ml">尺码：M</i>
+                   </p>
+                </dd>
+              </dl>
+              <dl>
+                <dt>
+                   <a href="#"><img src="images/18.jpg" alt=""/></a><br /><a href="#">1798****com</a>
+                </dt>
+                <dd>
+                   <p class="text">
+                      衣服很漂亮，穿着效果很好，很满意！
+                   </p>
+                   <p class="time">
+                      <i>2014-04-26  16：33</i><i class="ml">颜色：深蓝色 </i><i class="ml">尺码：M</i>
+                   </p>
+                </dd>
+              </dl>
+              <dl>
+                <dt>
+                   <a href="#"><img src="images/18.jpg" alt=""/></a><br /><a href="#">1798****com</a>
+                </dt>
+                <dd>
+                   <p class="text">
+                      衣服很漂亮，穿着效果很好，很满意！
+                   </p>
+                   <p class="time">
+                      <i>2014-04-26  16：33</i><i class="ml">颜色：深蓝色 </i><i class="ml">尺码：M</i>
+                   </p>
+                </dd>
+              </dl>
+           </div>
+           
+           <!-- pages -->
+           <div id="pages">
+              <div class="pages_con">
+                 <a href="#" class="pre">&lt;&lt;上一页</a><a href="#">1</a><a href="#">2</a><a href="#">3</a><span class="dot">...</span><a href="#" class="pre">下一页&gt;&gt;</a><span class="text">共7页，到第<input name="" type="text" class="int" value="1" />页</span><input name="" type="button" class="sure" value="确定"/>
+              </div>
+           </div>
+           
+           
+        </div>
+        <!-- con end -->
+        <!-- con -->
+        <div class="con" style="display:none">
+           <div class="record">
+             <h3>最近三个月交易记录</h3>
+             <table cellpadding="0" cellspacing="0">
+                <thead>
+                  <tr>
+                    <td class="w1">买家</td>
+                    <td class="w2">商品</td>
+                    <td class="w1">数量</td>
+                    <td class="w1">购买价格</td>
+                    <td class="w1">成交时间</td>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="w1"><a href="#">段**3 (匿名)</a></td>
+                    <td class="w2">颜色分类:酒红色<br />尺码:36</td>
+                    <td class="w1">1</td>
+                    <td class="w1"><span class="orange">￥268</span><span class="cu"><img src="images/cu.png" /></span></td>
+                    <td class="w1">2014-08-29 16:36:11</td>
+                  </tr>
+                  <tr>
+                    <td class="w1"><a href="#">段**3 (匿名)</a></td>
+                    <td class="w2">颜色分类:酒红色<br />尺码:36</td>
+                    <td class="w1">1</td>
+                    <td class="w1"><span class="orange">￥268</span></td>
+                    <td class="w1">2014-08-29 16:36:11</td>
+                  </tr>
+                  <tr>
+                    <td class="w1"><a href="#">段**3 (匿名)</a></td>
+                    <td class="w2">颜色分类:酒红色<br />尺码:36</td>
+                    <td class="w1">1</td>
+                    <td class="w1"><span class="orange">￥268</span></td>
+                    <td class="w1">2014-08-29 16:36:11</td>
+                  </tr>
+                  <tr>
+                    <td class="w1"><a href="#">段**3 (匿名)</a></td>
+                    <td class="w2">颜色分类:酒红色<br />尺码:36</td>
+                    <td class="w1">1</td>
+                    <td class="w1"><span class="orange">￥268</span></td>
+                    <td class="w1">2014-08-29 16:36:11</td>
+                  </tr>
+                  <tr>
+                    <td class="w1"><a href="#">段**3 (匿名)</a></td>
+                    <td class="w2">颜色分类:酒红色<br />尺码:36</td>
+                    <td class="w1">1</td>
+                    <td class="w1"><span class="orange">￥268</span></td>
+                    <td class="w1">2014-08-29 16:36:11</td>
+                  </tr>
+                  <tr>
+                    <td class="w1"><a href="#">段**3 (匿名)</a></td>
+                    <td class="w2">颜色分类:酒红色<br />尺码:36</td>
+                    <td class="w1">1</td>
+                    <td class="w1"><span class="orange">￥268</span></td>
+                    <td class="w1">2014-08-29 16:36:11</td>
+                  </tr>
+                  <tr>
+                    <td class="w1"><a href="#">段**3 (匿名)</a></td>
+                    <td class="w2">颜色分类:酒红色<br />尺码:36</td>
+                    <td class="w1">1</td>
+                    <td class="w1"><span class="orange">￥268</span></td>
+                    <td class="w1">2014-08-29 16:36:11</td>
+                  </tr>
+                  <tr>
+                    <td class="w1"><a href="#">段**3 (匿名)</a></td>
+                    <td class="w2">颜色分类:酒红色<br />尺码:36</td>
+                    <td class="w1">1</td>
+                    <td class="w1"><span class="orange">￥268</span></td>
+                    <td class="w1">2014-08-29 16:36:11</td>
+                  </tr>
+                </tbody>
+            </table>
+            <!-- pages -->
+           <div id="pages">
+              <div class="pages_con">
+                 <a href="#" class="pre">&lt;&lt;上一页</a><a href="#">1</a><a href="#">2</a><a href="#">3</a><span class="dot">...</span><a href="#" class="pre">下一页&gt;&gt;</a><span class="text">共7页，到第<input name="" type="text" class="int" value="1" />页</span><input name="" type="button" class="sure" value="确定"/>
+              </div>
+           </div>
+
+           </div>
+        </div>
+        <!-- con end-->
+        
+     </div>
+     
+  </div>
+  <!-- product_xq end -->
+</div>
+<!-- product end -->
+
+<!-- footer -->
+<div id="footer">
+    <!-- footer_con -->
+    <div class="footer_con">
+       <!-- footer_con0 -->
+       <div class="footer_con0">
+          <h3><img src="images/news.jpg" alt="下载客户端，关注更多潮流咨询" /></h3>
+          <ul>
+             <li class="line"></li>
+             <li><img src="images/sina.jpg" alt="官方微博@kouclo" /></li>
+             <li class="line"></li>
+             <li class="wx"><img src="images/qq.jpg" alt="微信平台" /></li>
+             <li class="line"></li>
+             <li class="kh"><img src="images/phone.jpg" alt="客户端下载" /></li>
+          </ul>
+       </div>
+       <!-- footer_content -->
+       <div class="footer_content">
+           <img src="images/content.png" alt="联系我们 400-8859-000" />
+       </div>
+    </div>
+</div>
+<!-- footer end -->
+
+<!-- service -->
+<div class="service">
+    <!-- service_left -->
+    <div class="service_left">
+       <div class="service_left_tit">
+          <ul>
+             <li>关于抠抠</li>
+             <li class="line"></li>
+             <li>新手指南 </li>
+             <li class="line"></li>
+             <li>维权中心</li>
+             <li class="line"></li>
+             <li>支付方式</li>
+             <li class="line"></li>
+             <li>售后服务</li>
+             <li class="line"></li>
+             <li>配送说明</li>
+           </ul>
+       </div>
+       <div class="service_left_con">
+          <ul>
+             <li>
+               <a href="#">关于抠抠</a><a href="#">商家入驻</a><a href="#">加入我们</a><a href="#">联系我们</a><a href="#">友情链接</a> 
+             </li>
+             <li>
+               <a href="#">用户注册</a><a href="#">用户注册协议</a><a href="#">购物流程</a><a href="#">网站地图</a> 
+             </li>
+             <li>
+               <a href="#">客服中心</a><a href="#">找回密码</a><a href="#">邮件订阅</a><a href="#">产品册订阅</a><a href="#">隐私声明</a> 
+             </li>
+             <li class="l">
+               <a href="#">货到付款</a><a href="#">在线支付</a><a href="#">礼品卡及账户余额</a><a href="#">其他支付方式</a>
+             </li>
+             <li class="n">
+               <a href="#">退款政策</a><a href="#">退货流程</a><a href="#">退款说明</a> 
+             </li>
+             <li>
+               <a href="#">发货规定</a><a href="#">国内配送</a><a href="#">海外配送</a><a href="#">订单拆分</a>
+             </li>
+          </ul>
+       </div>
+        
+    </div>
+    <!-- service_right -->
+    <div class="service_right hide">
+       <div class="bg_pic"></div>
+       <ul>
+          <li>7天内退换货</li>
+          <li class="l">百分之百正品保障</li>
+          <li class="n">百分之百质量保障</li>
+       </ul>
+    </div>
+</div>
+
+<!-- copyright -->
+<div class="copyright">
+     CopyRIGHT © 2009-2014 抠抠网 KOUCLO All RIGHTS RESERVED 闽ICP备13001618号 | 增值电信业务经营许可证：闽B1-20130053 | 互联网药品信息服务资质证书编号：（闽）-非经营性-2014-0008
+</div>
+<script type="text/javascript">
+function count($num){
+	var goods_num = $num;
+		if (goods_num == 0)
+		{
+			$('.count').html('<input type="button" class="no" onClick="javascript:is_over();" />');
+		}else{
+			$('.count').html('<input type="button" class="buy" onclick="javascript:ljgm();" /><input type="button" class="scar" onClick="javascript:but_buy();" />');
+		}
+}
+				
+//已售罄按钮
+function is_over()
+{
+	alert('商品已卖完，请查看其他商品！');
+	return false;
+}
+//加入购物车按钮
+	function but_buy()
+	{
+		var sku_id = $('#sku_id').val();
+		var group_id = 0;
+		var goods_num = $('#goods_num').val();
+		//alert(sku_id+" "+goods_num);
+		if (goods_num == 0)
+		{   
+		    alert('请选择');
+			return false;
+		}
+		else
+		{
+			var ajax = $.ajax({url:'http://www.kouclo.com/shopcart/add_cart',
+						 type:'post',
+						 data:{group_id:group_id,sku_id:sku_id,goods_num:goods_num},
+						 dataType:'json',
+						 beforeSend:loading_img(),
+						 success:function(json){
+								 $('#ajax_num').html(json.buy_num);
+								 $('#ajax_totle_price').html('￥'+ json.total_price + "元");
+								 if(json.state_img == 'error')
+								 {
+								  	$('#shopcar_cg_con').find('.con').find('b').addClass('error_icon').removeClass('right_icon');
+							     }
+								 else
+								 {
+								    $('#shopcar_cg_con').find('.con').find('b').addClass('right_icon').removeClass('error_icon');
+								 }
+								 $('#state_goods_title').html(json.state);
+								 $('#shopcar_cg_con').show();
+								 //$(".buy_box").removeClass("hide");
+							}
+						});
+		}
+	}
+
+
+
+	function ljgm()
+	{
+		var sku_id = $('#sku_id').val();
+		var group_id = 0;
+		var goods_num = $('#goods_num').val();
+		//alert(sku_id+" "+goods_num);
+		if (goods_num == 0)
+		{
+			return false;
+		}
+		else{
+			var ajax = $.ajax({url:'http://www.kouclo.com/shopcart/add_cart',
+						 type:'post',
+						 data:{group_id:group_id,sku_id:sku_id,goods_num:goods_num},
+						 dataType:'json',
+						 success:function(json){
+								 if (json.buy_num != '')
+								 {
+										window.location.href = '/shopcart';
+								 }
+							}
+						});
+		}
+	}
+
+	//虚拟物品购物
+	function xjgm()
+	{
+		var sku_id = $('#sku_id').val();
+	    var goods_id = '15141';
+	    var goods_num = $('#goods_num').val();
+	    if (goods_num == 0)
+	    {
+			alert('请选择');
+	        return false;
+	    }else{
+	        /*var ajax = $.ajax({url:'http://www.kouclo.com/shopcart/xjgm_cart',
+	            type:'get',
+	            data:{goods_id:goods_id,sku)id:sku_id,goods_num:goods_num},
+	            dataType:'json',
+	            success:function(json){
+
+	                window.location.href = '/order_Confirmation/xndd';
+			            
+			    }
+		    });*/
+	    	window.location.href = '/order_Confirmation/xndd?goods_id='+goods_id+'&sku_id='+sku_id+'&goods_num='+goods_num;
+		    //$.get("http://www.kouclo.com/shopcart/xjgm_cart",{goods_id:goods_id,sku_id:sku_id,goods_num:goods_num});
+		}
+	}
+
+
+
+$(function(){
+	
+	var arrInfo = [];
+	function isselct()
+	{
+		var iscld = '';
+		$('a[name="issku"]').each(function (){
+		   if ($(this).attr('class') =='okIco')
+		   {
+			  iscld += $(this).attr('title');
+		   }
+	   }) 
+		
+	   return iscld;
+
+	}
+	
+	//点击红色边框  对沟
+	function jsClick( $tag ){
+		$(".jsClick").find($tag).click(function(){
+			if( $(this).attr('class') =='dd_none'){
+				return false;
+			}
+			
+			$(this).addClass("okIco").siblings().removeClass("okIco");
+			
+			var rtslct = isselct();
+			
+			for(var i in arrInfo){
+				
+				if(arrInfo[i].color == rtslct ){
+					$('#goods_price').text(arrInfo[i].price);
+					$('#goodsnum').text(arrInfo[i].num);
+					
+					$('#sku_id').val(arrInfo[i].sku_id);
+					//alert( $(this).html() )
+					if( $(this).find('img').length>0 ){
+						$("#imagezoom-wrap img").attr( 'src', $(this).find('img').attr('src')  )
+					}
+					$('#goods_num').val(1);
+					count(arrInfo[i].num);
+				}
+			}
+			
+
+		});
+	}
+
+
+jsClick("a");	
+	 
+	
+})
+</script>
+
+</body>
+</html>

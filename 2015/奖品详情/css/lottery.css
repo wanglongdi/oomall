@@ -1,0 +1,95 @@
+@charset 'utf-8';
+/* bg */
+.lot_item h2,.lot_man_con,.lot_con0 ul li .con,.lot_con0 ul li .free_btn,#close,#lot_suc dd .ling_btn,#lot_know,#lot_top{background:url('../images/lot_bg.png') no-repeat;overflow: hidden;}
+.lot_con0 ul li .con0{background:url('../images/lot_bg.png') no-repeat;}
+img{display: block;}
+
+/* lot_banner */
+#lot_banner{width: 100%;text-align: center;overflow: hidden;min-width: 1200px;}
+
+/* lot_con */
+.lot_con{background: #ba0019;position: relative;z-index: 9; width: 100%;min-width: 1200px;}
+.lot_con0,.lot_act0,.lot_item{width: 1200px;margin: 0 auto;}
+.lot_con0 ul{width: 1320px;margin-left: -120px; padding: 50px 0 50px 0;}
+.lot_con0 ul li{width: 320px;float: left;margin-left: 120px;}
+.lot_con0 ul li .con{width: 320px;margin-top: 30px;background-position: 0 -131px;height: 300px;}
+.lot_con0 ul li .free_btn{width: 156px;height: 53px;margin: 172px 0 0 80px;display: block;cursor: pointer;background-position: -191px -526px;}
+.lot_con0 ul li .free_btn:hover{background-position: 0px -526px;}
+.lot_con0 ul li .free_btn0{background-position: -370px -526px;}
+.lot_con0 ul li .con0{width: 310px;background-position: -443px -126px;height: 330px;position: relative;display: none;}
+.lot_con0 ul li .bg{width: 216px;height: 208px;background: #000;opacity: 0.3;filter: alpha(opacity=30);position: absolute; left:46px;top: -64px;border-top-left-radius: 5px;border-top-right-radius: 5px;z-index: 1;}
+.lot_con0 ul li .pic{width: 200px;height: 200px;position: absolute; left: 54px;top: -56px;z-index: 2;}
+.lot_con0 ul li .pic img{width: 200px;height: 200px;}
+
+/* lot_act */
+.lot_act{background: url('../images/lot_bg0.jpg') repeat;overflow: hidden;width: 100%;min-width: 1200px;}
+.lot_act0{padding: 45px 0 115px;overflow: hidden;}
+.lot_item{width: 720px;padding:85px 0px 0px 50px;float: left;overflow: hidden;}
+.lot_item h2{width: 360px; margin-left: 60px;height: 95px;background-position: 0 0;text-indent:-9999px;}
+.lot_item p{line-height: 42px;color: #ffe372;font-size: 14px;padding-top: 50px;}
+
+
+/* lot_man */
+.lot_man{width: 368px;height: 482px;background: #880103;float: left;border-radius: 8px;}
+.lot_man_con{width: 304px;height: 395px;background-position: -897px 0;margin: 52px 32px 0;}
+.lot_man_tit{width: 220px;border-bottom: #cbbb88 1px dashed;margin: 20px 42px 5px;color: #4b0809;font-size: 16px;line-height: 44px;overflow: hidden;}
+.lot_man_tit li{width: 130px;float: left;}
+.lot_man_tit li.l{width: 90px;}
+
+/* lot_man0 */
+.lot_man0{width: 220px;color: #4b0809; overflow: hidden;height: 300px;margin: 0 42px;}
+.lot_man0 ul{overflow: hidden;}
+.lot_man0 ul li{width: 220px;color: #b10408;line-height: 30px;}
+.lot_man0 ul li span{width: 130px;float: left;}
+.lot_man0 ul li span.l{width: 90px;}
+
+/* lot_tit */
+.lot_tit{width: 1200px;margin: 0px auto;overflow: hidden;position: relative;padding-top: 40px;}
+.lot_tit h2{font-size: 28px;color: #ffcf27;line-height: 50px;}
+.lot_tit .more{width: 100px;position: absolute;text-align: right;right: 0;top: 55px;font-size: 18px;color: #ffcf27;}
+
+/* lot_product */
+.lot_product,.lot_sj{width: 1200px;margin: 0px auto;overflow: hidden;}
+.lot_product ul li{width: 220px;background: #da122d;float: left;margin: 10px; line-height: 28px;text-align: center;height: 300px;}
+.lot_product ul li img{width: 220px;height: 220px; margin-bottom: 5px;}
+.lot_product ul li .text a{color: #fff;font-size: 14px;}
+.lot_product ul li .text a:hover{text-decoration: underline;}
+.lot_product ul li .price{font-weight: bold;color: #ffcf27;font-size: 22px;}
+
+/* lot_sj */
+.lot_sj{padding-bottom: 150px;}
+.lot_sj ul li{width: 220px;float: left;margin: 10px;}
+.lot_sj ul li img{width: 220px;height: 90px;}
+
+/* lot_suc */
+#lot_suc_bg{width: 876px;height: 616px;position: fixed;left: 50%;top: 50%;margin-left: -438px;margin-top: -308px;background: #000;opacity: 0.5;filter: alpha(opacity=50);z-index: 1001;border-radius: 8px;display: none;}
+#lot_suc{width: 860px;height: 600px;position: fixed;left: 50%;top: 50%;margin-left: -430px;margin-top: -300px;background: url('../images/lot_bg01.jpg') repeat;z-index: 1002;border-radius: 8px;display: none;}
+#lot_suc h2{width: 640px;margin: 60px auto;color: #fd0325;font-size: 32px;line-height: 50px;position: relative;}
+#lot_suc dl{width: 640px;margin: 20px auto;overflow: hidden;}
+#lot_suc dt{width: 312px;float: left;position: relative;overflow: hidden;height: 312px;}
+#lot_suc dt .bg_con{width: 312px;height: 312px;background: #000;opacity: 0.2;filter: alpha(opacity=20);position: absolute;left: 0;top: 0;z-index: 1;}
+#lot_suc dt .pic{width: 300px;height: 300px;position: absolute;left: 6px;top: 6px;z-index: 2;}
+#lot_suc dt .pic img{width: 300px;height: 300px;}
+#lot_suc dd{width: 298px;padding-left: 30px;float: left;overflow: hidden;line-height: 24px;padding-top: 15px;}
+#lot_suc dd .tit a{color: #4a4a4a;font-size: 16px;}
+#lot_suc dd .tit a:hover{text-decoration: underline;}
+#lot_suc dd .text{color: #999;font-size: 14px;}
+#lot_suc dd .text a{color: #333;font-size: 14px;}
+#lot_suc dd .text a:hover{text-decoration: underline;}
+#lot_suc dd .price{color: #fd0325;font-size: 25px;font-weight: bold;margin: 14px 0;}
+#lot_suc dd .price em{margin-left: 10px;font-size: 35px;font-style: normal;}
+#lot_suc dd .ling_btn{width: 267px;height: 68px;background-position: -871px -418px;line-height: 68px;text-align: center;margin-top: 95px;}
+#lot_suc dd .ling_btn a{color: #fff;font-weight: bold;font-size: 26px;display: block;}
+#close{width: 20px;height: 20px;cursor: pointer; background-position: -1181px -419px;position: absolute;right: -90px;top: -45px;display: block; z-index: 1003;}
+
+/* mask */
+#mask{width: 100%;background: #000;opacity: 0.3;filter: alpha(opacity=30);position: fixed;left: 0;top: 0;z-index: 1000;display: none; min-width: 1200px;}
+
+/* lot_no */
+#lot_no{width: 418px;height: 250px;position: fixed;left: 50%;top: 50%;margin-left: -209px;margin-top: -125px;background: #ffff9d;border: #d44500 2px solid;border-radius: 10px;z-index: 1005;display: none;}
+#lot_no .text{width: 350px;margin: 30px auto;line-height: 40px;text-indent: 2em;color: #c84100;font-size: 26px;}
+#lot_know{width: 146px;height: 50px;background-position: 0 -447px; margin: 20px auto;cursor: pointer;}
+
+
+/* lot_top */
+#lot_top{width: 67px;height: 67px;background-position: -806px 0;cursor: pointer;position: fixed;bottom: 100px;display: none;z-index: 11;right: 200px;}

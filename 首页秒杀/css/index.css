@@ -1,0 +1,30 @@
+@charset "utf-8";
+/* CSS Document */
+body{font-size:12px; font-family:"Microsoft YaHei";}
+*{margin:0px; padding:0px;}
+img{border:0px;}
+ul,li{list-style:none;}
+
+a{font-size:12px; text-decoration:none; color:#333;}
+
+
+
+
+/* seckill_banner */
+#seckill_banner{width:1200px; margin:10px auto 0px; overflow:hidden; position:relative;}
+#seckill_big{height:500px; display:none;}
+#seckill_small{height:90px; display:none;}
+#clock{width:170px; height:90px; background:#141414; position:absolute; top:0px; left:30px;}
+#clock .clock_text{padding-left:13px; line-height:30px; color:#fff; font-weight:bold; font-size:12.23px; width:157px; margin:10px 0px;}
+#clock .clock_con{width:157px; margin:2px 0px 0px 13px; height:43px;}
+#clock .clock_t{width:144px; height:43px; background:url(../images/seckill_index.png) no-repeat 0px -29px; overflow:hidden;}
+#clock .clock_d{width:36px; float:left; overflow:hidden; }
+#clock .clock_h{width:18px; float:left; overflow:hidden; text-align:center; line-height:24px; font-size:26px; font-weight:bold; color:#fff; text-align:center; font-family:HelveticaNeueLT BlackCond,Arial;}
+#clock .hour,#clock .minute,#clock .second{width:36px; line-height:24px; font-size:26px; font-weight:bold; color:#fff; text-align:center; display:block; padding-top:4px; font-family:HelveticaNeueLT BlackCond,Arial;}
+#clock .time{width:32px; padding-right:4px; color:#fff; text-align:right; display:block; line-height:14px;}
+
+/* #open*/
+#open{width:61px; height:23px; position:absolute; right:9px; top:8px; background:url(../images/seckill_index.png) no-repeat 0px 0px; overflow:hidden;}
+#open .open_text{line-height:23px; width:52px; position:relative; padding-left:9px; font-size:14px; color:#fff; cursor:pointer;}
+#open .open_pic{width:13px; height:7px; background:url(../images/seckill_index.png) no-repeat -70px 0px; overflow:hidden; position:absolute; top:8px; right:5px;}
+#open .back_pic{width:13px; height:7px; background:url(../images/seckill_index.png) no-repeat -87px 0px; overflow:hidden; position:absolute; top:8px; right:5px;}

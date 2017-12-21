@@ -1,0 +1,12 @@
+*{padding:0;margin:0}
+.calender{ width:245px;margin:50px auto;top:0;left:0;border-right:1px #ccc solid;border-bottom:1px #ccc solid;background:#ecf1f4;position:absolute;display:none;z-index:999;}
+.calendertb{width:100%;}
+.calendertb td{width:28px;height:28px;border-left:1px #ccc solid;border-top:1px #ccc solid;text-align:center;vertical-align:middle;cursor:pointer;font-size:12px;}
+.calendertb td.hover,.calendertb td.weekendhover{background:#fff;}
+.calendertb th{width:28px;height:28px;border-left:1px #ccc solid;border-top:1px #ccc solid;text-align:center;vertical-align:middle;cursor:pointer;color:#555; background:#FFF;}
+.tdtoday{ background:#8ca4c8;color:#fff;width:28px;height:28px;border-left:1px #ccc solid;border-top:1px #ccc solid;text-align:center;vertical-align:middle;cursor:pointer;font-size:14px;font-weight:bold;}
+.getyear{ width:28px;height:28px;width:100%;text-align:center; border-left:1px #ccc solid;border-top:1px #ccc solid; padding-top:5px;}
+.preMonth{ font-size:14px;font-weight:bold;cursor:pointer;margin-right:18px;color:#0080FF;}
+.nextMonth{ font-size:14px;font-weight:bold;cursor:pointer;margin-left:18px;color:#0080FF;}
+
+.zhezhao{width:100%;height:100%;position:fixed;z-index:998;background:#fff;filter:alpha(opacity=10);opacity:0.1;display:none;}
